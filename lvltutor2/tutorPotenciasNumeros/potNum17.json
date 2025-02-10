@@ -1,0 +1,55 @@
+{
+    "code": "potNum17",
+    "meta": {},
+    "title": "Producto de potencias de igual base.",
+    "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del producto de potencias de igual base expresa como potencia de la fracción.",
+            "expression": "\\left( \\frac{2}{3} \\right)^{2} \\cdot \\left( \\frac{2}{3} \\right)^{-3}",
+            "KCs": [
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾"
+                },
+                {
+                    "hintId": 1,
+                    "hint": " La base en común es: ",
+                    "expression": "2/3"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es :",
+                    "expression": "\\frac{3}{2}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\left( \\frac{2}{3} \\right)^{-1}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "\\frac{3}{2}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 2/3 y los exponentes son 2 y -3.",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad del producto de potencias de igual base.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\left(  \\frac{2}{3} \\right)^{2 - 3} \\longrightarrow \\left( \\frac{2}{3} \\right)^{-1} = \\frac{3}{2}"
+            ],
+            "matchingError": []
+        }
+    ]
+}

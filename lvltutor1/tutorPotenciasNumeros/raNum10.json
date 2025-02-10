@@ -1,0 +1,94 @@
+{
+  "code": "raNum10", 
+  "meta": {},
+  "title": "Simplificación de raíces.",
+  "text": "Simplifica la siguiente expresión aplicando las propiedades correspondientes.",
+  "initialExpression":"2\\sqrt{4\\sqrt{16}}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Escribe esta parte de la expresión como una potencia de base 2.",
+      "expression": "\\sqrt{16}",
+      "KCs": ["TransRaizPot"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que para escribir la raíz como una potencia se ocupa: ",
+          "expression":"\\sqrt[n]{a} \\longrightarrow a^{\\frac{1}{n}}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "2^{2}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{2}"], "nextStep": "1" }],
+      "summary": "1) Se escribe la raíz en forma de potencia.",
+      "correctMsg": "Has escrito de forma correcta de raíz a potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt{16}  \\longrightarrow 16^{\\frac{1}{2}} \\longrightarrow 2^{\\frac{4}{2}} \\longrightarrow 2^{2}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Realiza la siguiente multiplicación aplicando las propiedades de las potencias y expresa como una potencia de base 2.",
+      "expression": "4 \\cdot 2^{2}",
+      "KCs": ["SumResExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda transformar el 4 a una potencia de 2 y realiza la propiedad."
+        },
+        {
+          "hintId": 1,
+          "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+          "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
+        },
+        {
+          "hintId":2,
+          "hint": "La respuesta es:",
+          "expression":"2^{4}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{4}"], "nextStep": "2" }],
+      "summary": "2) Se realiza la propiedad de multiplicar 2 potencias del misma base.",
+      "correctMsg": "Has realizado la propiedad correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["4 \\cdot 2^{2} \\longrightarrow 2^{2} \\cdot 2^{2} \\longrightarrow 2^{2+2} \\longrightarrow 2^{4}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Expresa la siguiente raíz como una potencia de base 2 y escribe el resultado final.",
+      "expression": "2 \\cdot \\sqrt{2^{4}}",
+      "KCs": ["TransRaizPot","SumResExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que para escribir la raíz como una potencia se ocupa: ",
+          "expression":"\\sqrt[n]{a} \\longrightarrow a^{\\frac{1}{n}}"
+        },
+        {
+          "hintId": 1,
+          "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+          "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
+        },
+        {
+          "hintId":2,
+          "hint": "La respuesta es:",
+          "expression":"2^{3}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{3}"], "nextStep": "-1" }],
+      "summary": "3) Se simplifica aplicando la propiedades correspondientes.",
+      "correctMsg": "Has realizado la simplificación correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2 \\sqrt{2^{4}} \\longrightarrow 2 \\cdot 2^{2} \\longrightarrow 2^{3}"],
+      "matchingError": []
+    }
+  ]
+}

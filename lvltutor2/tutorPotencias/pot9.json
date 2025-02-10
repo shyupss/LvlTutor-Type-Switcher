@@ -1,0 +1,83 @@
+{
+    "code": "pot9",
+    "meta": {},
+    "title": "Reducción de expresión",
+    "text": "Reduce la siguiente expresión:",
+    "type": "lvltutor",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "KCs": [
+                "TransExpFrac"
+            ],
+            "expression": "a^{-1}",
+            "stepTitle": "Utiliza la propiedad potencia con exponente negativo para volver positivo el exponente de la potencia.",
+            "displayResult": [
+                "\\frac{1}{a}"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para que el exponente sea positivo, el numerador y denominador deben cambiar de lugar"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El numerador es a, el denominador es 1 y el exponente es (-1)"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{1}{a}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{a}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+            "summary": "Para transformar una potencia con exponente negativo a uno positivo se deben intercambiar el numerador por el denominador y viceversa.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{a}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "a",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "a^{-n} = \\frac{1}{a^n}"
+                },
+                {
+                    "id": 2,
+                    "expression": "-a",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "a^{-n} = \\frac{1}{a^n}"
+                },
+                {
+                    "id": 3,
+                    "expression": "1^{a}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "a^{-n} = \\frac{1}{a^n}"
+                }
+            ]
+        }
+    ]
+}

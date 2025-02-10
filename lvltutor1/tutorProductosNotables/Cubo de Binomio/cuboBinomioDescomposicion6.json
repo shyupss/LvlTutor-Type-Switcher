@@ -1,0 +1,113 @@
+{
+    "code": "pnc3b16",
+    "meta": {},
+    "text": "Calcula el cubo de binomio descomponiendo como multiplicación de cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(\\frac{3}{4}x+\\frac{2}{3}y)^{3}",
+    "steps": [
+      {
+        "KCs": ["C3BDescomp","C3BCoefFrac","IdeTer3MultVar"],
+        "hints": [
+          {
+            "hint": "Recuerda que una potencia se puede escribir como una multiplicación de potencias de igual base, donde la suma de estos nuevos exponentes, den como resultado el valor del exponente original.",
+            "hintId": 0
+          },
+          {
+            "hint": "Por ejemplo:",
+            "expression":"a^3 = a\\cdot a^2",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression":"\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)^{2}",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "x", "value": 2}
+        ],
+        "answers": [{ "answer": ["(\\frac{3}{4}x+\\frac{2}{3}y)(\\frac{3}{4}x+\\frac{2}{3}y)^{2}"], "nextStep": "1" }],
+        "summary": "1) Se descompone el cubo de binomio en una multiplicación entre un binomio y un cuadrado de binomio.",
+        "stepTitle": "Reescribe la expresión de la forma (□ + □)(□ + □)².",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "(\\frac{3}{4}x+\\frac{2}{3}y)^{3} = (□ + □)(□ + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["(\\frac{3}{4}x+\\frac{2}{3}y)(\\frac{3}{4}x+\\frac{2}{3}y)^{2}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["C3BCuad","C3BCoefFrac","IdeTer3MultVar"],
+        "hints": [
+          {
+            "hint": "La identidad de cuadrado de binomio es: (a ± b)² = a² ± 2ab + b²",
+            "hintId": 0
+          },
+          {
+            "hint": "Recuerda revisar la operación dentro del paréntesis.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression":"\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}",
+            "hintId": 2
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}"], "nextStep": "2" }],
+        "summary": "2) Se desarrolla el cuadrado de binomio utilizando la identidad del cuadrado de binomio (a + b)² = a² + 2ab + b²",
+        "stepTitle": "Desarrolla el cuadrado de binomio, y simplifica al máximo las fracciones.",
+        "correctMsg": "Has calculado el cuadrado de binomio.",
+        "expression": "(\\frac{3}{4}x+\\frac{2}{3}y)^{2} = □ + □ + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["C3BDist","C3BCoefFrac","IdeTer3MultVar"],
+        "hints": [
+          {
+            "hint": "Para realizar la multiplicación primero multiplicas el primer término del binomio por cada valor del segundo paréntesis, y luego haces lo mismo con el segundo término del binomio.",
+            "hintId": 0
+          },
+          {
+            
+            "hint": "En el siguiente ejemplo, primero se multiplica 'a' por cada uno de los términos del segundo paréntesis y luego se realiza lo mismo pero utilizando 'b'.",
+            "expression":"(a+b)(x+y) = (ax + ay) + (bx + by)",
+            "hintId": 1
+          },
+          {
+            "hint": "Recuerda revisar los signos al multiplicar y reducir los términos semejantes.",
+            "hintId": 2
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression":"\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}",
+            "hintId": 3
+          }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}"], "nextStep": "-1" }],
+        "summary": "3) Se multiplica cada factor del binomio por el resultado del cuadrado de binomio y se reducen los términos semejantes.",
+        "stepTitle": "Finalmente, realiza la multiplicación distributiva y simplifica al máximo las fracciones.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(\\frac{3}{4}x+\\frac{2}{3}y)(\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}) = □ + □ + □ + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}"],
+        "matchingError": []
+      }
+    ],
+    "title": "Cubo de binomio"
+  }

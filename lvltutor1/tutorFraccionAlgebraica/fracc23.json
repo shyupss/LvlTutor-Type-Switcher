@@ -1,0 +1,113 @@
+{
+    "code": "fracc23",
+    "title": "Suma y resta de fracciones",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Realiza las operaciones indicadas y reduzca",
+    "steps": [
+      {
+        "stepId": "0",
+        "expression": "\\frac{1}{\\left(x+1\\right)}+\\frac{2}{\\left(x-1\\right)}-\\frac{1}{\\left(x^{2}-1\\right)}",
+        "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+        "displayResult": [
+          "\\left(x+1\\right)\\left(x-1\\right)",
+          "\\left(x^{2}-1\\right)"
+        ],
+        "KCs": [
+          "MCM","MCMPot","SumDif","IdenDenominador"
+        ],
+        "values": [
+          {
+            "name": "x",
+            "value": 2
+          }
+        ],
+        "hints": [
+            {
+              "hintId": 0,
+              "hint": "Comenzar encontrando los factores para cada denominador. Para esto debes factorizar cada denominador si es que es posible."
+            },
+            {
+              "hintId": 1,
+              "hint": "El denominador de la tercera fracción es una diferencia de cuadrados, por lo tanto, se puede expresar de la forma (x+a)(x-a)"
+            },
+            {
+              "hintId": 2,
+              "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores escoge el de máxima potencia"
+            },
+            {
+              "hintId": 3,
+              "hint": "El mínimo común múltiplo de los denominadores es:",
+              "expression": "\\left(x+1\\right)\\left(x-1\\right)"
+            }
+          ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\left(x+1\\right)\\left(x-1\\right)"
+            ],
+            "nextStep": "1"
+          },
+          {
+            "answer": [
+              "\\left(x^{2}-1\\right)"
+            ],
+            "nextStep": "1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
+        "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+      },
+      {
+        "stepId": "1",
+        "expression": "\\frac{1}{\\left(x+1\\right)}+\\frac{2}{\\left(x-1\\right)}-\\frac{1}{\\left(x^{2}-1\\right)}",
+        "stepTitle": "Realiza la suma de las fracciones aplicando el mínimo común múltiplo encontrado.",
+        "displayResult": [
+          "\\frac{3x}{\\left(x+1\\right)\\left(x-1\\right)}",
+          "\\frac{3x}{\\left(x^{2}-1\\right)}"
+        ],
+        "KCs": [
+          "SRFrac","SRFraccPot","IdenNumerador"
+        ],
+        "values": [
+          {
+            "name": "x",
+            "value": 2
+          }
+        ],
+        "hints": [
+            {
+              "hintId": 0,
+              "hint": "Usa el mínimo común múltiplo encontrado como denominador común en el resultado."
+            },
+            {
+              "hintId": 1,
+              "hint": "Cada fracción en la suma y resta de las fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+            },
+            {
+              "hintId": 2,
+              "hint": "El resultado es: ",
+              "expression": "\\frac{3x}{\\left(x+1\\right)\\left(x-1\\right)}"
+            }
+          ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{3x}{\\left(x+1\\right)\\left(x-1\\right)}",
+              "\\frac{3x}{\\left(x^{2}-1\\right)}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has realizado la suma y resta de fracciones correctamente..",
+        "summary": "2) Finalmente se realiza las operaciones indicadas de fracciones haciendo uso del mínimo común múltiplo encontrado."
+      }
+    ]
+  }
+  

@@ -1,0 +1,241 @@
+{
+  "code": "fracc1",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Reduce la siguiente expresión:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{\\left(\\frac{a}{b}+\\frac{c}{d}\\right)}{\\left(\\frac{a}{b}-\\frac{c}{d}\\right)}",
+      "stepTitle": "Realiza la suma (o resta) de fracciones en el numerador y expresa el resultado final solo del numerador.",
+      "displayResult": [
+        "\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)"
+      ],
+      "KCs": [
+        "SRFrac",
+        "MCM"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identifica el numerador que es la parte superior de la expresión, luego identifica si hay operaciones realizables en el numerador."
+        },
+        {
+          "hintId": 1,
+          "hint": "Existe una suma (o resta) de fracciones en el numerador (la parte superior), aplica la propiedad de suma de fracciones. Necesita encontrar el mínimo común múltiplo de los denominadores."
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado final del numerador es ",
+          "expression": "\\left(\\frac{ad+bc}{bd}\\right)"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\left(\\frac{ad+bc}{bd}\\right)"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has realizado las operaciones en el numerador correctamente.",
+      "summary": "1) Luego se resuelve las operaciones en el numerador."
+    },
+    {
+      "stepId": "1",
+      "expression": "\\frac{\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)}{\\left(\\frac{a}{b}-\\frac{c}{d}\\right)}",
+      "stepTitle": "Realiza la suma (o resta) de fracciones en el denominador y expresa el resultado final solo del denominador.",
+      "displayResult": [
+        "\\left(\\frac{a\\cdot d-b\\cdot c}{b\\cdot d}\\right)"
+      ],
+      "KCs": [
+        "SRFrac",
+        "MCM"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identifica el denominador que es la parte inferior de la expresión, luego identifica si hay operaciones realizables en el denominador."
+        },
+        {
+          "hintId": 1,
+          "hint": "Existe una suma (o resta) de fracciones en el denominador (la parte inferior), aplica la propiedad de suma de fracciones."
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado final del denominador es ",
+          "expression": "\\left(\\frac{a\\cdot d-b\\cdot c}{b\\cdot d}\\right)"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\left(\\frac{ad-bc}{bd}\\right)"
+          ],
+          "nextStep": "2"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has realizado las operaciones en el denominador correctamente.",
+      "summary": "2) Se continúa resolviendo las operaciones en el denominador."
+    },
+    {
+      "stepId": "2",
+      "expression": "\\frac{\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)}{\\left(\\frac{a\\cdot d-b\\cdot c}{b\\cdot d}\\right)}",
+      "stepTitle": "Invierte la fracción ubicada en el denominador y expresa como multiplicación el resultado con el numerador sin simplificar.",
+      "displayResult": [
+        "\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)\\cdot\\left(\\frac{b\\cdot d}{a\\cdot d-b\\cdot c}\\right)"
+      ],
+      "KCs": [
+        "DivFrac"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la propiedad de división de fracciones. "
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "\\left(\\frac{ad+bc}{bd}\\right)\\cdot\\left(\\frac{bd}{ad-bc}\\right)"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\left(\\frac{ad+bc}{bd}\\right)\\cdot\\left(\\frac{bd}{ad-bc}\\right)"
+          ],
+          "nextStep": "3"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
+      "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+    },
+    {
+      "stepId": "3",
+      "expression": "\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)\\cdot\\left(\\frac{b\\cdot d}{a\\cdot d-b\\cdot c}\\right)",
+      "stepTitle": "Simplifica la siguiente expresión cancelando los términos semejantes, luego multiplica ambas fracciones",
+      "displayResult": [
+        "\\frac{a\\cdot d+b\\cdot c}{a\\cdot d-b\\cdot c}"
+      ],
+      "KCs": [
+        "CancTermSem",
+        "MultFrac"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Identifica términos semejantes entre los numeradores y denominadores de las dos fracciones."
+        },
+        {
+          "hintId": 1,
+          "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
+          "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "\\frac{ad+bc}{ad-bc}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{ad+bc}{ad-bc}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has logrado reducir la expresión correctamente.",
+      "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+    "code": "SumCub12",
+    "title": "\\text{Identifica y resuelve la siguiente expresión.} ",
+    "description": "",
+    "order_steps": {
+      "show": false,
+      "position": "final"
+    },
+    "type": "mo",
+    "meta": {},
+    "eqc": "(4p²+3q³)(16p⁴-12p²q³+9q⁶)",
+    "steps": [
+      {
+        "stepId": "0",
+        "left_text": "Realiza la multiplicación de paréntesis.",
+        "right_text": "Multiplicación de paréntesis",
+        "input_labels": "",
+        "correct_answer": 4,
+        "hints": [
+          {
+            "id": 0,
+            "text": "\\text{Recuerda aplicar bien la} \\newline \\text{propiedad distributiva} \\newline \\text{sobre la expresion,} \\newline \\text{multiplicando termino} \\newline \\text{a termino.}",
+            "answers": [
+              1,
+              2
+            ],
+            "generic": false
+          },
+          {
+            "id": 1,
+            "text": "\\text{Recuerda que al multi-} \\newline \\text{plicar potencias con} \\newline \\text{misma base y distinto} \\newline \\text{exponente, la base se} \\newline \\text{mantiene y los exponentes} \\newline \\text{se suman.}",
+            "answers": [
+              5
+            ],
+            "generic": false
+          },
+          {
+            "id": 2,
+            "text": "\\text{Ten mucho cuidado con} \\newline \\text{los signos durante la} \\newline \\text{multiplicación de} \\newline \\text{términos}",
+            "answers": [
+              6,
+              3
+            ],
+            "generic": false
+          }
+        ],
+        "type": "drag-fixed",
+        "KCs": [
+          "MultDist"
+        ],
+        "answers": [
+          {
+            "id": 1,
+            "value": "(64p⁶-48p⁴q³+36p²q⁶)"
+          },
+          {
+            "id": 2,
+            "value": "(48p⁴q³-36p²q⁶+27q⁹)"
+          },
+          {
+            "id": 3,
+            "value": "(64p⁶+48p⁴q³+36p²q⁶+48p⁴q³+36p²q⁶+27q⁹)"
+          },
+          {
+            "id": 4,
+            "value": "(64p⁶-48p⁴q³+36p²q⁶+48p⁴q³-36p²q⁶+27q⁹)"
+          },
+          {
+            "id": 5,
+            "value": "(64p⁶-48pq³+36p²q+48pq³-36p²q+27q⁹)"
+          },
+          {
+            "id": 6,
+            "value": "(64p⁶-48p⁴q³+36p²q⁶-48p⁴q³+36p²q⁶-27q⁹)"
+          }
+        ]
+      },
+      {
+      "stepId": "1",
+      "left_text": "Reduzca la expresión resultante de la multiplicación: ",
+      "input_labels": "(64p⁶-48p⁴q³+36p²q⁶+48p⁴q³-36p²q⁶+27q¹²) =>",
+      "correct_answer": 3,
+      "hints": [
+        {
+          "id": 0,
+          "text": "\\text{Identifica términos} \\newline \\text{semejantes y agrupalos} \\newline \\text{para poder reducirlos} \\newline \\text{de mejor manera}",
+          "answers": [],
+          "generic": true
+        },
+        {
+          "id": 1,  
+          "text": "\\text{Ten cuidado con} \\newline \\text{los signos dentro de} \\newline \\text{la expresion}",
+          "answers": [],
+          "generic": true
+        },
+        {
+          "id": 2,
+          "text": "\\text{La respuesta es } \\newline \\text{64p⁶+27q⁹}",
+          "answers": [],
+          "generic": false
+        }
+      ],
+      "type": "input",
+      "KCs": [
+        "ReducSumCubos"
+      ],
+      "answers": [
+        {
+          "id": 1,
+          "value": " "
+        },
+        {
+          "id": 2,
+          "value": "64p^6-27q^9"
+        },
+        {
+          "id": 3,
+          "value": "64p^6+27q^9"
+        }
+      ]
+      },
+      {
+        "stepId": "2",
+        "left_text": "Identifica que producto notable es: ",
+        "input_labels": "(64p⁶+27q⁹) = ",
+        "correct_answer": 6,
+        "hints": [
+          {
+            "id": 0,
+            "text": "\\text{La diferencia de cubos} \\newline \\text{es de la forma a³-b³}",
+            "answers": [
+              2
+            ],
+            "generic": false
+          },
+          {
+            "id": 1,
+            "text": "\\text{Un cubo Binomio al cubo} \\newline \\text{es de la forma (a+b)³}",
+            "answers": [
+              3
+            ],
+            "generic": false
+          },
+          {
+            "id": 2,
+            "text": "\\text{Una suma por su dif-} \\newline \\text{erencia es de la forma} \\newline \\text{(a+b)(a-b)}",
+            "answers": [
+              4
+            ],
+            "generic": false
+          },
+          {
+            "id": 3,
+            "text": "\\text{Un Cuadrado de} \\newline \\text{Binomio es de la} \\newline \\text{forma (a+b)²}",
+            "answers": [
+              5
+            ],
+            "generic": false
+          },
+          {
+            "id": 4,
+            "text": "\\text{Un Cuadrado de} \\newline \\text{Trinomio es de la} \\newline \\text{forma (a+b+c)²}",
+            "answers": [
+              1
+            ],
+            "generic": false
+          }
+        ],
+        "type": "drag-text",
+        "KCs": [
+          ""
+        ],
+        "answers": [
+          {
+            "id": 1,
+            "value": "\\text{Cuadrado de un Trinomio.}"
+          },
+          {
+            "id": 2,
+            "value": "\\text{Diferencia de Cubos}"
+          },
+          {
+            "id": 3,
+            "value": "\\text{Binomio al Cubo.}"
+          },
+          {
+            "id": 4,
+            "value": "\\text{Suma por su diferencia.}"
+          },
+          {
+            "id": 5,
+            "value": "\\text{Cuadrado de Binomio.}"
+          },
+          {
+            "id": 6,
+            "value": "\\text{Suma de Cubos.}"
+          }
+        ]
+      }
+    ]
+}

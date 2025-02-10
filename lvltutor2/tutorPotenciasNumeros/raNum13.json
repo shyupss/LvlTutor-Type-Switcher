@@ -1,0 +1,46 @@
+{
+    "code": "raNum13",
+    "meta": {},
+    "title": "Suma de radicales",
+    "text": "Realice la suma de radicales y escriba su resultado.",
+    "initialExpression": "-5\\sqrt{5} + \\sqrt{5} + 4\\sqrt{5}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando propiedades, realize la suma de radicales y escriba el resultado",
+            "expression": "-5\\sqrt{5} + \\sqrt{5} + 4\\sqrt{5}",
+            "KCs": [
+                "SumRad"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+                    "expression": "a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b} "
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "0"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "0"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1)Ocupando propiedades y factorización se realiza la suma de radicales.",
+            "correctMsg": "Has realizado correctamente la suma de radicales.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "-5\\sqrt{5} + \\sqrt{5} + 4\\sqrt{5} \\longrightarrow \\left(-5 + 1 + 4\\right)\\sqrt{5} \\longrightarrow 0"
+            ],
+            "matchingError": []
+        }
+    ]
+}

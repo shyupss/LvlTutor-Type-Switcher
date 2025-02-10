@@ -1,0 +1,64 @@
+{
+  "code": "fracc27",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Exprese la siguiente fraccion como multiplicacion:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{\\frac{1}{x+1}}{\\frac{1}{y+1}}",
+      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "displayResult": [
+        "\\frac{1}{x+1}\\cdot (y+1)"
+      ],
+      "KCs": [
+        "DivFrac","IdenNumerador","IdenDenominador","ArFrac"
+      ],
+      "values": [
+        {
+          "name": "x",
+          "value": 1
+        },
+        {
+          "name": "y",
+          "value": 2
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la propiedad de división de fracciones. "
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es: ",
+          "expression": "\\frac{1}{x+1} \\cdot \\left(y+1\\right) "
+        }
+      ],
+      "matchingError": [],
+      "validation": "evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{1}{x+1}\\cdot (y+1)"
+          ],
+          "nextStep": "-1"
+        },
+        {
+          "answer": [
+            "\\frac{y+1}{x+1}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
+      "summary": "Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "code": "raNum5", 
+  "meta": {},
+  "title": "Simplificación de raíces.",
+  "text": "Simplifica el siguiente producto de raíces quintas.",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Aplicando la propiedad del producto de raices del mismo orden , exprese como quedaria la raíz cúbica.",
+      "expression": "\\sqrt[3]{6} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[3]{\\frac{9}{2}} \\cdot \\sqrt[2]{5}",
+      "KCs": ["MultRaices"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+          "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+        },
+        {
+          "hintId":1,
+          "hint":"La respuesta es: ",
+          "expression": "\\sqrt[3]{27}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt[3]{27}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad del producto de raíces del mismo orden para las raíces cúbicas",
+      "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt[3]{6  \\cdot \\frac{9}{2}} \\longrightarrow \\sqrt[3]{27}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Aplicando la propiedad del producto de raíces del mismo orden , exprese como quedaría la raíz cuadrada.",
+      "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[2]{5}",
+      "KCs": ["MultRaices"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+          "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+        },
+        {
+          "hintId":1,
+          "hint":"La respuesta es: ",
+          "expression": "\\sqrt[2]{25}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt[2]{25}"], "nextStep": "2" },{ "answer": ["\\sqrt{25}"], "nextStep": "2" }],
+      "summary": "2) Se aplica la propiedad del producto de raíces del mismo orden para las raíces cuadrada.",
+      "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt[2]{5} \\cdot \\sqrt[2]{5} \\longrightarrow \\sqrt[2]{25}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Simplifique y resuelva la operación.",
+      "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{25}",
+      "KCs": ["SimpRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Resuelve cada una de las raíces y multiplica."
+        },
+        {
+          "hintId":1,
+          "hint":"La respuesta es: ",
+          "expression": "15"
+        }
+      ],
+      "answers": [{ "answer": ["15"], "nextStep": "-1" }],
+      "summary": "3) Se resuelve las raíces y se multiplican.",
+      "correctMsg": "Has resuelto correctamente el problema",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt[3]{27} \\cdot \\sqrt[2]{25} \\longrightarrow 3 \\cdot 5 \\longrightarrow 15"],
+      "matchingError": []
+    }
+  ]
+}

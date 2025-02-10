@@ -1,0 +1,37 @@
+{
+  "code": "potNum6", 
+  "meta": {},
+  "title": "Potencia de una potencia",
+  "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de 2",
+      "expression": "(2^{2})^{3}",
+      "KCs": ["MultExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+        },
+        {
+          "hintId": 1,
+          "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+        },
+        {
+          "hintId": 2,
+          "hint": "La respuesta es :",
+          "expression":"2^{2 \\cdot 3} = 2^{6}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{6}"], "nextStep": "-1" }, { "answer": ["64"], "nextStep": "-1"}],
+      "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 3, por lo tanto la multiplicación de estos es 6",
+      "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{2 \\cdot 3 } = 2^{6}"],
+      "matchingError": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+    "code": "polires03",
+    "meta": {},
+    "text": "Resta los siguientes polinomios:",
+    "type": "lvltutor",
+    "steps": [
+      {
+        "KCs": ["InvSign"],
+        "hints": [
+          {
+            "hint": "Debes cambiar los signos del segundo término ya que hay un signo negativo antes del paréntesis.",
+            "hintId": 0
+          },
+          {
+            "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es 2x²-5x-3.", "hintId": 2 }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["2x^{2}-5x-3"], "nextStep": "1" }],
+        "summary": "1) Se invierten los signos del segundo polinomio.",
+        "stepTitle": "Ingresa el segundo polinomio con los signos invertidos",
+        "correctMsg": "Obtuviste el segundo polinomio.",
+        "expression": "(3x^{2}+2x-1)-(-2x^{2}+5x+3)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["2x^{2}-5x-3"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["AgrTer"],
+        "hints": [
+          {
+            "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+            "hintId": 0
+          },
+          {
+            "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es 5x²-3x-4.", "hintId": 2 }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["5x^{2}-3x-4"], "nextStep": "-1" }],
+        "summary": "1) Se suman los términos semejantes.",
+        "stepTitle": "Suma los términos semejantes entre los polinomios",
+        "correctMsg": "Obtuviste la suma de los polinomios.",
+        "expression": "(3x^{2}+2x-1)+(2x^{2}-5x-3)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["5x^{2}-3x-4"],
+        "matchingError": []
+      }
+    ],
+    "title": "Álgebra de polinomios"
+  }

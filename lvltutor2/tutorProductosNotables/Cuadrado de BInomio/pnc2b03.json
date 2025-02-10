@@ -1,0 +1,211 @@
+{
+    "code": "pnc2b03",
+    "meta": {},
+    "text": "Utilizando la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(3xy-5)²",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2MultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes elevar al cuadrado tanto las variables como el coeficiente que los acompaña.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Por ejemplo: ",
+                    "expression": "\\left(5ab\\right)^{2}=25a^{2}b^{2}",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es",
+                    "expression": " 9x^{2}y^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "9x^{2}y^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², el primer término \"a²\" se obtiene al elevar \"3xy\" al cuadrado",
+            "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(3xy-5)² = □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "9x^{2}y^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C2BTIMultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda revisar la operación detro del paréntesis. ",
+                    "hintId": 0
+                },
+                {
+                    "hint": " Primero multiplica ambos términos del paréntesis, y después multiplica el resultado por 2. Recuerda considerar el signo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "-30xy",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-30xy"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) El término \"2ab\" surge de multiplicar 2, 3xy y 5. Como la expresión original es una resta, el segundo término del cuadrado de binomio es negativo.",
+            "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(3xy-5)² = 9x²y² + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-30xy"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "C2BTIMultVar",
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": " 25",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "25"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) El tercer término \"b²\" se obtiene elevando \"5\" al cuadrado.",
+            "stepTitle": "Calcula el tercer término.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(3xy-5)² = 9x²y² - 30xy + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "25"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2MultVar",
+            "C2BTIMultVar",
+            "IdeTer2"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+                "hintId": 0
+            },
+            {
+                "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": " 25",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            },
+            {
+                "name": "y",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "25"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) El tercer término \"b²\" se obtiene elevando \"5\" al cuadrado.",
+        "stepTitle": "Calcula el tercer término.",
+        "correctMsg": "Has encontrado el tercer término.",
+        "expression": "(3xy-5)² = 9x²y² - 30xy + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "25"
+        ],
+        "matchingError": []
+    }
+}

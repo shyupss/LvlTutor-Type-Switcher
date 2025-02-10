@@ -1,0 +1,74 @@
+{
+    "code": "pnsd19",
+    "meta": {},
+    "text": "Obtén 2 binomios de la forma 'suma por diferencia' que equivalgan a la siguiente expresión",
+    "type": "lvltutor",
+    "initialExpression": "25x²y²-16",
+    "steps": [
+      {
+        "KCs": ["IdeTer2MultVar"],
+        "hints": [
+          {
+            "hint": "Para obtener el primer término debes utilizar el término 25x²y².",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 25x²y² para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "5xy",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2 }
+        ],
+        "answers": [{ "answer": ["5xy"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de suma por diferencia 'a² - b² = (a + b)(a - b)', para obtener el primer término se debe calcular la raíz cuadrada de 25x²y².",
+        "stepTitle": "Encuentra el primer término de suma por diferencia.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "25x^{2}y^{2}-16 = (□ + □)(□ - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["5xy"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+            "hint": "Para obtener el segundo término debes utilizar el término 16.",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 16 para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "4",
+            "hintId": 2
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["4"], "nextStep": "-1" }],
+        "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada de 16.",
+        "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "25x^{2}y^{2}-16 = (5xy + □)(5xy - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["4"],
+        "matchingError": []
+      }
+    ],
+    "title": "Suma por diferencia"
+  }

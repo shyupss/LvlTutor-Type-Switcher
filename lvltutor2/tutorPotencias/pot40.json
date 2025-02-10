@@ -1,0 +1,157 @@
+{
+    "code": "pot40",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Racionalización",
+    "text": "Racionaliza la siguiente expresión:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "\\frac{1}{\\sqrt{5}}",
+            "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+            "displayResult": [
+                "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}"
+            ],
+            "KCs": [
+                "DetConj",
+                "AmpFrac1"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "El conjugado de una raíz es igual a la misma raíz"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Para racionalizar, se multiplica por un '1 conveniente', utilizando el conjugado del denominador. Ejemplo: ",
+                    "expression": "\\frac{a}{\\sqrt{b}\\pm\\sqrt{c}}\\cdot\\frac{\\sqrt{b}\\mp\\sqrt{c}}{\\sqrt{b}\\mp\\sqrt{c}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado identificar el conjugado y expresar la amplificación.",
+            "summary": "1) Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado."
+        },
+        {
+            "stepId": "1",
+            "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}",
+            "stepTitle": "Multiplica ambas fracciones y simplifica si es posible.",
+            "displayResult": [
+                "\\frac{\\sqrt{5}}{5}"
+            ],
+            "KCs": [
+                "DetConj",
+                "AmpFrac1",
+                "MultFrac"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La multiplicación de dos fracciones es ",
+                    "expression": "\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "\\frac{\\sqrt{5}}{5}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{\\sqrt{5}}{5}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado racionalizar el denominador correctamente.",
+            "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}",
+        "stepTitle": "Multiplica ambas fracciones y simplifica si es posible.",
+        "displayResult": [
+            "\\frac{\\sqrt{5}}{5}"
+        ],
+        "KCs": [
+            "DetConj",
+            "AmpFrac1",
+            "MultFrac"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 1
+            },
+            {
+                "name": "b",
+                "value": 4
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "La multiplicación de dos fracciones es ",
+                "expression": "\\frac{a}{b}\\cdot\\frac{c}{d}=\\frac{ac}{bd}"
+            },
+            {
+                "hintId": 2,
+                "hint": "El resultado es ",
+                "expression": "\\frac{\\sqrt{5}}{5}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{\\sqrt{5}}{5}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado racionalizar el denominador correctamente.",
+        "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+    }
+}

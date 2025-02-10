@@ -1,0 +1,66 @@
+{
+  "code": "fracc28",
+  "meta": {},
+  "text": "Expresa como división:",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "KCs": [
+        "DivFrac","IdenNumerador","IdenDenominador","ArFrac"
+      ],
+      "hints": [
+        {
+          "hint": "Aplica la inversa de la propiedad de división de fracciones. ",
+          "hintId": 0
+        },
+        {
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba), debes realizar lo inverso a esto.",
+          "hintId": 1
+        },
+        {
+          "hint": "La solución es: ",
+          "hintId": 2,
+          "expression": "\\frac{\\frac{x}{y}}{\\frac{k}{z}}"
+        }
+      ],
+      "stepId": "0",
+      "values": [
+        {
+          "name": "x",
+          "value": 1
+        },
+        {
+          "name": "y",
+          "value": 2
+        },
+        {
+          "name": "z",
+          "value": 3
+        },
+        {
+          "name": "k",
+          "value": 4
+        }
+      ],
+      "answers": [
+        {
+          "answer": [
+            "\\frac{\\frac{x}{y}}{\\frac{k}{z}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "summary": "1) Para expresar una multiplicación de fracciones en una división de fracciones se divide la fracción de la izquierda de la multiplicación por la fracción inversa de la derecha de la multiplicación",
+      "stepTitle": "Inviertiendo la fracción del lado derecho de la multiplicación, expresa como una fracción de fracciones.",
+      "correctMsg": "Has expresado la multiplicación de fracciones como división de fracciones correctamente.",
+      "expression": "\\frac{x}{y}\\cdot\\frac{z}{k}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": [
+        "\\frac{\\frac{x}{y}}{\\frac{k}{z}}"
+      ],
+      "matchingError": []
+    }
+  ],
+  "title": "Fracción Algebraica"
+}

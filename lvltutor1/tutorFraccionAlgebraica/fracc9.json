@@ -1,0 +1,130 @@
+{
+    "code": "fracc9",
+    "title": "Fracción Algebraica",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Reduce la siguiente expresión:",
+    "steps": [
+      {
+        "stepId": "0",
+        "expression": "\\frac{\\frac{1}{a}}{\\frac{1}{b}}",
+        "stepTitle": "Inviertiendo la fracción ubicada en el denominador, expresa como multiplicación de fracciones",
+        "displayResult": [
+          "\\frac{1}{a}\\cdot{b}"
+        ],
+        "KCs": [
+          "DivFrac","IdenNumerador","IdenDenominador","ArFrac"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 1
+          },
+          {
+            "name": "b",
+            "value": 2
+          },
+          {
+            "name": "c",
+            "value": 3
+          },
+          {
+            "name": "d",
+            "value": 4
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Aplica la propiedad de división de fracciones."
+          },
+          {
+            "hintId": 1,
+            "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+          },
+          {
+            "hintId": 2,
+            "hint": "La solución es ",
+            "expression": "\\frac{1}{a}\\cdot{b}"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{1}{a}\\cdot{b}"
+            ],
+            "nextStep": "1"
+          },
+          {
+            "answer": [
+              "\\frac{1}{a}\\cdot\\frac{b}{1}"
+            ],
+            "nextStep": "1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
+        "summary": "1) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+      },
+      {
+        "stepId": "1",
+        "expression": "\\frac{1}{a}\\cdot{b}",
+        "stepTitle": "Multiplica ambas fracciones",
+        "displayResult": [
+          "\\frac{b}{a}"
+        ],
+        "KCs": [
+          "MultFrac"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 1
+          },
+          {
+            "name": "b",
+            "value": 2
+          },
+          {
+            "name": "c",
+            "value": 3
+          },
+          {
+            "name": "d",
+            "value": 4
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Multiplica los términos de los numeradores de cada fracción, has lo mismo con los denominadores"
+          },{
+            "hintId" : 1,
+            "hint": "Recuerda que b se puede expresar como ",
+            "expression": "\\frac{b}{1}"
+          },
+          {
+            "hintId": 1,
+            "hint": "La solución es ",
+            "expression": "\\frac{1}{a}\\cdot{b}"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{b}{a}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has logrado multiplicar las fracciones correctamente",
+        "summary": "2) Finalmente se aplica la multiplicación entre ambas fracciones."
+      }
+    ]
+  }
+  

@@ -1,0 +1,85 @@
+{
+  "code": "raNum8", 
+  "meta": {},
+  "title": "Simplificación de raíces.",
+  "text": "Simplifica la siguiente expresión aplicando las propiedades correspondientes.",
+  "initialExpression":"\\frac{\\sqrt{2}}{\\sqrt{6}} \\cdot \\left( \\frac{\\sqrt{10}}{\\sqrt{45}} \\right) ^{-1}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Aplica la propiedad de potencia negativa en la fracción del paréntesis.",
+      "expression": "\\left( \\frac{\\sqrt{10}}{\\sqrt{45}} \\right)^{-1}",
+      "KCs": ["PotNegFracc"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad de la potencia negativa es : ",
+          "expression":"\\left( a \\right) ^{-b}  \\longrightarrow \\left( \\frac{1}{a} \\right)^{b}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\frac{\\sqrt{45}}{\\sqrt{10}}"
+        }
+      ],
+      "answers": [{ "answer": ["\\frac{\\sqrt{45}}{\\sqrt{10}}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad de la potencia negativa a la fracción del paréntesis.",
+      "correctMsg": "Has aplicado correctamente la propiedad de la potencia negativa.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\left( \\frac{\\sqrt{10}}{\\sqrt{45}}  \\right)^{-1} \\longrightarrow \\frac{\\sqrt{45}}{\\sqrt{10}}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Realiza la multiplicación aplicando la propiedad del producto de raíces y expresa el resultado como una fracción de raíces.",
+      "expression": "\\frac{\\sqrt{2}}{\\sqrt{6}} \\cdot \\frac{\\sqrt{45}}{\\sqrt{10}}",
+      "KCs": ["MultRaices"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad de la multiplicacion de raíces de igual orden es : ",
+          "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
+        },
+        {
+          "hintId":1,
+          "hint": "La respuesta es:",
+          "expression":"\\frac{\\sqrt{90}}{\\sqrt{60}}"
+        }
+      ],
+      "answers": [{ "answer": ["\\frac{\\sqrt{90}}{\\sqrt{60}}"], "nextStep": "2" }],
+      "summary": "2) Se realiza la multiplicación aplicando el producto de raíces ",
+      "correctMsg": "Has realizado la multiplicación correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\frac{\\sqrt{2 \\cdot 45}}{\\sqrt{6 \\cdot 10}} \\longrightarrow \\frac{\\sqrt{90}}{\\sqrt{60}}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Simplifica la expresión resultante, aplicando la propiedad de cociente de raíces de igual orden.",
+      "expression": "\\frac{\\sqrt{90}}{\\sqrt{60}}",
+      "KCs": ["CoRaiz","SimpRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad del cociente de raíces del mismo orden dice: ",
+          "expression": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+        },
+        {
+          "hintId":1,
+          "hint": "La respuesta es:",
+          "expression":"\\sqrt{\\frac{3}{2}}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{\\frac{3}{2}}"], "nextStep": "-1" }],
+      "summary": "3) Se simplifica aplicando la propiedad del cociente de raíces del mismo orden.",
+      "correctMsg": "Has realizado la simplificación correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt{\\frac{90}{60}} \\longrightarrow \\sqrt{\\frac{3}{2}}"],
+      "matchingError": []
+    }
+  ]
+}

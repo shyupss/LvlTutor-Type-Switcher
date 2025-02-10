@@ -1,0 +1,293 @@
+{
+    "code": "pnc2b01",
+    "meta": {},
+    "text": "Utilizando la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(2x-3)²",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes elevar al cuadrado tanto la variable como al coeficiente que lo acompaña.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Por ejemplo: ",
+                    "expression": "\\left(3a\\right)^{2}=9a^{2}",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "4x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "4x^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², el primer término \"a²\" se obtiene al elevar \"2x\" al cuadrado",
+            "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(2x-3)² = □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "4x²"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que tambien debes elevar al cuadrado las variables"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(4x\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "El coeficiente ya fue elevado al cuadrado y debe estar fuera de los paréntesis"
+                },
+                {
+                    "id": 3,
+                    "expression": "2x",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado tanto la variable como al coeficiente que lo acompaña."
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "C2BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda revisar la operación detro del paréntesis. ",
+                    "hintId": 0
+                },
+                {
+                    "hint": " Primero multiplica ambos términos del paréntesis, y después multiplica el resultado por 2. Recuerda considerar el signo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-12x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-12x"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) El término \"2ab\" surge de multiplicar 2, 2x y 3. Como la expresión original es una resta, el segundo término del cuadrado de binomio es negativo.",
+            "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(2x-3)² = 4x² + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-12x"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-12x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda revisar el signo del segundo término."
+                },
+                {
+                    "id": 2,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Primero multiplica ambos términos, y después multiplica el resultado por 2; recuerda que el segundo término es 2⋅a⋅b."
+                },
+                {
+                    "id": 3,
+                    "expression": "-6x",
+                    "correct": false,
+                    "feedbackMsg": "No olvides multiplicar el resultado por 2."
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 5² = 5 · 5 = 25",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "9",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "9"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) El tercer término \"b²\" se obtiene elevando \"3\" al cuadrado.",
+            "stepTitle": "Calcula el tercer término.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(2x-3)² = 4x² - 12x + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "9"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "9",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que b al cuadrado es b⋅b"
+                },
+                {
+                    "id": 3,
+                    "expression": "-9",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+                }
+            ]
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "C2BTI"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 5² = 5 · 5 = 25",
+                "hintId": 0
+            },
+            {
+                "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "9",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "9"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) El tercer término \"b²\" se obtiene elevando \"3\" al cuadrado.",
+        "stepTitle": "Calcula el tercer término.",
+        "correctMsg": "Has encontrado el tercer término.",
+        "expression": "(2x-3)² = 4x² - 12x + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "9"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "9",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "3",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "6",
+                "correct": false,
+                "feedbackMsg": "Recuerda que b al cuadrado es b⋅b"
+            },
+            {
+                "id": 3,
+                "expression": "-9",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+            }
+        ]
+    }
+}

@@ -1,0 +1,193 @@
+{
+    "code": "raNum16",
+    "meta": {},
+    "title": "Racionaliza la siguiente expresión.",
+    "text": "Realice la suma de radicales y escriba su resultado.",
+    "initialExpression": "\\frac{3}{\\sqrt{5}}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Para este caso, identifique el denominador radical.",
+            "expression": "\\frac{3}{\\sqrt{5}}",
+            "KCs": [
+                "IdeDenoRadi"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para racionalizar, necesitamos identificar correctamente el denominador radical. Por ejemplo :  ",
+                    "expression": "\\frac{a}{\\sqrt{b}} \\longrightarrow \\sqrt{b}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "\\sqrt{5}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\sqrt{5}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1)Se identifica el denominador radical.",
+            "correctMsg": "Has identificado correctamente el denominador radical.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\frac{3}{\\sqrt{5}} \\longrightarrow \\sqrt{5}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{5}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Para racionalizar, necesitas identificar correctamente el denominador radical. Por ejemplo :",
+                    "feedbackMsgExp": "\\frac{a}{\\sqrt{b}}\\longrightarrow \\sqrt{b}"
+                },
+                {
+                    "id": 2,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "Para racionalizar, necesitas identificar correctamente el denominador radical. Por ejemplo :",
+                    "feedbackMsgExp": "\\frac{a}{\\sqrt{b}}\\longrightarrow \\sqrt{b}"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Multiplica el numerador y el denominador por el denominador radical encontrado en el paso anterior.",
+            "expression": "\\frac{3}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
+            "KCs": [
+                "IdeDenoRadi",
+                "MultFrac",
+                "SumDif"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Multiplica para poder eliminar la raíz del denominador."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{3\\sqrt{5}}{5}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{3\\sqrt{5}}{5}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Se realiza la racionalización.",
+            "correctMsg": "Has realizado correctamente la racionalización.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\frac{3}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}} \\longrightarrow \\frac{3\\sqrt{5}}{5}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3\\sqrt{5}}{5}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3\\sqrt{5}}{\\sqrt{5}}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar las raíces del denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\sqrt{5}}{5}",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides del 3 del numerador."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{5}",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides que en el numerador también va",
+                    "feedbackMsgExp": "\\sqrt{5}"
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "stepTitle": "Multiplica el numerador y el denominador por el denominador radical encontrado en el paso anterior.",
+        "expression": "\\frac{3}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
+        "KCs": [
+            "IdeDenoRadi",
+            "MultFrac",
+            "SumDif"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Multiplica para poder eliminar la raíz del denominador."
+            },
+            {
+                "hintId": 1,
+                "hint": "El resultado es: ",
+                "expression": "\\frac{3\\sqrt{5}}{5}"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{3\\sqrt{5}}{5}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Se realiza la racionalización.",
+        "correctMsg": "Has realizado correctamente la racionalización.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no es correcta.",
+        "displayResult": [
+            "\\frac{3}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}} \\longrightarrow \\frac{3\\sqrt{5}}{5}"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{3\\sqrt{5}}{5}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{3\\sqrt{5}}{\\sqrt{5}}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar las raíces del denominador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{\\sqrt{5}}{5}",
+                "correct": false,
+                "feedbackMsg": "No te olvides del 3 del numerador."
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{3}{5}",
+                "correct": false,
+                "feedbackMsg": "No te olvides que en el numerador también va",
+                "feedbackMsgExp": "\\sqrt{5}"
+            }
+        ]
+    }
+}

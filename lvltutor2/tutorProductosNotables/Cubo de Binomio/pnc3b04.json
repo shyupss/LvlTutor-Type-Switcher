@@ -1,0 +1,240 @@
+{
+    "code": "pnc3b04",
+    "meta": {},
+    "text": "Utilizando la identidad de cubo de binomio (a - b)³ = (a³ - 3a²b + 3ab² - b³), desarrolla el siguiente cubo de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(5x-2)³",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer3"
+            ],
+            "hints": [
+                {
+                    "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "(4a)^{3}=4a\\cdot4a\\cdot4a=64a^{3}",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "125x^{3}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "125x^{3}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo con la fórmula del cubo del binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), el primer término a³ se obtiene al elevar 5x al cubo.",
+            "stepTitle": "Encuentra el primer término del cubo de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(5x-2)^{3} = □ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "125x^{3}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3a²b.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-150x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-150x^{2}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Según la identidad, el segundo término 3a²b se calcula al multiplicar 3, (5x)² y (-2).",
+            "stepTitle": "Encuentra el segundo término del cubo de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(5x-2)^{3} = 125x³ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-150x^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3ab².",
+                    "hintId": 0
+                },
+                {
+                    "hint": "El término 3ab² siempre será positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "60x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "60x"
+                    ],
+                    "nextStep": "3"
+                }
+            ],
+            "summary": "3) El tercer término 3ab² surge de multiplicar 3, 5x y (-2)².",
+            "stepTitle": "Encuentra el tercer término del cubo de binomio.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(5x-2)^{3} = 125x³ - 150x² + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "60x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer3",
+                "C3BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "(4)^{3}=4\\cdot4\\cdot4=64",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-8",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "3",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-8"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "4) Por último, el cuarto término b³ se obtiene al elevar (-2) al cubo.",
+            "stepTitle": "Finalmente obtén el cuarto término.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(5x-2)^{3} = 125x³ - 150x² + 60x + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "125x³-150x²+60x-8"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cubo de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer3",
+            "C3BTI"
+        ],
+        "hints": [
+            {
+                "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                "hintId": 0
+            },
+            {
+                "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                "expression": "(4)^{3}=4\\cdot4\\cdot4=64",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "-8",
+                "hintId": 2
+            }
+        ],
+        "stepId": "3",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-8"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "4) Por último, el cuarto término b³ se obtiene al elevar (-2) al cubo.",
+        "stepTitle": "Finalmente obtén el cuarto término.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(5x-2)^{3} = 125x³ - 150x² + 60x + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "125x³-150x²+60x-8"
+        ],
+        "matchingError": []
+    }
+}

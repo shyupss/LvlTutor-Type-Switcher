@@ -1,0 +1,122 @@
+{
+    "code": "potNum16",
+    "meta": {},
+    "title": "Propiedades de potencias",
+    "text": "Aplicando propiedades de potencias, expresa como una potencia de 2.",
+    "initialExpression": "16^{\\frac{3}{2}}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "expresa el 16 como una potencia de 2 y escribe el resultado.",
+            "expression": "16",
+            "KCs": [
+                "ExprePot"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Recuerda que una potencia es una forma de expresar un producto de factores iguales. Por ejemplo: 2 · 2 · 2 = 2³"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La base de la potencia que estamos buscando es 2. ¿Cuál sería el exponente ? :",
+                    "expression": "2^{n} = 16"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es :",
+                    "expression": "2^{4}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2^{4}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se expresa el 16 como una potencia de 2.",
+            "correctMsg": "Has contestado correctamente expresando el 16 como potencia de 2.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "16 \\longrightarrow 2^{4}"
+            ],
+            "matchingError": []
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Utilizando la propiedad de potencia de una potencia, expresa el resultado como potencia de 2",
+            "expression": "\\left( 2^{4} \\right)^{\\frac{3}{2}}",
+            "KCs": [
+                "ExprePot",
+                "MultExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La respuesta es :",
+                    "expression": "2^{6}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2^{6}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia. ",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\longrightarrow 2^{4 \\cdot \\frac{3}{2}} \\longrightarrow 2^{6} "
+            ],
+            "matchingError": []
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "stepTitle": "Utilizando la propiedad de potencia de una potencia, expresa el resultado como potencia de 2",
+        "expression": "\\left( 2^{4} \\right)^{\\frac{3}{2}}",
+        "KCs": [
+            "ExprePot",
+            "MultExp"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+            },
+            {
+                "hintId": 1,
+                "hint": "La respuesta es :",
+                "expression": "2^{6}"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "2^{6}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
+        "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia. ",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no es correcta.",
+        "displayResult": [
+            "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\longrightarrow 2^{4 \\cdot \\frac{3}{2}} \\longrightarrow 2^{6} "
+        ],
+        "matchingError": []
+    }
+}

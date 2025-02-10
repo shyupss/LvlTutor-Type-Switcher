@@ -1,0 +1,187 @@
+{
+    "code": "polimult04",
+    "meta": {},
+    "text": "Multiplica los siguientes polinomios:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es -20x³-20x²+12x.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-20x^{3}-20x^{2}+12x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se realiza la primera multiplicación.",
+            "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(-5x^{2}-5x+3)\\cdot (4x-2)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-20x^{3}-20x^{2}+12x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 10x²+10x-6.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "10x^{2}+10x-6"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se realiza la segunda multiplicación.",
+            "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(-5x^{2}-5x+3)\\cdot (4x-2)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "10x^{2}+10x-6"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultDist",
+                "AgrTer"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es -20x³-10x²+22x-6.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-20x^{3}-10x^{2}+22x-6"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) Se obtiene el resultado.",
+            "stepTitle": "Finalmente, reduce los términos semejantes",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(-20x^{3}-20x^{2}+12x)+(10x^{2}+10x-6)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-20x^{3}-10x^{2}+22x-6"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Álgebra de polinomios",
+    "finalAnswer": {
+        "KCs": [
+            "MultDist",
+            "AgrTer"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                "hintId": 0
+            },
+            {
+                "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es -20x³-10x²+22x-6.",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-20x^{3}-10x^{2}+22x-6"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) Se obtiene el resultado.",
+        "stepTitle": "Finalmente, reduce los términos semejantes",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(-20x^{3}-20x^{2}+12x)+(10x^{2}+10x-6)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "-20x^{3}-10x^{2}+22x-6"
+        ],
+        "matchingError": []
+    }
+}

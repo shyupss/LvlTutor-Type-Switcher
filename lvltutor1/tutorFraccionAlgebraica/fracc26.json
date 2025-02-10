@@ -1,0 +1,72 @@
+{
+  "code": "fracc26",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Exprese la siguiente fraccion como multiplicacion:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{\\frac{x}{y}}{\\frac{z}{k}}",
+      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "displayResult": [
+        "\\frac{x}{y}\\cdot \\frac{k}{z}"
+      ],
+      "KCs": [
+        "DivFrac", "IdenNumerador","IdenDenominador","ArFrac"
+      ],
+      "values": [
+        {
+          "name": "x",
+          "value": 1
+        },
+        {
+          "name": "y",
+          "value": 2
+        },
+        {
+          "name": "z",
+          "value": 3
+        },
+        {
+          "name": "k",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la propiedad de división de fracciones. "
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es: ",
+          "expression": "\\frac{x}{y} \\cdot \\frac{k}{z}"
+        }
+      ],
+      "matchingError": [],
+      "validation": "evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{x}{y}\\cdot \\frac{k}{z}"
+          ],
+          "nextStep": "-1"
+        },
+        {
+          "answer": [
+            "\\frac{xk}{yz}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
+      "summary": "Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+    }
+  ]
+}

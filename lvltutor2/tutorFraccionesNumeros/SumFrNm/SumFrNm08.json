@@ -1,0 +1,218 @@
+{
+    "code": "SumFrNm08",
+    "meta": {},
+    "text": "Realiza la siguiente suma de fracciones:",
+    "initialExpression": "\\frac{2}{3} + \\frac{1}{4} + \\frac{5}{6}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "MCM"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "El mínimo común múltiplo (MCM) de dos o más números, corresponde al número más pequeño que es múltiplo de cada uno de ellos. Para encontrar el denominador común, debes buscar el MCM de los denominadores de las fracciones que se están sumando."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Imagina que necesitas encontrar el Mínimo Común Múltiplo (MCM) de 12 y 18. Los múltiplos de 12 son 12, 24, 36, 48, mientras que los de 18 son 18, 36, 54, 72. El MCM de 12 y 18 es 36, ya que es el múltiplo más pequeño que ambos comparten. Ahora, busca el MCM de los denominadores de las fracciones que estás sumando."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es:",
+                    "expression": "12"
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "12"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Primero determinamos el denominador común. Este es el MCM de los denominadores de las fracciones que se están sumando. Este denominador común es esencial para que las fracciones sean compatibles entre sí.",
+            "stepTitle": "Escribe el denominador común. Utiliza mínimo común múltiplo para determinarlo.",
+            "correctMsg": "Has determinado el denominador común.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "6"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "AmpFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Multiplica el numerador y el denominador de cada fracción por el factor necesario (amplifica) para alcanzar el denominador común que calculaste en el paso anterior. No olvides escribir la expresión completa en tu respuesta."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Consideremos la fracción 1/4 como ejemplo. Para escribir esta fracción como una fracción equivalente de denominador 12, multiplicamos tanto el numerador como el denominador por 3, obteniendo la fracción equivalente 3/12. Repite este procedimiento para las fracciones presentes en el ejercicio original."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es:",
+                    "expression": "\\frac{8}{12} + \\frac{3}{12} + \\frac{10}{12}"
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{8}{12} + \\frac{3}{12} + \\frac{10}{12}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Para igualar los denominadores de las fracciones, multiplicamos cada fracción por un factor que haga que su denominador coincida con el denominador común deseado. Este procedimiento facilita la suma al permitir trabajar con fracciones que comparten el mismo denominador.",
+            "stepTitle": "Ajusta las fracciones del ejercicio creando fracciones equivalentes con el mismo denominador común calculado en el paso anterior. Emplea la amplificación de fracciones como ayuda. Posteriormente, escribe la expresión completa con las nuevas fracciones calculadas.",
+            "correctMsg": "Has conseguido que todas las fracciones en el ejercicio compartan el mismo denominador.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{8}{12} + \\frac{3}{12} + \\frac{10}{12}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MCM",
+                "AmpFrac",
+                "SRFrac",
+                "SimFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "No olvides que al sumar fracciones con denominadores iguales, el valor del denominador se mantiene sin cambios en la fracción resultante y el valor del numerador se obtiene al sumar todos los numeradores de las fracciones que se están sumando."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Ese factor común es el 3. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{7}{4}"
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{7}{4}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) Al construir la fracción, recordemos que el numerador se coloca en la parte superior y el denominador en la parte inferior. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+            "stepTitle": "Escribe el resultado de la suma de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+            "correctMsg": "Obtuviste el resultado de la suma.",
+            "expression": "\\frac{8}{12} + \\frac{3}{12} + \\frac{10}{12}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{21}{12} = \\frac{7}{4}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Suma de fracciones",
+    "finalAnswer": {
+        "KCs": [
+            "MCM",
+            "AmpFrac",
+            "SRFrac",
+            "SimFrac"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "No olvides que al sumar fracciones con denominadores iguales, el valor del denominador se mantiene sin cambios en la fracción resultante y el valor del numerador se obtiene al sumar todos los numeradores de las fracciones que se están sumando."
+            },
+            {
+                "hintId": 1,
+                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+            },
+            {
+                "hintId": 2,
+                "hint": "Ese factor común es el 3. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+            },
+            {
+                "hintId": 3,
+                "hint": "El resultado es:",
+                "expression": "\\frac{7}{4}"
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "a",
+                "value": 1
+            },
+            {
+                "name": "b",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{7}{4}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) Al construir la fracción, recordemos que el numerador se coloca en la parte superior y el denominador en la parte inferior. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Escribe el resultado de la suma de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Obtuviste el resultado de la suma.",
+        "expression": "\\frac{8}{12} + \\frac{3}{12} + \\frac{10}{12}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "\\frac{21}{12} = \\frac{7}{4}"
+        ],
+        "matchingError": []
+    }
+}

@@ -1,0 +1,120 @@
+{
+  "code": "pot12",
+  "meta": {},
+  "title": "Evaluar expresión",
+  "text": "Utilizando propiedades de potencias, evalúe la siguiente expresión:",
+  "type": "lvltutor",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "KCs": ["TransExpFrac"],
+      "expression": "\\frac{2^{-2}}{3^{-3}}",
+      "stepTitle": "Transforme los exponentes de negativo a positivo, dejando la expresión como división de fracciones",
+      "displayResult": [
+        "\\frac{\\frac{1}{2^{2}}}{\\frac{1}{3^{3}}}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "la propiedad dice",
+          "expression": "a^{-2} = \\frac{1}{a^{2}}"
+        },
+        {
+          "hintId": 1,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{\\frac{1}{2^{2}}}{\\frac{1}{3^{3}}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{\\frac{1}{2^{2}}}{\\frac{1}{3^{3}}}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado transformar los exponentes de negativo a positivo.",
+      "summary": "1) Se utilizó la propiedad de potencia con exponente negativo, la cual indica que cualquier potencia con exponente negativo se puede escribir como el denominador de 1 con exponente positivo"
+    },
+    {
+      "stepId": "1",
+      "KCs": ["DivFrac"],
+      "expression": "\\frac{\\frac{1}{2^{2}}}{\\frac{1}{3^{3}}}",
+      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "displayResult": [
+        "\\frac{3^{3}}{2^{2}}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la propiedad de división de fracciones"
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{3^{3}}{2^{2}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{3^{3}}{2^{2}}"
+          ],
+          "nextStep": "2"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado aplicar la propiedad de división de fracciones",
+      "summary": "Con el fin de transformar una fracción a multiplicación, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+    },
+    {
+      "stepId": "2",
+      "KCs": ["EvalExp"],
+      "expression": "\\frac{3^{3}}{2^{2}}",
+      "stepTitle": "Evalúe la expresión",
+      "displayResult": [
+        "\\frac{27}{4}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Evalúe las potencias del numerador y denominador"
+        },
+        {
+          "hintId": 1,
+          "hint": "La potencias de un número se puede evaluar como ",
+          "expression": "a^{3} = a * a * a"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{27}{4}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{27}{4}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado evaluar la expresión correctamente",
+      "summary": "Finalmente, se evaluó la fracción resolviendo las potencias respectivas"
+    }
+  ]
+}
+

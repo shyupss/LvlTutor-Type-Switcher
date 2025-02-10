@@ -1,0 +1,74 @@
+{
+    "code": "pnc2b10",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "9x²-24x+16",
+    "steps": [
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+          "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+          "hintId": 0
+        },
+          {
+            "hint": "Para obtener el primer término debes calcular la raíz cuadrada de 9x².",
+            "hintId": 1
+          },
+          { "hint": "El resultado es: ",
+            "expression":"3x",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["3x"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² - 2ab + b² = (a - b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada de \"9x²\".",
+        "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "9x^{2}-24x+16 = (□ + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["3x"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+          "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+          "hintId": 0
+        },
+          {
+            "hint": "Para obtener el primer término debes calcular la raíz cuadrada de 16.",
+            "hintId": 1
+          },
+          {
+            "hint": "Recuerda que el signo del término del medio de a² - 2ab + b², indica el signo del segundo término dentro del paréntesis de (a - b)².",
+            "hintId": 2
+          },
+          { "hint": "El resultado es: ",
+            "expression":"-4",
+            "hintId": 3
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["-4"], "nextStep": "-1" }],
+        "summary": "2) El término \"b\" se obtiene al calcular la raíz cuadrada de \"16\", pero el signo de este valor está determinado por el término del medio, en este caso \"-24x\".",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "9x^{2}-24x+16 = (3x + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["-4"],
+        "matchingError": []
+      }
+    ],
+    "title": "Cuadrado de binomio"
+  }

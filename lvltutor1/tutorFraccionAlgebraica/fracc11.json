@@ -1,0 +1,55 @@
+{
+    "code": "fracc11",
+    "title": "Fracción Algebraica",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Expresar como división o fracción",
+    "initialExpression": "\\frac{1}{a}:\\frac{1}{b}",
+    "steps": [
+      {
+        "stepId": "0",
+        "stepTitle": "Expresa la división como una fracción",
+        "displayResult": [
+          "\\frac{\\frac{1}{a}}{\\frac{1}{b}}"
+        ],
+        "KCs": [
+          "TransDivRac","IdenNumerador","IdenDenominador"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 1
+          },
+          {
+            "name": "b",
+            "value": 2
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "p:q se puede expresar como la fracción p/q (p es el numerador y q es el denominador)"
+          },
+          {
+            "hintId": 1,
+            "hint": "La solucion es ",
+            "expression": "\\frac{\\frac{1}{a}}{\\frac{1}{b}}"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{\\frac{1}{a}}{\\frac{1}{b}}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has expresado la división como una fracción correctamente.",
+        "summary": "1) Para expresar una division p:q en una fracción se debe dividir p por q, donde p es el numerador y q el denominador"
+      }
+    ]
+  }
+  

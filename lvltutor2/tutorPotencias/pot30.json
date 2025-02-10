@@ -1,0 +1,312 @@
+{
+    "code": "pot30",
+    "meta": {},
+    "title": "Notación científica",
+    "text": "Escribe la siguiente expresión en notación científica:",
+    "type": "lvltutor",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "KCs": [
+                "NC",
+                "NCD"
+            ],
+            "expression": "0.0004\\cdot{0.2}",
+            "stepTitle": "Escribe la siguiente multiplicación con cada factor expresado en notación científica.",
+            "displayResult": [
+                "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Sin multiplicar los números, expresa cada factor en notación científica."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "0.0004 en notación científica es",
+                    "expression": "4\\cdot{10^{-4}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has expresado cada factor en su notación científica.",
+            "summary": "1) Se expresa cada factor en su notación científica.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4\\cdot10^{-4\\ }\\ \\cdot 0.2",
+                    "correct": false,
+                    "feedbackMsg": "El factor 0.2 también debe escribirse en notación científica, considerando que la parte entera debe ser un número natural entre 1 y 9."
+                },
+                {
+                    "id": 2,
+                    "expression": "0.4\\cdot10^{-3\\ }\\ \\cdot2\\cdot10^{-1}",
+                    "correct": false,
+                    "feedbackMsg": "El factor 0.0004 también debe escribirse en notación científica, considerando que la parte entera debe ser un número natural entre 1 y 9."
+                },
+                {
+                    "id": 3,
+                    "expression": "4\\cdot10^{-5\\ }\\ \\cdot2\\cdot10^{-1}",
+                    "correct": false,
+                    "feedbackMsg": "Para escribir 0.0004 en notación científica, debes encontrar n tal que",
+                    "feedbackMsgExp": "4*10^{n} = 0.0004"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "KCs": [
+                "AgrTerBase",
+                "Mult"
+            ],
+            "expression": "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}",
+            "stepTitle": "Reduce la expresión multiplicando los números que no son potencia de 10",
+            "displayResult": [
+                "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Primero multiplica los números que no son potencias de 10."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Revisa que has escrito la expresión completa, sin olvidar los términos en base 10 sin haberlos multiplicado."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es: ",
+                    "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has realizado las operaciones indicadas correctamente.",
+            "summary": "2) Se trabaja primero con los números que no son potencias de 10 reduciendo la expresión.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "No olvides las potencias de 10"
+                },
+                {
+                    "id": 2,
+                    "expression": "10^{-4}\\cdot10^{-1}",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir el resultado de multiplicar 4‧2"
+                },
+                {
+                    "id": 3,
+                    "expression": "8\\cdot10^{-5}",
+                    "correct": false,
+                    "feedbackMsg": "Debes mantener las potencias de 10 sin modificaciones"
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "KCs": [
+                "NC",
+                "NCD",
+                "AgrTerBase",
+                "Mult",
+                "SumResExp"
+            ],
+            "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}",
+            "stepTitle": "Realiza la multiplicación de las potencias de base 10",
+            "displayResult": [
+                "8\\cdot{10^{-5}}"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Sólo multiplica las potencias en base 10."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Aplica la propiedad de multiplicación de potencias: se suman los exponentes cuando las bases son iguales."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es ",
+                    "expression": "8\\cdot{10^{-5}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "8\\cdot{10^{-5}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado expresar la expresión original en su notación científica",
+            "summary": "3) Se aplica la propiedad de multiplicación de potencias.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "8\\cdot{10^{-5}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8\\cdot10^{5}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de la potencia de 10"
+                },
+                {
+                    "id": 3,
+                    "expression": "8\\cdot10^{-4}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides la potencia",
+                    "feedbackMsgExp": "10^{-1}"
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "2",
+        "KCs": [
+            "NC",
+            "NCD",
+            "AgrTerBase",
+            "Mult",
+            "SumResExp"
+        ],
+        "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}",
+        "stepTitle": "Realiza la multiplicación de las potencias de base 10",
+        "displayResult": [
+            "8\\cdot{10^{-5}}"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 1
+            },
+            {
+                "name": "b",
+                "value": 4
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Sólo multiplica las potencias en base 10."
+            },
+            {
+                "hintId": 1,
+                "hint": "Aplica la propiedad de multiplicación de potencias: se suman los exponentes cuando las bases son iguales."
+            },
+            {
+                "hintId": 2,
+                "hint": "La solución es ",
+                "expression": "8\\cdot{10^{-5}}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "8\\cdot{10^{-5}}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado expresar la expresión original en su notación científica",
+        "summary": "3) Se aplica la propiedad de multiplicación de potencias.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "8\\cdot{10^{-5}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "8\\cdot10^{5}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+            },
+            {
+                "id": 2,
+                "expression": "8",
+                "correct": false,
+                "feedbackMsg": "No te olvides de la potencia de 10"
+            },
+            {
+                "id": 3,
+                "expression": "8\\cdot10^{-4}",
+                "correct": false,
+                "feedbackMsg": "No olvides la potencia",
+                "feedbackMsgExp": "10^{-1}"
+            }
+        ]
+    }
+}

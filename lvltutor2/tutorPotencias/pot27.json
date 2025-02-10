@@ -1,0 +1,51 @@
+{
+    "code": "pot27",
+    "meta": {},
+    "title": "Notación científica",
+    "text": "Escribe la siguiente expresión en notación científica:",
+    "type": "lvltutor",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "KCs": [
+                "NC",
+                "NCD"
+            ],
+            "expression": "0.0000298",
+            "stepTitle": "Escribe el siguiente número en notación científica.",
+            "displayResult": [
+                "2.98\\cdot{10^{-5}}"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Mueve la coma decimal hacia la izquierda o derecha para que solo quede un dígito diferente de cero a la izquierda de la coma"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Escribe el número como un número decimal entre 1 y 10, multiplicado por una potencia de 10 cuyo exponente será igual al número de lugares que se movió la coma. Si se movió hacia la derecha, la potencia es negativa, si se movió hacia la izquierda, la potencia es positiva. La expresión debe quedar de la siguiente manera",
+                    "expression": "a\\cdot{10^{n}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "2.98\\cdot{10^{-5}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "2.98\\cdot{10^{-5}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+            "summary": "Se mueve la coma decimal 5 veces hacia la derecha, quedando como número decimal 2.98, luego esto se multiplica por una potencia de 10 cuyo exponente es -5 "
+        }
+    ]
+}

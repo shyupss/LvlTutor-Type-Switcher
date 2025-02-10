@@ -1,0 +1,174 @@
+{
+    "code": "fracc31",
+    "meta": {},
+    "text": "Multiplique las siguientes fracciones:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "MultFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "El resultado de multiplicar los numeradores es:",
+                    "expression": "a \\cdot da",
+                    "hintId": 0
+                },
+                {
+                    "hint": "El resultado de multiplicar los denominadores es:",
+                    "expression": "cd \\cdot c",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{a \\cdot da}{cd \\cdot c}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "c",
+                    "value": 2
+                },
+                {
+                    "name": "d",
+                    "value": 3
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{a*da}{cd*c}"
+                    ],
+                    "nextStep": "1"
+                },
+                {
+                    "answer": [
+                        "\\frac{a^{2}*d}{c^{2}d}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Para multiplicar fracciones, multiplica sus numeradores y sus denominadores. El numerador resultante será el numerador de la fracción resultante y el denominador resultante será su denominador.",
+            "stepTitle": "Realice la multiplicación de los numeradores y denominadores sin simplificar términos aun",
+            "correctMsg": "Has realizado la multiplicación de la expresión de manera correcta. Esto te permitirá reducir términos semejantes y simplificar la fracción",
+            "expression": "\\frac{a}{cd}\\cdot\\frac{da}{c}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Verifica la expresión ingresada.",
+            "displayResult": [
+                "\\frac{a \\cdot da}{cd \\cdot c}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultFrac",
+                "CancTermSem"
+            ],
+            "hints": [
+                {
+                    "hint": "'d' es un término semejante",
+                    "hintId": 0
+                },
+                {
+                    "hint": "La solución es: ",
+                    "expression": "\\frac{a \\cdot a}{c \\cdot c}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                },
+                {
+                    "name": "c",
+                    "value": 3
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{a*a}{c*c}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "\\frac{a^{2}}{c^{2}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Después de multiplicar las fracciones, debes reducir los términos similares (los elementos iguales en el numerador y denominador)",
+            "stepTitle": "Reduzca la fraccion eliminando los términos semejantes",
+            "correctMsg": "Has simplificado la expresión, pero aún no está completamente simplificada",
+            "expression": "\\frac{a \\cdot da}{cd \\cdot c}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+            "displayResult": [
+                "\\frac{a \\cdot a}{c \\cdot c}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Fracción Algebraica",
+    "finalAnswer": {
+        "KCs": [
+            "MultFrac",
+            "CancTermSem"
+        ],
+        "hints": [
+            {
+                "hint": "'d' es un término semejante",
+                "hintId": 0
+            },
+            {
+                "hint": "La solución es: ",
+                "expression": "\\frac{a \\cdot a}{c \\cdot c}",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "a",
+                "value": 2
+            },
+            {
+                "name": "c",
+                "value": 3
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{a*a}{c*c}"
+                ],
+                "nextStep": "-1"
+            },
+            {
+                "answer": [
+                    "\\frac{a^{2}}{c^{2}}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Después de multiplicar las fracciones, debes reducir los términos similares (los elementos iguales en el numerador y denominador)",
+        "stepTitle": "Reduzca la fraccion eliminando los términos semejantes",
+        "correctMsg": "Has simplificado la expresión, pero aún no está completamente simplificada",
+        "expression": "\\frac{a \\cdot da}{cd \\cdot c}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+        "displayResult": [
+            "\\frac{a \\cdot a}{c \\cdot c}"
+        ],
+        "matchingError": []
+    }
+}

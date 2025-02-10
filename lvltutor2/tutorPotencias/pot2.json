@@ -1,0 +1,283 @@
+{
+    "code": "pot2",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Evaluar expresión",
+    "text": "Factorizando y usando propiedades de potencias, evalúa la siguiente expresión:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "\\left(2^{-3}-2^{-5}\\right)^{-2}",
+            "stepTitle": "Identifica el factor común y factoriza.",
+            "displayResult": [
+                "\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}"
+            ],
+            "KCs": [
+                "FactExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Identifica el número con el menor exponente y utilízalo para factorizar."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La base en común es 2 y el menor exponente es -5."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es: ",
+                    "expression": "\\left(2^{-5} \\cdot \\left(2^{2}-1\\right)\\right)^{-2}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado factorizar y identificar el menor exponente en números de misma base.",
+            "summary": "1) Se identifica el -5 como el menor exponente entre los números de base 2 y luego se factoriza por la base 2 elevada a -5.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(2^{-3}\\left(1-2^{-2}\\right)\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes factorizar por el número con el menor exponente, en este caso ",
+                    "feedbackMsgExp": "2^{-5}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{-3}\\left(1-2^{-2}\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "El factor común debe quedarse dentro del paréntesis, no lo saques fuera. Además, el factor común con menor exponente no es ",
+                    "feedbackMsgExp": "2^{-3}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^{-5}\\left(2^2-1\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "El factor común debe quedarse dentro del paréntesis, no lo saques fuera."
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "expression": "\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}",
+            "stepTitle": "Resuelve primero el paréntesis interno y luego opera con las potencias.",
+            "displayResult": [
+                "2^{10}\\cdot3^{-2}"
+            ],
+            "KCs": [
+                "MultExp",
+                "EvalExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Resuelve el párentesis interno, luego utiliza propiedades de las potencias."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Los exponentes se multiplican en una potencia de una potencia, por ejemplo: ",
+                    "expression": "\\left(3^{4}\\cdot2^{-2}\\right)^{-3} = 3^{-12}\\cdot2^{6}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es ",
+                    "expression": "2^{10} \\cdot 3^{-2}."
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "2^{10}\\cdot3^{-2}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has multiplicado potencias correctamente.",
+            "summary": "2) Se procede a resolver cada paréntesis y luego se multiplican los exponentes de cada factor resultante por el exponente fuera del paréntesis.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{10}\\cdot3^{-2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(6^{-5}\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "No puedes multiplicar potencias de distinta base y distinto exponente"
+                },
+                {
+                    "id": 2,
+                    "expression": "6^{10}",
+                    "correct": false,
+                    "feedbackMsg": "No puedes multiplicar potencias de distinta base y exponente"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^{10}\\cdot 3",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que ",
+                    "feedbackMsgExp": "\\left(a^n\\cdot b^m\\right)^r=a^{nr}\\cdot b^{mr}"
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "expression": "2^{10}\\cdot3^{-2}",
+            "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+            "displayResult": [
+                "\\frac{1024}{9}"
+            ],
+            "KCs": [
+                "FactExp",
+                "MultExp",
+                "EvalExp",
+                "TransExpFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
+                    "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Expresa como una fracción y evalúa las potencias."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es:",
+                    "expression": " \\frac{1024}{9}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1024}{9}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado evaluar la expresión original.",
+            "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1024}{9}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{2^{10}}{9}",
+                    "correct": false,
+                    "feedbackMsg": "Debes evaluar la potencia del numerador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{2048}{9}",
+                    "correct": false,
+                    "feedbackMsg": "Procura tener cuidado al evaluar las potencias ",
+                    "feedbackMsgExp": "2^{n}=\\underbrace{2\\cdot \\dots \\cdot 2}_{n\\ \\rm{veces}}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1024}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Procura tener cuidado al evaluar las potencias, recuerda que ",
+                    "feedbackMsgExp": "3^{-2}=\\frac{1}{3^2}"
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "2",
+        "expression": "2^{10}\\cdot3^{-2}",
+        "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+        "displayResult": [
+            "\\frac{1024}{9}"
+        ],
+        "KCs": [
+            "FactExp",
+            "MultExp",
+            "EvalExp",
+            "TransExpFrac"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
+                "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+            },
+            {
+                "hintId": 1,
+                "hint": "Expresa como una fracción y evalúa las potencias."
+            },
+            {
+                "hintId": 2,
+                "hint": "La solución es:",
+                "expression": " \\frac{1024}{9}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{1024}{9}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado evaluar la expresión original.",
+        "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{1024}{9}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{2^{10}}{9}",
+                "correct": false,
+                "feedbackMsg": "Debes evaluar la potencia del numerador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{2048}{9}",
+                "correct": false,
+                "feedbackMsg": "Procura tener cuidado al evaluar las potencias ",
+                "feedbackMsgExp": "2^{n}=\\underbrace{2\\cdot \\dots \\cdot 2}_{n\\ \\rm{veces}}"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{1024}{3}",
+                "correct": false,
+                "feedbackMsg": "Procura tener cuidado al evaluar las potencias, recuerda que ",
+                "feedbackMsgExp": "3^{-2}=\\frac{1}{3^2}"
+            }
+        ]
+    }
+}

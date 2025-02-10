@@ -1,0 +1,37 @@
+{
+    "code": "DecFrNm01",
+    "meta": {},
+    "text": "Expresa la fracción en su equivalente decimal:",
+    "type": "lvltutor",
+    "initialExpression":"\\frac{3}{4}",
+    "steps": [
+      {
+        "KCs": ["FaD"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Para convertir una fracción a un número decimal divides el numerador entre el denominador."
+          },
+          { 
+            "hintId": 1,
+            "hint": "La respuesta es: ",
+            "expression": "0.75"
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["0.75"], "nextStep": "1" }],
+        "summary": "1) Los decimales y las fracciones representan la misma información numérica de formas distintas. Para convertir una fracción a decimal, simplemente divide el numerador entre el denominador de la fracción.",
+        "stepTitle": "Escribe la fracción como decimal utilizando un punto (.) como separador decimal.",
+        "correctMsg": "Has logrado convertir la fracción a decimal.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["0.75"],
+        "matchingError": []
+      }
+    ],
+    "title": "Transformación de Fracciones a Decimales"
+  }  

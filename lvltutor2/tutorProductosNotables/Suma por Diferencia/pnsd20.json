@@ -1,0 +1,164 @@
+{
+    "code": "pnsd20",
+    "meta": {},
+    "text": "Obtén 2 binomios de la forma 'suma por diferencia' que equivalgan a la siguiente expresión",
+    "type": "lvltutor",
+    "initialExpression": "\\frac{36}{25}x²-\\frac{64}{9}y²",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "SDCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Para obtener el primer término debes utilizar el término:",
+                    "expression": "\\frac{36}{25}x²",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el término, debes calcular la raíz de:",
+                    "expression": "\\frac{36}{25}x²",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{6}{5}x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{6}{5}x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de suma por diferencia 'a² - b² = (a + b)(a - b)', para obtener el primer término se debe calcular la raíz cuadrada del término que contiene 'x'.",
+            "stepTitle": "Encuentra el primer término de suma por diferencia.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "\\frac{36}{25}x^{2}-\\frac{64}{9}y^{2} = (□ + □)(□ - □)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{6}{5}x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "SDCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Para obtener el primer término debes utilizar el término que contiene 'y'.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el término, debes calcular la raíz de:",
+                    "expression": "\\frac{64}{9}y²",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{8}{3}y",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{8}{3}y"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada del término que contiene 'y'.",
+            "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "\\frac{36}{25}x^{2}-\\frac{64}{9}y^{2} = (\\frac{6}{5}x + □)(\\frac{6}{5}x - □)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{8}{3}y"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Suma por diferencia",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2MultVar",
+            "SDCoefFrac"
+        ],
+        "hints": [
+            {
+                "hint": "Para obtener el primer término debes utilizar el término que contiene 'y'.",
+                "hintId": 0
+            },
+            {
+                "hint": "Para obtener el término, debes calcular la raíz de:",
+                "expression": "\\frac{64}{9}y²",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es:",
+                "expression": "\\frac{8}{3}y",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            },
+            {
+                "name": "y",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{8}{3}y"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada del término que contiene 'y'.",
+        "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "\\frac{36}{25}x^{2}-\\frac{64}{9}y^{2} = (\\frac{6}{5}x + □)(\\frac{6}{5}x - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "\\frac{8}{3}y"
+        ],
+        "matchingError": []
+    }
+}

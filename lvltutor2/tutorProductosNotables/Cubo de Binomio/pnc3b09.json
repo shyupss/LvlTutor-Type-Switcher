@@ -1,0 +1,245 @@
+{
+    "code": "pnc3b09",
+    "meta": {},
+    "text": "Utilizando la identidad de cubo de binomio (a - b)³ = (a³ - 3a²b + 3ab² - b³), desarrolla el siguiente cubo de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(\\frac{3}{4}x-3)³",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer3",
+                "C3BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "\\left( \\frac{2}{7}x \\right)^3 = \\frac{2}{7}x \\cdot \\frac{2}{7}x \\cdot \\frac{2}{7}x = \\frac{8}{343}x^3",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{27}{64}x^{3}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{27}{64}x^{3}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se obtiene el primer término.",
+            "stepTitle": "Encuentra el primer término del cubo de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(\\frac{3}{4}x-3)^{3} = □ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{27}{64}x^{3}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTI",
+                "C3BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3a²b.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{-81}{16}x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{-81}{16}x^{2}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se obtiene el segundo término.",
+            "stepTitle": "Encuentra el segundo término del cubo de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(\\frac{3}{4}x-3)^{3} = \\frac{27}{64}x³ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{-81}{16}x^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTI",
+                "C3BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3ab².",
+                    "hintId": 0
+                },
+                {
+                    "hint": "El término 3ab² siempre será positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{81}{4}x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{81}{4}x"
+                    ],
+                    "nextStep": "3"
+                }
+            ],
+            "summary": "3) Se obtiene el tercer término.",
+            "stepTitle": "Encuentra el término del cubo de binomio.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(\\frac{3}{4}x-3)^{3} = \\frac{27}{64}x³ - \\frac{81}{16}x^{2} + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{81}{4}x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer3",
+                "C3BCoefFrac",
+                "C3BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "(2)^{3}=2\\cdot2\\cdot2=8",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-27",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "3",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-27"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "4) Se obtiene el resultado.",
+            "stepTitle": "Finalmente obtén el cuarto término.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(\\frac{3}{4}x-3)^{3} = \\frac{27}{64}x³ - \\frac{-81}{16}x^{2} + \\frac{81}{4}x + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{27}{64}x^{3}-\\frac{81}{16}x^{2}+\\frac{81}{4}x-27"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cubo de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer3",
+            "C3BCoefFrac",
+            "C3BTI"
+        ],
+        "hints": [
+            {
+                "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                "hintId": 0
+            },
+            {
+                "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                "expression": "(2)^{3}=2\\cdot2\\cdot2=8",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "-27",
+                "hintId": 2
+            }
+        ],
+        "stepId": "3",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-27"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "4) Se obtiene el resultado.",
+        "stepTitle": "Finalmente obtén el cuarto término.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(\\frac{3}{4}x-3)^{3} = \\frac{27}{64}x³ - \\frac{-81}{16}x^{2} + \\frac{81}{4}x + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "\\frac{27}{64}x^{3}-\\frac{81}{16}x^{2}+\\frac{81}{4}x-27"
+        ],
+        "matchingError": []
+    }
+}

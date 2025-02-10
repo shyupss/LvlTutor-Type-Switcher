@@ -1,0 +1,133 @@
+{
+  "code": "pnc3b01",
+  "meta": {},
+  "text": "Utilizando la identidad de cubo de binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), desarrolla el siguiente cubo de binomio:",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "KCs": ["IdeTer3"],
+      "hints": [
+        {
+          "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+          "hintId": 0
+        },
+        {
+          "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+          "expression": "(3a)^{3}=3a\\cdot3a\\cdot3a=27a^{3}",
+          "hintId": 1
+        },
+        { "hint": "El resultado es: ",
+          "expression": "x^{3}",
+          "hintId": 2
+        }
+      ],
+      "stepId": "0",
+      "values": [
+        { "name": "x", "value": 1 }
+      ],
+      "answers": [{ "answer": ["x^{3}"], "nextStep": "1" }],
+      "summary": "1) De acuerdo con la fórmula del cubo del binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), el primer término a³ se obtiene al elevar x al cubo.",
+      "stepTitle": "Encuentra el primer término del cubo de binomio.",
+      "correctMsg": "Has encontrado el primer término.",
+      "expression": "(x+5)^{3}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["x^{3}"],
+      "matchingError": []
+    },
+    {
+      "KCs": ["C3BTI"],
+      "hints": [
+        {
+          "hint": "El término que estás buscando es 3a²b.",
+          "hintId": 0
+        },
+        {
+          "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
+          "hintId": 1
+        },
+        { "hint": "El resultado es: ",
+          "expression": "15x^{2}",
+          "hintId": 2
+        }
+      ],
+      "stepId": "1",
+      "values": [
+        { "name": "x", "value": 1 }
+      ],
+      "answers": [{ "answer": ["15x^{2}"], "nextStep": "2" }],
+      "summary": "2) Según la identidad, el segundo término 3a²b se calcula al multiplicar 3, x² y 5.",
+      "stepTitle": "Encuentra el segundo término del cubo de binomio.",
+      "correctMsg": "Has encontrado el segundo término.",
+      "expression": "(x+5)^{3}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["15x^{2}"],
+      "matchingError": []
+    },
+    {
+      "KCs": ["C3BTI"],
+      "hints": [
+        {
+          "hint": "El término que estás buscando es 3ab².",
+          "hintId": 0
+        },
+        {
+          "hint": "El término 3ab² siempre será positivo.",
+          "hintId": 1
+        },
+        {
+          "hint": "El resultado es: ",
+          "expression": "75x",
+          "hintId": 2
+        }
+      ],
+      "stepId": "2",
+      "values": [
+        { "name": "x", "value": 1 }
+      ],
+      "answers": [{ "answer": ["75x"], "nextStep": "3" }],
+      "summary": "3) El tercer término 3ab² surge de multiplicar 3, x y 5².",
+      "stepTitle": "Encuentra el tercer término del cubo de binomio.",
+      "correctMsg": "Has encontrado el tercer término.",
+      "expression": "(x+5)^{3}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["75x"],
+      "matchingError": []
+    },
+    {
+      "KCs": ["IdeTer3"],
+      "hints": [
+        {
+          "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+          "hintId": 0
+        },
+        {
+          "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+          "expression": "(2)^{3}=2\\cdot2\\cdot2=8",
+          "hintId": 1
+        },
+        {
+          "hint": "El resultado es: ",
+          "expression": "125",
+          "hintId": 2
+        }
+      ],
+      "stepId": "3",
+      "values": [
+        { "name": "x", "value": 1 }
+      ],
+      "answers": [{ "answer": ["125"], "nextStep": "-1" }],
+      "summary": "4) Por último, el cuarto término b³ se obtiene al elevar 5 al cubo.",
+      "stepTitle": "Finalmente obtén el cuarto término.",
+      "correctMsg": "Has encontrado el resultado.",
+      "expression": "(x+5)^{3}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["x³+15x²+75x+125"],
+      "matchingError": []
+    }
+  ],
+  "title": "Cubo de binomio"
+}

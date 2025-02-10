@@ -1,0 +1,196 @@
+{
+    "code": "pnc2b04",
+    "meta": {},
+    "text": "Utilizando la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "\\left(\\frac{1}{2}x-8\\right)^{2}",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes elevar al cuadrado cada variable y el coeficiente que las acompaña. Si el coeficiente es una fracción, recuerda simplificarla si es posible.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "En una potencia de una fracción, el exponente aplica para el numerador y el denominador.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": " \\frac{1}{4}x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{4}x^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a - b)² = a² - 2ab + b², el primer término \"a²\" se obtiene al elevar al cuadrado el primer término dentro del parentesis.",
+            "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "\\left(\\frac{1}{2}x-8\\right)^{2} = □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{1}{4}x^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C2BTI",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Revisa si estás multiplicando los términos correctamente, considerando los signos y simplificando si es posible.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Primero multiplica ambos términos del paréntesis, y después multiplica por 2. Recuerda considerar el signo y simplificar si es posible.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-8x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-8x"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) El término \"2ab\" surge de multiplicar ambos términos del paréntesis entre si, y despues multiplicar el resultado por 2. Como la expresión original es una resta, el segundo término del cuadrado de binomio es negativo.",
+            "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "\\left(\\frac{1}{2}x-8\\right)^{2} = \\frac{1}{4}x²+ □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-8x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac",
+                "C2BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "64",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "64"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) El tercer término \"b²\" se obtiene elevando al cuadrado el segundo término del paréntesis.",
+            "stepTitle": "Calcula el tercer término.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "\\left(\\frac{1}{2}x-8\\right)^{2} = \\frac{1}{4}x² - 8x + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "64"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "C2BCoefFrac",
+            "C2BTI"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+                "hintId": 0
+            },
+            {
+                "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "64",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "64"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) El tercer término \"b²\" se obtiene elevando al cuadrado el segundo término del paréntesis.",
+        "stepTitle": "Calcula el tercer término.",
+        "correctMsg": "Has encontrado el tercer término.",
+        "expression": "\\left(\\frac{1}{2}x-8\\right)^{2} = \\frac{1}{4}x² - 8x + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "64"
+        ],
+        "matchingError": []
+    }
+}

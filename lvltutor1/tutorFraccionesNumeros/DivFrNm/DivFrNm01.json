@@ -1,0 +1,153 @@
+{
+    "code": "DivFrNm01",
+    "meta": {},
+    "text": "Realiza la siguiente división de fracciones:",
+    "initialExpression": "\\frac{4}{7} \\div \\frac{3}{5} ",
+    "type": "lvltutor",
+    "steps": [
+      {
+        "KCs": ["InvFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Para obtener el inverso multiplicativo de una fracción, simplemente intercambia el numerador y el denominador de posición. Recuerda que el divisor es el número que se encuentra en el lado derecho del símbolo de división."
+          },
+
+          {
+            "hintId": 1,
+            "hint": "Consideremos la fracción 3/7 como ejemplo. El inverso multiplicativo de la fracción es 7/3."
+          },
+
+          { "hintId": 2,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{5}{3}"
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{5}{3}"], "nextStep": "1" }],
+        "summary": "1) Determinamos el inverso multiplicativo del divisor",
+        "stepTitle": "Escribe el inverso multiplicativo del divisor.",
+        "correctMsg": "Has logrado determinar el inverso multiplicativo del divisor",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{5}{3}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["DivFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": " Escribe la fracción del lado izquierdo tal como está y multiplícala por el inverso multiplicativo del divisor, el que determinaste en el paso anterior."
+          },
+          { "hintId": 1,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{4}{7} \\cdot \\frac{5}{3}"
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{4}{7} \\cdot \\frac{5}{3}"], "nextStep": "1" }],
+        "summary": "2) Transformamos la división en multiplicación. Esto se logra multiplicando la fracción del lado izquierdo por el inverso multiplicativo del divisor.",
+        "stepTitle": "Transforma la división a multiplicación.",
+        "correctMsg": "Has logrado expresar la división de fracciones a una multiplicación de fracciones",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{4}{7} \\cdot \\frac{5}{3}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["MultFrac", "IdenNumerador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que al multiplicar fracciones, el valor del numerador se obtiene multiplicando los numeradores de todas las fracciones involucradas en el ejercicio."
+          },
+          { "hintId": 1,
+            "hint": "El resultado del numerador es: ",
+            "expression": "20"
+          }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["20"], "nextStep": "1" }],
+        "summary": "3) Para determinar el valor del numerador de la fracción resultante, multiplicamos todos los numeradores correspondientes de las fracciones que estamos multiplicando.",
+        "stepTitle": "Escribe el valor del numerador de la fracción resultante.",
+        "correctMsg": "Has encontrado el valor del numerador en la fracción final.",
+        "expression": "\\frac{4}{7} \\cdot \\frac{5}{3}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["20"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["MultFrac", "IdenDenominador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que al multiplicar fracciones, el valor del denominador se obtiene multiplicando los denominadores de todas las fracciones involucradas en el ejercicio."
+          },
+
+          { "hintId": 1,
+            "hint": "El resultado del denominador es: ",
+            "expression": "21"
+          }
+        ],
+        "stepId": "3",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["21"], "nextStep": "1" }],
+        "summary": "4) Para determinar el valor del denominador de la fracción resultante, multiplicamos todos los denominadores correspondientes de las fracciones que estamos multiplicando.",
+        "stepTitle": "Escribe el valor del denominador de la fracción resultante.",
+        "correctMsg": "Has encontrado el valor del denominador en la fracción final.",
+    "expression": "\\frac{4}{7} \\cdot \\frac{5}{3}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["21"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["ArFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que en una fracción, el numerador se ubica en la parte superior y el denominador en la parte inferior."
+          },
+          { "hintId": 1,
+            "hint": "En este ejercicio no hay que simplificar."
+          },
+  
+          { "hintId": 2,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{20}{21}"
+          }
+        ],
+        "stepId": "4",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{20}{21}"], "nextStep": "1" }],
+        "summary": "5)  Al construir la fracción, recordemos que el numerador se coloca en la parte superior y el denominador en la parte inferior. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Escribe el resultado de la multiplicación de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Obtuviste el resultado de la división.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{20}{21}"],
+        "matchingError": []
+      }
+    ],
+    "title": "División de fracciones"
+  }

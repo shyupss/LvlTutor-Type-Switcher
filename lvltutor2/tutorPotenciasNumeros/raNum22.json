@@ -1,0 +1,120 @@
+{
+    "code": "raNum22",
+    "meta": {},
+    "title": "Racionalización",
+    "text": "Racionaliza la siguiente expresión.",
+    "initialExpression": "\\frac{1}{3 - \\sqrt{10}}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Identifique y escriba el conjugado del denominador",
+            "expression": "\\frac{1}{3 - \\sqrt{10}}",
+            "KCs": [
+                "DetConj"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "expression": "\\left( a + b \\right) \\longrightarrow  \\left( a - b \\right)"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "3 + \\sqrt{10}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "3+\\sqrt{10}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se identifica el conjugado de la expresión.",
+            "correctMsg": "Has identificado correctamente el conjugado de la fracción.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "3 - \\sqrt{10}  \\longrightarrow 3 + \\sqrt{10}"
+            ],
+            "matchingError": []
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+            "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{7}\\right)}",
+            "KCs": [
+                "DetConj",
+                "MultFrac",
+                "SumDif"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "- 3 - \\sqrt{10}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-3-\\sqrt{10}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Se hace la racionalización de la expresión.",
+            "correctMsg": "Has racionalizado correctamente la expresion.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no  es correcta.",
+            "displayResult": [
+                "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -3-\\sqrt{10}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+        "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{7}\\right)}",
+        "KCs": [
+            "DetConj",
+            "MultFrac",
+            "SumDif"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+            },
+            {
+                "hintId": 1,
+                "hint": "El resultado es: ",
+                "expression": "- 3 - \\sqrt{10}"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-3-\\sqrt{10}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Se hace la racionalización de la expresión.",
+        "correctMsg": "Has racionalizado correctamente la expresion.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no  es correcta.",
+        "displayResult": [
+            "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -3-\\sqrt{10}"
+        ],
+        "matchingError": []
+    }
+}

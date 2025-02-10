@@ -1,0 +1,145 @@
+{
+  "code": "fracc32",
+  "meta": {},
+  "text": "Reduce la siguiente expresión",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "KCs": [
+        "DivFrac","IdenNumerador","IdenDenominador","ArFrac"
+      ],
+      "hints": [
+        {
+          "hint": "Aplica la propiedad de división de fracciones.",
+          "hintId": 0
+        },
+        {
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba).",
+          "hintId": 1
+        },
+        {
+          "hint": "El resultado es:",
+          "expression": "\\frac{ab}{c} \\cdot \\frac{d}{c}",
+          "hintId": 2
+        }
+      ],
+      "stepId": "0",
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "answers": [
+        {
+          "answer": [
+            "\\frac{ab}{c} \\cdot \\frac{d}{c}"
+          ],
+          "nextStep": "1"
+        },
+        {
+          "answer": [
+            "\\frac{abd}{cc}"
+          ],
+          "nextStep": "1"
+        },
+        {
+          "answer": [
+            "\\frac{abd}{c^{2}}"
+          ],
+          "nextStep": "1"
+        }
+
+      ],
+      "summary": "1) Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "correctMsg": "Has invertido el denominador correctamente",
+      "expression": "\\frac{\\frac{ab}{c}}{\\frac{c}{d}}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+      "displayResult": [
+        "\\frac{ab}{c} \\cdot \\frac{d}{c}"
+      ],
+      "matchingError": []
+    },
+    {
+      "KCs": [
+        "MultFrac"
+      ],
+      "hints": [
+        {
+          "hint": "Multiplica ambos numeradores",
+          "hintId": 0
+        },
+        {
+          "hint": "El numerador resultante es abd",
+          "hintId": 1
+        },
+        {
+          "hint": "Multiplica ambos denominadores",
+          "hintId": 2
+        },
+        {
+          "hint": "El denominador resultante es: ",
+          "expression": "c^{2}",
+          "hintId": 3
+        },
+        {
+          "hint": "el resultado es:",
+          "expression": "\\frac{abd}{c^{2}}",
+          "hintId": 4
+        }
+      ],
+      "stepId": "1",
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "answers": [
+        {
+          "answer": [
+            "\\frac{abd}{c^{2}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "summary": "2) Finalmente se aplica la multiplicación entre ambas fracciones.",
+      "stepTitle": "Multiplica las fracciones",
+      "correctMsg": "Felicidades!. Has completado el ejercicio",
+      "expression": "\\frac{ab}{c}\\cdot\\frac{d}{c}",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+      "displayResult": [
+        "\\frac{abd}{c^{2}}"
+      ],
+      "matchingError": []
+    }
+  ],
+  "title": "Fracción Algebraica"
+}

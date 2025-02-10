@@ -1,0 +1,59 @@
+{
+  "code": "raNum17", 
+  "meta": {},
+  "title": "Racionaliza la siguiente expresión.",
+  "text": "Realice la suma de radicales y escriba su resultado.",
+  "initialExpression":"\\frac{1}{\\sqrt{3}}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Para este caso, identifique el denominador radical.",
+      "expression": "\\frac{1}{\\sqrt{3}}",
+      "KCs": ["IdeDenoRadi"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Para racionalizar, necesitamos identificar correctamente el denominador radical. Por ejemplo :  ",
+          "expression":"\\frac{a}{\\sqrt{b}} \\longrightarrow \\sqrt{b}" 
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\sqrt{3}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{3}"], "nextStep": "1" }],
+      "summary": "1) Se identifica el denominador radical.",
+      "correctMsg": "Has identificado correctamente el denominador radical.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\frac{1}{\\sqrt{3}} \\longrightarrow \\sqrt{3}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Multiplica el numerador y el denominador por el denominador radical encontrado en el paso anterior.",
+      "expression": "\\frac{1}{\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}}",
+      "KCs": ["MultFrac","SumDif"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Multiplica para poder eliminar la raíz del denominador."
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\frac{\\sqrt{3}}{3}"
+        }
+      ],
+      "answers": [{ "answer": ["\\frac{\\sqrt{3}}{3}"], "nextStep": "-1" }],
+      "summary": "2) Se realiza la racionalización.",
+      "correctMsg": "Has realizado correctamente la racionalización.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\frac{1}{\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} \\longrightarrow \\frac{\\sqrt{3}}{3}"],
+      "matchingError": []
+    }
+  ]
+}

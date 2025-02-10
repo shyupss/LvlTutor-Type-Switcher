@@ -1,0 +1,59 @@
+{
+  "code": "potNum18", 
+  "meta": {},
+  "title": "Resolución de ejercicios con potencias.",
+  "text": "Resuelve la siguiente expresión.",
+  "initialExpression":"2^{3} + \\left( \\frac{1}{2} \\right)^{-5}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe su resultado.",
+      "expression": "\\left( \\frac{1}{2} \\right)^{-5}",
+      "KCs": ["TransExpFrac"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad de la potencia con exponente negativo dice: ",
+          "expression": "a^{-m} = \\left(\\frac{1}{a} \\right)^{m}"
+        },
+        {
+          "hintId": 1,
+          "hint": "La respuesta es :",
+          "expression":"2^{5}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{5}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad de la potencia con exponente negativo al paréntisis de la expresión, lo que da como resultado invertir la fracción y dejar el exponente positivo.",
+      "correctMsg": "Has contestado correctamente aplicando la propiedad del producto de potencias de igual base.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{3} + \\left( \\frac{1}{2} \\right)^{-5} \\longrightarrow 2^{3} + 2^{5}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+      "expression": "2^{3} + 2^{5}",
+      "KCs": ["PotNum"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Para resolver la expresión, evalúa las potencias y suma el resultado de estas."
+        },
+        {
+          "hintId": 1,
+          "hint": "La respuesta es: ",
+          "expression":"40"
+        }
+      ],
+      "answers": [{ "answer": ["40"], "nextStep": "1" }],
+      "summary": "2) Se evalúan las potencias y se realiza la suma.",
+      "correctMsg": "Has resuelto correctamente la expresión.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{3} + 2^{5} = 8 + 32 = 40"],
+      "matchingError": []
+    }
+  ]
+}

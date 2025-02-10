@@ -1,0 +1,174 @@
+{
+    "code": "fracc30",
+    "meta": {},
+    "text": "Multiplique las siguientes fracciones:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "MultFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "El resultado de multiplicar los numeradores es:",
+                    "expression": "xy \\cdot y",
+                    "hintId": 0
+                },
+                {
+                    "hint": "El resultado de multiplicar los denominadores es:",
+                    "expression": "z \\cdot x",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{xy \\cdot y}{z \\cdot x}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                },
+                {
+                    "name": "z",
+                    "value": 3
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{xy*y}{z*x}"
+                    ],
+                    "nextStep": "1"
+                },
+                {
+                    "answer": [
+                        "\\frac{xy^{2}}{z*x}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Para multiplicar fracciones, multiplica sus numeradores y sus denominadores. El numerador resultante será el numerador de la fracción resultante y el denominador resultante será su denominador.",
+            "stepTitle": "Realice la multiplicación de los numeradores y denominadores sin simplificar términos aun",
+            "correctMsg": "Has realizado la multiplicación de la expresión de manera correcta. Esto te permitirá reducir términos semejantes y simplificar la fracción",
+            "expression": "\\frac{xy}{z}\\cdot\\frac{y}{x}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Verifica la expresión ingresada.",
+            "displayResult": [
+                "\\frac{xy \\cdot y}{z \\cdot x}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultFrac",
+                "CancTermSem"
+            ],
+            "hints": [
+                {
+                    "hint": "'x' es un termino semejante",
+                    "hintId": 0
+                },
+                {
+                    "hint": "La solución es: ",
+                    "expression": "\\frac{y \\cdot y}{z}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "y",
+                    "value": 2
+                },
+                {
+                    "name": "z",
+                    "value": 3
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{y*y}{z}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "\\frac{y^{2}}{z}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Después de multiplicar las fracciones, debes reducir los términos similares (los elementos iguales en el numerador y denominador)",
+            "stepTitle": "Reduzca la fraccion eliminando los términos semejantes",
+            "correctMsg": "Has simplificado la expresión!",
+            "expression": "\\frac{xy \\cdot y}{z \\cdot x}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+            "displayResult": [
+                "\\frac{y^{2}}{z}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Fracción Algebraica",
+    "finalAnswer": {
+        "KCs": [
+            "MultFrac",
+            "CancTermSem"
+        ],
+        "hints": [
+            {
+                "hint": "'x' es un termino semejante",
+                "hintId": 0
+            },
+            {
+                "hint": "La solución es: ",
+                "expression": "\\frac{y \\cdot y}{z}",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "y",
+                "value": 2
+            },
+            {
+                "name": "z",
+                "value": 3
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{y*y}{z}"
+                ],
+                "nextStep": "-1"
+            },
+            {
+                "answer": [
+                    "\\frac{y^{2}}{z}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Después de multiplicar las fracciones, debes reducir los términos similares (los elementos iguales en el numerador y denominador)",
+        "stepTitle": "Reduzca la fraccion eliminando los términos semejantes",
+        "correctMsg": "Has simplificado la expresión!",
+        "expression": "\\frac{xy \\cdot y}{z \\cdot x}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+        "displayResult": [
+            "\\frac{y^{2}}{z}"
+        ],
+        "matchingError": []
+    }
+}

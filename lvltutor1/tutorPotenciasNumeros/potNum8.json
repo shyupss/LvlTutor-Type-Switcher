@@ -1,0 +1,37 @@
+{
+  "code": "potNum8", 
+  "meta": {},
+  "title": "Potencia de una potencia",
+  "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de la fracción",
+      "expression": "((\\frac{1}{10})^{2})^{4}",
+      "KCs": ["MultExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+        },
+        {
+          "hintId": 1,
+          "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+        },
+        {
+          "hintId": 2,
+          "hint": "La respuesta es :",
+          "expression":"(\\frac{1}{10})^{2 \\cdot 4} = (\\frac{1}{10})^{8}"
+        }
+      ],
+      "answers": [{ "answer": ["(\\frac{1}{10})^{8}"], "nextStep": "-1" }, { "answer": ["\\frac{1}{100000000}"], "nextStep": "-1"},{ "answer": ["\\frac{1}{10^{8}}"], "nextStep": "-1"}],
+      "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso los exponentes son 2 y 4, por lo tanto la multiplicación de estos es 8",
+      "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["(\\frac{1}{10})^{2 \\cdot 4} = (\\frac{1}{10})^{8}"],
+      "matchingError": []
+    }
+  ]
+}

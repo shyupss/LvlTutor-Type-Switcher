@@ -1,0 +1,123 @@
+{
+  "code": "pot32",
+  "meta": {},
+  "title": "Notación científica",
+  "text": "Escriba la siguiente expresión en notación científica:",
+  "type": "lvltutor",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "KCs": ["NC","NCD","NCE"],
+      "expression": "\\frac{0.04}{200}",
+      "stepTitle": "Escribe el numerador y denominador de la fracción en notación científica",
+      "displayResult": [
+        "\\frac{4\\cdot{10^{-2}}}{2\\cdot{10^{2}}}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Sin dividir los números, expresa el numerador y denominador en notación científica."
+        },
+        {
+          "hintId": 1,
+          "hint": "0.04 en notación científica es: ",
+          "expression": "4\\cdot{10^{-2}}"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{4\\cdot{10^{-2}}}{2\\cdot{10^{2}}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{4\\cdot{10^{-2}}}{2\\cdot{10^{2}}}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has expresado el numerador y denominador en notación científica.",
+      "summary": "1) Se escribe el denominador y numerador de la fracción en notación científica."
+    },
+    {
+      "stepId": "1",
+      "KCs": [],
+      "expression": "\\frac{4\\cdot{10^{-2}}}{2\\cdot{10^{2}}}",
+      "stepTitle": "Realiza la división de los números que no son potencia de 10.",
+      "displayResult": [
+        "2\\cdot\\frac{10^{-2}}{10^{2}}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Simplifica los números que no son potencia de 10, sin modificar las potencias de 10."
+        },
+        {
+          "hintId": 1,
+          "hint": "Revisa que has escrito la expresión completa, sin olvidar los términos en base 10 sin simplificarlos."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solucion es: ",
+          "expression": "2\\cdot\\frac{10^{-2}}{10^{2}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "2\\cdot\\frac{10^{-2}}{10^{2}}"
+          ],
+          "nextStep": "2"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has realizado las operaciones indicadas correctamente.",
+      "summary": "2) Se reduce la expresion dividiendo los números que no son potencia de 10."
+    },
+    {
+      "stepId": "2",
+      "KCs": ["SumResExp"],
+      "expression": "2\\cdot\\frac{10^{-2}}{10^{2}}",
+      "stepTitle": "Realiza la división de las potencias de 10.",
+      "displayResult": [
+        "2\\cdot{10^{-4}}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Sólo divide las potencias en base 10."
+        },
+        {
+          "hintId": 1,
+          "hint": "Para dividir potencias de igual base, se conserva la base y se restan los exponentes."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "2\\cdot{10^{-4}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "2\\cdot{10^{-4}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado expresar la expresión original en su notación científica.",
+      "summary": "3) Se realiza la división de las potencias con base 10."
+    }
+  ]
+}
+  

@@ -1,0 +1,51 @@
+{
+    "code": "fracc14",
+    "title": "Fracción Algebraica",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Expresa la siguiente expresión como fracción:",
+    "steps": [
+      {
+        "stepId": "0",
+        "expression": "\\left(a+\\frac{1}{2}\\right):\\left(2+\\frac{1}{a}\\right)",
+        "stepTitle": "Expresa la siguiente división como una fracción",
+        "displayResult": [
+          "\\frac{\\left(a+\\frac{1}{2}\\right)}{\\left(2+\\frac{1}{a}\\right)}"
+        ],
+        "KCs": [
+          "TransDivRac","IdenNumerador","IdenDenominador","ArFrac"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 2
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "p:q se puede expresar como la fracción p/q (p es el numerador y q es el denominador)"
+          },
+          {
+            "hintId": 1,
+            "hint": "La solución es ",
+            "expression": "\\frac{\\left(a+\\frac{1}{2}\\right)}{\\left(2+\\frac{1}{a}\\right)}"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{\\left(a+\\frac{1}{2}\\right)}{\\left(2+\\frac{1}{a}\\right)}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has expresado la división como una fracción correctamente.",
+        "summary": "Para expresar una division p:q en una fracción se debe dividir p por q, donde p es el numerador y q el denominador"
+      }
+    ]
+  }
+  

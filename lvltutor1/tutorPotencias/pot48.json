@@ -1,0 +1,103 @@
+{
+  "code": "pot48",
+  "type": "lvltutor",
+  "meta": {},
+  "title": "Equivalencia entre raíz y potencia",
+  "text": "Simplificación de raíces:",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\sqrt{x^4}",
+      "stepTitle": "Expresa la siguiente raíz como una potencia fracionaria.",
+      "displayResult": [
+        "x^{\\frac{4}{2}}"
+      ],
+      "KCs": [
+        "TransRaizPot",
+        "RaizDePot"
+      ],
+      "values": [
+        {
+          "name": "x",
+          "value": 2
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que el grado de la raíz se convierte en el denominador del exponente"
+        },
+        {
+          "hintId": 1,
+          "hint": "Por ejemplo, la raíz cúbica (grado 3) de x cuadrado se convierte en: ",
+          "expression": "x^{\\frac{2}{3}}"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es ",
+          "expression": "x^{\\frac{4}{2}}"
+        }
+      ],
+      "matchingError": [],
+      "validation": "evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "x^{\\frac{4}{2}}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado transformar la raíz a una potencia fracionaria.",
+      "summary": "1) Con el fin de transformar la raíz a una potencia fracionaria el grado de la raíz pasa a convertirse en el denominador del exponente."
+    },
+    {
+      "stepId": "1",
+      "expression": "x^{\\frac{4}{2}}",
+      "stepTitle": "Simplifica el exponente.",
+      "displayResult": [
+        "x^{2}"
+      ],
+      "KCs": [
+        ""
+      ],
+      "values": [
+        {
+          "name": "x",
+          "value": 2
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "El exponente es el valor al cual esta elevado."
+        },
+        {
+          "hintId": 1,
+          "hint": "Por ejemplo, el exponente es n en ",
+          "expression": "x^{n}"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es ",
+          "expression": "x^{2}"
+        }
+      ],
+      "matchingError": [],
+      "validation": "evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "x^{2}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado simplificar el exponente.",
+      "summary": "2) Con el fin de simplificar la expresión has simplificado el exponente."
+    }
+  ]
+}

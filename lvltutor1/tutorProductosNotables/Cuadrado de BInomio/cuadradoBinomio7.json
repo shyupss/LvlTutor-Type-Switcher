@@ -1,0 +1,101 @@
+{
+  "code": "pnc2b07",
+  "meta": {},
+  "text": "Utilizando la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+  "type": "lvltutor",
+  "initialExpression": "(5xy+6)²",
+  "steps": [
+    {
+      "KCs": ["IdeTer2MultVar"],
+      "hints": [
+        {
+          "hint": "Debes elevar al cuadrado tanto las variables como el coeficiente que los acompaña.",
+          "hintId": 0
+        },
+        {
+          "hint": "Por ejemplo: ",
+          "expression": "\\left(3a\\right)^{2}=9a^{2}",
+          "hintId": 1
+        },
+        { "hint": "El resultado es: ",
+            "expression":"25x^{2}y^{2}", 
+            "hintId": 2 }
+      ],
+      "stepId": "0",
+      "values": [
+        { "name": "x", "value": 1 },
+        { "name": "y", "value": 2}
+      ],
+      "answers": [{ "answer": ["25x^{2}y^{2}"], "nextStep": "1" }],
+      "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², el primer término \"a²\" se obtiene al elevar \"5xy\" al cuadrado",
+      "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+      "correctMsg": "Has encontrado el primer término.",
+      "expression": "(5xy+6)² = □ + □ + □",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["25x^{2}y^{2}"],
+      "matchingError": []
+    },
+    {
+      "KCs": ["C2BTIMultVar"],
+      "hints": [
+        {
+          "hint": "Recuerda revisar la operación detro del paréntesis. ",
+          "hintId": 0
+        },
+        {
+          "hint": " Primero multiplica ambos términos del paréntesis, y después multiplica el resultado por 2. Recuerda considerar el signo.",
+          "hintId": 1
+        },
+        { "hint": "El resultado es: ",
+            "expression":"60xy", 
+            "hintId": 2 }
+      ],
+      "stepId": "1",
+      "values": [
+        { "name": "x", "value": 1 },
+        { "name": "y", "value": 2 }
+      ],
+      "answers": [{ "answer": ["60xy"], "nextStep": "2" }],
+      "summary": "2) El término \"2ab\" surge de multiplicar 2, 5xy y 6.",
+      "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+      "correctMsg": "Has encontrado el segundo término.",
+      "expression": "(5xy+6)² = 25x²y² + □ + □",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["60xy"],
+      "matchingError": []
+    },
+    {
+      "KCs": ["IdeTer2"],
+      "hints": [
+        {
+          "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+          "hintId": 0
+        },
+        {
+          "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+          "hintId": 1
+        },
+        { "hint": "El resultado es: ",
+            "expression":"36",
+            "hintId": 2 }
+      ],
+      "stepId": "2",
+      "values": [
+        { "name": "x", "value": 1 },
+        { "name": "y", "value": 2}
+      ],
+      "answers": [{ "answer": ["36"], "nextStep": "-1" }],
+      "summary": "3) El tercer término \"b²\" se obtiene elevando \"6\" al cuadrado.",
+      "stepTitle": "Calcula el tercer término.",
+      "correctMsg": "Has encontrado el tercer término.",
+      "expression": "(5xy+6)² = 25x²y² + 60xy + □",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "displayResult": ["36"],
+      "matchingError": []
+    }
+  ],
+  "title": "Cuadrado de binomio"
+}

@@ -1,0 +1,328 @@
+{
+    "code": "pot3",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Reducción de expresión",
+    "text": "Reduce la siguiente expresión:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "\\frac{\\left(a^{b+3}\\cdot{c}^{b+2}\\right)^{3}}{a^{3b}\\cdot{c}^{6}}",
+            "stepTitle": "Usando propiedades de potencias, desarrolla el numerador.",
+            "displayResult": [
+                "\\frac{a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot{c}^{6}}"
+            ],
+            "KCs": [
+                "MultExp"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                },
+                {
+                    "name": "d",
+                    "value": 3
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad de potencia de un producto es: ",
+                    "expression": "\\left(a \\cdot b\\right)^{n} = a^{n} \\cdot b^{n}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La propiedad de potencia de una potencia es: ",
+                    "expression": "\\left(a^{n}\\right)^{m} = a^{n \\cdot m}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "\\frac{a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot{c}^{6}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{a^{3\\cdot b+9}\\cdot c^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot c^6}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado multiplicar los exponentes correctamente.",
+            "summary": "1) Se multiplica el exponente del paréntesis con los exponentes de cada factor encontrados en el numerador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{a^{3\\cdot b+9}\\cdot c^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot c^6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{a^{b+6}\\cdot d^{b+5}}{a^{3b}\\cdot c^6}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "(a\\cdot b)^n=a^n\\cdot b^n"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{(a \\cdot c)^{6b+15}}{a^{3b}\\cdot c^6}",
+                    "correct": false,
+                    "feedbackMsg": "No puedes multiplicar potencias de distinta base y exponente"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{a^{3b+9} + c^{3b+6}}{a^{3b}\\cdot c^6}",
+                    "correct": false,
+                    "feedbackMsg": "En el numerador hay una multiplicación dentro del paréntesis, no una suma"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "expression": "\\frac{a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}}{a^{3\\cdot b}\\cdot{c}^{6}}",
+            "stepTitle": "Multiplica el numerador por el inverso del denominador.",
+            "displayResult": [
+                "a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}\\cdot{a}^{-3\\cdot b}\\cdot{c}^{-6}"
+            ],
+            "KCs": [
+                "TransExpFrac"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                },
+                {
+                    "name": "d",
+                    "value": 3
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Puedes \"subir\" el denominador de una fracción elevándolo a -1."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Las fracciones se pueden expresar como ",
+                    "expression": "\\frac{1}{a^{2}} = \\left(a^{2}\\right)^{-1} = a^{-2}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "a^{3 \\cdot b+9} \\cdot c^{3 \\cdot b+6} \\cdot a^{-3 \\cdot b} \\cdot c^{-6}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "a^{3\\cdot b+9}\\cdot c^{3\\cdot b+6}\\cdot a^{-3\\cdot b}\\cdot c^{-6}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado invertir el denominador correctamente.",
+            "summary": "2) Se invierte cada factor encontrado en el denominador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "a^{3\\cdot b+9}\\cdot c^{3\\cdot b+6}\\cdot a^{-3\\cdot b}\\cdot c^{-6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "a^{3b+9}\\cdot a^{3b}\\cdot d^{3b+6}\\cdot d^{6}",
+                    "correct": false,
+                    "feedbackMsg": "Puedes \"subir\" el denominador de una fracción elevándolo a -1."
+                },
+                {
+                    "id": 2,
+                    "expression": "a^{3b+9}\\cdot -a^{3b}\\cdot d^{3b+6}\\cdot -d^{6}",
+                    "correct": false,
+                    "feedbackMsg": "Puedes \"subir\" el denominador de una fracción elevándolo a -1."
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "expression": "a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}\\cdot{a}^{-3\\cdot b}\\cdot{c}^{-6}",
+            "stepTitle": "Realiza la multiplicación de potencias.",
+            "displayResult": [
+                "a^{9}\\cdot{c}^{3\\cdot b}"
+            ],
+            "KCs": [
+                "MultExp",
+                "TransExpFrac",
+                "SumResExp"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                },
+                {
+                    "name": "d",
+                    "value": 3
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Multiplica las potencias de igual base."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Aplica la propiedad de multiplicación de potencias: se suman los exponentes cuando las bases son iguales."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La solución es ",
+                    "expression": "a^{9} \\cdot c^{3 \\cdot b}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "a^9\\cdot c^{3\\cdot b}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado reducir la expresión correctamente.",
+            "summary": "3) Finalmente se aplica la multiplicación de potencias en misma base.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "a^9\\cdot c^{3\\cdot b}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "a^{-9b^2-27b}\\cdot c^{-18b-36}",
+                    "correct": false,
+                    "feedbackMsg": "Utiliza la propiedad de multiplicación de potencias de igual base",
+                    "feedbackMsgExp": "a^n\\cdot{a^m}=a^{n+m}"
+                },
+                {
+                    "id": 2,
+                    "expression": "(a \\cdot c)^{27b}",
+                    "correct": false,
+                    "feedbackMsg": "No puedes multiplicar potencias de distinta base y exponente"
+                },
+                {
+                    "id": 3,
+                    "expression": "a^9\\cdot c^{3b+12}",
+                    "correct": false,
+                    "feedbackMsg": "La variable 'c' esta elevada a -6, por lo tanto debes restarlo al exponente de",
+                    "feedbackMsgExp": "c^{3 \\cdot b +6}"
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "2",
+        "expression": "a^{3\\cdot b+9}\\cdot{c}^{3\\cdot b+6}\\cdot{a}^{-3\\cdot b}\\cdot{c}^{-6}",
+        "stepTitle": "Realiza la multiplicación de potencias.",
+        "displayResult": [
+            "a^{9}\\cdot{c}^{3\\cdot b}"
+        ],
+        "KCs": [
+            "MultExp",
+            "TransExpFrac",
+            "SumResExp"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 1
+            },
+            {
+                "name": "b",
+                "value": 2
+            },
+            {
+                "name": "d",
+                "value": 3
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Multiplica las potencias de igual base."
+            },
+            {
+                "hintId": 1,
+                "hint": "Aplica la propiedad de multiplicación de potencias: se suman los exponentes cuando las bases son iguales."
+            },
+            {
+                "hintId": 2,
+                "hint": "La solución es ",
+                "expression": "a^{9} \\cdot c^{3 \\cdot b}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "a^9\\cdot c^{3\\cdot b}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado reducir la expresión correctamente.",
+        "summary": "3) Finalmente se aplica la multiplicación de potencias en misma base.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "a^9\\cdot c^{3\\cdot b}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "a^{-9b^2-27b}\\cdot c^{-18b-36}",
+                "correct": false,
+                "feedbackMsg": "Utiliza la propiedad de multiplicación de potencias de igual base",
+                "feedbackMsgExp": "a^n\\cdot{a^m}=a^{n+m}"
+            },
+            {
+                "id": 2,
+                "expression": "(a \\cdot c)^{27b}",
+                "correct": false,
+                "feedbackMsg": "No puedes multiplicar potencias de distinta base y exponente"
+            },
+            {
+                "id": 3,
+                "expression": "a^9\\cdot c^{3b+12}",
+                "correct": false,
+                "feedbackMsg": "La variable 'c' esta elevada a -6, por lo tanto debes restarlo al exponente de",
+                "feedbackMsgExp": "c^{3 \\cdot b +6}"
+            }
+        ]
+    }
+}

@@ -1,0 +1,230 @@
+{
+    "code": "pot16",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Notación científica",
+    "text": "Escribe la siguiente expresión en notación científica:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "500\\cdot 0.08\\cdot 0.002",
+            "stepTitle": "Escribe la siguiente multiplicación con cada factor expresado en notación científica.",
+            "displayResult": [
+                "\\left(5 \\cdot 10^{2}\\right)\\cdot \\left(8 \\cdot 10^{-2}\\right)\\cdot \\left(2 \\cdot 10^{-3}\\right)"
+            ],
+            "KCs": [
+                "NC",
+                "NCD",
+                "NCE"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para expresar un número decimal en su notación científica: ",
+                    "expression": "0.00234 = 2.34 \\cdot 10^{-3}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Para expresar un número mayor a 9 en su notación científica: ",
+                    "expression": "800 = 8 \\cdot 10^{2}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "500 en notación científica es ",
+                    "expression": "5\\cdot10^{2}"
+                },
+                {
+                    "hintId": 3,
+                    "hint": "0.08 en notación científica es ",
+                    "expression": "8\\cdot10^{-2}"
+                },
+                {
+                    "hintId": 4,
+                    "hint": "La respuesta es ",
+                    "expression": "\\left(5 \\cdot 10^{2}\\right)\\cdot \\left(8 \\cdot 10^{-2}\\right)\\cdot \\left(2 \\cdot 10^{-3}\\right)"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(5\\right)\\cdot\\left(10^{2}\\right)\\cdot \\left(8\\right)\\cdot\\left(10^{-2}\\right)\\cdot \\left(2\\right)\\cdot\\left(10^{-3}\\right)"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has expresado cada factor en su notación científica.",
+            "summary": "1) Se expresa cada factor en su notación científica."
+        },
+        {
+            "stepId": "1",
+            "expression": "5 \\cdot 10^{2}\\cdot 8 \\cdot 10^{-2}\\cdot 2 \\cdot 10^{-3}",
+            "stepTitle": "Reduce la expresión multiplicando los números que no son potencias de 10.",
+            "displayResult": [
+                "80\\cdot 10^{2}\\cdot10^{-2}\\cdot10^{-3}"
+            ],
+            "KCs": [
+                "AgrTerBase",
+                "Mult"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Realiza la multiplicación sólo de los números 5, 8 y 2, y deja expresado los números que están escritos como potencia de 10."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La solución es ",
+                    "expression": "80\\cdot 10^{2}\\cdot10^{-2}\\cdot10^{-3}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(80\\right)\\cdot\\left(10^{2}\\right)\\cdot\\left(10^{-2}\\right)\\cdot\\left(10^{-3}\\right)"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has realizado las operaciones indicadas correctamente.",
+            "summary": "2) Se trabaja primero con los números que no son potencias de 10 reduciendo la expresión."
+        },
+        {
+            "stepId": "2",
+            "expression": "80\\cdot 10^{2}\\cdot10^{-2}\\cdot10^{-3}",
+            "stepTitle": "Reescribe el número 80 en notación científica y deja expresado los números que están escritos como potencia de 10.",
+            "displayResult": [
+                "8\\cdot 10\\cdot 10^{2}\\cdot 10^{-2}\\cdot 10^{-3}"
+            ],
+            "KCs": [
+                "NC",
+                "NCE"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para expresar un número mayor a 9 en su notación científica: ",
+                    "expression": "500 = 5 \\cdot 10^{2}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Expresa el número 80 con su notación científica."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es ",
+                    "expression": "8\\cdot 10\\cdot 10^{2}\\cdot 10^{-2}\\cdot 10^{-3}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(8\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{2}\\right)\\cdot\\left(10^{-2}\\right)\\cdot\\left(10^{-3}\\right)"
+                    ],
+                    "nextStep": "3"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has expresado el número indicado en su notación científica.",
+            "summary": "3) Se expresan los factores en su notación científica."
+        },
+        {
+            "stepId": "3",
+            "expression": "8\\cdot 10\\cdot 10^{2}\\cdot 10^{-2}\\cdot 10^{-3}",
+            "stepTitle": "Realiza la multiplicación de las potencias en base 10.",
+            "displayResult": [
+                "8\\cdot 10^{-2}"
+            ],
+            "KCs": [
+                "NC",
+                "NCD",
+                "NCE",
+                "AgrTerBase",
+                "Mult",
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Aplica la propiedad de multiplicación de potencias de igual base: se mantiene la base y se suman los exponentes."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Aplicando la propiedad multiplicación de potencias de igual base al siguiente ejemplo: ",
+                    "expression": "10^{-2}\\cdot10\\cdot10^{5} = 10^{\\left(-2+1+5\\right)} = 10^{4}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es ",
+                    "expression": "8\\cdot 10^{-2}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(8\\right)\\cdot\\left(10^{-2}\\right)"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado expresar la expresión original en su notación científica",
+            "summary": "4) Se aplica la propiedad de suma de potencias."
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "3",
+        "expression": "8\\cdot 10\\cdot 10^{2}\\cdot 10^{-2}\\cdot 10^{-3}",
+        "stepTitle": "Realiza la multiplicación de las potencias en base 10.",
+        "displayResult": [
+            "8\\cdot 10^{-2}"
+        ],
+        "KCs": [
+            "NC",
+            "NCD",
+            "NCE",
+            "AgrTerBase",
+            "Mult",
+            "SumResExp"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Aplica la propiedad de multiplicación de potencias de igual base: se mantiene la base y se suman los exponentes."
+            },
+            {
+                "hintId": 1,
+                "hint": "Aplicando la propiedad multiplicación de potencias de igual base al siguiente ejemplo: ",
+                "expression": "10^{-2}\\cdot10\\cdot10^{5} = 10^{\\left(-2+1+5\\right)} = 10^{4}"
+            },
+            {
+                "hintId": 2,
+                "hint": "La respuesta es ",
+                "expression": "8\\cdot 10^{-2}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "\\left(8\\right)\\cdot\\left(10^{-2}\\right)"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado expresar la expresión original en su notación científica",
+        "summary": "4) Se aplica la propiedad de suma de potencias."
+    }
+}

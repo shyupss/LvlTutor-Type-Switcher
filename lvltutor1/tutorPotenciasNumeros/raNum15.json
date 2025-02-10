@@ -1,0 +1,108 @@
+{
+  "code": "raNum15", 
+  "meta": {},
+  "title": "Suma de radicales",
+  "text": "Aplicando propiedades , realiza la suma de radicales y escribe el resultado",
+  "initialExpression":"2\\sqrt{12} - 3\\sqrt{75} + \\sqrt{27}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz.",
+      "expression": "2\\sqrt{12}",
+      "KCs": ["DescoRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "4\\sqrt{3}"
+        }
+      ],
+      "answers": [{ "answer": ["4\\sqrt{3}"], "nextStep": "1" }],
+      "summary": "1)Se realiza la primera descoposición de la raíz de 12.",
+      "correctMsg": "Has realizado correctamente la descomposición de la raíz.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2\\sqrt{12} \\longrightarrow 2\\sqrt{4 \\cdot 3 } \\longrightarrow 4\\sqrt{3}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Usando propiedades, descompone y simplifica la siguiente raíz de la suma de radicales.",
+      "expression": "3\\sqrt{75}",
+      "KCs": ["DescoRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "15\\sqrt{3}"
+        }
+      ],
+      "answers": [{ "answer": ["15\\sqrt{3}"], "nextStep": "2" }],
+      "summary": "2) Se realiza la segunda descomposicion de la raíz de 75.",
+      "correctMsg": "Has realizado correctamente la descomposición de la raíz.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["3\\sqrt{75} \\longrightarrow 3\\sqrt{25 \\cdot 3} \\longrightarrow 15\\sqrt{3}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz de 27.",
+      "expression": "\\sqrt{27}",
+      "KCs": ["DescoRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo:",
+          "expression":"a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "3\\sqrt{3}"
+        }
+      ],
+      "answers": [{ "answer": ["3\\sqrt{3}"], "nextStep": "3" }],
+      "summary": "3) Se realiza descomposición de la raíz de 27.",
+      "correctMsg": "Has realizado la suma de radicales correctamente",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2\\sqrt{3} - 3\\sqrt{3} + 10\\sqrt{3} = 9\\sqrt{3}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "3",
+      "stepTitle": "Realiza la suma de radicales.",
+      "expression": "4\\sqrt{3} - 15\\sqrt{3} + 3\\sqrt{3}",
+      "KCs": ["SumRad"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+          "expression":"a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "-8\\sqrt{3}"
+        }
+      ],
+      "answers": [{ "answer": ["-8\\sqrt{3}"], "nextStep": "-1" }],
+      "summary": "4) Se realiza la suma de radicales.",
+      "correctMsg": "Has realizado la suma de radicales correctamente",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["4\\sqrt{3} - 15\\sqrt{3} + 3\\sqrt{3} \\longrightarrow -8\\sqrt{3}"],
+      "matchingError": []
+    }
+  ]
+}

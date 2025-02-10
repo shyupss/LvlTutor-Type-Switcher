@@ -1,0 +1,154 @@
+{
+    "code": "raNum2",
+    "meta": {},
+    "title": "Simplificación de raíces.",
+    "text": "Simplifica la siguiente raíz cuadrada a su expresión mínima.",
+    "initialExpression": "\\sqrt{108}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Escribe el 108 como producto de 2 números, en donde uno de ellos sea un cuadrado perfecto.",
+            "expression": "108",
+            "KCs": [
+                "FactNum"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Un cuadrado perfecto es un número que resulta de multiplicar un número entero por sí mismo. Por ejemplo, si tomas el número 4 y lo multiplicas por sí mismo (4 * 4), obtienes 16, que es un cuadrado perfecto."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado debe quedar de la forma: ",
+                    "expression": "\\underline{} \\cdot \\underline{}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es: ",
+                    "expression": "36 \\cdot 3"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "36 \\cdot 3"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se simplifica el 108 de la raíz como un producto de 2 números , en donde uno de ellos es un cuadrado perfecto (36)",
+            "correctMsg": "Has simplificado correctamente el 108 entre una multiplicación de 2 números , en donde uno de ellos es un cuadrado perfecto.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "108 = 36 \\cdot 3 "
+            ],
+            "matchingError": []
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Expresa el resultado final aplicando la propiedad de producto de raíces.",
+            "expression": "\\sqrt{36 \\cdot 3}",
+            "KCs": [
+                "FactNum",
+                "ProdRaiz"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Separa el producto en una multiplicación de 2 raices."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Aplica las raíces en cada uno de los valores , si es que se pudiera."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es: ",
+                    "expression": "6 \\sqrt{3}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "6\\sqrt{3}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "6 \\cdot \\sqrt{3}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "6 \\sqrt{3}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Se aplica la propiedad de producto de raíces y se simplifica el resultado.",
+            "correctMsg": "Has aplicado la propiedad y simplificado correctamente.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\sqrt{36 \\cdot 3} \\longrightarrow \\sqrt{36}  \\cdot \\sqrt{3} \\longrightarrow 6 \\sqrt{3}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "stepTitle": "Expresa el resultado final aplicando la propiedad de producto de raíces.",
+        "expression": "\\sqrt{36 \\cdot 3}",
+        "KCs": [
+            "FactNum",
+            "ProdRaiz"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Separa el producto en una multiplicación de 2 raices."
+            },
+            {
+                "hintId": 1,
+                "hint": "Aplica las raíces en cada uno de los valores , si es que se pudiera."
+            },
+            {
+                "hintId": 2,
+                "hint": "La respuesta es: ",
+                "expression": "6 \\sqrt{3}"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "6\\sqrt{3}"
+                ],
+                "nextStep": "-1"
+            },
+            {
+                "answer": [
+                    "6 \\cdot \\sqrt{3}"
+                ],
+                "nextStep": "-1"
+            },
+            {
+                "answer": [
+                    "6 \\sqrt{3}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Se aplica la propiedad de producto de raíces y se simplifica el resultado.",
+        "correctMsg": "Has aplicado la propiedad y simplificado correctamente.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no es correcta.",
+        "displayResult": [
+            "\\sqrt{36 \\cdot 3} \\longrightarrow \\sqrt{36}  \\cdot \\sqrt{3} \\longrightarrow 6 \\sqrt{3}"
+        ],
+        "matchingError": []
+    }
+}

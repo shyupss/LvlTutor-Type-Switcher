@@ -1,0 +1,208 @@
+{
+    "code": "pnc3b15",
+    "meta": {},
+    "text": "Calcula el cubo de binomio descomponiendo como multiplicación de cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(\\frac{5}{7}x+5)^{3}",
+    "steps": [
+        {
+            "KCs": [
+                "C3BDescomp",
+                "C3BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que una potencia se puede escribir como una multiplicación de potencias de igual base, donde la suma de estos nuevos exponentes, den como resultado el valor del exponente original.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Por ejemplo:",
+                    "expression": "a^3 = a\\cdot a^2",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\left(\\frac{5}{7}x+5\\right)\\left(\\frac{5}{7}x+5\\right)^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "(\\frac{5}{7}x+5)(\\frac{5}{7}x+5)^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se descompone el cubo de binomio en una multiplicación entre un binomio y un cuadrado de binomio.",
+            "stepTitle": "Reescribe la expresión de la forma (□ + □)(□ + □)².",
+            "expression": "(\\frac{5}{7}x+5)^{3} = (□ + □)(□ + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "(\\frac{5}{7}x+5)(\\frac{5}{7}x+5)^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BCuad",
+                "C3BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: (a ± b)² = a² ± 2ab + b²",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar la operación dentro del paréntesis.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se desarrolla el cuadrado de binomio utilizando la identidad del cuadrado de binomio (a + b)² = a² + 2ab + b²",
+            "stepTitle": "Desarrolla el cuadrado de binomio.",
+            "correctMsg": "Has calculado el cuadrado de binomio.",
+            "expression": "(\\frac{5}{7}x+5)^{2} = □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BDescomp",
+                "C3BCoefFrac",
+                "C3BCuad",
+                "C3BDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Para realizar la multiplicación primero multiplicas el primer término del binomio por cada valor del segundo paréntesis, y luego haces lo mismo con el segundo término del binomio.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "En el siguiente ejemplo, primero se multiplica 'a' por cada uno de los términos del segundo paréntesis y luego se realiza lo mismo pero utilizando 'b'.",
+                    "expression": "(a+b)(x+y) = (ax + ay) + (bx + by)",
+                    "hintId": 1
+                },
+                {
+                    "hint": "Recuerda revisar los signos al multiplicar y reducir los términos semejantes.",
+                    "hintId": 2
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125",
+                    "hintId": 3
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) Se multiplica cada factor del binomio por el resultado del cuadrado de binomio y se reducen los términos semejantes.",
+            "stepTitle": "Finalmente, realiza la multiplicación distributiva.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(\\frac{5}{7}x+5)(\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25) = □ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cubo de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "C3BDescomp",
+            "C3BCoefFrac",
+            "C3BCuad",
+            "C3BDist"
+        ],
+        "hints": [
+            {
+                "hint": "Para realizar la multiplicación primero multiplicas el primer término del binomio por cada valor del segundo paréntesis, y luego haces lo mismo con el segundo término del binomio.",
+                "hintId": 0
+            },
+            {
+                "hint": "En el siguiente ejemplo, primero se multiplica 'a' por cada uno de los términos del segundo paréntesis y luego se realiza lo mismo pero utilizando 'b'.",
+                "expression": "(a+b)(x+y) = (ax + ay) + (bx + by)",
+                "hintId": 1
+            },
+            {
+                "hint": "Recuerda revisar los signos al multiplicar y reducir los términos semejantes.",
+                "hintId": 2
+            },
+            {
+                "hint": "El resultado es:",
+                "expression": "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125",
+                "hintId": 3
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) Se multiplica cada factor del binomio por el resultado del cuadrado de binomio y se reducen los términos semejantes.",
+        "stepTitle": "Finalmente, realiza la multiplicación distributiva.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(\\frac{5}{7}x+5)(\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25) = □ + □ + □ + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
+        ],
+        "matchingError": []
+    }
+}

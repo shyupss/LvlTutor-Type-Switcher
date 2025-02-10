@@ -1,0 +1,74 @@
+{
+    "code": "raNum12",
+    "meta": {},
+    "title": "Suma de radicales",
+    "text": "Realice la suma de radicales y escriba su resultado.",
+    "initialExpression": "2\\sqrt{2} - 4\\sqrt{2} + \\sqrt{2}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando propiedades, realize la suma de radicales y escriba el resultado",
+            "expression": "2\\sqrt{2} - 4\\sqrt{2} + \\sqrt{2}",
+            "KCs": [
+                "SumRad"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+                    "expression": "a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b} "
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "-\\sqrt{2}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-\\sqrt{2}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1)Ocupando propiedades y factorización se realiza la suma de radicales.",
+            "correctMsg": "Has realizado correctamente la suma de radicales.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "2\\sqrt{2} - 4\\sqrt{2} + \\sqrt{2} = \\left(2 - 4 + 1 \\right)\\sqrt{2} = -\\sqrt{2}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-\\sqrt{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{2}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{2}"
+                },
+                {
+                    "id": 2,
+                    "expression": "7\\sqrt{2}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{2}"
+                },
+                {
+                    "id": 3,
+                    "expression": "-8 \\sqrt{2}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{2}"
+                }
+            ]
+        }
+    ]
+}

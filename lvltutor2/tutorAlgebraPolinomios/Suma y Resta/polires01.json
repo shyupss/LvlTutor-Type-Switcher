@@ -1,0 +1,218 @@
+{
+    "code": "polires01",
+    "meta": {},
+    "text": "Resta los siguientes polinomios:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "InvSign"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes cambiar los signos del segundo término ya que hay un signo negativo antes del paréntesis.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es x²-4x+5.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "x^{2}-4x+5"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se invierten los signos del segundo polinomio.",
+            "stepTitle": "Ingresa el segundo polinomio con los signos invertidos",
+            "correctMsg": "Obtuviste el segundo polinomio.",
+            "expression": "(3x^{2}-2x+1)-(-x^{2}+4x-5)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "x^{2}-4x+5"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{2}-4x+5",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x^2+4x+5",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                },
+                {
+                    "id": 2,
+                    "expression": "x^2+4x-5",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                },
+                {
+                    "id": 3,
+                    "expression": "-x^2-4x+5",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "InvSign",
+                "AgrTer"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 4x²-6x+6.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "4x^{2}-6x+6"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se suman los términos semejantes.",
+            "stepTitle": "Suma los términos semejantes entre los polinomios",
+            "correctMsg": "Obtuviste la suma de los polinomios.",
+            "expression": "(3x^{2}-2x+1)+(x^{2}-4x+5)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "4x^{2}-6x+6"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4x^{2}-6x+6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2x^2-6x+6",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 2,
+                    "expression": "4x^2+2x+6",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                },
+                {
+                    "id": 3,
+                    "expression": "4x^2-6x-4",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los términos independientes."
+                }
+            ]
+        }
+    ],
+    "title": "Álgebra de polinomios",
+    "finalAnswer": {
+        "KCs": [
+            "InvSign",
+            "AgrTer"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                "hintId": 0
+            },
+            {
+                "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es 4x²-6x+6.",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "4x^{2}-6x+6"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "1) Se suman los términos semejantes.",
+        "stepTitle": "Suma los términos semejantes entre los polinomios",
+        "correctMsg": "Obtuviste la suma de los polinomios.",
+        "expression": "(3x^{2}-2x+1)+(x^{2}-4x+5)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "4x^{2}-6x+6"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "4x^{2}-6x+6",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2x^2-6x+6",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 2,
+                "expression": "4x^2+2x+6",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            },
+            {
+                "id": 3,
+                "expression": "4x^2-6x-4",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los términos independientes."
+            }
+        ]
+    }
+}

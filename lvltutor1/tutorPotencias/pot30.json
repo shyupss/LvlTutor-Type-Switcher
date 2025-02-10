@@ -1,0 +1,131 @@
+{
+  "code": "pot30",
+  "meta": {},
+  "title": "Notación científica",
+  "text": "Escribe la siguiente expresión en notación científica:",
+  "type": "lvltutor",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "KCs": ["NC","NCD"],
+      "expression": "0.0004\\cdot{0.2}",
+      "stepTitle": "Escribe la siguiente multiplicación con cada factor expresado en notación científica.",
+      "displayResult": [
+        "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Sin multiplicar los números, expresa cada factor en notación científica."
+        },
+        {
+          "hintId": 1,
+          "hint": "0.0004 en notación científica es",
+          "expression": "4\\cdot{10^{-4}}"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has expresado cada factor en su notación científica.",
+      "summary": "1) Se expresa cada factor en su notación científica."
+    },
+    {
+      "stepId": "1",
+      "KCs": ["AgrTerBase","Mult"],
+      "expression": "(4\\cdot{10^{-4}})\\cdot{(2\\cdot{10^{-1}})}",
+      "stepTitle": "Reduce la expresión multiplicando los números que no son potencia de 10",
+      "displayResult": [
+        "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+      ],
+      "values": [
+        { "name": "a", "value": 1 },
+        { "name": "b", "value": 4 }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Primero multiplica los números que no son potencias de 10."
+        },
+        {
+          "hintId": 1,
+          "hint": "Revisa que has escrito la expresión completa, sin olvidar los términos en base 10 sin haberlos multiplicado."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es: ",
+          "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "8\\cdot{10^{-4}\\cdot{10^{-1}}}"
+          ],
+          "nextStep": "2"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has realizado las operaciones indicadas correctamente.",
+      "summary": "2) Se trabaja primero con los números que no son potencias de 10 reduciendo la expresión."
+    },
+    {
+      "stepId": "2",
+      "KCs": ["SumResExp"],
+      "expression": "8\\cdot{10^{-4}\\cdot{10^{-1}}}",
+      "stepTitle": "Realiza la multiplicación de las potencias de base 10",
+      "displayResult": [
+        "8\\cdot{10^{-5}}"
+      ],
+      "values": [
+        { "name": "a", "value": 1 },
+        { "name": "b", "value": 4 }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Sólo multiplica las potencias en base 10."
+        },
+        {
+          "hintId": 1,
+          "hint": "Aplica la propiedad de multiplicación de potencias: se suman los exponentes cuando las bases son iguales."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "8\\cdot{10^{-5}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "8\\cdot{10^{-5}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado expresar la expresión original en su notación científica",
+      "summary": "3) Se aplica la propiedad de multiplicación de potencias."
+    }
+  ]
+}
+  

@@ -1,0 +1,71 @@
+{
+    "code": "raNum11",
+    "meta": {},
+    "title": "Expresar como raíz",
+    "text": "Expresar solo como raíz.",
+    "initialExpression": "2\\sqrt{3}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando propiedades de raíces transforma a un radical.",
+            "expression": "2\\sqrt{3}",
+            "KCs": [
+                "CompRaiz"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para expresar como un solo radical, el número de afuera tiene que entrar a la raíz.",
+                    "expression": "a\\sqrt{b} \\longrightarrow \\sqrt{a^{2} \\cdot b}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es: ",
+                    "expression": "\\sqrt{12}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\sqrt{12}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se ocupa propiedades para transformar la expresión a un solo radical",
+            "correctMsg": "Has respondido correctamente.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "2\\sqrt{3} \\longrightarrow \\sqrt{2^{2} \\cdot 3 } \\longrightarrow \\sqrt{12}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{6}",
+                    "correct": false,
+                    "feedbackMsg": "Al incorporar 2 dentro de la raíz, este debe elevarse al cuadrado."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{9}",
+                    "correct": false,
+                    "feedbackMsg": "Al incorporar 2 dentro de la raíz, este debe elevarse al cuadrado."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt{8}",
+                    "correct": false,
+                    "feedbackMsg": "Al incorporar 2 dentro de la raíz, este debe elevarse al cuadrado."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+  "code": "fracc6",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Exprese la siguiente fracción como multiplicación:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{\\frac{a}{b}}{\\frac{c}{d}}",
+      "stepTitle": "Invirtiendo la fracción del denominador, expresa como multiplicación de fracciones.",
+      "displayResult": [
+        "\\frac{a}{b}\\cdot \\frac{d}{c}"
+      ],
+      "KCs": [
+        "DivFrac","IdenDenominador","IdenNumerador","ArFrac"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la propiedad de división de fracciones. "
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es (a/b) * (d/c)"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{a}{b}\\cdot \\frac{d}{c}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
+      "summary": "Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+    "code": "pnc2b19",
+    "meta": {},
+    "text": "La siguiente expresión se puede expresar como un cuadrado de binomio, sin embargo, le falta un término. Encuentra el término faltante para luego completar el cuadrado de binomio:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)², utiliza los términos a² y 2ab para encontrar b.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "¿Cuánto vale b²?, si:",
+                    "expression": "a^{2}=\\frac{9}{16}x^{2}, \\quad 2ab=12x",
+                    "hintId": 1
+                },
+                {
+                    "hint": "Para obtener a:",
+                    "expression": "a^{2}=\\frac{9}{16}x^{2} \\quad \\rightarrow \\quad \\sqrt{a^2} = \\sqrt{\\frac{9}{16}x^{2}} \\quad \\rightarrow \\quad a=\\frac{3}{4}x",
+                    "hintId": 2
+                },
+                {
+                    "hint": "Para obtener b:",
+                    "expression": "2ab = 12x \\quad \\rightarrow \\quad 2 \\cdot \\frac{3}{4}x⋅b = 12x \\quad \\rightarrow \\quad b=8",
+                    "hintId": 3
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "64",
+                    "hintId": 4
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "64"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Para obtener el término faltante b², se utiliza la fórmula de cuadrado de binomio a²+2ab+b²=(a+b)² y los términos a² y 2ab para encontrar b. Primero, se obtiene a por la raíz cuadrada de a², que corresponde al término que contiene x². Después, se despeja b utilizando 2ab = 12x, reemplazando el valor de a encontrado anteriormente y se obtiene b = 8, lo que implica que b² = 64.",
+            "stepTitle": "Encuentra el término faltante '□'",
+            "correctMsg": "Has encontrado el término faltante.",
+            "expression": "\\frac{9}{16}x^{2}+12x+□",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "64"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)².",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para encontrar el segundo término del cuadrado de binomio, debes calcular la raíz cuadrada del término obtenido en el paso anterior",
+                    "hintId": 1
+                },
+                {
+                    "hint": "Recuerda, los valores de:",
+                    "expression": "a=\\frac{3}{4}x, \\quad b=8",
+                    "hintId": 2
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "(\\frac{3}{4}x+8)²",
+                    "hintId": 3
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "(\\frac{3}{4}x+8)^{2}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Del paso anterior, ya se obtienen los valores a y b.",
+            "stepTitle": "Representa la expresión como un cuadrado de binomio.",
+            "correctMsg": "Has encontrado el cuadrado de binomio.",
+            "expression": "\\frac{9}{16}x^{2}+12x+64",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "(\\frac{3}{4}x+8)^{2}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "C2BCoefFrac"
+        ],
+        "hints": [
+            {
+                "hint": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)².",
+                "hintId": 0
+            },
+            {
+                "hint": "Para encontrar el segundo término del cuadrado de binomio, debes calcular la raíz cuadrada del término obtenido en el paso anterior",
+                "hintId": 1
+            },
+            {
+                "hint": "Recuerda, los valores de:",
+                "expression": "a=\\frac{3}{4}x, \\quad b=8",
+                "hintId": 2
+            },
+            {
+                "hint": "El resultado es:",
+                "expression": "(\\frac{3}{4}x+8)²",
+                "hintId": 3
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "(\\frac{3}{4}x+8)^{2}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Del paso anterior, ya se obtienen los valores a y b.",
+        "stepTitle": "Representa la expresión como un cuadrado de binomio.",
+        "correctMsg": "Has encontrado el cuadrado de binomio.",
+        "expression": "\\frac{9}{16}x^{2}+12x+64",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "(\\frac{3}{4}x+8)^{2}"
+        ],
+        "matchingError": []
+    }
+}

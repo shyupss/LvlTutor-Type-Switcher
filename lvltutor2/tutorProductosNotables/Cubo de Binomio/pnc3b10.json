@@ -1,0 +1,260 @@
+{
+    "code": "pnc3b10",
+    "meta": {},
+    "text": "Utilizando la identidad de cubo de binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), desarrolla el siguiente cubo de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(4xy²+2)³",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer3MultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "(5ac)^{3}=5ac\\cdot5ac\\cdot5ac=125a^{3}c^{3}",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "64x^{3}y^{6}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "64x^{3}y^{6}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo con la fórmula del cubo del binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), el primer término a³ se obtiene al elevar 4xy² al cubo.",
+            "stepTitle": "Encuentra el primer término del cubo de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(4xy^{2}+2)^{3} = □ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "64x^{3}y^{6}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTIMultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3a²b.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "96x^{2}y^{4}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "96x^{2}y^{4}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Según la identidad, el segundo término 3a²b se calcula al multiplicar 3, (4xy²)² y 2.",
+            "stepTitle": "Encuentra el segundo término del cubo de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(4xy^{2}+2)^{3} = 64x³y⁶ + □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "96x^{2}y^{4}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C3BTIMultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "El término que estás buscando es 3ab².",
+                    "hintId": 0
+                },
+                {
+                    "hint": "El término 3ab² siempre será positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "48xy^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "48xy^{2}"
+                    ],
+                    "nextStep": "3"
+                }
+            ],
+            "summary": "3) El tercer término 3ab² surge de multiplicar 3, 4xy² y 2².",
+            "stepTitle": "Encuentra el tercer término del cubo de binomio.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(4xy^{2}+2)^{3} = 64x³y⁶ + 96x²y⁴ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "48xy^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer3MultVar",
+                "C3BTIMultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                    "expression": "(4)^{3}=4\\cdot4\\cdot4=64",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "8",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "3",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "y",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "8"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "4) Por último, el cuarto término b³ se obtiene al elevar 2 al cubo.",
+            "stepTitle": "Finalmente obtén el cuarto término.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(4xy^{2}+2)^{3} = 64x³y⁶ + 96x²y⁴ + 48xy² + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "64x³y⁶+96x²y⁴+48xy²+8"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cubo de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer3MultVar",
+            "C3BTIMultVar"
+        ],
+        "hints": [
+            {
+                "hint": "Para calcular el último término, debes elevar al cubo el segundo término del binomio.",
+                "hintId": 0
+            },
+            {
+                "hint": "Recuerda que elevar al cubo es multiplicar un número por si mismo 3 veces. Por ejemplo: ",
+                "expression": "(4)^{3}=4\\cdot4\\cdot4=64",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "8",
+                "hintId": 2
+            }
+        ],
+        "stepId": "3",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            },
+            {
+                "name": "y",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "8"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "4) Por último, el cuarto término b³ se obtiene al elevar 2 al cubo.",
+        "stepTitle": "Finalmente obtén el cuarto término.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(4xy^{2}+2)^{3} = 64x³y⁶ + 96x²y⁴ + 48xy² + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "64x³y⁶+96x²y⁴+48xy²+8"
+        ],
+        "matchingError": []
+    }
+}

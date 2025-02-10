@@ -1,0 +1,220 @@
+{
+    "code": "pnc2b09",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "4x²+8x+4",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el primer término debes calcular la raíz cuadrada de 4x².",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "2x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² + 2ab + b² = (a + b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada de \"4x²\".",
+            "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "4x^{2}+8x+4 = (□ + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "2x"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir la variable x"
+                },
+                {
+                    "id": 2,
+                    "expression": "2x^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes aplicar la raiz tanto al coeficiente como a la variable"
+                },
+                {
+                    "id": 3,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "La raíz cuadrada aplica tanto al coeficiente como a la variable"
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 4.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "2",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Según la identidad de cuadrado de binomio, el término \"b\" se obtiene al calcular la raíz cuadrada de \"4\". ",
+            "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "4x^{2}+8x+4 = (2x + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "2"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 2,
+                    "expression": "-4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 3,
+                    "expression": "-2",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de considerar el signo"
+                }
+            ]
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2"
+        ],
+        "hints": [
+            {
+                "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                "hintId": 0
+            },
+            {
+                "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 4.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "2",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "2"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Según la identidad de cuadrado de binomio, el término \"b\" se obtiene al calcular la raíz cuadrada de \"4\". ",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "4x^{2}+8x+4 = (2x + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "2"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "4",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 2,
+                "expression": "-4",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 3,
+                "expression": "-2",
+                "correct": false,
+                "feedbackMsg": "No te olvides de considerar el signo"
+            }
+        ]
+    }
+}

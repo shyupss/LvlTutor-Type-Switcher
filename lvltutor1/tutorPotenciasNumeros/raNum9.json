@@ -1,0 +1,85 @@
+{
+  "code": "raNum9", 
+  "meta": {},
+  "title": "Simplificación de raíces.",
+  "text": "Simplifica la siguiente expresión aplicando las propiedades correspondientes.",
+  "initialExpression":"\\left( \\frac{\\sqrt{2} \\cdot \\sqrt{3}}{\\sqrt{12}} \\right)^{3}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Aplicando la propiedad de multiplicación de raíces de igual orden, exprese como raíz el resultado del numerador.",
+      "expression": "\\sqrt{2} \\cdot \\sqrt{3}",
+      "KCs": ["MultRaices"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad de la potencia negativa es : ",
+          "expression":"\\sqrt[n]{a} \\cdot \\sqrt[n]{b} \\longrightarrow \\sqrt[n]{a \\cdot b}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\sqrt{6}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{6}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad de multiplicación de raíces de igual orden.",
+      "correctMsg": "Has aplicado correctamente la propiedad de multiplicación de raíces de igual orden.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt{2} \\cdot \\sqrt{3} \\longrightarrow \\sqrt{6}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Aplicando la propiedad del cociente de raíces del mismo orden , exprese el resultado como una fracción de raíces.",
+      "expression": "\\frac{\\sqrt{6}}{\\sqrt{12}}",
+      "KCs": ["CoRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad del cociente del mismo orden: ",
+          "expression": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} \\longrightarrow \\sqrt[n]{\\frac{a}{b}}"
+        },
+        {
+          "hintId":1,
+          "hint": "La respuesta es:",
+          "expression":"\\frac{\\sqrt{1}}{\\sqrt{2}}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{\\frac{1}{2}}"], "nextStep": "2" }, { "answer": ["\\frac{\\sqrt{1}}{\\sqrt{2}}"], "nextStep": "2" }],
+      "summary": "2) Se realiza la propiedad del cociente de raíces de igual orden. ",
+      "correctMsg": "Has realizado la propiedad correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\frac{\\sqrt{6}}{\\sqrt{12}} \\longrightarrow \\frac{\\sqrt{1}}{\\sqrt{2}}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Simplifica la expresión resultante , aplicando la propiedad de cociente de raíces de igual orden.",
+      "expression": "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3}",
+      "KCs": ["SimpRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que la propiedad del cociente de raíces del mismo orden dice: ",
+          "expression": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+        },
+        {
+          "hintId":1,
+          "hint": "La respuesta es:",
+          "expression":"\\frac{\\sqrt{2}}{4}"
+        }
+      ],
+      "answers": [{ "answer": ["\\frac{\\sqrt{2}}{4}"], "nextStep": "-1" }, { "answer": ["\\frac{1}{2\\sqrt{2}}"], "nextStep": "-1" }],
+      "summary": "3) Se simplifica aplicando la propiedades correspondientes.",
+      "correctMsg": "Has realizado la simplificación correctamente.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3} \\longrightarrow \\frac{\\sqrt{2}}{4}"],
+      "matchingError": []
+    }
+  ]
+}

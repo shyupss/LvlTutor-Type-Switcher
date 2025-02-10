@@ -1,0 +1,287 @@
+{
+    "code": "polimult01",
+    "meta": {},
+    "text": "Multiplica los siguientes polinomios:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es x⁴+8x³+21x²+18x.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "x^{4}+8x^{3}+21x^{2}+18x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se realiza la primera multiplicación.",
+            "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(x^{3}+8x^{2}+21x+18)\\cdot (x+2)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "x^{4}+8x^{3}+21x^{2}+18x"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{4}+8x^{3}+21x^{2}+18x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2x^4+8x^3+21x^2+18x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación x³‧x"
+                },
+                {
+                    "id": 2,
+                    "expression": "x^4+16x^3+21x^2+18x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 8x²‧x"
+                },
+                {
+                    "id": 3,
+                    "expression": "x^4+8x^3+21x^2+18",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 18‧x"
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 2x³+16x²+42x+36.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2x^{3}+16x^{2}+42x+36"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se realiza la segunda multiplicación.",
+            "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(x^{3}+8x^{2}+21x+18)\\cdot (x+2)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "2x^{3}+16x^{2}+42x+36"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2x^{3}+16x^{2}+42x+36",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x^3+16x^2+42x+36",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación x³‧2"
+                },
+                {
+                    "id": 2,
+                    "expression": "2x^3+10x^2+42x+36",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 8x²‧2"
+                },
+                {
+                    "id": 3,
+                    "expression": "2x^3+16x^2+78",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 21x‧2"
+                }
+            ]
+        },
+        {
+            "KCs": [
+                "MultDist",
+                "AgrTer"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es x⁴+10x³+37x²+60x+36.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "x^{4}+10x^{3}+37x^{2}+60x+36"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) Se obtiene el resultado.",
+            "stepTitle": "Finalmente, reduce los términos semejantes",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(x^{4}+8x^{3}+21x^{2}+18x)+(2x^{3}+16x^{2}+42x+36)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "x^{4}+10x^{3}+37x^{2}+60x+36"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{4}+10x^{3}+37x^{2}+60x+36",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6x^4+10x^3+37x^2+60x+36",
+                    "correct": false,
+                    "feedbackMsg": "Solo hay un término con x⁴, ten cuidado al sumar."
+                },
+                {
+                    "id": 2,
+                    "expression": "x^4+10x^3+21x^2+60x+36",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 3,
+                    "expression": "x^4+10x^3+37x^2+18x+36",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                }
+            ]
+        }
+    ],
+    "title": "Álgebra de polinomios",
+    "finalAnswer": {
+        "KCs": [
+            "MultDist",
+            "AgrTer"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                "hintId": 0
+            },
+            {
+                "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es x⁴+10x³+37x²+60x+36.",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "x^{4}+10x^{3}+37x^{2}+60x+36"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) Se obtiene el resultado.",
+        "stepTitle": "Finalmente, reduce los términos semejantes",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(x^{4}+8x^{3}+21x^{2}+18x)+(2x^{3}+16x^{2}+42x+36)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "x^{4}+10x^{3}+37x^{2}+60x+36"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "x^{4}+10x^{3}+37x^{2}+60x+36",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "6x^4+10x^3+37x^2+60x+36",
+                "correct": false,
+                "feedbackMsg": "Solo hay un término con x⁴, ten cuidado al sumar."
+            },
+            {
+                "id": 2,
+                "expression": "x^4+10x^3+21x^2+60x+36",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 3,
+                "expression": "x^4+10x^3+37x^2+18x+36",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            }
+        ]
+    }
+}

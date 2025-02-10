@@ -1,0 +1,64 @@
+{
+    "code": "fracc13",
+    "title": "Fracción Algebraica",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Expresar como división o fracción",
+    "initialExpression":"",
+    "steps": [
+      {
+        "stepId": "0",
+        "expression": "\\frac{a}{b}:\\frac{c}{d}",
+        "stepTitle": "Expresa la siguiente división como una fracción",
+        "displayResult": [
+          "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+        ],
+        "KCs": [
+          "TransDivRac","IdenNumerador","IdenDenominador"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 1
+          },
+          {
+            "name": "b",
+            "value": 2
+          },
+          {
+            "name": "c",
+            "value": 3
+          },
+          {
+            "name": "d",
+            "value": 4
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "p:q se puede expresar como la fracción p/q (p es el numerador y q es el denominador)"
+          },
+          {
+            "hintId": 1,
+            "hint": "La solucion es ",
+            "expression": "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "correctMsg": "Has expresado la división como una fracción correctamente.",
+        "summary": "Para expresar una division p:q en una fracción se debe dividir p por q, donde p es el numerador y q el denominador"
+      }
+    ]
+  }
+  

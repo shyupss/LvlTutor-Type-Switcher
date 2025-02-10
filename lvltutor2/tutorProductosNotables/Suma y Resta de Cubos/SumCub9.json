@@ -1,0 +1,239 @@
+{
+    "code": "SumCub9",
+    "title": "\\text{Identifica y resuelve la siguiente expresión.} ",
+    "description": "",
+    "order_steps": {
+        "show": false,
+        "position": "final"
+    },
+    "type": "mo",
+    "meta": {},
+    "eqc": "e⁶ + x³b⁹",
+    "steps": [
+        {
+            "stepId": "0",
+            "left_text": "Identifica que producto notable es: ",
+            "input_labels": "",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{La diferencia de cubos} \\newline \\text{es de la forma a³-b³}",
+                    "answers": [
+                        4
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{Un cubo Binomio al cubo} \\newline \\text{es de la forma (a+b)³}",
+                    "answers": [
+                        1
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{Una suma por su dif-} \\newline \\text{erencia es de la forma} \\newline \\text{(a+b)(a-b)}",
+                    "answers": [
+                        2
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 3,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Binomio es de la} \\newline \\text{forma (a+b)²}",
+                    "answers": [
+                        5
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 4,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Trinomio es de la} \\newline \\text{forma (a+b+c)²}",
+                    "answers": [
+                        6
+                    ],
+                    "generic": false
+                }
+            ],
+            "type": "drag-text",
+            "KCs": [
+                ""
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "\\text{Binomio al Cubo.}"
+                },
+                {
+                    "id": 2,
+                    "value": "\\text{Suma por su diferencia.}"
+                },
+                {
+                    "id": 3,
+                    "value": "\\text{Suma de Cubos.}"
+                },
+                {
+                    "id": 4,
+                    "value": "\\text{Diferencia de Cubos.}"
+                },
+                {
+                    "id": 5,
+                    "value": "\\text{Cuadrado de Binomio.}"
+                },
+                {
+                    "id": 6,
+                    "value": "\\text{Cuadrado de un Trinomio.}"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "left_text": "Calcula la raíz cúbica del primer elemento.: ",
+            "input_labels": "∛(e⁶) = ",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{Recuerda que la raíz cú-} \\newline \\text{bica esta denotado de la} \\newline \\text{forma ∛}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{La raíz cúbica de un num-} \\newline \\text{ero o expresión algebraica,} \\newline \\text{será otro numero o} \\newline \\text{expresión que multi-} \\newline \\text{plicado 3 veces por si} \\newline \\text{mismo da como resultado} \\newline \\text{el número del cuál es} \\newline \\text{raíz cúbica.}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La raíz cúbica de } \\newline \\text{e⁶ es e²}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "input",
+            "KCs": [
+                "IdeTer3Pot"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "e⁶"
+                },
+                {
+                    "id": 2,
+                    "value": "e⁴"
+                },
+                {
+                    "id": 3,
+                    "value": "e²"
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "left_text": "Calcula la raíz cúbica del segundo elemento.: ",
+            "input_labels": "∛(x³b⁹) =",
+            "correct_answer": 2,
+            "hints": [
+                {
+                    "id": 1,
+                    "text": "\\text{Recuerda que la raíz cú-} \\newline \\text{bica esta denotado de la} \\newline \\text{forma ∛}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La raíz cúbica de un num-} \\newline \\text{ero o expresión algebraica,} \\newline \\text{será otro numero o} \\newline \\text{expresión que multi-} \\newline \\text{plicado 3 veces por si} \\newline \\text{mismo da como resultado} \\newline \\text{el número del cuál es} \\newline \\text{raíz cúbica.}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 3,
+                    "text": "\\text{La raíz cúbica de } \\newline \\text{x³b⁹ es xb³}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "input",
+            "KCs": [
+                "IdeTer3Pot",
+                "IdeTer3MultVar"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "x³b⁹"
+                },
+                {
+                    "id": 2,
+                    "value": "xb³"
+                },
+                {
+                    "id": 3,
+                    "value": "x²b⁶"
+                }
+            ]
+        },
+        {
+            "stepId": "3",
+            "left_text": "Calcula el resultado de la expresión utilizando su formula respectiva",
+            "input_labels": "(e⁶ + x³b⁹) = ",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{La forma de la expresión}\\newline \\text{es la multiplicacion de} \\newline \\text{un binomio con} \\newline \\text{ un trinomio.}",
+                    "answers": [
+                        4,
+                        5
+                    ],
+                    "generic": true
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{La expresión de una} \\newline \\text{diferencia de cubos esta } \\newline \\text{denotada de la forma: } \\newline \\text{a³-b³=(a-b)(a²+ab+b²)}",
+                    "answers": [
+                        1,
+                        2
+                    ],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La respuesta correcta es: } \\newline \\text{(e² + xb³)(e⁴ - e²xb³ + x²b⁶)}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "drag-fixed",
+            "KCs": [
+                "FactSumCubos"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "(e² - xb³)(e⁴ + e²xb³ + x²b⁶)"
+                },
+                {
+                    "id": 2,
+                    "value": "(e² + xb³)(e⁴ - xb³ + xb⁶)"
+                },
+                {
+                    "id": 3,
+                    "value": "(e² + xb³)(e⁴ - e²xb³ + x²b⁶)"
+                },
+                {
+                    "id": 4,
+                    "value": "(e² + xb³)(e⁴xb³ + x²b⁶)"
+                },
+                {
+                    "id": 5,
+                    "value": "(e² + xb³)(e⁴ - x²b⁶)"
+                }
+            ]
+        }
+    ]
+}

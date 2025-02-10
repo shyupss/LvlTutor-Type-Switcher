@@ -1,0 +1,321 @@
+{
+    "code": "polidiv01",
+    "meta": {},
+    "text": "Divide los siguientes polinomios mediante el algoritmo de Euclides:",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "KCs": [
+                "DivPrimTermPol"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda el coeficiente que acompaña a 5x³ y las propiedades de las potencias.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Encuentra un número que multiplicado por x² dé como resultado 5x³.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 5x.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "5x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se realiza la primera multiplicación.",
+            "stepTitle": "Divide 5x³ por x² para encontrar el primer término.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(5x^{3}-7x^{2}+4x+1):(x^{2}+x-1)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "5x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del polinomio por el término '5x'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 5x³+5x²-5x.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "5x^{3}+5x^{2}-5x"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se obtiene un polinomio resultante.",
+            "stepTitle": "Ahora multiplica todos los términos del polinomio divisor por el término que encontraste en el paso anterior.",
+            "correctMsg": "Has realizado la multiplicación.",
+            "expression": "(x^{2}+x-1)\\cdot (5x)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "5x^{3}+5x^{2}-5x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "AgrTer"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es -12x²+9x+1.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-12x^{2}+9x+1"
+                    ],
+                    "nextStep": "3"
+                }
+            ],
+            "summary": "4) Se restan los polinomios.",
+            "stepTitle": "Ahora, resta el polinomio dividendo por el polinomio obtenido en el paso anterior.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(5x^{3}-7x^{2}+4x+1)-(5x^{3}+5x^{2}-5x)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-12x^{2}+9x+1"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "DivPrimTermPol"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda el coeficiente que acompaña a -12x² y las propiedades de las potencias.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Encuentra un número que multiplicado por x² dé como resultado -12x².",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es -12.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "3",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-12"
+                    ],
+                    "nextStep": "4"
+                }
+            ],
+            "summary": "5) Se repite el proceso.",
+            "stepTitle": "Ahora, divide -12x² por x² para encontrar el segundo término.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(-12x^{2}+9x+1):(x²+x-1)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-12"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultDist"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes multiplicar todos los términos del polinomio por el término '-12'",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es -12x²-12x+12.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "4",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-12x^{2}-12x+12"
+                    ],
+                    "nextStep": "5"
+                }
+            ],
+            "summary": "6) Se obtiene un polinomio resultante.",
+            "stepTitle": "Ahora multiplica todos los términos del polinomio divisor por el término que encontraste en el paso anterior.",
+            "correctMsg": "Has realizado la multiplicación.",
+            "expression": "(x^{2}+x-1)\\cdot (-12)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-12x^{2}-12x+12"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "DivPrimTermPol",
+                "MultDist",
+                "AgrTer"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es 21x-11.",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "5",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "21x-11"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "7) Se restan los polinomios.",
+            "stepTitle": "Ahora, resta el polinomio dividendo por el polinomio obtenido en el paso anterior.",
+            "correctMsg": "Has encontrado el resultado.",
+            "expression": "(-12x^{2}+9x+1)-(-12x^{2}-12x+12)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "5x-12"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Álgebra de polinomios",
+    "finalAnswer": {
+        "KCs": [
+            "DivPrimTermPol",
+            "MultDist",
+            "AgrTer"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+                "hintId": 0
+            },
+            {
+                "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es 21x-11.",
+                "hintId": 2
+            }
+        ],
+        "stepId": "5",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "21x-11"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "7) Se restan los polinomios.",
+        "stepTitle": "Ahora, resta el polinomio dividendo por el polinomio obtenido en el paso anterior.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(-12x^{2}+9x+1)-(-12x^{2}-12x+12)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "5x-12"
+        ],
+        "matchingError": []
+    }
+}

@@ -1,0 +1,123 @@
+{
+    "code": "fracc10",
+    "title": "Fracción Algebraica",
+    "type": "lvltutor",
+    "meta": {},
+    "text": "Reduce la siguiente expresión",
+    "steps": [
+      {
+          "stepId": "0",
+          "expression": "\\frac{\\frac{a}{b}}{\\frac{c}{d}}",
+          "stepTitle": "Inviertiendo la fracción ubicada en el denominador, expresa como multiplicación de fracciones.",
+          "displayResult": [
+            "\\frac{a}{b}\\cdot\\frac{d}{c}"
+          ],
+          "KCs": [
+            "DivFrac", "IdenDenominador","IdenNumerador"
+          ],
+          "values": [
+            {
+              "name": "a",
+              "value": 1
+            },
+            {
+              "name": "b",
+              "value": 2
+            },
+            {
+              "name": "c",
+              "value": 3
+            },
+            {
+              "name": "d",
+              "value": 4
+            }
+          ],
+          "hints": [
+            {
+              "hintId": 0,
+              "hint": "Aplica la propiedad de división de fracciones."
+            },
+            {
+              "hintId": 1,
+              "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+            },
+            {
+              "hintId": 2,
+              "hint": "El resultado es (a/b) * (d/c)"
+            }
+          ],
+          "matchingError": [],
+          "validation":"evaluateAndCount",
+          "answers": [
+            {
+              "answer": [
+                "\\frac{a}{b}\\cdot\\frac{d}{c}"
+              ],
+              "nextStep": "1"
+            }
+          ],
+          "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+          "correctMsg": "Has invertido el denominador correctamente",
+          "summary": "1) Con el fin de transformar una fracción a multiplicación, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+      },
+			{
+				"stepId": "1",
+				"expression": "\\frac{a}{b}\\cdot\\frac{d}{c}", 
+				"stepTitle": "Multiplica las fracciones",
+				"displayResult": [
+					"\\frac{ad}{bc}"
+				],
+				"KCs": [
+					"MultFrac"
+				],
+				"values": [
+					{
+						"name": "a",
+						"value": 1
+					},
+					{
+						"name": "b",
+						"value": 2
+					},
+				  {
+						"name": "c",
+						"value": 3
+					},
+					{
+						"name": "d",
+						"value": 4
+					}
+				],
+				"hints": [
+					{
+						"hintId": 0,
+						"hint": "el numerador es ad"
+					},
+					{
+						"hintId": 1,
+						"hint": "el denominador es bc"
+					},
+          {
+						"hintId": 2,
+						"hint": "el resultado es: ad / bc"
+					}
+
+				],
+				"matchingError": [],
+        "validation":"evaluateAndCount",
+				"answers": [
+					{
+						"answer": [
+							"\\frac{ad}{bc}"
+						],
+						"nextStep": "-1"
+					}
+				],
+				"incorrectMsg": "Revisa que la expresión ingresada este correcta",
+				"correctMsg": "Has completado el ejercicio. Muy bien!!",
+				"summary": "2) Finalmente se aplica la multiplicación entre ambas fracciones."
+			}
+    ]
+}
+  

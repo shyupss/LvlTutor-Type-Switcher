@@ -1,0 +1,54 @@
+{
+  "code": "pot6",
+  "meta": {},
+  "title": "Reducción de expresión",
+  "text": "Reduce la siguiente expresión:",
+  "type": "lvltutor",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "KCs": ["MultExp"],
+      "expression": "\\left(a\\cdot{b}\\right)^{2}",
+      "stepTitle": "Aplica la propiedad potencia de un producto.",
+      "displayResult": [
+        "a^{2}\\cdot{b^{2}}"
+      ],
+      "values": [
+        { "name": "a", "value": 2 },
+        { "name": "b", "value": 4 }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La potencia de un producto indica que se debe aplicar el exponente a cada una de las potencias dentro del paréntesis"
+        },
+        {
+          "hintId": 1,
+          "hint": "Los factores del producto son a, b y el exponente es 2"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "a^{2}\\cdot{b^{2}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "a^{2}\\cdot{b^{2}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+      "summary": "Se aplicó la propiedad de potencia de un producto donde cada factor del producto se eleva al exponente de la potencia"
+    }
+  ]
+}
+
+
+  

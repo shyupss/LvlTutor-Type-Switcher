@@ -1,0 +1,94 @@
+{
+  "code": "potNum15", 
+  "meta": {},
+  "title": "Cociente de potencias de igual base.",
+  "text": "Simplifica la siguiente expresión aplicando propiedades de potencias.",
+  "initialExpression": "\\frac{(2^{3} \\cdot 5^{2})^{2} \\cdot 3^{4}}   {6^{2} \\cdot 5^{3}}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Aplicando la propiedad de potencias de potencias, escribe el resultado de desarrollar sólo el paréntesis.",
+      "expression": "\\left( 2^{3} \\cdot 5^{2} \\right)^{2}",
+      "KCs": ["MultExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado sería de la forma:",
+          "expression": "2^{}\\cdot 5^{}"
+        },
+        {
+          "hintId": 2,
+          "hint": "La respuesta es:",
+          "expression":"2^{6}\\cdot 5^{4}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{6} \\cdot 5^{4}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso como son dos términos los cuales los eleva el exponente fuera del paréntesis, se aplica la propiedad por separado para cada término. Para la base 2, sus exponentes son 3 y 2 y la multiplicación de estos es 6. Para la base 5, sus exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+      "correctMsg": "Has contestado correctamente aplicando la propiedad de potencias de una potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{3 \\cdot 2}  \\cdot 5^{2 \\cdot 2}= 2^{6} \\cdot 5^{4}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Expresa el 6² como un producto de potencias de numeros primos.",
+      "expression": "\\frac{2^{6} \\cdot 5^{4} \\cdot 3^{4} }{\\textcolor{BlueViolet}{6} ^{2} \\cdot 5^{4}}",
+      "KCs": ["FacPot"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda los numeros primos son: ",
+          "expression": "2, 3, 5, 7, 11..."
+        },
+        {
+          "hintId": 1,
+          "hint": "El resultado quedaría de la forma: ",
+          "expression": "\\underline{}^{} \\cdot \\underline{}^{}"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression":"2^{2} \\cdot 3^{2}"
+        }
+      ],
+      "answers": [{ "answer": ["(2 \\cdot 3)^{2}"], "nextStep": "2" }, { "answer": ["2^{2} \\cdot 3^{2}"], "nextStep": "2"}],
+      "summary": "2) Se factoriza el 6 del denominador por sus factores primos y el exponente que estaba en el número 6, ahora debe escribirse en sus factores primos.",
+      "correctMsg": "Has contestado correctamente factorizando el 6 en sus factores primos",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["6^{2} = (2 \\cdot 3)^{2}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Simplifica la expresión aplicando la propiedad de cociente de potencias de igual base.",
+      "expression": "\\frac{2^{6} \\cdot 5^{4} \\cdot 3^{4}}{2^{2} \\cdot 3^{2} \\cdot 5^{3}}",
+      "KCs": ["SumResExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad del cociente de potencias de igual base dice: ",
+          "expression": "\\frac{a^{m}}{a^{n}} = a^{m-n}"
+        },
+        {
+          "hintId": 1,
+          "hint": "El resultado es: ",
+          "expression": "2^{4} \\cdot 5 \\cdot 3^{2}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{4} \\cdot 5 \\cdot 3^{2}"], "nextStep": "-1" }, { "answer": ["2^{4} \\cdot 5^{1} \\cdot 3^{2}"], "nextStep": "-1"},{ "answer": ["720"], "nextStep": "-1"}],
+      "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. Para las potencias de base 2, el exponente del numerador es 6 y el del denominador es 2, por lo tanto la resta de estos es 4. Para las potencias de base 5, el exponente del numerador es 4 y el del denominador es 3, y la resta de estos es 1. Para las potencias de base 3, el exponente del numerador es 4 y el del denominador es 2, por lo tanto la resta de estos es 2.",
+      "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{6-2} \\cdot 5^{4-3} \\cdot 3^{4-2} = 2^{4} \\cdot 5 \\cdot 3^{2}"],
+      "matchingError": []
+    }
+  ]
+}

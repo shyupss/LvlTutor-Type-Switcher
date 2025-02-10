@@ -1,0 +1,201 @@
+{
+    "code": "DifCub15",
+    "title": "\\text{Identifica y resuelve la siguiente expresión.} ",
+    "description": "",
+    "order_steps": {
+        "show": false,
+        "position": "final"
+    },
+    "type": "mo",
+    "meta": {},
+    "eqc": "(10m³-4k⁴)(100m⁶+40m³k⁴+16k⁸)",
+    "steps": [
+        {
+            "stepId": "0",
+            "left_text": "Realiza la multiplicación de paréntesis.",
+            "right_text": "Multiplicación de paréntesis",
+            "input_labels": "",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{Recuerda aplicar bien la} \\newline \\text{propiedad distributiva} \\newline \\text{sobre la expresion,} \\newline \\text{multiplicando termino} \\newline \\text{a termino.}",
+                    "answers": [
+                        2,
+                        6
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{Recuerda que al multi-} \\newline \\text{plicar potencias con} \\newline \\text{misma base y distinto} \\newline \\text{exponente, la base se} \\newline \\text{mantiene y los exponentes} \\newline \\text{se suman.}",
+                    "answers": [
+                        5
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{Ten mucho cuidado con} \\newline \\text{los signos durante la} \\newline \\text{multiplicación de} \\newline \\text{términos}",
+                    "answers": [
+                        4,
+                        1
+                    ],
+                    "generic": false
+                }
+            ],
+            "type": "drag-fixed",
+            "KCs": [
+                "MultDist"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "(1000m⁹ - 400m⁶k⁴ - 160m³k⁸ - 400m⁶k⁴ - 160m³k⁸ - 64k¹²)"
+                },
+                {
+                    "id": 2,
+                    "value": "(1000m⁹ + 400m⁶k⁴ + 160m³k⁸)"
+                },
+                {
+                    "id": 3,
+                    "value": "(1000m⁹ + 400m⁶k⁴ + 160m³k⁸ - 400m⁶k⁴ - 160m³k⁸ - 64k¹²)"
+                },
+                {
+                    "id": 4,
+                    "value": "(1000m⁹ + 400m⁶k⁴ - 160m³k⁸ + 400m⁶k⁴ - 160m³k⁸ + 64k¹²)"
+                },
+                {
+                    "id": 5,
+                    "value": "(1000m⁹ + 400mk⁴ + 160m³k - 400mk⁴ - 160m³k - 64k¹²)"
+                },
+                {
+                    "id": 6,
+                    "value": "(-400m⁶k⁴ - 160m³k⁸ - 64k¹²)"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "left_text": "Reduzca la expresión resultante de la multiplicación: ",
+            "input_labels": " ",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{Identifica términos} \\newline \\text{semejantes y agrupalos} \\newline \\text{para poder reducirlos} \\newline \\text{de mejor manera}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{Ten cuidado con} \\newline \\text{los signos dentro de} \\newline \\text{la expresion}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La respuesta es } \\newline \\text{1000m⁹-64k¹²}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "input",
+            "KCs": [
+                "ReducResCubos"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "x⁴-n³"
+                },
+                {
+                    "id": 2,
+                    "value": "x⁸-27n⁶"
+                },
+                {
+                    "id": 3,
+                    "value": "1000m^9-64k^12"
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "left_text": "Identifica que producto notable es: ",
+            "input_labels": "(1000m⁹-64k¹²) = ",
+            "correct_answer": 4,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{La suma de cubos} \\newline \\text{es de la forma a³-b³}",
+                    "answers": [
+                        5
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{Un Binomio al cubo} \\newline \\text{es de la forma (a+b)³}",
+                    "answers": [
+                        3
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{Una suma por su dif-} \\newline \\text{erencia es de la forma} \\newline \\text{(a+b)(a-b)}",
+                    "answers": [
+                        1
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 3,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Binomio es de la} \\newline \\text{forma (a+b)²}",
+                    "answers": [
+                        6
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 4,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Trinomio es de la} \\newline \\text{forma (a+b+c)²}",
+                    "answers": [
+                        2
+                    ],
+                    "generic": false
+                }
+            ],
+            "type": "drag-text",
+            "KCs": [
+                ""
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "\\text{Suma por su diferencia.}"
+                },
+                {
+                    "id": 2,
+                    "value": "\\text{Cuadrado de Trinomio.}"
+                },
+                {
+                    "id": 3,
+                    "value": "\\text{Binomio al Cubo.}"
+                },
+                {
+                    "id": 4,
+                    "value": "\\text{Diferencia de Cubos.}"
+                },
+                {
+                    "id": 5,
+                    "value": "\\text{Suma de cubos.}"
+                },
+                {
+                    "id": 6,
+                    "value": "\\text{Cuadrado de Binomio.}"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "code": "pnsd16",
+    "meta": {},
+    "text": "Obtén 2 binomios de la forma 'suma por diferencia' que equivalgan a la siguiente expresión",
+    "type": "lvltutor",
+    "initialExpression": "36x²-169",
+    "steps": [
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+            "hint": "Para obtener el primer término debes utilizar el término 36x².",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 36x² para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "6x",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["6x"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de suma por diferencia 'a² - b² = (a + b)(a - b)', para obtener el primer término se debe calcular la raíz cuadrada de 36x².",
+        "stepTitle": "Encuentra el primer término de suma por diferencia.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "36x^2-169 = (□ + □)(□ - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["6x"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+            "hint": "Para obtener el segundo término debes utilizar el término 169.",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 169 para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "13",
+            "hintId": 2
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["13"], "nextStep": "-1" }],
+        "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada de 169.",
+        "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "36x^2-169 = (6x + □)(6x - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["13"],
+        "matchingError": []
+      }
+    ],
+    "title": "Suma por diferencia"
+  }

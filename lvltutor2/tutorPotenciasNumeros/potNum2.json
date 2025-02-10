@@ -1,0 +1,59 @@
+{
+    "code": "potNum2",
+    "meta": {},
+    "title": "Producto de potencias de igual base.",
+    "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 8",
+            "expression": "8^{3} \\cdot 8",
+            "KCs": [
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Recuerda que cuando un numero no tiene un exponente visible, este quiere decir que esta elevado a 1. Para este caso: 8¹"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La propiedad del producto de potencias de igual base dice: ",
+                    "expression": "a^{m} \\cdot a^{n} = a^{m + n}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "La respuesta es :",
+                    "expression": "8^{3+1} = 8^{4}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "8^{4}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "4096"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 8 y los exponentes son 3 y 1.",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad del producto potencias de igual base",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "8^{3+1} = 8^{4}"
+            ],
+            "matchingError": []
+        }
+    ]
+}

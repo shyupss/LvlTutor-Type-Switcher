@@ -1,0 +1,149 @@
+{
+    "code": "pnsd09",
+    "meta": {},
+    "text": "Utilizando la identidad de 'suma por diferencia' (a + b)(a - b) = a² - b², desarrolla la siguiente expresión:",
+    "type": "lvltutor",
+    "initialExpression": "(\\frac{9}{8}x+4)(\\frac{9}{8}x-4)",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2",
+                "SDCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que se eleva al cuadrado la variable y su coeficiente.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "En este caso: ",
+                    "expression": "a=\\frac{9}{8}x",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{81}{64}x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{81}{64}x^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de suma por diferencia (a + b)(a - b) = a² - b², el primer término \"a²\" se obtiene al elevar al cuadrado el primer término dentro del paréntesis.",
+            "stepTitle": "Encuentra el primer término de la expresión final.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(\\frac{9}{8}x+4)(\\frac{9}{8}x-4) = □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{81}{64}x^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "SDCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que elevar al cuadrado es multiplicar 2 veces el mismo número.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "En suma por diferencia, el segundo término de la expresión final siempre tiene signo negativo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-16",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-16"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) En la identidad de suma por diferencia, el término \"b²\" corresponde al cuadrado del segundo término dentro del paréntesis. Como la identidad lo define como \"-b²\", el resultado es negativo.",
+            "stepTitle": "Encuentra el segundo término de la expresión final.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(\\frac{9}{8}x+4)(\\frac{9}{8}x-4) = \\frac{81}{64}x² + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-16"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Suma por diferencia",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "SDCoefFrac"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que elevar al cuadrado es multiplicar 2 veces el mismo número.",
+                "hintId": 0
+            },
+            {
+                "hint": "En suma por diferencia, el segundo término de la expresión final siempre tiene signo negativo.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "-16",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-16"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) En la identidad de suma por diferencia, el término \"b²\" corresponde al cuadrado del segundo término dentro del paréntesis. Como la identidad lo define como \"-b²\", el resultado es negativo.",
+        "stepTitle": "Encuentra el segundo término de la expresión final.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "(\\frac{9}{8}x+4)(\\frac{9}{8}x-4) = \\frac{81}{64}x² + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "-16"
+        ],
+        "matchingError": []
+    }
+}

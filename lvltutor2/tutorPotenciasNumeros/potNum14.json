@@ -1,0 +1,148 @@
+{
+    "code": "potNum14",
+    "meta": {},
+    "title": "Propiedades de potencias de igual base.",
+    "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+    "initialExpression": "\\left( \\frac{2^{5}}{2^{3}} \\right)^{2}",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa la fracción marcada como potencia de 2.",
+            "expression": "\\frac{2^{5}}{2^{3}}",
+            "KCs": [
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del cociente de potencias de igual base dice: ",
+                    "expression": "\\frac{a^{m}}{a^{n}} = a^{m-n}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es :",
+                    "expression": "2^{5-3} = 2^{2}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2^{2}"
+                    ],
+                    "nextStep": "1"
+                },
+                {
+                    "answer": [
+                        "4"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 2, el exponente del numerador es 5 y el del denominador es 3, y la resta de estos es 2",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "2^{5-3} = 2^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Simplifica usando la propiedad de potencia de una potencia y expresa como potencia de 2.",
+            "expression": "(2^{2})^{2}",
+            "KCs": [
+                "SumResExp",
+                "MultExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es :",
+                    "expression": "2^{2 \\cdot 2} = 2^{4}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2^{4}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "16"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "2^{2 \\cdot 2} = 2^{4}"
+            ],
+            "matchingError": []
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "stepTitle": "Simplifica usando la propiedad de potencia de una potencia y expresa como potencia de 2.",
+        "expression": "(2^{2})^{2}",
+        "KCs": [
+            "SumResExp",
+            "MultExp"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+            },
+            {
+                "hintId": 1,
+                "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+            },
+            {
+                "hintId": 2,
+                "hint": "La respuesta es :",
+                "expression": "2^{2 \\cdot 2} = 2^{4}"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "2^{4}"
+                ],
+                "nextStep": "-1"
+            },
+            {
+                "answer": [
+                    "16"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+        "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no es correcta.",
+        "displayResult": [
+            "2^{2 \\cdot 2} = 2^{4}"
+        ],
+        "matchingError": []
+    }
+}

@@ -1,0 +1,59 @@
+{
+  "code": "raNum20", 
+  "meta": {},
+  "title": "Racionalización",
+  "text": "Racionaliza la siguiente expresión.",
+  "initialExpression":"\\frac{3}{\\sqrt{5} - \\sqrt{2}}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Identifique y escriba el conjugado del denominador",
+      "expression": "\\frac{3}{\\sqrt{5} - \\sqrt{2}}",
+      "KCs": ["DetConj"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+          "expression":"\\left( a + b \\right) \\longrightarrow  \\left( a - b \\right)"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\sqrt{5} + \\sqrt{2}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{5} + \\sqrt{2}"], "nextStep": "-1" }],
+      "summary": "1) Se identifica el conjugado de la expresión.",
+      "correctMsg": "Has identificado correctamente el conjugado de la fracción.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt{5} - \\sqrt{2}  \\longrightarrow \\sqrt{5} + \\sqrt{2}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+      "expression": "\\frac{3}{\\sqrt{5} - \\sqrt{2}} \\cdot \\frac{\\left( \\sqrt{5} + \\sqrt{2}\\right)}{\\left( \\sqrt{5} + \\sqrt{2}\\right)}",
+      "KCs": ["MultFrac","SumDif"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\sqrt{5} + \\sqrt{2}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt{5} + \\sqrt{2}"], "nextStep": "-1" }],
+      "summary": "2) Se hace la racionalización de la expresión.",
+      "correctMsg": "Has racionalizado correctamente la expresion.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\frac{3}{\\sqrt{5} - \\sqrt{2}} \\cdot \\frac{\\left( \\sqrt{5} + \\sqrt{2}\\right)}{\\left( \\sqrt{5} + \\sqrt{2}\\right)} \\longrightarrow \\sqrt{5} + \\sqrt{2}"],
+      "matchingError": []
+    }
+  ]
+}

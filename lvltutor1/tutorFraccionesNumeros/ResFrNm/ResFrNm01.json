@@ -1,0 +1,94 @@
+{
+    "code": "ResFrNm01",
+    "meta": {},
+    "text": "Realiza la siguiente resta de fracciones:",
+    "initialExpression": "\\frac{3}{4} - \\frac{2}{4}",
+    "type": "lvltutor",
+    "steps": [
+      {
+        "KCs": ["SRFrac", "IdenDenominador"],
+        "hints": [
+          { "hintId": 0,
+            "hint": "Recuerda que al restar fracciones con denominadores iguales, la fracción resultante conservará el mismo denominador que las fracciones del ejercicio."
+          },
+          { "hintId": 1,
+            "hint": "El resultado del denominador es:",
+            "expression": "4"
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["4"], "nextStep": "1" }],
+        "summary": "1) Primero, identificamos cuál será el denominador de la fracción resultante. Es importante recordar que si ya contamos con fracciones que comparten el mismo denominador, este se conservará en la fracción resultante.",
+        "stepTitle": "Identifica el valor del denominador de la fracción resultante.",
+        "correctMsg": "Has identificado el valor del denominador de la fracción resultante.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["4"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["SRFrac", "IdenNumerador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "No olvides que al restar fracciones con denominadores iguales, el valor del numerador en la fracción resultante se obtiene al restar todos los numeradores de las fracciones que se están restando."
+          },
+          {
+            "hintId": 1,
+            "hint": "El resultado del numerador es:",
+            "expression": "1"
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["1"], "nextStep": "-1" }],
+        "summary": "2) Para calcular el valor del numerador de la fracción resultante, restamos todos los numeradores correspondientes de las fracciones que estamos restando.",
+        "stepTitle": "Calcula el valor del numerador de la fracción resultante.",
+        "correctMsg": "Has calculado el valor del numerador de la fracción resultante.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["1"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["ArFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que en una fracción, el numerador se ubica en la parte superior y el denominador en la parte inferior."
+          },
+          {
+            "hintId": 1,
+            "hint": "En este ejercicio no hay que simplificar."
+          },
+  
+          {
+            "hintId": 2,
+            "hint": "El resultado es:",
+            "expression": "\\frac{1}{4}"
+          }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{1}{4}"], "nextStep": "-1" }],
+        "summary": "3) Al construir la fracción, recordemos que el numerador se coloca en la parte superior y el denominador en la parte inferior. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Escribe el resultado de la resta de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Obtuviste el resultado de la resta.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{1}{4}"],
+        "matchingError": []
+      }
+    ],
+    "title": "Resta de fracciones"
+  }  

@@ -1,0 +1,70 @@
+{
+    "code": "pnc2b14",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "64x²+48x+9",
+    "steps": [
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+          "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+          "hintId": 0
+        },
+          {
+            "hint": "Para obtener el primer término debes calcular la raíz cuadrada de 64x².",
+            "hintId": 1
+          },
+          { "hint": "El resultado es: ",
+            "expression":"8x",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["8x"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² + 2ab + b² = (a + b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada de \"64x²\".",
+        "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "64x^{2}+48x+9 = (□ + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["8x"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+          "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+          "hintId": 0
+          },
+          {
+            "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 9.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es: ",
+            "expression":"3",
+            "hintId": 2
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["3"], "nextStep": "-1" }],
+        "summary": "2) Según la identidad de cuadrado de binomio, el término \"b\" se obtiene al calcular la raíz cuadrada de \"9\". ",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "64x^{2}+48x+9 = (8x + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["3"],
+        "matchingError": []
+      }
+    ],
+    "title": "Cuadrado de binomio"
+  }

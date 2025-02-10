@@ -1,0 +1,240 @@
+{
+    "code": "DifCub6",
+    "title": "\\text{Identifica y resuelve la siguiente expresión.} ",
+    "description": "",
+    "order_steps": {
+        "show": false,
+        "position": "final"
+    },
+    "type": "mo",
+    "meta": {},
+    "eqc": "\\frac{1}{8}{x³} - \\frac{1}{27}{b³}",
+    "steps": [
+        {
+            "stepId": "0",
+            "left_text": "Identifica que producto notable es: ",
+            "input_labels": "",
+            "correct_answer": 2,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{Una suma de cubos} \\newline \\text{es de la forma a³+b³}",
+                    "answers": [
+                        1
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{Un cubo Binomio al cubo} \\newline \\text{es de la forma (a+b)³}",
+                    "answers": [
+                        4
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{Una suma por su dif-} \\newline \\text{erencia es de la forma} \\newline \\text{(a+b)(a-b)}",
+                    "answers": [
+                        6
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 3,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Binomio es de la} \\newline \\text{forma (a+b)²}",
+                    "answers": [
+                        5
+                    ],
+                    "generic": false
+                },
+                {
+                    "id": 4,
+                    "text": "\\text{Un Cuadrado de} \\newline \\text{Trinomio es de la} \\newline \\text{forma (a+b+c)²}",
+                    "answers": [
+                        3
+                    ],
+                    "generic": false
+                }
+            ],
+            "type": "drag-text",
+            "KCs": [
+                ""
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "\\text{Suma de cubos.}"
+                },
+                {
+                    "id": 2,
+                    "value": "\\text{Diferencia de cubos.}"
+                },
+                {
+                    "id": 3,
+                    "value": "\\text{Cuadrado de un Trinomio.}"
+                },
+                {
+                    "id": 4,
+                    "value": "\\text{Binomio al Cubo.}"
+                },
+                {
+                    "id": 5,
+                    "value": "\\text{Cuadrado de Binomio.}"
+                },
+                {
+                    "id": 6,
+                    "value": "\\text{Suma por su diferencia.}"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "left_text": "Calcula la raíz cúbica del primer elemento.: ",
+            "input_labels": "\\frac{1}{8}{x³}",
+            "correct_answer": 3,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{Recuerda que la raíz cú-} \\newline \\text{bica esta denotado de la} \\newline \\text{forma ∛}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{La raíz cúbica de un num-} \\newline \\text{ero o expresión algebraica,} \\newline \\text{será otro numero o} \\newline \\text{expresión que multi-} \\newline \\text{plicado 3 veces por si} \\newline \\text{mismo da como resultado} \\newline \\text{el número del cuál es} \\newline \\text{raíz cúbica.}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La raíz cúbica de } \\newline \\text{\\frac{1}{8}{x³} es \\frac{1}{2}{x}}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "input",
+            "KCs": [
+                "IdeTer3Frac",
+                "IdeTer3MultVar"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "\\frac{1}{8}{x³}"
+                },
+                {
+                    "id": 2,
+                    "value": "\\frac{1}{4}{x²}"
+                },
+                {
+                    "id": 3,
+                    "value": "(1/2)x"
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "left_text": "Calcula la raíz cúbica del segundo elemento.: ",
+            "input_labels": "\\frac{1}{27}{b³}",
+            "correct_answer": 2,
+            "hints": [
+                {
+                    "id": 1,
+                    "text": "\\text{Recuerda que la raíz cú-} \\newline \\text{bica esta denotado de la} \\newline \\text{forma ∛}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La raíz cúbica de un num-} \\newline \\text{ero o expresión algebraica,} \\newline \\text{será otro numero o} \\newline \\text{expresión que multi-} \\newline \\text{plicado 3 veces por si} \\newline \\text{mismo da como resultado} \\newline \\text{el número del cuál es} \\newline \\text{raíz cúbica.}",
+                    "answers": [],
+                    "generic": true
+                },
+                {
+                    "id": 3,
+                    "text": "\\text{La raíz cúbica de } \\newline \\text{\\frac{1}{27}{b³} es \\frac{1}{3}{b}}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "input",
+            "KCs": [
+                "IdeTer3Frac",
+                "IdeTer3MultVar"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "\\frac{1}{27}{b³}"
+                },
+                {
+                    "id": 2,
+                    "value": "(1/3)b"
+                },
+                {
+                    "id": 3,
+                    "value": "\\frac{1}{3}{b²}"
+                }
+            ]
+        },
+        {
+            "stepId": "3",
+            "left_text": "Calcula el resultado de la expresión utilizando su formula respectiva",
+            "input_labels": "\\frac{1}{8}{x³} - \\frac{1}{27}{b³}",
+            "correct_answer": 1,
+            "hints": [
+                {
+                    "id": 0,
+                    "text": "\\text{La forma de la expresión}\\newline \\text{es la multiplicacion de} \\newline \\text{un binomio con} \\newline \\text{ un trinomio.}",
+                    "answers": [
+                        2,
+                        5
+                    ],
+                    "generic": true
+                },
+                {
+                    "id": 1,
+                    "text": "\\text{La expresión de una} \\newline \\text{diferencia de cubos esta } \\newline \\text{denotada de la forma: } \\newline \\text{a³-b³=(a-b)(a²+ab+b²)}",
+                    "answers": [
+                        4,
+                        3
+                    ],
+                    "generic": true
+                },
+                {
+                    "id": 2,
+                    "text": "\\text{La respuesta correcta es: } \\newline \\text{(\\frac{1}{2}{x} - \\frac{1}{3}{b})(\\frac{1}{4}{x²} + \\frac{1}{6}{xb} + \\frac{1}{9}{b²})}",
+                    "answers": [],
+                    "generic": false
+                }
+            ],
+            "type": "drag-fixed",
+            "KCs": [
+                "FactSRCubosFrac"
+            ],
+            "answers": [
+                {
+                    "id": 1,
+                    "value": "(\\frac{1}{2}{x} - \\frac{1}{3}{b})(\\frac{1}{4}{x²} + \\frac{1}{6}{xb} + \\frac{1}{9}{b²})"
+                },
+                {
+                    "id": 2,
+                    "value": "(\\frac{1}{2}{x} + \\frac{1}{3}{b})(\\frac{1}{4}{x²} - \\frac{1}{9}{b²})"
+                },
+                {
+                    "id": 3,
+                    "value": "(\\frac{1}{2}{x} + \\frac{1}{3}{b})(\\frac{1}{4}{x²} - \\frac{1}{6}{xb} + \\frac{1}{9}{b²})"
+                },
+                {
+                    "id": 4,
+                    "value": "(\\frac{1}{2}{x} - \\frac{1}{3}{b})(\\frac{1}{2}{x} + \\frac{1}{6}{xb} + \\frac{1}{3}{b})"
+                },
+                {
+                    "id": 5,
+                    "value": "(\\frac{1}{2}{x} - \\frac{1}{3}{b})(\\frac{1}{4}{x²} + \\frac{1}{9}{b²})"
+                }
+            ]
+        }
+    ]
+}

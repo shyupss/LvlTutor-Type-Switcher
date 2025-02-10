@@ -1,0 +1,74 @@
+{
+    "code": "pnsd15",
+    "meta": {},
+    "text": "Obtén 2 binomios de la forma 'suma por diferencia' que equivalgan a la siguiente expresión",
+    "type": "lvltutor",
+    "initialExpression": "64x⁴-25y²",
+    "steps": [
+      {
+        "KCs": ["IdeTer2MultVar"],
+        "hints": [
+          {
+            "hint": "Para obtener el primer término debes utilizar el término 64x⁴.",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 64x⁴ para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "8x^{2}",
+            "hintId": 2
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["8x^{2}"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de suma por diferencia 'a² - b² = (a + b)(a - b)', para obtener el primer término se debe calcular la raíz cuadrada de 64x⁴.",
+        "stepTitle": "Encuentra el primer término de suma por diferencia.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "64x^{4}-25y^{2} = (□ + □)(□ - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["8x^{2}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2MultVar"],
+        "hints": [
+          {
+            "hint": "Para obtener el segundo término debes utilizar el término 25y².",
+            "hintId": 0
+          },
+          {
+            "hint": "Calcula la raíz de 25y² para obtener el término.",
+            "hintId": 1
+          },
+          { 
+            "hint": "El resultado es:",
+            "expression": "5y",
+            "hintId": 2
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["5y"], "nextStep": "-1" }],
+        "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada de 25y².",
+        "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "64x^{4}-25y^{2} = (8x² + □)(8x² - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["5y"],
+        "matchingError": []
+      }
+    ],
+    "title": "Suma por diferencia"
+  }

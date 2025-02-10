@@ -1,0 +1,171 @@
+{
+    "code": "polidiv03",
+    "meta": {},
+    "text": "Divide los siguientes polinomios mediante el algoritmo de Euclides:",
+    "type": "lvltutor",
+    "steps": [
+      {
+        "KCs": ["DivPrimTermPol"],
+        "hints": [
+          {
+            "hint": "Recuerda el coeficiente que acompaña a x² y las propiedades de las potencias.",
+            "hintId": 0
+          },
+          {
+            "hint": "Encuentra un número que multiplicado por x dé como resultado x².",
+            "hintId": 1
+          },
+          { "hint": "El resultado es x.", "hintId": 2 }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["x"], "nextStep": "1" }],
+        "summary": "1) Se realiza la primera multiplicación.",
+        "stepTitle": "Primero, divide x² por x para encontrar el primer término.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "(x^{2}-1):(x-1)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["x"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["MultDist"],
+        "hints": [
+          {
+            "hint": "Debes multiplicar todos los términos del polinomio por el término 'x'",
+            "hintId": 0
+          },
+          {
+            "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es x²-x.", "hintId": 2 }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["x^{2}-x"], "nextStep": "2" }],
+        "summary": "2) Se obtiene un polinomio resultante.",
+        "stepTitle": "Ahora multiplica todos los términos del polinomio divisor por el término que encontraste en el paso anterior.",
+        "correctMsg": "Has realizado la multiplicación.",
+        "expression": "(x-1)\\cdot (x)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["x^{2}-x"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["AgrTer"],
+        "hints": [
+          {
+            "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+            "hintId": 0
+          },
+          {
+            "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es -x+1.", "hintId": 2 }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["-x+1"], "nextStep": "3" }],
+        "summary": "4) Se restan los polinomios.",
+        "stepTitle": "Ahora, resta el polinomio dividendo por el polinomio obtenido en el paso anterior.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(x^{2}-1)-(x^{2}-x)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["-x+1"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["DivPrimTermPol"],
+        "hints": [
+            {
+                "hint": "Recuerda el coeficiente que acompaña a -x y las propiedades de las potencias.",
+                "hintId": 0
+              },
+              {
+                "hint": "Encuentra un número que multiplicado por x dé como resultado -x",
+                "hintId": 1
+              },
+              { "hint": "El resultado es -1.", "hintId": 2 }
+        ],
+        "stepId": "3",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["-1"], "nextStep": "4" }],
+        "summary": "5) Se repite el proceso.",
+        "stepTitle": "Ahora, divide -x por x para encontrar el segundo término.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(-x+1):(x-1)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["-1"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["MultDist"],
+        "hints": [
+          {
+            "hint": "Debes multiplicar todos los términos del polinomio por el término '-1'",
+            "hintId": 0
+          },
+          {
+            "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es -x+1.", "hintId": 2 }
+        ],
+        "stepId": "4",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["-x+1"], "nextStep": "5" }],
+        "summary": "6) Se obtiene un polinomio resultante.",
+        "stepTitle": "Ahora multiplica todos los términos del polinomio divisor por el término que encontraste en el paso anterior.",
+        "correctMsg": "Has realizado la multiplicación.",
+        "expression": "(x-1)\\cdot (-1)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["-x+1"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["AgrTer"],
+        "hints": [
+          {
+            "hint": "Recuerda que debes agrupar los términos semejantes y sumarlos o restarlos según corresponda.",
+            "hintId": 0
+          },
+          {
+            "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es 0.", "hintId": 2 }
+        ],
+        "stepId": "5",
+        "values": [
+          { "name": "x", "value": 1 }
+        ],
+        "answers": [{ "answer": ["0"], "nextStep": "-1" }],
+        "summary": "7) Se restan los polinomios.",
+        "stepTitle": "Ahora, resta el polinomio dividendo por el polinomio obtenido en el paso anterior.",
+        "correctMsg": "Has encontrado el resultado.",
+        "expression": "(-x+1)-(-x+1)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["x-1"],
+        "matchingError": []
+      }
+    ],
+    "title": "Álgebra de polinomios"
+  }

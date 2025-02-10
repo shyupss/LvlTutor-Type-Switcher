@@ -1,0 +1,76 @@
+{
+    "code": "pot26",
+    "meta": {},
+    "title": "Notación científica",
+    "text": "Escribe la siguiente expresión en notación científica:",
+    "type": "lvltutor",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "KCs": [
+                "NC",
+                "NCE"
+            ],
+            "expression": "3500000",
+            "stepTitle": "Escribe el siguiente número en notación científica.",
+            "displayResult": [
+                "3.5\\cdot{10^{6}}"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Mueve la coma decimal hacia la izquierda o derecha para que solo quede un dígito diferente de cero a la izquierda de la coma"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Escribe el número como un número decimal entre 1 y 10, multiplicado por una potencia de 10 cuyo exponente será igual al número de lugares que se movió la coma. Si se movió hacia la derecha, la potencia es negativa, si se movió hacia la izquierda, la potencia es positiva. La expresión debe quedar de la siguiente manera",
+                    "expression": "a\\cdot{10^{n}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "3.5\\cdot{10^{6}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "3.5\\cdot{10^{6}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+            "summary": "Se mueve la coma decimal 6 veces hacia la izquierda, quedando como número decimal 3.5, luego esto se multiplica por una potencia de 10 cuyo exponente es 6 ",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3.5\\cdot{10^{6}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3.5\\cdot 10^5",
+                    "correct": false,
+                    "feedbackMsg": "Para encontrar el exponente de 10, cuenta la cantidad de posiciones que el separador decimal se movió a la izquierda."
+                },
+                {
+                    "id": 2,
+                    "expression": "35\\cdot10^5",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                },
+                {
+                    "id": 3,
+                    "expression": "0.35\\cdot 10^7",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                }
+            ]
+        }
+    ]
+}

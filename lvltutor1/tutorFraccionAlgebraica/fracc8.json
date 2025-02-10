@@ -1,0 +1,127 @@
+{
+  "code": "fracc8",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Multiplique las siguientes fracciones:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{ab}{cd}\\cdot\\frac{de}{ca}",
+      "stepTitle": "Realice la multiplicación de los numeradores y denominadores sin simplificar términos aun",
+      "displayResult": [  
+        "\\frac{ab*de}{cd*ca}"
+      ],
+      "KCs": [
+        "MultFrac", "IdenNumerador", "IdenDenominador"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "El resultado de multiplicar los numeradores es: (ab * de)"
+        },
+        {
+          "hintId": 1,
+          "hint": "El resultado de multiplicar los denominadores es: (cd * ca)"
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: (ab * de) / (cd * ca)"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{ab*de}{cd*ca}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Verifica la expresión ingresada.",
+      "correctMsg": "Has realizado la multiplicación de la expresión de manera correcta. Esto te permitirá reducir términos semejantes y simplificar la fracción",
+      "summary": "1) Para multiplicar fracciones, multiplica sus numeradores y sus denominadores. El numerador resultante será el numerador de la fracción resultante y el denominador resultante será su denominador."
+    },
+    {
+        "stepId": "1",
+        "expression": "\\frac{ab*de}{cd*ca}",
+        "stepTitle": "Reduzca la fracción eliminando los términos semejantes",
+        "displayResult": [
+          "\\frac{b*e}{c*c}"
+        ],
+        "KCs": [
+          "CancTermSem"
+        ],
+        "values": [
+          {
+            "name": "a",
+            "value": 1
+          },
+          {
+            "name": "b",
+            "value": 2
+          },
+          {
+            "name": "c",
+            "value": 3
+          },
+          {
+            "name": "d",
+            "value": 4
+          }
+        ],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "'a' es un término semejante"
+          },
+          {
+            "hintId": 1,
+            "hint": "'d' es un término semejante"
+          },
+          {
+            "hintId": 2,
+            "hint": "La solución es (b*e) / (c*c)"
+          }
+        ],
+        "matchingError": [],
+        "validation":"evaluateAndCount",
+        "answers": [
+          {
+            "answer": [
+              "\\frac{b*e}{c*c}"
+            ],
+            "nextStep": "-1"
+          },
+          {
+            "answer": [
+              "\\frac{b*e}{c^{2}}"
+            ],
+            "nextStep": "-1"
+          }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta",
+        "correctMsg": "Has simplificado la expresión, pero aún no está completamente simplificada",
+        "summary": "2) Después de multiplicar las fracciones, debes reducir los términos similares (los elementos iguales en el numerador y denominador)"
+    }  
+  ]
+}

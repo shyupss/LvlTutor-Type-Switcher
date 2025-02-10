@@ -1,0 +1,100 @@
+{
+    "code": "pnc2b05",
+    "meta": {},
+    "text": "Utilizando la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(\\frac{5}{6}xy+4)²",
+    "steps": [
+      {
+        "KCs": ["IdeTer2MultVar", "C2BCoefFrac"],
+        "hints": [
+          {
+            "hint": "Debes elevar al cuadrado cada variable y el coeficiente que las acompaña. Si el coeficiente es una fracción, recuerda simplificarla si es posible.",
+            "hintId": 0
+          },
+          {
+            "hint": "En una potencia de una fracción, el exponente aplica para el numerador y el denominador.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es: ",
+            "expression":"\\frac{25}{36}x^{2}y^{2}",
+            "hintId": 2 }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["\\frac{25}{36}x^{2}y^{2}"], "nextStep": "1" }],
+        "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², el primer término \"a²\" se obtiene al elevar al cuadrado el primer término dentro del parentesis.",
+        "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el primer término.",
+        "expression": "(\\frac{5}{6}xy+4)² = □ + □ + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{25}{36}x^{2}y^{2}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["C2BTIMultVar", "C2BCoefFrac"],
+        "hints": [
+          {
+            "hint": "Revisa si estás multiplicando los términos correctamente, considerando los signos y simplificando si es posible.",
+            "hintId": 0
+          },
+          {
+            "hint": "Primero multiplica ambos términos del paréntesis, y después multiplica por 2. Recuerda considerar el signo y simplificar si es posible.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es:",
+            "expression":"\\frac{20}{3}xy",
+            "hintId": 2 }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{20}{3}xy"], "nextStep": "2" }],
+        "summary": "2) El término \"2ab\" surge de multiplicar ambos términos entre si, y despues multiplicar el resultado por 2.",
+        "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "(\\frac{5}{6}xy+4)² = \\frac{25}{36}x²y² + □ + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{20}{3}xy"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["IdeTer2"],
+        "hints": [
+          {
+          "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 4² = 4 · 4 = 16",
+          "hintId": 0
+          },
+          {
+            "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+            "hintId": 1
+          },
+          { "hint": "El resultado es:",
+            "expression": "16",
+            "hintId": 2 }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "x", "value": 1 },
+          { "name": "y", "value": 2}
+        ],
+        "answers": [{ "answer": ["16"], "nextStep": "-1" }],
+        "summary": "3) El tercer término \"b²\" se obtiene elevando al cuadrado el segundo término del paréntesis.",
+        "stepTitle": "Calcula el tercer término.",
+        "correctMsg": "Has encontrado el tercer término.",
+        "expression": "(\\frac{5}{6}xy+4)² = \\frac{25}{36}x²y² + \\frac{20}{3}xy + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["16"],
+        "matchingError": []
+      }
+    ],
+    "title": "Cuadrado de binomio"
+  }

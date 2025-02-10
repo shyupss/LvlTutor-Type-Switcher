@@ -1,0 +1,240 @@
+{
+    "code": "pot7",
+    "meta": {},
+    "title": "Reducción de expresión",
+    "text": "Reduce la siguiente expresión:",
+    "type": "lvltutor",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "KCs": [
+                "MultExp"
+            ],
+            "expression": "\\frac{\\left(a^{2}\\right)^{4}}{\\left(a\\cdot{b}\\right)^{2}}",
+            "stepTitle": "Elimina los paréntesis aplicando propiedades de potencias.",
+            "displayResult": [
+                "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Puedes reducir el numerador aplicando la propiedad potencia de una potencia."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Puedes reducir el denominador aplicando la propiedad potencia de un producto."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+            "summary": "1) Se aplicó la propiedad potencia de una potencia en el numerador y potencia de un producto en el denominador",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{a^8}{\\left(a\\cdot b\\right)^2}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides eliminar el paréntesis del denominador."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{a^8}{ab^2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "(a\\cdot b)^n=a^n\\cdot b^n"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{a^6}{a^2b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "(a^n)^m=a^{n\\cdot m}"
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "KCs": [
+                "MultExp",
+                "SumResExp"
+            ],
+            "expression": "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}",
+            "stepTitle": "Reduce la expresión aplicando la propiedad división de potencias de igual base.",
+            "displayResult": [
+                "\\frac{a^{6}}{b^{2}}"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                },
+                {
+                    "name": "b",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para dividir potencias de igual base, se escribe la misma base y se restan los exponentes."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La base en común es a."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{a^{6}}{b^{2}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{a^{6}}{b^{2}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+            "summary": "2) Se reduce la expresión utilizando la propiedad de división de potencias",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{a^{6}}{b^{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "a^6 b^2",
+                    "correct": false,
+                    "feedbackMsg": "No olvides  que b está solamente en el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{a^8}{b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{a^4}{b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "KCs": [
+            "MultExp",
+            "SumResExp"
+        ],
+        "expression": "\\frac{a^{8}}{a^{2}\\cdot{b^{2}}}",
+        "stepTitle": "Reduce la expresión aplicando la propiedad división de potencias de igual base.",
+        "displayResult": [
+            "\\frac{a^{6}}{b^{2}}"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 2
+            },
+            {
+                "name": "b",
+                "value": 4
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Para dividir potencias de igual base, se escribe la misma base y se restan los exponentes."
+            },
+            {
+                "hintId": 1,
+                "hint": "La base en común es a."
+            },
+            {
+                "hintId": 2,
+                "hint": "El resultado es: ",
+                "expression": "\\frac{a^{6}}{b^{2}}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{a^{6}}{b^{2}}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
+        "summary": "2) Se reduce la expresión utilizando la propiedad de división de potencias",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{a^{6}}{b^{2}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "a^6 b^2",
+                "correct": false,
+                "feedbackMsg": "No olvides  que b está solamente en el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{a^8}{b^2}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{a^4}{b^2}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+            }
+        ]
+    }
+}

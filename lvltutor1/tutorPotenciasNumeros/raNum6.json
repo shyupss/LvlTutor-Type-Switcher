@@ -1,0 +1,85 @@
+{
+  "code": "raNum6", 
+  "meta": {},
+  "title": "Operaciones con raíces",
+  "text": "Simplifica la siguiente expresión de potencia de raíces.",
+  "initialExpression":"\\left( \\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}} \\right)^{48}",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Exprese como una sola raíz, aplicando la propiedad de raíz de una raíz.",
+      "expression": "\\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}}",
+      "KCs": ["RaizDeRaiz"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad dice :",
+          "expression": "\\sqrt[n]{\\sqrt[m]{a}} = \\sqrt[n \\cdot m]{a}"
+        },
+        {
+          "hintId":1,
+          "hint":"El resultado es: ",
+          "expression": "\\sqrt[16]{2}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt[16]{2}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad de raíz de una raíz y se expresa como una sola raiz.",
+      "correctMsg": "Has aplicado correctamente la propiedad de raíz de una raíz.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}} \\longrightarrow \\sqrt[2 \\cdot 2 \\cdot 2 \\cdot 2]{2} \\longrightarrow \\sqrt[16]{2}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "1",
+      "stepTitle": "Exprese la raíz como una potencia.",
+      "expression": "\\sqrt[16]{2}",
+      "KCs": ["TransRaizPot"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Recuerda que para expresar la raíz como una potencia se hace :",
+          "expression": "\\sqrt[n]{a} = a^{\\frac{1}{n}}"
+        },
+        {
+          "hintId":1,
+          "hint": "La respuesta es:",
+          "expression":"2^{\\frac{1}{16}}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{\\frac{1}{16}}"], "nextStep": "2" }],
+      "summary": "2) Se expresa la raíz como una potencia.",
+      "correctMsg": "Has expresado correctamente la raíz como una potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt[16]{2} \\longrightarrow 2^{\\frac{1}{16}}"],
+      "matchingError": []
+    },
+    {
+      "stepId": "2",
+      "stepTitle": "Aplicando la propiedad de potencia de una potencia, exprese el resultado como potencia de 2.",
+      "expression": "\\left( 2^{\\frac{1}{16}} \\right) ^{48}",
+      "KCs": ["MultExp"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad de potencia de una potencia dice: ",
+          "expression": "(a^{m})^{n} = a^{m \\cdot n}"
+        },
+        {
+          "hintId": 1,
+          "hint": "La respuesta es :",
+          "expression":"2^{3}"
+        }
+      ],
+      "answers": [{ "answer": ["2^{3}"], "nextStep": "-1" }],
+      "summary": "3) Se aplica la propiedad de potencia de una potencia , y se deja expresado como potencia de 2.",
+      "correctMsg": "Has aplicado correctamente la propiedad de potencia de una potencia.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["2^{\\frac{1}{16} \\cdot 48} \\longrightarrow 2^{3}"],
+      "matchingError": []
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+    "code": "potNum12",
+    "meta": {},
+    "title": "Cociente de potencias de igual base.",
+    "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa como potencia de la 5",
+            "expression": "\\frac{5^{3}}{5^{-2}}",
+            "KCs": [
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del cociente de potencias de igual base dice: ",
+                    "expression": "\\frac{a^{m}}{a^{n}} = a^{m-n}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Para aplicar la propiedad deL cociente de potencias de igual base donde un exponente es negativo:",
+                    "expression": "\\frac{a^{m}}{a^{-n}} = a^{m-(-n)}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "La respuesta es :",
+                    "expression": "5^{3-(-2)} = 5^{5}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "5^{5}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "3125"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 5, el exponente del numerador es 3 y el del denominador es -2, y la resta de estos es 5",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "5^{3-(-2)} = 5^{5}"
+            ],
+            "matchingError": []
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+{
+    "code": "pnc2b11",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "49x²z²-98xz+49",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2MultVar"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el primer término debes calcular la raíz cuadrada de 49x²z².",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "7xz",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "z",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "7xz"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² - 2ab + b² = (a - b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada de \"49x²z²\".",
+            "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "49x^{2}z^{2}-98xz+49 = (□ + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "7xz"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 49.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "Recuerda que el signo del término del medio de a² - 2ab + b², indica el signo del segundo término dentro del paréntesis de (a - b)².",
+                    "hintId": 2
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-7",
+                    "hintId": 3
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "z",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-7"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) El término \"b\" se obtiene al calcular la raíz cuadrada de \"49\", pero el signo de este valor está determinado por el término del medio, en este caso \"-98xz\".",
+            "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "49x^{2}z^{2}-98xz+49 = (7xz + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-7"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2MultVar",
+            "IdeTer2"
+        ],
+        "hints": [
+            {
+                "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                "hintId": 0
+            },
+            {
+                "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 49.",
+                "hintId": 1
+            },
+            {
+                "hint": "Recuerda que el signo del término del medio de a² - 2ab + b², indica el signo del segundo término dentro del paréntesis de (a - b)².",
+                "hintId": 2
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "-7",
+                "hintId": 3
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            },
+            {
+                "name": "z",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-7"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) El término \"b\" se obtiene al calcular la raíz cuadrada de \"49\", pero el signo de este valor está determinado por el término del medio, en este caso \"-98xz\".",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "49x^{2}z^{2}-98xz+49 = (7xz + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "-7"
+        ],
+        "matchingError": []
+    }
+}

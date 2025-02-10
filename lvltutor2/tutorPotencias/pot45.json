@@ -1,0 +1,150 @@
+{
+    "code": "pot45",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Equivalencia entre raíz y potencia",
+    "text": "Transforma la potencia a una raíz:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "a^{-\\frac{1}{2}}",
+            "stepTitle": "Expresa la siguiente potencia negativa como una fracción.",
+            "displayResult": [
+                "\\frac{1}{a^{\\frac{1}{2}}}"
+            ],
+            "KCs": [
+                "TransExpFrac"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Un número elevado a un valor negativo es igual a 1 dividido por el número elevado a un valor positivo"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Por ejemplo, x elevado a -y es equivalente a ",
+                    "expression": "\\frac{1}{x^{y}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "\\frac{1}{a^{\\frac{1}{2}}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{a^{\\frac{1}{2}}}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado transformar la potencia negativa en una fracción.",
+            "summary": "1) Con el fin de transformar el exponente negativo a positivo se transforma la expresión en una fracción."
+        },
+        {
+            "stepId": "1",
+            "expression": "\\frac{1}{a^{\\frac{1}{2}}}",
+            "stepTitle": "Transforma la potencia a una raíz.",
+            "displayResult": [
+                "\\frac{1}{\\sqrt{a}}"
+            ],
+            "KCs": [
+                "TransExpFrac",
+                "TransRaizPot"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 4
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Recuerda que el denominador de la potencia se convierte en el grado de la raíz"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Por ejemplo, x elevado a m/n es equivalente a ",
+                    "expression": "\\sqrt[n]{x^{m}}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "\\frac{1}{\\sqrt{a}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{\\sqrt{a}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado transformar la potencia fraccionaria en una raíz.",
+            "summary": "2) Con el fin de transformar la potencia fracionaria a una raíz se utiliza el denominador del exponente como el grado de la raíz."
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "expression": "\\frac{1}{a^{\\frac{1}{2}}}",
+        "stepTitle": "Transforma la potencia a una raíz.",
+        "displayResult": [
+            "\\frac{1}{\\sqrt{a}}"
+        ],
+        "KCs": [
+            "TransExpFrac",
+            "TransRaizPot"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 4
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Recuerda que el denominador de la potencia se convierte en el grado de la raíz"
+            },
+            {
+                "hintId": 1,
+                "hint": "Por ejemplo, x elevado a m/n es equivalente a ",
+                "expression": "\\sqrt[n]{x^{m}}"
+            },
+            {
+                "hintId": 2,
+                "hint": "El resultado es ",
+                "expression": "\\frac{1}{\\sqrt{a}}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "\\frac{1}{\\sqrt{a}}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado transformar la potencia fraccionaria en una raíz.",
+        "summary": "2) Con el fin de transformar la potencia fracionaria a una raíz se utiliza el denominador del exponente como el grado de la raíz."
+    }
+}

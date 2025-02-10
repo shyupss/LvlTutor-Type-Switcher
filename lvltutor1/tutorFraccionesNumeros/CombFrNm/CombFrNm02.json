@@ -1,0 +1,117 @@
+{
+    "code": "CombFrNm02",
+    "meta": {},
+    "text": "Realiza el siguiente ejercicio de fracciones con operaciones combinadas. Aplica jerarquía de las operaciones para resolverlo:",
+    "type": "lvltutor",
+    "initialExpression":"\\frac{2}{3} \\cdot  \\frac{4}{5} - \\frac{6}{15}",
+    "steps": [
+      {
+        "KCs": ["MultFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Realiza las operaciones matemáticas siguiendo la jerarquía: paréntesis, potencia, multiplicación y división (de izquierda a derecha), y finalmente suma y resta (de izquierda a derecha)."
+          },
+          
+          { "hintId": 1,
+            "hint": "Primero resuelve la multiplicación de fracciones, que tiene prioridad sobre la resta."
+          },
+          { "hintId": 2,
+            "hint": "Recuerda, la multiplicación de fracciones es la operación más directa y sencilla de las operaciones de fracciones que hemos revisado."
+          },
+
+          {
+            "hintId": 3,
+            "hint": "Multiplicación de fracciones: ",
+            "expression": "\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}"
+          },
+
+          { "hintId": 4,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{8}{15}"
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{8}{15}"], "nextStep": "1" }],
+        "summary": "1) En un ejercicio de operaciones combinadas, partimos resolviendo la operación que tiene prioridad ante las demás operaciones. El orden de priorización es el siguiente: paréntesis, potencia, multiplicación y división (de izquierda a derecha), y finalmente suma y resta (de izquierda a derecha).",
+        "stepTitle": "Comienza resolviendo la operación que tiene prioridad y escribe su resultado.",
+        "correctMsg": "Has logrado resolver la operación que tiene prioridad",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{8}{15}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["STFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "La sección que queremos reemplazar es aquella que resolviste en el paso anterior, específicamente:",
+            "expression": "\\textcolor{Goldenrod}{\\frac{2}{3} \\cdot  \\frac{4}{5}}  - \\frac{6}{15}"
+          },
+          { "hintId": 1,
+            "hint": "Recuerda escribir la expresión completa!! "
+          },
+
+          { "hintId": 2,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{8}{15} - \\frac{6}{15}"
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{8}{15} - \\frac{6}{15}"], "nextStep": "1" }],
+        "summary": "2) Sustituir los resultados obtenidos en la expresión original facilita la resolución del problema, haciendo el proceso más manejable y permitiendo un enfoque paso a paso más claro y eficiente.",
+        "stepTitle": "Sustituye el resultado anterior en la expresión original.",
+        "correctMsg": "Has logrado reducir la expresión original",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{8}{15} - \\frac{6}{15}"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["SRFrac", "IdenDenominador", "IdenNumerador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que al sumar fracciones con denominadores iguales, la fracción resultante conservará el mismo denominador que las fracciones del ejercicio."
+          },
+          { "hintId": 1,
+            "hint": "No olvides que al restar fracciones con denominadores iguales, el valor del numerador en la fracción resultante se obtiene al restar todos los numeradores de las fracciones que se están restando."
+          },
+
+          { "hintId": 2,
+            "hint": "En este ejercicio no hay que simplificar."
+          },
+
+          { "hintId": 3,
+            "hint": "La respuesta es: ",
+            "expression": "\\frac{2}{15}"
+          }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{2}{15}"], "nextStep": "1" }],
+        "summary": "3) Resolvemos todas las operaciones pendientes, teniendo en cuenta la jerarquía de las operaciones. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Resuelve y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Has resuelto el ejercicio de fracciones con operaciones combinadas",
+        "expression": "\\frac{8}{15} - \\frac{6}{15}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{2}{15}"],
+        "matchingError": []
+      }
+    ],
+    "title": "Ejercicio de fracciones con Operaciones combinadas"
+  }
+    

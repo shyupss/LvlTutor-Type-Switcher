@@ -1,0 +1,65 @@
+{
+    "code": "potNum4",
+    "meta": {},
+    "title": "Producto de potencias de igual base.",
+    "text": "Simplifica la siguiente expresión usando propiedades de potencias.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 3",
+            "expression": "3^{-5} \\cdot 3^{2}",
+            "KCs": [
+                "SumResExp"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Para aplicar la propiedad a potencias con exponente negativo: ",
+                    "expression": "a^{m} \\cdot a^{-n} = a^{m + (-n)}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Manteniendo la base de la potencia, opera solo con los exponentes."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "La respuesta es :",
+                    "expression": "3^{-5+2} = 3^{-3}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "3^{-3}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "\\frac{1}{3^{3}}"
+                    ],
+                    "nextStep": "-1"
+                },
+                {
+                    "answer": [
+                        "\\frac{1}{27}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 3 y los exponentes son -5 y 2.",
+            "correctMsg": "Has contestado correctamente aplicando la propiedad del producto potencias de igual base",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "3^{-5+2} = 3^{-3}"
+            ],
+            "matchingError": []
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+  "code": "raNum3", 
+  "meta": {},
+  "title": "Simplificación de raíces.",
+  "text": "Simplifica el siguiente producto de raíces cúbicas.",
+  "type": "lvltutor",
+  "steps": [
+    {
+      "stepId": "0",
+      "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, exprese como raíz cúbica.",
+      "expression": "\\sqrt[3]{2} \\cdot \\sqrt[3]{4}",
+      "KCs": ["MultRaices"],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+          "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b }"
+        },
+        {
+          "hintId":1,
+          "hint":"La respuesta es: ",
+          "expression": "\\sqrt[3]{8}"
+        }
+      ],
+      "answers": [{ "answer": ["\\sqrt[3]{8}"], "nextStep": "1" }],
+      "summary": "1) Se aplica la propiedad del producto de raíces del mismo orden",
+      "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+      "validation": "evaluateAndCount",
+      "incorrectMsg": "La expresión ingresada no es correcta.",
+      "displayResult": ["\\sqrt[3]{2 \\cdot 4} \\longrightarrow \\sqrt[3]{8}"],
+      "matchingError": []
+    }
+  ]
+}

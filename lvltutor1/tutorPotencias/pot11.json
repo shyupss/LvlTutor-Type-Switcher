@@ -1,0 +1,91 @@
+{
+  "code": "pot11",
+  "meta": {},
+  "title": "Evaluar expresión",
+  "text": "Utilizando propiedades de potencias, evalúa la siguiente expresión:",
+  "type": "lvltutor",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "KCs": ["TransExpFrac","EvalExp"],
+      "expression": "\\frac{2^{-1}-2^{-2}}{3^{0}}",
+      "stepTitle": "Aplica propiedades de las potencias, luego evalúa los números enteros con exponentes y dejelas expresados como fracción.",
+      "displayResult": [
+        "\\frac{1}{2}-\\frac{1}{4}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Cualquier número elevado a 0 es 1."
+        },
+        {
+          "hintId": 1,
+          "hint": "a⁽⁻²⁾ se puede escribir como ",
+          "expression": "\\frac{1}{a^{2}}"
+        },
+        {
+          "hintId": 2,
+          "hint": "x⁽⁻²⁾ + y⁽⁻²⁾ se puede escribir como ",
+          "expression": "\\frac{1}{x^{2}} + \\frac{1}{y^{2}}"
+        },
+        {
+          "hintId": 3,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{1}{2}-\\frac{1}{4}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{1}{2}-\\frac{1}{4}"
+          ],
+          "nextStep": "1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has aplicado propiedades de las potencias",
+      "summary": "1) Se utilizó dos propiedades de potencias. La primera indica que cualquier potencia elevada a 0 es 1. La segunda indica que cualquier potencia con exponente negativo se puede escribir como el denominador de 1 con exponente positivo."
+    },
+    {
+      "stepId": "1",
+      "KCs": ["MCM","SRFrac"],
+      "expression": "\\frac{1}{2}-\\frac{1}{4}",
+      "stepTitle": "Encuentra el minimo comun multiplo y realiza la resta de fracciones.",
+      "displayResult": [
+        "\\frac{1}{4}"
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "El mínimo común múltiplo (mcm) es el número positivo más pequeño que es múltiplo de dos o más números."
+        },
+        {
+          "hintId": 1,
+          "hint": "El mcm es igual a 4."
+        },
+        {
+          "hintId": 2,
+          "hint": "El resultado es: ",
+          "expression": "\\frac{1}{4}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{1}{4}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado evaluar la expresión correctamente",
+      "summary": "Se realizó una resta de fracciones, cuyo mínimo común múltiplo es 4. "
+    }
+  ]
+}
+

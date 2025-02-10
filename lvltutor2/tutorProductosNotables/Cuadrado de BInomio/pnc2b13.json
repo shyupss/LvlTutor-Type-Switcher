@@ -1,0 +1,171 @@
+{
+    "code": "pnc2b13",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "\\frac{25}{9}x²z²-\\frac{80}{3}xz+64",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el primer término debes calcular la raíz cuadrada de: ",
+                    "expression": "\\frac{25}{9}x²z²",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{5}{3}xz",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "z",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{5}{3}xz"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² - 2ab + b² = (a - b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada del primer término de \"a² - 2ab + b²\" ",
+            "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "\\frac{25}{9}x^{2}z^{2}-\\frac{80}{3}xz+64 = (□ + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{5}{3}xz"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2MultVar",
+                "C2BCoefFrac",
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 64.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "Recuerda el signo del término del medio de (a² - 2ab + b²), indica el signo del segundo término dentro del paréntesis de (a - b)².",
+                    "hintId": 2
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "-8",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                },
+                {
+                    "name": "z",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "-8"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) El término \"b\" se obtiene al calcular la raíz cuadrada del último término de (a² - 2ab + b²), pero el signo está determinado por el término del medio de (a² - 2ab + b²), por lo tanto el resultado es negativo.",
+            "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "\\frac{25}{9}x^{2}z^{2}-\\frac{80}{3}xz+64 = (\\frac{5}{3}xz + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "-8"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2MultVar",
+            "C2BCoefFrac",
+            "IdeTer2"
+        ],
+        "hints": [
+            {
+                "hint": "La identidad de cuadrado de binomio es: a² - 2ab + b² = (a - b)² ",
+                "hintId": 0
+            },
+            {
+                "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de 64.",
+                "hintId": 1
+            },
+            {
+                "hint": "Recuerda el signo del término del medio de (a² - 2ab + b²), indica el signo del segundo término dentro del paréntesis de (a - b)².",
+                "hintId": 2
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "-8",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            },
+            {
+                "name": "z",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "-8"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) El término \"b\" se obtiene al calcular la raíz cuadrada del último término de (a² - 2ab + b²), pero el signo está determinado por el término del medio de (a² - 2ab + b²), por lo tanto el resultado es negativo.",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "\\frac{25}{9}x^{2}z^{2}-\\frac{80}{3}xz+64 = (\\frac{5}{3}xz + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "-8"
+        ],
+        "matchingError": []
+    }
+}

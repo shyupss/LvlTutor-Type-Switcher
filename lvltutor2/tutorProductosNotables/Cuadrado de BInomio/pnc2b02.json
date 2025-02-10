@@ -1,0 +1,193 @@
+{
+    "code": "pnc2b02",
+    "meta": {},
+    "text": "Utilizando la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², desarrolla el siguiente cuadrado de binomio:",
+    "type": "lvltutor",
+    "initialExpression": "(x+7)²",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "Debes elevar al cuadrado tanto la variable como al coeficiente que lo acompaña.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Por ejemplo: ",
+                    "expression": "\\left(3a\\right)^{2}=9a^{2}",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "x^{2}",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "x^{2}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio (a + b)² = a² + 2ab + b², el primer término \"a²\" se obtiene al elevar \"x\" al cuadrado",
+            "stepTitle": "Calcula el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "(x+7)² = □ + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "x^{2}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "C2BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda revisar la operación detro del paréntesis. ",
+                    "hintId": 0
+                },
+                {
+                    "hint": " Primero multiplica ambos términos del paréntesis, y después multiplica el resultado por 2. Recuerda considerar el signo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": " 14x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "14x"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) El término \"2ab\" surge de multiplicar 2, x y 7.",
+            "stepTitle": "Calcula el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "(x+7)² = x² + □ + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "14x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BTI"
+            ],
+            "hints": [
+                {
+                    "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 5² = 5 · 5 = 25",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "49",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "49"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) El tercer término \"b²\" se obtiene elevando \"7\" al cuadrado.",
+            "stepTitle": "Calcula el tercer término.",
+            "correctMsg": "Has encontrado el tercer término.",
+            "expression": "(x+7)² = x² + 14x + □",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "49"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "C2BTI"
+        ],
+        "hints": [
+            {
+                "hint": "Recuerda que elevar al cuadrado es multiplicar el número por el mismo número, por ejemplo: 5² = 5 · 5 = 25",
+                "hintId": 0
+            },
+            {
+                "hint": "Al elevar al cuadrado siempre el resultado es positivo.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "49",
+                "hintId": 2
+            }
+        ],
+        "stepId": "2",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "49"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) El tercer término \"b²\" se obtiene elevando \"7\" al cuadrado.",
+        "stepTitle": "Calcula el tercer término.",
+        "correctMsg": "Has encontrado el tercer término.",
+        "expression": "(x+7)² = x² + 14x + □",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "49"
+        ],
+        "matchingError": []
+    }
+}

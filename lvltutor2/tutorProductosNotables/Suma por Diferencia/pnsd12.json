@@ -1,0 +1,145 @@
+{
+    "code": "pnsd12",
+    "meta": {},
+    "text": "Obtén 2 binomios de la forma 'suma por diferencia' que equivalgan a la siguiente expresión",
+    "type": "lvltutor",
+    "initialExpression": "25x²-4",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "Para obtener el primer término debes utilizar el término 25x².",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Calcula la raíz de 25x² para obtener el término.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "5x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "5x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de suma por diferencia 'a² - b² = (a + b)(a - b)', para obtener el primer término se debe calcular la raíz cuadrada de 25x².",
+            "stepTitle": "Encuentra el primer término de suma por diferencia.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "25x²-4 = (□ + □)(□ - □)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "5x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2"
+            ],
+            "hints": [
+                {
+                    "hint": "Para obtener el segundo término debes utilizar el término 4.",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Calcula la raíz de 4 para obtener el término.",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es:",
+                    "expression": "2",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "2"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada de 4.",
+            "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "25x²-4 = (5x + □)(5x - □)",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "2"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Suma por diferencia",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2"
+        ],
+        "hints": [
+            {
+                "hint": "Para obtener el segundo término debes utilizar el término 4.",
+                "hintId": 0
+            },
+            {
+                "hint": "Calcula la raíz de 4 para obtener el término.",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es:",
+                "expression": "2",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "2"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Para obtener el segundo término, se debe calcular la raíz cuadrada de 4.",
+        "stepTitle": "Encuentra el segundo término de suma por diferencia.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "25x²-4 = (5x + □)(5x - □)",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "2"
+        ],
+        "matchingError": []
+    }
+}

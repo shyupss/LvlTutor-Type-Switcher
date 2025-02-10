@@ -1,0 +1,173 @@
+{
+    "code": "pot44",
+    "type": "lvltutor",
+    "meta": {},
+    "title": "Equivalencia entre raíz y potencia",
+    "text": "Simplifique la expresión:",
+    "selectSteps": false,
+    "steps": [
+        {
+            "stepId": "0",
+            "expression": "\\left(\\sqrt[m]{a}\\right)^{n}",
+            "stepTitle": "Expresa la raíz de la expresión como una potencia.",
+            "displayResult": [
+                "\\left(a^{\\frac{1}{m}}\\rigth)^{n}"
+            ],
+            "KCs": [
+                "TransRaizPot",
+                "RaizN"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                },
+                {
+                    "name": "m",
+                    "value": 4
+                },
+                {
+                    "name": "n",
+                    "value": 2
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La raíz n de un número 'a' es equivalente a ",
+                    "expression": "a^{\\frac{1}{n}}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "El resultado es ",
+                    "expression": "\\left(a^{\\frac{1}{m}}\\right)^{n}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "\\left(a^{\\frac{1}{m}}\\right)^{n}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado transformar la raíz a una potencia.",
+            "summary": "1) Con el fin de transformar la raíz a una potencia se aplica la regla general de que la raíz n de un número se puede expresar como el número elevado a 1/n."
+        },
+        {
+            "stepId": "1",
+            "expression": "\\left(a^{\\frac{1}{m}}\\right)^{n}",
+            "stepTitle": "Simplifica la expresión.",
+            "displayResult": [
+                "a^{\\frac{n}{m}}"
+            ],
+            "KCs": [
+                "TransRaizPot",
+                "RaizN",
+                "MultExp"
+            ],
+            "values": [
+                {
+                    "name": "a",
+                    "value": 2
+                },
+                {
+                    "name": "m",
+                    "value": 4
+                },
+                {
+                    "name": "n",
+                    "value": 2
+                }
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Para simplificar la expresión puedes multiplicar los exponentes"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Por ejemplo, el exponente es 3 en la siguiente expresión ",
+                    "expression": "2^{3}"
+                },
+                {
+                    "hintId": 2,
+                    "hint": "El resultado es ",
+                    "expression": "a^{\\frac{n}{m}}"
+                }
+            ],
+            "matchingError": [],
+            "validation": "evaluateAndCount",
+            "answers": [
+                {
+                    "answer": [
+                        "a^{\\frac{n}{m}}"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+            "correctMsg": "Has logrado simplificar la expresión.",
+            "summary": "2) Para simplificar una potencia con exponente fraccionario elevado a otra potencia se utiliza la ley de los exponentes de la potenciación la cual dice que si tenemos 'a' elevado a m y esto elevado a 1/n, entonces podemos multiplicar los exponentes m y 1/n y obtener 'a' elevado a m/n."
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "1",
+        "expression": "\\left(a^{\\frac{1}{m}}\\right)^{n}",
+        "stepTitle": "Simplifica la expresión.",
+        "displayResult": [
+            "a^{\\frac{n}{m}}"
+        ],
+        "KCs": [
+            "TransRaizPot",
+            "RaizN",
+            "MultExp"
+        ],
+        "values": [
+            {
+                "name": "a",
+                "value": 2
+            },
+            {
+                "name": "m",
+                "value": 4
+            },
+            {
+                "name": "n",
+                "value": 2
+            }
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Para simplificar la expresión puedes multiplicar los exponentes"
+            },
+            {
+                "hintId": 1,
+                "hint": "Por ejemplo, el exponente es 3 en la siguiente expresión ",
+                "expression": "2^{3}"
+            },
+            {
+                "hintId": 2,
+                "hint": "El resultado es ",
+                "expression": "a^{\\frac{n}{m}}"
+            }
+        ],
+        "matchingError": [],
+        "validation": "evaluateAndCount",
+        "answers": [
+            {
+                "answer": [
+                    "a^{\\frac{n}{m}}"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+        "correctMsg": "Has logrado simplificar la expresión.",
+        "summary": "2) Para simplificar una potencia con exponente fraccionario elevado a otra potencia se utiliza la ley de los exponentes de la potenciación la cual dice que si tenemos 'a' elevado a m y esto elevado a 1/n, entonces podemos multiplicar los exponentes m y 1/n y obtener 'a' elevado a m/n."
+    }
+}

@@ -1,0 +1,66 @@
+{
+  "code": "fracc7",
+  "title": "Fracción Algebraica",
+  "type": "lvltutor",
+  "meta": {},
+  "text": "Expresa la siguiente expresión como división:",
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\frac{a}{b}\\cdot\\frac{d}{c}",
+      "stepTitle": "Inviertiendo la fracción del lado derecho de la multiplicación, expresa el resultado como una fracción de fracciones.",
+      "displayResult": [
+        "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+      ],
+      "KCs": [
+        "DivFrac","ArFrac","IdenNumerador","IdenDenominador"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 2
+        },
+        {
+          "name": "c",
+          "value": 3
+        },
+        {
+          "name": "d",
+          "value": 4
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "Aplica la inversa de la propiedad de división de fracciones. "
+        },
+        {
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba), debes realizar lo inverso a esto."
+        },
+        {
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+        }
+      ],
+      "matchingError": [],
+      "validation":"evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\frac{\\frac{a}{b}}{\\frac{c}{d}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+      "correctMsg": "Has expresado la multiplicación de fracciones como división de fracciones correctamente.",
+      "summary": "1) Para expresar una multiplicación de fracciones en una división de fracciones se divide la fracción de la izquierda de la multiplicación por la fracción inversa de la derecha de la multiplicación"
+    }
+  ]
+}

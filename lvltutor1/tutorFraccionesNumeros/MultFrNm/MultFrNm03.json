@@ -1,0 +1,92 @@
+{
+    "code": "MultFrNm03",
+    "meta": {},
+    "text": "Realiza la siguiente multiplicación de fracciones:",
+    "initialExpression": "\\frac{2}{3} \\cdot \\frac{4}{5} \\cdot \\frac{1}{7}",
+    "type": "lvltutor",
+    "steps": [
+      {
+        "KCs": ["MultFrac", "IdenNumerador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que al multiplicar, el valor del numerador se obtiene multiplicando los numeradores de todas las fracciones involucradas en el ejercicio."
+          },
+          { "hintId": 1,
+            "hint": "El resultado del numerador es: ",
+            "expression": "8"
+          }
+        ],
+        "stepId": "0",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["8"], "nextStep": "1" }],
+        "summary": "1) Para determinar el valor del numerador de la fracción resultante, multiplicamos todos los numeradores correspondientes de las fracciones que estamos multiplicando.",
+        "stepTitle": "Escribe el valor del numerador de la fracción resultante.",
+        "correctMsg": "Has encontrado el valor del numerador en la fracción final.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["8"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["MultFrac", "IdenDenominador"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que al multiplicar fracciones, el valor del denominador se obtiene multiplicando los denominadores de todas las fracciones involucradas en el ejercicio."         
+          },
+          { "hintId": 1,
+            "hint": "El resultado del denominador es: ",
+            "expression": "105"
+          }
+        ],
+        "stepId": "1",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["105"], "nextStep": "1" }],
+        "summary": "2) Para determinar el valor del denominador de la fracción resultante, multiplicamos todos los denominadores correspondientes de las fracciones que estamos multiplicando.",
+        "stepTitle": "Escribe el valor del denominador de la fracción resultante.",
+        "correctMsg": "Has encontrado el valor del denominador en la fracción final.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["105"],
+        "matchingError": []
+      },
+      {
+        "KCs": ["ArFrac"],
+        "hints": [
+          {
+            "hintId": 0,
+            "hint": "Recuerda que en una fracción, el numerador se ubica en la parte superior y el denominador en la parte inferior."
+          },
+  
+          { "hintId": 1,
+            "hint": "En este ejercicio no hay que simplificar."
+          },
+          { "hintId": 2,
+            "hint": "El resultado es: ",
+            "expression": "\\frac{8}{105}"
+          }
+        ],
+        "stepId": "2",
+        "values": [
+          { "name": "a", "value": 1 },
+          { "name": "b", "value": 2 }
+        ],
+        "answers": [{ "answer": ["\\frac{8}{105}"], "nextStep": "1" }],
+        "summary": "3) Al construir la fracción, recordemos que el numerador se coloca en la parte superior y el denominador en la parte inferior. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Escribe el resultado de la multiplicación de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Obtuviste el resultado de la multiplicación.",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": ["\\frac{8}{105}"],
+        "matchingError": []
+      }
+    ],
+    "title": "Multiplicación de fracciones"
+  }

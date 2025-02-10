@@ -1,0 +1,259 @@
+{
+    "code": "raNum5",
+    "meta": {},
+    "title": "Simplificación de raíces.",
+    "text": "Simplifica el siguiente producto de raíces quintas.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Aplicando la propiedad del producto de raices del mismo orden , exprese como quedaria la raíz cúbica.",
+            "expression": "\\sqrt[3]{6} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[3]{\\frac{9}{2}} \\cdot \\sqrt[2]{5}",
+            "KCs": [
+                "MultRaices"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                    "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\sqrt[3]{27}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\sqrt[3]{27}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad del producto de raíces del mismo orden para las raíces cúbicas",
+            "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\sqrt[3]{6  \\cdot \\frac{9}{2}} \\longrightarrow \\sqrt[3]{27}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt[3]{27}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt[3]{6\\cdot \\frac{9}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes desarrollar y simplificar lo que hay dentro de la raíz."
+                },
+                {
+                    "id": 2,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como raíz cúbica."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt[3]{3\\cdot 9}",
+                    "correct": false,
+                    "feedbackMsg": "Debes desarrollar y simplificar lo que hay dentro de la raíz."
+                }
+            ]
+        },
+        {
+            "stepId": "1",
+            "stepTitle": "Aplicando la propiedad del producto de raíces del mismo orden , exprese como quedaría la raíz cuadrada.",
+            "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[2]{5}",
+            "KCs": [
+                "MultRaices"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                    "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\sqrt[2]{25}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\sqrt[2]{25}"
+                    ],
+                    "nextStep": "2"
+                },
+                {
+                    "answer": [
+                        "\\sqrt{25}"
+                    ],
+                    "nextStep": "2"
+                }
+            ],
+            "summary": "2) Se aplica la propiedad del producto de raíces del mismo orden para las raíces cuadrada.",
+            "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\sqrt[2]{5} \\cdot \\sqrt[2]{5} \\longrightarrow \\sqrt[2]{25}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt[2]{25}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt[2]{5\\cdot 5}",
+                    "correct": false,
+                    "feedbackMsg": "Debes desarrollar y simplificar lo que hay dentro de la raíz."
+                },
+                {
+                    "id": 2,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como raíz cuadrada."
+                },
+                {
+                    "id": 3,
+                    "expression": "25^{\\frac{1}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como raíz cuadrada."
+                }
+            ]
+        },
+        {
+            "stepId": "2",
+            "stepTitle": "Simplifique y resuelva la operación.",
+            "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{25}",
+            "KCs": [
+                "MultRaices",
+                "SimpRaiz"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Resuelve cada una de las raíces y multiplica."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La respuesta es: ",
+                    "expression": "15"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "15"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "3) Se resuelve las raíces y se multiplican.",
+            "correctMsg": "Has resuelto correctamente el problema",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\sqrt[3]{27} \\cdot \\sqrt[2]{25} \\longrightarrow 3 \\cdot 5 \\longrightarrow 15"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt[5]{675}",
+                    "correct": false,
+                    "feedbackMsg": "Resuelve cada una de las raíces y multiplica."
+                },
+                {
+                    "id": 2,
+                    "expression": "3\\cdot 5",
+                    "correct": false,
+                    "feedbackMsg": "Desarrolla la multiplicación."
+                },
+                {
+                    "id": 3,
+                    "expression": "27^{\\frac{1}{3}}\\cdot 25^{\\frac{1}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes resolver las raíces y luego multiplicar los resultados."
+                }
+            ]
+        }
+    ],
+    "finalAnswer": {
+        "stepId": "2",
+        "stepTitle": "Simplifique y resuelva la operación.",
+        "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{25}",
+        "KCs": [
+            "MultRaices",
+            "SimpRaiz"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "Resuelve cada una de las raíces y multiplica."
+            },
+            {
+                "hintId": 1,
+                "hint": "La respuesta es: ",
+                "expression": "15"
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "15"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "3) Se resuelve las raíces y se multiplican.",
+        "correctMsg": "Has resuelto correctamente el problema",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "La expresión ingresada no es correcta.",
+        "displayResult": [
+            "\\sqrt[3]{27} \\cdot \\sqrt[2]{25} \\longrightarrow 3 \\cdot 5 \\longrightarrow 15"
+        ],
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "15",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\sqrt[5]{675}",
+                "correct": false,
+                "feedbackMsg": "Resuelve cada una de las raíces y multiplica."
+            },
+            {
+                "id": 2,
+                "expression": "3\\cdot 5",
+                "correct": false,
+                "feedbackMsg": "Desarrolla la multiplicación."
+            },
+            {
+                "id": 3,
+                "expression": "27^{\\frac{1}{3}}\\cdot 25^{\\frac{1}{2}}",
+                "correct": false,
+                "feedbackMsg": "Debes resolver las raíces y luego multiplicar los resultados."
+            }
+        ]
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "code": "pnc2b12",
+    "meta": {},
+    "text": "La siguiente expresión puede escribirse como el cuadrado de un binomio.",
+    "type": "lvltutor",
+    "initialExpression": "\\frac{1}{9}x²+6x+81",
+    "steps": [
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el primer término debes calcular la raíz cuadrada de: ",
+                    "expression": "\\frac{1}{9}x²",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{1}{3}x",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{1}{3}x"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) De acuerdo a la identidad de cuadrado de binomio a² + 2ab + b² = (a + b)², para obtener el primer término \"a\", se debe calcular la raíz cuadrada del primer término de \"a² + 2ab + b²\"",
+            "stepTitle": "Encuentra el primer término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el primer término.",
+            "expression": "\\frac{1}{9}x^2+6x+81 = (□ + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{1}{3}x"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "IdeTer2",
+                "C2BCoefFrac"
+            ],
+            "hints": [
+                {
+                    "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                    "hintId": 0
+                },
+                {
+                    "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de:",
+                    "expression": "81",
+                    "hintId": 1
+                },
+                {
+                    "hint": "El resultado es: ",
+                    "expression": "9",
+                    "hintId": 2
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "x",
+                    "value": 1
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "9"
+                    ],
+                    "nextStep": "-1"
+                }
+            ],
+            "summary": "2) Según la identidad de cuadrado de binomio, el término \"b\" se obtiene al calcular la raíz cuadrada de \"81\". ",
+            "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+            "correctMsg": "Has encontrado el segundo término.",
+            "expression": "\\frac{1}{9}x^2+6x+81 = (\\frac{1}{3} + □)²",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "9"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Cuadrado de binomio",
+    "finalAnswer": {
+        "KCs": [
+            "IdeTer2",
+            "C2BCoefFrac"
+        ],
+        "hints": [
+            {
+                "hint": "La identidad de cuadrado de binomio es: a² + 2ab + b² = (a + b)² ",
+                "hintId": 0
+            },
+            {
+                "hint": "Para obtener el segundo término debes calcular la raíz cuadrada de:",
+                "expression": "81",
+                "hintId": 1
+            },
+            {
+                "hint": "El resultado es: ",
+                "expression": "9",
+                "hintId": 2
+            }
+        ],
+        "stepId": "1",
+        "values": [
+            {
+                "name": "x",
+                "value": 1
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "9"
+                ],
+                "nextStep": "-1"
+            }
+        ],
+        "summary": "2) Según la identidad de cuadrado de binomio, el término \"b\" se obtiene al calcular la raíz cuadrada de \"81\". ",
+        "stepTitle": "Encuentra el segundo término del cuadrado de binomio.",
+        "correctMsg": "Has encontrado el segundo término.",
+        "expression": "\\frac{1}{9}x^2+6x+81 = (\\frac{1}{3} + □)²",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "9"
+        ],
+        "matchingError": []
+    }
+}

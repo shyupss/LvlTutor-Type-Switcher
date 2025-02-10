@@ -1,0 +1,341 @@
+{
+    "code": "CombFrNm04",
+    "meta": {},
+    "text": "Realiza el siguiente ejercicio de fracciones con operaciones combinadas. Aplica jerarquía de las operaciones para resolverlo:",
+    "type": "lvltutor",
+    "initialExpression": "\\left(\\frac{1}{2} + \\frac{1}{4}\\right)\\cdot  \\frac{5}{6} - \\frac{15}{24}",
+    "steps": [
+        {
+            "KCs": [
+                "MCM",
+                "SRFrac",
+                "AmpFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Realiza las operaciones matemáticas siguiendo la jerarquía: paréntesis, potencia, multiplicación y división (de izquierda a derecha), y finalmente suma y resta (de izquierda a derecha)."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Primero resuelve lo que está entre paréntesis, que tiene prioridad sobre el resto de operaciones."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Encuentra el mínimo común múltiplo (MCM) de los denominadores."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "El denominador común es 12. Ajusta las fracciones del ejercicio creando fracciones equivalentes con el mismo denominador común."
+                },
+                {
+                    "hintId": 4,
+                    "hint": "A continuación se presentan las fracciones del ejercicio ajustadas, ahora expresadas como fracciones equivalentes con un denominador común. Suma únicamente los denominadores y conserva el valor resultante del denominador común.",
+                    "expression": "\\frac{2}{4} + \\frac{1}{4}"
+                },
+                {
+                    "hintId": 5,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\frac{3}{4}"
+                }
+            ],
+            "stepId": "0",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{3}{4}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) En un ejercicio de operaciones combinadas, partimos resolviendo la operación que tiene prioridad ante las demás operaciones. El orden de priorización es el siguiente: paréntesis, potencia, multiplicación y división (de izquierda a derecha), y finalmente suma y resta (de izquierda a derecha).",
+            "stepTitle": "Comienza resolviendo la operación que tiene prioridad y escribe su resultado.",
+            "correctMsg": "Has logrado resolver la operación que tiene prioridad",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{3}{4}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "STFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La sección que queremos reemplazar es aquella que resolviste en el paso anterior, específicamente:",
+                    "expression": "\\textcolor{Goldenrod}{(\\left(\\frac{1}{2} + \\frac{1}{4}\\right))} \\cdot  \\frac{5}{6} - \\frac{15}{24}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Recuerda escribir la expresión completa!! "
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}"
+                }
+            ],
+            "stepId": "1",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "2) Sustituir los resultados obtenidos en la expresión original facilita la resolución del problema, haciendo el proceso más manejable y permitiendo un enfoque paso a paso más claro y eficiente.",
+            "stepTitle": "Sustituye el resultado anterior en la expresión original.",
+            "correctMsg": "Has logrado reducir la expresión original",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MultFrac"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "Realiza las operaciones matemáticas siguiendo la jerarquía: paréntesis, potencia, multiplicación y división (de izquierda a derecha), y finalmente suma y resta (de izquierda a derecha)."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Primero resuelve la multiplicación de fracciones, que tiene prioridad sobre la resta."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Recuerda, la multiplicación de fracciones es la operación más directa y sencilla de las operaciones de fracciones que hemos revisado."
+                },
+                {
+                    "hintId": 3,
+                    "hint": "Multiplicación de fracciones: ",
+                    "expression": "\\frac{a}{b} \\cdot \\frac{c}{d} = \\frac{a \\cdot c}{b \\cdot d}"
+                },
+                {
+                    "hintId": 4,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\frac{15}{24}"
+                }
+            ],
+            "stepId": "2",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{15}{24}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "3) Continuamos aplicando jerarquía de las operaciones. Resolvemos la operación que tiene prioridad ante las demás operaciones.",
+            "stepTitle": "Continua resolviendo la operación que tiene prioridad y escribe su resultado.",
+            "correctMsg": "Has logrado resolver la operación que tiene prioridad",
+            "expression": "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{15}{24}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "STFrac",
+                "IdenDenominador",
+                "IdenNumerador"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La sección que queremos reemplazar es aquella que resolviste en el paso anterior, específicamente:",
+                    "expression": "\\textcolor{Goldenrod}{\\frac{3}{4} \\cdot  \\frac{5}{6}} - \\frac{15}{24}"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "Recuerda escribir la expresión completa!! "
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\frac{15}{24} - \\frac{15}{24}"
+                }
+            ],
+            "stepId": "3",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\frac{15}{24} - \\frac{15}{24}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "4) Seguimos sustituyendo los resultados obtenidos en la expresión original.",
+            "stepTitle": "Sustituye el resultado anterior en la expresión original.",
+            "correctMsg": "Has logrado reducir la expresión original",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "\\frac{15}{24} - \\frac{15}{24}"
+            ],
+            "matchingError": []
+        },
+        {
+            "KCs": [
+                "MCM",
+                "SRFrac",
+                "AmpFrac",
+                "STFrac",
+                "MultFrac",
+                "IdenDenominador",
+                "IdenNumerador"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "No olvides que al restar fracciones con denominadores iguales, el valor del denominador se mantiene sin cambios en la fracción resultante y el valor del numerador se obtiene al restar todos los numeradores de las fracciones que se están restando."
+                },
+                {
+                    "hintId": 1,
+                    "hint": "En este ejercicio no hay que simplificar."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "La respuesta es: ",
+                    "expression": "0"
+                }
+            ],
+            "stepId": "4",
+            "values": [
+                {
+                    "name": "a",
+                    "value": 1
+                },
+                {
+                    "name": "b",
+                    "value": 2
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "0"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "5) Resolvemos todas las operaciones pendientes, teniendo en cuenta la jerarquía de las operaciones. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+            "stepTitle": "Escribe el resultado de la resta de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+            "correctMsg": "Has resuelto el ejercicio de fracciones con operaciones combinadas",
+            "expression": "\\frac{15}{24} - \\frac{15}{24}",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+            "displayResult": [
+                "0"
+            ],
+            "matchingError": []
+        }
+    ],
+    "title": "Ejercicio de fracciones con Operaciones combinadas",
+    "finalAnswer": {
+        "KCs": [
+            "MCM",
+            "SRFrac",
+            "AmpFrac",
+            "STFrac",
+            "MultFrac",
+            "IdenDenominador",
+            "IdenNumerador"
+        ],
+        "hints": [
+            {
+                "hintId": 0,
+                "hint": "No olvides que al restar fracciones con denominadores iguales, el valor del denominador se mantiene sin cambios en la fracción resultante y el valor del numerador se obtiene al restar todos los numeradores de las fracciones que se están restando."
+            },
+            {
+                "hintId": 1,
+                "hint": "En este ejercicio no hay que simplificar."
+            },
+            {
+                "hintId": 2,
+                "hint": "La respuesta es: ",
+                "expression": "0"
+            }
+        ],
+        "stepId": "4",
+        "values": [
+            {
+                "name": "a",
+                "value": 1
+            },
+            {
+                "name": "b",
+                "value": 2
+            }
+        ],
+        "answers": [
+            {
+                "answer": [
+                    "0"
+                ],
+                "nextStep": "1"
+            }
+        ],
+        "summary": "5) Resolvemos todas las operaciones pendientes, teniendo en cuenta la jerarquía de las operaciones. Y, si es posible, simplificamos el resultado. En caso contrario, escribimos directamente el resultado obtenido.",
+        "stepTitle": "Escribe el resultado de la resta de fracciones y, si es posible, simplifica el resultado. En caso contrario, escribe directamente el resultado obtenido.",
+        "correctMsg": "Has resuelto el ejercicio de fracciones con operaciones combinadas",
+        "expression": "\\frac{15}{24} - \\frac{15}{24}",
+        "validation": "evaluateAndCount",
+        "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
+        "displayResult": [
+            "0"
+        ],
+        "matchingError": []
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "code": "raNum3",
+    "meta": {},
+    "title": "Simplificación de raíces.",
+    "text": "Simplifica el siguiente producto de raíces cúbicas.",
+    "type": "lvltutor",
+    "steps": [
+        {
+            "stepId": "0",
+            "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, exprese como raíz cúbica.",
+            "expression": "\\sqrt[3]{2} \\cdot \\sqrt[3]{4}",
+            "KCs": [
+                "MultRaices"
+            ],
+            "hints": [
+                {
+                    "hintId": 0,
+                    "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                    "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b }"
+                },
+                {
+                    "hintId": 1,
+                    "hint": "La respuesta es: ",
+                    "expression": "\\sqrt[3]{8}"
+                }
+            ],
+            "answers": [
+                {
+                    "answer": [
+                        "\\sqrt[3]{8}"
+                    ],
+                    "nextStep": "1"
+                }
+            ],
+            "summary": "1) Se aplica la propiedad del producto de raíces del mismo orden",
+            "correctMsg": "Has aplicado correctamente la propiedad del producto de raíces del mismo orden.",
+            "validation": "evaluateAndCount",
+            "incorrectMsg": "La expresión ingresada no es correcta.",
+            "displayResult": [
+                "\\sqrt[3]{2 \\cdot 4} \\longrightarrow \\sqrt[3]{8}"
+            ],
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt[3]{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8^{\\frac{1}{3}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como raíz cúbica, no como potencia de base 8."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt[3]{6}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad del producto de raíces del mismo orden dice:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}\\cdot \\sqrt[n]{b}=\\sqrt[n]{a\\cdot b}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt[3]{2\\cdot4}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar las multiplicaciones que están dentro de la raíz."
+                }
+            ]
+        }
+    ]
+}

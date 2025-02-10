@@ -1,0 +1,56 @@
+{
+  "code": "pot47",
+  "type": "lvltutor",
+  "meta": {},
+  "title": "Equivalencia entre raíz y potencia",
+  "text": "Transforma la raíz a una potencia:",
+  "selectSteps": false,
+  "steps": [
+    {
+      "stepId": "0",
+      "expression": "\\sqrt{a+b}",
+      "stepTitle": "Expresa la siguiente raíz como una potencia.",
+      "displayResult": [
+        "\\left(a+b\\right)^{\\frac{1}{2}}"
+      ],
+      "KCs": [
+        "TransRaizPot"
+      ],
+      "values": [
+        {
+          "name": "a",
+          "value": 1
+        },
+        {
+          "name": "b",
+          "value": 3
+        }
+      ],
+      "hints": [
+        {
+          "hintId": 0,
+          "hint": "La raíz de grado n de un número 'x' es equivalente a ",
+          "expression": "x^{\\frac{1}{n}}"
+        },
+        {
+          "hintId": 1,
+          "hint": "El resultado es ",
+          "expression": "\\left(a+b\\right)^{\\frac{1}{2}}"
+        }
+      ],
+      "matchingError": [],
+      "validation": "evaluateAndCount",
+      "answers": [
+        {
+          "answer": [
+            "\\left(a+b\\right)^{\\frac{1}{2}}"
+          ],
+          "nextStep": "-1"
+        }
+      ],
+      "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
+      "correctMsg": "Has logrado transformar la raíz a una potencia.",
+      "summary": "1) Con el fin de transformar la raíz a una potencia se aplica la regla general de que la raíz de grado n de un número se puede expresar como el número elevado a 1/n."
+    }
+  ]
+}
