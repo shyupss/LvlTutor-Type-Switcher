@@ -13,23 +13,23 @@
                 "EvalExp"
             ],
             "expression": "\\frac{2^{-1}-2^{-2}}{3^{0}}",
-            "stepTitle": "Aplica propiedades de las potencias, luego evalúa los números enteros con exponentes y dejelas expresados como fracción.",
+            "stepTitle": "Aplica propiedades de las potencias, luego evalúa los números enteros con exponentes y déjalas expresados como fracción.",
             "displayResult": [
                 "\\frac{1}{2}-\\frac{1}{4}"
             ],
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Cualquier número elevado a 0 es 1."
+                    "hint": "Cualquier número elevado a 0 da como resultado 1."
                 },
                 {
                     "hintId": 1,
-                    "hint": "a⁽⁻²⁾ se puede escribir como ",
+                    "hint": "a⁻² se puede escribir como ",
                     "expression": "\\frac{1}{a^{2}}"
                 },
                 {
                     "hintId": 2,
-                    "hint": "x⁽⁻²⁾ + y⁽⁻²⁾ se puede escribir como ",
+                    "hint": "x⁻² + y⁻² se puede escribir como ",
                     "expression": "\\frac{1}{x^{2}} + \\frac{1}{y^{2}}"
                 },
                 {
@@ -50,7 +50,7 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has aplicado propiedades de las potencias",
-            "summary": "1) Se utilizó dos propiedades de potencias. La primera indica que cualquier potencia elevada a 0 es 1. La segunda indica que cualquier potencia con exponente negativo se puede escribir como el denominador de 1 con exponente positivo.",
+            "summary": "1) Se utilizó dos propiedades de potencias. La primera indica que cualquier potencia elevada a 0 es 1. La segunda indica que cualquier potencia con exponente negativo, se puede escribir como una fracción, con un 1 en el numerador, dividido por una potencia con la misma base elevada al mismo exponente pero positivo",
             "multipleChoice": [
                 {
                     "id": 0,
@@ -89,18 +89,18 @@
                 "SRFrac"
             ],
             "expression": "\\frac{1}{2}-\\frac{1}{4}",
-            "stepTitle": "Encuentra el minimo comun multiplo y realiza la resta de fracciones.",
+            "stepTitle": "Encuentra el mínimo común múltiplo y realiza la resta de fracciones.",
             "displayResult": [
                 "\\frac{1}{4}"
             ],
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "El mínimo común múltiplo (mcm) es el número positivo más pequeño que es múltiplo de dos o más números."
+                    "hint": "El mínimo común múltiplo (MCM) es el número positivo más pequeño que es múltiplo de dos o más números."
                 },
                 {
                     "hintId": 1,
-                    "hint": "El mcm es igual a 4."
+                    "hint": "El MCM es igual a 4."
                 },
                 {
                     "hintId": 2,
@@ -120,7 +120,7 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado evaluar la expresión correctamente",
-            "summary": "Se realizó una resta de fracciones, cuyo mínimo común múltiplo es 4. ",
+            "summary": "2) Se realizó una resta de fracciones, cuyo mínimo común múltiplo es 4. ",
             "multipleChoice": [
                 {
                     "id": 0,
@@ -157,18 +157,18 @@
             "SRFrac"
         ],
         "expression": "\\frac{1}{2}-\\frac{1}{4}",
-        "stepTitle": "Encuentra el minimo comun multiplo y realiza la resta de fracciones.",
+        "stepTitle": "Encuentra el mínimo común múltiplo y realiza la resta de fracciones.",
         "displayResult": [
             "\\frac{1}{4}"
         ],
         "hints": [
             {
                 "hintId": 0,
-                "hint": "El mínimo común múltiplo (mcm) es el número positivo más pequeño que es múltiplo de dos o más números."
+                "hint": "El mínimo común múltiplo (MCM) es el número positivo más pequeño que es múltiplo de dos o más números."
             },
             {
                 "hintId": 1,
-                "hint": "El mcm es igual a 4."
+                "hint": "El MCM es igual a 4."
             },
             {
                 "hintId": 2,
@@ -188,7 +188,7 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado evaluar la expresión correctamente",
-        "summary": "Se realizó una resta de fracciones, cuyo mínimo común múltiplo es 4. ",
+        "summary": "2) Se realizó una resta de fracciones, cuyo mínimo común múltiplo es 4. ",
         "multipleChoice": [
             {
                 "id": 0,

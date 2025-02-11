@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Aplica la propiedad de potencia negativa en la fracción del paréntesis.",
+            "stepTitle": "Aplica la propiedad de potencia con exponente negativo en la fracción del paréntesis.",
             "expression": "\\left( \\frac{\\sqrt{10}}{\\sqrt{45}} \\right)^{-1}",
             "KCs": [
                 "PotNegFracc"
@@ -16,7 +16,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que la propiedad de la potencia negativa es : ",
+                    "hint": "Recuerda que la propiedad de la potencia con exponente negativo es : ",
                     "expression": "\\left( a \\right) ^{-b}  \\longrightarrow \\left( \\frac{1}{a} \\right)^{b}"
                 },
                 {
@@ -33,14 +33,35 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de la potencia negativa a la fracción del paréntesis.",
-            "correctMsg": "Has aplicado correctamente la propiedad de la potencia negativa.",
+            "summary": "1) Se aplica la propiedad de la potencia con exponente negativo a la fracción del paréntesis.",
+            "correctMsg": "Has aplicado correctamente la propiedad de la potencia con exponente negativo.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
                 "\\left( \\frac{\\sqrt{10}}{\\sqrt{45}}  \\right)^{-1} \\longrightarrow \\frac{\\sqrt{45}}{\\sqrt{10}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\sqrt{45}}{\\sqrt{10}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{-\\sqrt{10}}{-\\sqrt{45}}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de la potencia con exponente engativo:",
+                    "feedbackMsgExp": "\\left(a\\right)^{-b}= \\left(\\frac{1}{a}\\right)^b"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\sqrt{45}^{-1}}{\\sqrt{10}^{-1}}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de la potencia con exponente engativo:",
+                    "feedbackMsgExp": "\\left(a\\right)^{-b}= \\left(\\frac{1}{a}\\right)^b"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -52,7 +73,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que la propiedad de la multiplicacion de raíces de igual orden es : ",
+                    "hint": "Recuerda que la propiedad de la multiplicacion de raíces de igual orden es: ",
                     "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
                 },
                 {
@@ -76,7 +97,33 @@
             "displayResult": [
                 "\\frac{\\sqrt{2 \\cdot 45}}{\\sqrt{6 \\cdot 10}} \\longrightarrow \\frac{\\sqrt{90}}{\\sqrt{60}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\sqrt{90}}{\\sqrt{60}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\sqrt{47}}{\\sqrt{16}}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de multiplicación de raíces de igual orden:",
+                    "feedbackMsgExp": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
+                },
+                {
+                    "id": 2,
+                    "expression": "-\\frac{\\sqrt{90}}{\\sqrt{60}}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\sqrt[4]{90}}{\\sqrt[4]{60}}",
+                    "correct": false,
+                    "feedbackMsg": "No cambies el orden de las raíces."
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -115,7 +162,27 @@
             "displayResult": [
                 "\\sqrt{\\frac{90}{60}} \\longrightarrow \\sqrt{\\frac{3}{2}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{\\frac{3}{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\sqrt{3}}{2}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides la raíz del denominador."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{30}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de división de raíces de igual índice",
+                    "feedbackMsgExp": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -155,6 +222,26 @@
         "displayResult": [
             "\\sqrt{\\frac{90}{60}} \\longrightarrow \\sqrt{\\frac{3}{2}}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\sqrt{\\frac{3}{2}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{\\sqrt{3}}{2}",
+                "correct": false,
+                "feedbackMsg": "No olvides la raíz del denominador."
+            },
+            {
+                "id": 2,
+                "expression": "\\sqrt{30}",
+                "correct": false,
+                "feedbackMsg": "Recuerda la propiedad de división de raíces de igual índice",
+                "feedbackMsgExp": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+            }
+        ]
     }
 }

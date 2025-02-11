@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe su resultado.",
+            "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe tu resultado.",
             "expression": "\\left( \\frac{1}{2} \\right)^{-5}",
             "KCs": [
                 "TransExpFrac"
@@ -38,7 +38,7 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "2^{3} + \\left( \\frac{1}{2} \\right)^{-5} \\longrightarrow 2^{3} + 2^{5}"
+                "2^{3} + \\left( \\frac{1}{2} \\right)^{-5} \\quad \\longrightarrow \\quad 2^{3} + 2^{5}"
             ],
             "matchingError": [],
             "multipleChoice": [
@@ -70,7 +70,7 @@
         },
         {
             "stepId": "1",
-            "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+            "stepTitle": "Quedando la expresión de la siguiente manera, resuelve:",
             "expression": "2^{3} + 2^{5}",
             "KCs": [
                 "TransExpFrac",
@@ -113,13 +113,15 @@
                     "id": 1,
                     "expression": "16",
                     "correct": false,
-                    "feedbackMsg": "Recuerda que a^n se obtiene multiplicando  n factores a"
+                    "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                    "feedbackMsgExp": "a^n"
                 },
                 {
                     "id": 2,
                     "expression": "12",
                     "correct": false,
-                    "feedbackMsg": "Recuerda que a^n se obtiene multiplicando  n factores a"
+                    "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                    "feedbackMsgExp": "a^n"
                 },
                 {
                     "id": 3,
@@ -132,7 +134,7 @@
     ],
     "finalAnswer": {
         "stepId": "1",
-        "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+        "stepTitle": "Quedando la expresión de la siguiente manera, resuelve:",
         "expression": "2^{3} + 2^{5}",
         "KCs": [
             "TransExpFrac",
@@ -175,13 +177,15 @@
                 "id": 1,
                 "expression": "16",
                 "correct": false,
-                "feedbackMsg": "Recuerda que a^n se obtiene multiplicando  n factores a"
+                "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                "feedbackMsgExp": "a^n"
             },
             {
                 "id": 2,
                 "expression": "12",
                 "correct": false,
-                "feedbackMsg": "Recuerda que a^n se obtiene multiplicando  n factores a"
+                "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                "feedbackMsgExp": "a^n"
             },
             {
                 "id": 3,

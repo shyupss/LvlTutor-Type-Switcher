@@ -9,7 +9,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{1}{\\sqrt{9}+\\sqrt{4}}",
-      "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+      "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
       "displayResult": ["\\frac{1}{\\sqrt{9}+\\sqrt{4}}\\cdot\\frac{\\sqrt{9}-\\sqrt{4}}{\\sqrt{9}-\\sqrt{4}}"],
       "KCs": ["DetConj", "AmpFrac1"],
       "values": [{"name": "a", "value": 9}, {"name": "b", "value": 4}],

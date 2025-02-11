@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Identifique y escriba el conjugado del denominador",
+            "stepTitle": "Identifica y escribe el conjugado del denominador",
             "expression": "\\frac{7}{\\sqrt{3} + \\sqrt{7}}",
             "KCs": [
                 "DetConj"
@@ -40,11 +40,39 @@
             "displayResult": [
                 "\\sqrt{3} + \\sqrt{7}  \\longrightarrow \\sqrt{3} - \\sqrt{7}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{3} - \\sqrt{7}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{3}+\\sqrt{7}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt{7}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+            "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
             "expression": "\\frac{7}{\\sqrt{3} + \\sqrt{7}} \\cdot \\frac{\\left( \\sqrt{3} - \\sqrt{7}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)}",
             "KCs": [
                 "DetConj",
@@ -54,18 +82,18 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+                    "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
                 },
                 {
                     "hintId": 1,
                     "hint": "El resultado es: ",
-                    "expression": "\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
+                    "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
                 }
             ],
             "answers": [
                 {
                     "answer": [
-                        "\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
+                        "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
                     ],
                     "nextStep": "-1"
                 },
@@ -83,12 +111,37 @@
             "displayResult": [
                 "\\frac{7}{\\sqrt{3} + \\sqrt{7}} \\cdot \\frac{\\left( \\sqrt{3} - \\sqrt{7}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -\\frac{7 \\left( \\sqrt{3} - \\sqrt{7} \\right)}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{10}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{\\sqrt{3}-\\sqrt{7}}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{40}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "1",
-        "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+        "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
         "expression": "\\frac{7}{\\sqrt{3} + \\sqrt{7}} \\cdot \\frac{\\left( \\sqrt{3} - \\sqrt{7}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)}",
         "KCs": [
             "DetConj",
@@ -98,18 +151,18 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+                "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
             },
             {
                 "hintId": 1,
                 "hint": "El resultado es: ",
-                "expression": "\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
+                "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
             }
         ],
         "answers": [
             {
                 "answer": [
-                    "\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
+                    "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
                 ],
                 "nextStep": "-1"
             },
@@ -127,6 +180,31 @@
         "displayResult": [
             "\\frac{7}{\\sqrt{3} + \\sqrt{7}} \\cdot \\frac{\\left( \\sqrt{3} - \\sqrt{7}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -\\frac{7 \\left( \\sqrt{3} - \\sqrt{7} \\right)}{4}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{10}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{\\sqrt{3}-\\sqrt{7}}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            },
+            {
+                "id": 3,
+                "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{40}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            }
+        ]
     }
 }

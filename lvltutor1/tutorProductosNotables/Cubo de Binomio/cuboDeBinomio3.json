@@ -9,7 +9,7 @@
       "KCs": ["IdeTer3"],
       "hints": [
         {
-          "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+          "hint": "Para encontrar el resultado debes elevar al cubo el primer término del binomio.",
           "hintId": 0
         },
         {
@@ -44,12 +44,17 @@
           "hintId": 0
         },
         {
-          "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
-          "hintId": 1
+          "hint":"¿Cuanto vale 3a²b?, si:",
+          "expression":"a=3x, \\quad b=6",
+          "hintId":1
+        },
+        {
+          "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b tendrá un signo menos.",
+          "hintId": 2
         },
         { "hint": "El resultado es: ",
           "expression": "162x^{2}",
-          "hintId": 2
+          "hintId": 3
         }
       ],
       "stepId": "1",
@@ -74,13 +79,18 @@
           "hintId": 0
         },
         {
-          "hint": "El término 3ab² siempre será positivo.",
+          "hint":"¿Cuanto vale 3ab²?, si:",
+          "expression":"a=3x, \\quad b=6",
           "hintId": 1
+        },
+        {
+          "hint": "El término 3ab² siempre será positivo.",
+          "hintId": 2
         },
         {
           "hint": "El resultado es: ",
           "expression": "324x",
-          "hintId": 2
+          "hintId": 3
         }
       ],
       "stepId": "2",
@@ -126,7 +136,7 @@
       "expression": "(3x+6)^{3} = 27x³ + 162x² + 324x + □",
       "validation": "evaluateAndCount",
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
-      "displayResult": ["27x³+162x²+324x+216"],
+      "displayResult": ["216"],
       "matchingError": []
     }
   ],

@@ -10,7 +10,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '4x'",
                     "hintId": 0
                 },
                 {
@@ -18,7 +18,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -20x³-20x²+12x.",
+                    "hint": "El resultado es:",
+                    "expression": "-20x^{3}-20x^{2}+12x",
                     "hintId": 2
                 }
             ],
@@ -37,7 +38,7 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se realiza la primera multiplicación.",
+            "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
             "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(-5x^{2}-5x+3)\\cdot (4x-2)",
@@ -46,7 +47,32 @@
             "displayResult": [
                 "-20x^{3}-20x^{2}+12x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-20x^{3}-20x^{2}+12x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-40x^2+12x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -5x²‧4x"
+                },
+                {
+                    "id": 2,
+                    "expression": "-20x^3-8x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -5x‧4x"
+                },
+                {
+                    "id": 3,
+                    "expression": "-20x^3-20x^2+12",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3‧4x"
+                }
+            ]
         },
         {
             "KCs": [
@@ -54,7 +80,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '-2'",
                     "hintId": 0
                 },
                 {
@@ -62,7 +88,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 10x²+10x-6.",
+                    "hint": "El resultado es:",
+                    "expression": "10x^{2}+10x-6",
                     "hintId": 2
                 }
             ],
@@ -81,7 +108,7 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la segunda multiplicación.",
+            "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
             "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(-5x^{2}-5x+3)\\cdot (4x-2)",
@@ -90,7 +117,32 @@
             "displayResult": [
                 "10x^{2}+10x-6"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "10x^{2}+10x-6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-10x^2+10x-6",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -5x²‧-2"
+                },
+                {
+                    "id": 2,
+                    "expression": "10x^2-10x-6",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -5x‧-2"
+                },
+                {
+                    "id": 3,
+                    "expression": "10x^2+10x+6",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3‧-2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +159,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -20x³-10x²+22x-6.",
+                    "hint": "El resultado es:",
+                    "expression": "-20x^{3}-10x^{2}+22x-6",
                     "hintId": 2
                 }
             ],
@@ -126,7 +179,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se obtiene el resultado.",
+            "summary": "3) Se suman los términos semejantes.",
             "stepTitle": "Finalmente, reduce los términos semejantes",
             "correctMsg": "Has encontrado el resultado.",
             "expression": "(-20x^{3}-20x^{2}+12x)+(10x^{2}+10x-6)",
@@ -135,7 +188,32 @@
             "displayResult": [
                 "-20x^{3}-10x^{2}+22x-6"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-20x^{3}-10x^{2}+22x-6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-10x^3-10x^2+22x-6",
+                    "correct": false,
+                    "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+                },
+                {
+                    "id": 2,
+                    "expression": "-20x^3+10x^2+22x-6",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 3,
+                    "expression": "-20x^3-10x^2+2x-6",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -154,7 +232,8 @@
                 "hintId": 1
             },
             {
-                "hint": "El resultado es -20x³-10x²+22x-6.",
+                "hint": "El resultado es:",
+                "expression": "-20x^{3}-10x^{2}+22x-6",
                 "hintId": 2
             }
         ],
@@ -173,7 +252,7 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(-20x^{3}-20x^{2}+12x)+(10x^{2}+10x-6)",
@@ -182,6 +261,31 @@
         "displayResult": [
             "-20x^{3}-10x^{2}+22x-6"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-20x^{3}-10x^{2}+22x-6",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-10x^3-10x^2+22x-6",
+                "correct": false,
+                "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+            },
+            {
+                "id": 2,
+                "expression": "-20x^3+10x^2+22x-6",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 3,
+                "expression": "-20x^3-10x^2+2x-6",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            }
+        ]
     }
 }

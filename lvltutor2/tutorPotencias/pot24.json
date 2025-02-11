@@ -43,7 +43,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado factorizar y identificar el menor exponente en numeros de misma base.",
-            "summary": "1) Se identifica el -3 como el menor exponente entre los números de base 3 y luego se factoriza por la base 3 elevada a -3."
+            "summary": "1) Se identifica el -3 como el menor exponente entre los números de base 3 y luego se factoriza por la base 3 elevada a -3.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(3^{-3}\\cdot \\left(3-1\\right)\\right)^{-2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3^{-3}\\left(3-1\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "El factor común debe quedarse dentro del paréntesis, no lo saques fuera."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(3^{-2}\\left(1-3^{-1}\\right)\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes factorizar por el número con el menor exponente, en este caso ",
+                    "feedbackMsgExp": "3^{-3}"
+                },
+                {
+                    "id": 3,
+                    "expression": "3^{-2}\\left(1-3^{-1}\\right)^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "El factor común debe quedarse dentro del paréntesis, no lo saques fuera. Además, el factor común con menor exponente no es ",
+                    "feedbackMsgExp": "3^{-2}"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -84,12 +111,38 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has multiplicado potencias correctamente.",
-            "summary": "2) Se procede a resolver cada paréntesis y luego se multiplican los exponentes de cada factor resultante por el exponente fuera del paréntesis."
+            "summary": "2) Se procede a resolver cada paréntesis y luego se multiplican los exponentes de cada factor resultante por el exponente fuera del paréntesis.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3^{6}\\cdot 2^{-2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6^4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que no puedes multiplicar potencias de distinta base y exponente"
+                },
+                {
+                    "id": 2,
+                    "expression": "3^{10}",
+                    "correct": false,
+                    "feedbackMsg": "Resuelve el párentesis interno, luego utiliza propiedades de las potencias"
+                },
+                {
+                    "id": 3,
+                    "expression": "3^{6}\\cdot 2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que ",
+                    "feedbackMsgExp": "\\left(a^n\\cdot b^m\\right)^r=a^{nr}\\cdot b^{mr}"
+                }
+            ]
         },
         {
             "stepId": "2",
             "expression": "3^{6}\\cdot 2^{-2}",
-            "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+            "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción, evaluando las potencias.",
             "displayResult": [
                 "\\frac{729}{4}"
             ],
@@ -102,8 +155,8 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
-                    "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+                    "expression": "5^{-2} = \\frac{1}{5^{2}}"
                 },
                 {
                     "hintId": 1,
@@ -127,13 +180,39 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado evaluar la expresión original.",
-            "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional."
+            "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{729}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{729}{2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes tener cuidado al evaluar las potencias, recuerda que ",
+                    "feedbackMsgExp": "2^{-2}=\\frac{1}{2^2}"
+                },
+                {
+                    "id": 2,
+                    "expression": "6^{4}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que no puedes multiplicar potencias de distinta base y exponente"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{729}{8}",
+                    "correct": false,
+                    "feedbackMsg": "Debes tener cuidado al evaluar la potencia del denominador"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "2",
         "expression": "3^{6}\\cdot 2^{-2}",
-        "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+        "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción, evaluando las potencias.",
         "displayResult": [
             "\\frac{729}{4}"
         ],
@@ -146,8 +225,8 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
-                "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+                "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+                "expression": "5^{-2} = \\frac{1}{5^{2}}"
             },
             {
                 "hintId": 1,
@@ -171,6 +250,32 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado evaluar la expresión original.",
-        "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional."
+        "summary": "3) Finalmente se evalúa cada factor expresando el resultado como un número racional.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{729}{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{729}{2}",
+                "correct": false,
+                "feedbackMsg": "Debes tener cuidado al evaluar las potencias, recuerda que ",
+                "feedbackMsgExp": "2^{-2}=\\frac{1}{2^2}"
+            },
+            {
+                "id": 2,
+                "expression": "6^{4}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que no puedes multiplicar potencias de distinta base y exponente"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{729}{8}",
+                "correct": false,
+                "feedbackMsg": "Debes tener cuidado al evaluar la potencia del denominador"
+            }
+        ]
     }
 }

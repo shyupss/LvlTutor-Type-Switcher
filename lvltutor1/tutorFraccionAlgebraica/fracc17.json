@@ -8,7 +8,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{1}{3a^{2}}+\\frac{1}{5a}",
-      "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+      "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
       "displayResult": [
         "15\\cdot a^{2}"
       ],
@@ -24,15 +24,17 @@
       "hints": [
           {
             "hintId": 0,
-            "hint": "Comenzar encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x², y. 12xy tiene por factores 2²,3,x,y. Deberías comenzar descomponiendo los coeficientes numéricos (3 y 5) en sus factores primos."
+            "hint": "Comienza encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x, x², y."
           },
           {
             "hintId": 1,
-            "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores escoge el de máxima potencia"
+            "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+            "expression":"\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
           },
           {
             "hintId": 2,
-            "hint": "El mínimo común múltiplo de los denominadores es 15a²"
+            "hint": "El mínimo común múltiplo de los denominadores es",
+            "expression":" 15a²"
           }
         ],
       "matchingError": [],
@@ -72,7 +74,7 @@
           },
           {
             "hintId": 1,
-            "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+            "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
           },
           {
             "hintId": 2,

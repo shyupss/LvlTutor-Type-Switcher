@@ -3,12 +3,12 @@
   "title": "Fracción Algebraica",
   "type": "lvltutor",
   "meta": {},
-  "text": "Exprese la siguiente fraccion como multiplicacion:",
+  "text": "Expresa la siguiente fraccion como multiplicacion:",
   "steps": [
     {
       "stepId": "0",
       "expression": "\\frac{\\frac{x}{y}}{\\frac{z}{k}}",
-      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "stepTitle": "Invirtiendo la fracción del denominador, expresa como multiplicación de fracciones.",
       "displayResult": [
         "\\frac{x}{y}\\cdot \\frac{k}{z}"
       ],
@@ -40,7 +40,8 @@
         },
         {
           "hintId": 1,
-          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+          "expression":"\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
         },
         {
           "hintId": 2,
@@ -66,7 +67,7 @@
       ],
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
       "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
-      "summary": "Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+      "summary": "Con el fin de transformar una divsión de fracciones a multiplicación de fracciones, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
     }
   ]
 }

@@ -8,7 +8,7 @@
         {
             "stepId": "0",
             "expression": "\\frac{1}{b^{2}} + \\frac{1}{a^{2}\\cdot b}",
-            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo",
+            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
             "displayResult": [
                 "a^{2}\\cdot b^{2}"
             ],
@@ -30,15 +30,17 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Comenzar encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x², y."
+                    "hint": "Comienza encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x, x², y."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Multiplicar todos los factores únicos de los dos denominadores en su máxima potencia."
+                    "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+                    "expression": "\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
                 },
                 {
                     "hintId": 2,
-                    "hint": "El mínimo común múltiplo de los denominadores es a²b²."
+                    "hint": "El mínimo común múltiplo de los denominadores es:",
+                    "expression": "a^{2}\\cdot b^{2}"
                 }
             ],
             "matchingError": [],
@@ -53,7 +55,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
-            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "a^{2}\\cdot b^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "ba^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que b² es múltiplo de b"
+                },
+                {
+                    "id": 2,
+                    "expression": "b^2",
+                    "correct": false,
+                    "feedbackMsg": "También debes considerar el mínimo común múltiplo para el factor a"
+                },
+                {
+                    "id": 3,
+                    "expression": "b^2a",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 'a' esta al cuadrado"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -87,11 +114,12 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+                    "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
                 },
                 {
                     "hintId": 2,
-                    "hint": "El resultado es: (a²+b)/(a²b²)."
+                    "hint": "El resultado es: ",
+                    "expression": "\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}"
                 }
             ],
             "matchingError": [],
@@ -106,7 +134,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado la suma de fracciones aplicando mínimo común múltiplo correctamente.",
-            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{a^2+1}{a^2b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la  segunda fracción b"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{a^2b+b^2}{a^2b^2}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por a² y la segunda por b"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1+b}{a^2b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica  la primera fracción a²"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -141,11 +194,12 @@
             },
             {
                 "hintId": 1,
-                "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+                "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
             },
             {
                 "hintId": 2,
-                "hint": "El resultado es: (a²+b)/(a²b²)."
+                "hint": "El resultado es: ",
+                "expression": "\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}"
             }
         ],
         "matchingError": [],
@@ -160,6 +214,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has realizado la suma de fracciones aplicando mínimo común múltiplo correctamente.",
-        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{a^2+1}{a^2b^2}",
+                "correct": false,
+                "feedbackMsg": "Amplifica la  segunda fracción b"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{a^2b+b^2}{a^2b^2}",
+                "correct": false,
+                "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por a² y la segunda por b"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{1+b}{a^2b^2}",
+                "correct": false,
+                "feedbackMsg": "Amplifica  la primera fracción a²"
+            }
+        ]
     }
 }

@@ -8,7 +8,7 @@
       "KCs": ["IdeTer3"],
       "hints": [
         {
-          "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+          "hint": "Para encontrar el resultado debes elevar al cubo el primer término del binomio.",
           "hintId": 0
         },
         {
@@ -29,7 +29,7 @@
       "summary": "1) De acuerdo con la fórmula del cubo del binomio (a + b)³ = (a³ + 3a²b + 3ab² + b³), el primer término a³ se obtiene al elevar x al cubo.",
       "stepTitle": "Encuentra el primer término del cubo de binomio.",
       "correctMsg": "Has encontrado el primer término.",
-      "expression": "(x+5)^{3}",
+      "expression": "(x+5)^{3} = □ + □ + □ + □",
       "validation": "evaluateAndCount",
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
       "displayResult": ["x^{3}"],
@@ -43,12 +43,17 @@
           "hintId": 0
         },
         {
-          "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
-          "hintId": 1
+          "hint":"¿Cuanto vale 3a²b?, si:",
+          "expression":"a=x, \\quad b=5",
+          "hintId":1
+        },
+        {
+          "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b tendrá un signo menos.",
+          "hintId": 2
         },
         { "hint": "El resultado es: ",
           "expression": "15x^{2}",
-          "hintId": 2
+          "hintId": 3
         }
       ],
       "stepId": "1",
@@ -59,7 +64,7 @@
       "summary": "2) Según la identidad, el segundo término 3a²b se calcula al multiplicar 3, x² y 5.",
       "stepTitle": "Encuentra el segundo término del cubo de binomio.",
       "correctMsg": "Has encontrado el segundo término.",
-      "expression": "(x+5)^{3}",
+      "expression": "(x+5)^{3} = (x)^{3} + □ + □ + □",
       "validation": "evaluateAndCount",
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
       "displayResult": ["15x^{2}"],
@@ -73,13 +78,18 @@
           "hintId": 0
         },
         {
-          "hint": "El término 3ab² siempre será positivo.",
+          "hint":"¿Cuanto vale 3ab²?, si:",
+          "expression":"a=x, \\quad b=5",
           "hintId": 1
+        },
+        {
+          "hint": "El término 3ab² siempre será positivo.",
+          "hintId": 2
         },
         {
           "hint": "El resultado es: ",
           "expression": "75x",
-          "hintId": 2
+          "hintId": 3
         }
       ],
       "stepId": "2",
@@ -90,7 +100,7 @@
       "summary": "3) El tercer término 3ab² surge de multiplicar 3, x y 5².",
       "stepTitle": "Encuentra el tercer término del cubo de binomio.",
       "correctMsg": "Has encontrado el tercer término.",
-      "expression": "(x+5)^{3}",
+      "expression": "(x+5)^{3} = (x)^{3} + 15x^{2} + □ + □",
       "validation": "evaluateAndCount",
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
       "displayResult": ["75x"],
@@ -122,10 +132,10 @@
       "summary": "4) Por último, el cuarto término b³ se obtiene al elevar 5 al cubo.",
       "stepTitle": "Finalmente obtén el cuarto término.",
       "correctMsg": "Has encontrado el resultado.",
-      "expression": "(x+5)^{3}",
+      "expression": "(x+5)^{3} = (x)^{3} + 15x^{2} + 75x + □",
       "validation": "evaluateAndCount",
       "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
-      "displayResult": ["x³+15x²+75x+125"],
+      "displayResult": ["125"],
       "matchingError": []
     }
   ],

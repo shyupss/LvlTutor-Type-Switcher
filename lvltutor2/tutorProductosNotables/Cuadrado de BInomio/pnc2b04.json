@@ -49,7 +49,32 @@
             "displayResult": [
                 "\\frac{1}{4}x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{4}x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{4}x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que tambien debes elevar al cuadrado las variables"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{1}{4}x\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "El coeficiente ya fue elevado al cuadrado y debe estar fuera de los paréntesis"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1}{2} x^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado tanto la variable como al coeficiente que lo acompaña."
+                }
+            ]
         },
         {
             "KCs": [
@@ -95,7 +120,32 @@
             "displayResult": [
                 "-8x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-8x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda revisar el signo del segundo término."
+                },
+                {
+                    "id": 2,
+                    "expression": "-4x",
+                    "correct": false,
+                    "feedbackMsg": "No olvides multiplicar el resultado por 2."
+                },
+                {
+                    "id": 3,
+                    "expression": "-8",
+                    "correct": false,
+                    "feedbackMsg": "Primero multiplica ambos términos, y después multiplica el resultado por 2; recuerda que el segundo término es 2⋅a⋅b."
+                }
+            ]
         },
         {
             "KCs": [
@@ -142,7 +192,32 @@
             "displayResult": [
                 "64"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "64",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-8",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=-8"
+                },
+                {
+                    "id": 3,
+                    "expression": "-64",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -191,6 +266,31 @@
         "displayResult": [
             "64"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "64",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-8",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "8",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=-8"
+            },
+            {
+                "id": 3,
+                "expression": "-64",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+            }
+        ]
     }
 }

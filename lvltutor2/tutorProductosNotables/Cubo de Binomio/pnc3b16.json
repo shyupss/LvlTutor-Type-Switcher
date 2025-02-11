@@ -55,7 +55,32 @@
             "displayResult": [
                 "(\\frac{3}{4}x+\\frac{2}{3}y)(\\frac{3}{4}x+\\frac{2}{3}y)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(\\frac{3}{4}x+\\frac{2}{3}y)(\\frac{3}{4}x+\\frac{2}{3}y)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que a³=a‧a²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia con exponente 1 y otra con exponente 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{3}{4}x+\\frac{2}{3}y\\right)\\cdot\\left(\\frac{3}{4}x+\\frac{2}{3y}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "El segundo término debe estar al cuadrado"
+                }
+            ]
         },
         {
             "KCs": [
@@ -106,7 +131,32 @@
             "displayResult": [
                 "\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{9}{16}x^{2}+xy + \\frac{4}{9}y^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{9}{16}x^2+xy+\\frac{2}{3}y\\right)",
+                    "correct": false,
+                    "feedbackMsg": "El tercer término del cuadrado de binomio es b², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{3}{4}x+xy+\\frac{4}{9}y^2\\right)",
+                    "correct": false,
+                    "feedbackMsg": "El primer término del cuadrado de binomio es a², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{9}{16}x^2+\\frac{1}{2}xy+\\frac{4}{9}y^2\\right)",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de mutliplicar por 2 el segundo término, recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                }
+            ]
         },
         {
             "KCs": [
@@ -164,7 +214,32 @@
             "displayResult": [
                 "\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{27}{64}x^3 + \\frac{3}{4}x^2y + \\frac{1}{3}xy^2 + \\frac{3}{8}x^2y + \\frac{2}{3}xy^2 + \\frac{8}{27}y^3",
+                    "correct": false,
+                    "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{27}{64}x^2+\\frac{9}{8}x^2y+xy^2+\\frac{8}{27}y^3",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{27}{64}x^3+\\frac{9}{8}xy+xy^2+\\frac{8}{27}y^3",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de las variables del segundo término"
+                }
+            ]
         }
     ],
     "title": "Cubo de binomio",
@@ -224,6 +299,31 @@
         "displayResult": [
             "\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{27}{64}x^{3}+\\frac{9}{8}x^{2}y +xy^{2} +\\frac{8}{27}y^{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{27}{64}x^3 + \\frac{3}{4}x^2y + \\frac{1}{3}xy^2 + \\frac{3}{8}x^2y + \\frac{2}{3}xy^2 + \\frac{8}{27}y^3",
+                "correct": false,
+                "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{27}{64}x^2+\\frac{9}{8}x^2y+xy^2+\\frac{8}{27}y^3",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{27}{64}x^3+\\frac{9}{8}xy+xy^2+\\frac{8}{27}y^3",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de las variables del segundo término"
+            }
+        ]
     }
 }

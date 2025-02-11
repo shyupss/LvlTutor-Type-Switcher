@@ -55,7 +55,34 @@
             "displayResult": [
                 "\\frac{6}{5}x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{6}{5}x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{6}{5}",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de la variable x"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{36}{25}x^2",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el primer término debes calcular la raíz del término ",
+                    "feedbackMsgExp": "\\frac{36}{25}x^2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{6}{5}x^2",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el primer termino calcula la raíz de",
+                    "feedbackMsgExp": "\\frac{36}{25}x^2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -106,7 +133,34 @@
             "displayResult": [
                 "\\frac{8}{3}y"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{8}{3}y",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{64}{9}y^2",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes calcular la raíz del término",
+                    "feedbackMsgExp": "\\frac{64}{9}y^2"
+                },
+                {
+                    "id": 2,
+                    "expression": "-\\frac{8}{3}y",
+                    "correct": false,
+                    "feedbackMsg": "Procura fijarte bien en el signo"
+                },
+                {
+                    "id": 3,
+                    "expression": "-\\frac{64}{9}y^2",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes calcular la raíz del término",
+                    "feedbackMsgExp": "\\frac{64}{9}y^2"
+                }
+            ]
         }
     ],
     "title": "Suma por diferencia",
@@ -159,6 +213,33 @@
         "displayResult": [
             "\\frac{8}{3}y"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{8}{3}y",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{64}{9}y^2",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes calcular la raíz del término",
+                "feedbackMsgExp": "\\frac{64}{9}y^2"
+            },
+            {
+                "id": 2,
+                "expression": "-\\frac{8}{3}y",
+                "correct": false,
+                "feedbackMsg": "Procura fijarte bien en el signo"
+            },
+            {
+                "id": 3,
+                "expression": "-\\frac{64}{9}y^2",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes calcular la raíz del término",
+                "feedbackMsgExp": "\\frac{64}{9}y^2"
+            }
+        ]
     }
 }

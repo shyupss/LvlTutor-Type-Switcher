@@ -44,7 +44,32 @@
             "displayResult": [
                 "108 = 36 \\cdot 3 "
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "36 \\cdot 3",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "54\\cdot 2",
+                    "correct": false,
+                    "feedbackMsg": "Uno de los factores debe ser un cuadrado perfecto, un cuadrado perfecto es un número que resulta de multiplicar un número entero por sí mismo."
+                },
+                {
+                    "id": 2,
+                    "expression": "6\\cdot 18",
+                    "correct": false,
+                    "feedbackMsg": "Uno de los factores debe ser un cuadrado perfecto, un cuadrado perfecto es un número que resulta de multiplicar un número entero por sí mismo."
+                },
+                {
+                    "id": 3,
+                    "expression": "6\\cdot 6\\cdot3",
+                    "correct": false,
+                    "feedbackMsg": "Debe ser el producto de 2 factores, no 3"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -57,7 +82,8 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Separa el producto en una multiplicación de 2 raices."
+                    "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                    "expression": "\\sqrt[n]{a \\cdot b} = \\sqrt[n]{a} \\cdot  \\sqrt[n]{b}"
                 },
                 {
                     "hintId": 1,
@@ -96,7 +122,32 @@
             "displayResult": [
                 "\\sqrt{36 \\cdot 3} \\longrightarrow \\sqrt{36}  \\cdot \\sqrt{3} \\longrightarrow 6 \\sqrt{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6\\sqrt{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-6\\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{36}\\cdot \\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Como 36 es un cuadrado perfecto, puedes sacarlo fuera de la raíz"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt{6\\cdot 6\\cdot 3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 36 es un cuadrado perfecto, por lo tanto tiene raíz exacta."
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -110,7 +161,8 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Separa el producto en una multiplicación de 2 raices."
+                "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                "expression": "\\sqrt[n]{a \\cdot b} = \\sqrt[n]{a} \\cdot  \\sqrt[n]{b}"
             },
             {
                 "hintId": 1,
@@ -149,6 +201,31 @@
         "displayResult": [
             "\\sqrt{36 \\cdot 3} \\longrightarrow \\sqrt{36}  \\cdot \\sqrt{3} \\longrightarrow 6 \\sqrt{3}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "6\\sqrt{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-6\\sqrt{3}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el signo."
+            },
+            {
+                "id": 2,
+                "expression": "\\sqrt{36}\\cdot \\sqrt{3}",
+                "correct": false,
+                "feedbackMsg": "Como 36 es un cuadrado perfecto, puedes sacarlo fuera de la raíz"
+            },
+            {
+                "id": 3,
+                "expression": "\\sqrt{6\\cdot 6\\cdot 3}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que 36 es un cuadrado perfecto, por lo tanto tiene raíz exacta."
+            }
+        ]
     }
 }

@@ -2,19 +2,19 @@
   "code": "raNum16", 
   "meta": {},
   "title": "Racionaliza la siguiente expresión.",
-  "text": "Realice la suma de radicales y escriba su resultado.",
+  "text": "Realiza la división de radicales y escribe su resultado.",
   "initialExpression":"\\frac{3}{\\sqrt{5}}",
   "type": "lvltutor",
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Para este caso, identifique el denominador radical.",
+      "stepTitle": "Para este caso, identifica el denominador radical.",
       "expression": "\\frac{3}{\\sqrt{5}}",
       "KCs": ["IdeDenoRadi"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Para racionalizar, necesitamos identificar correctamente el denominador radical. Por ejemplo :  ",
+          "hint": "Para racionalizar, necesitas identificar correctamente el denominador radical. Por ejemplo :  ",
           "expression":"\\frac{a}{\\sqrt{b}} \\longrightarrow \\sqrt{b}" 
         },
         {
@@ -24,7 +24,7 @@
         }
       ],
       "answers": [{ "answer": ["\\sqrt{5}"], "nextStep": "1" }],
-      "summary": "1)Se identifica el denominador radical.",
+      "summary": "1) Se identifica el denominador radical.",
       "correctMsg": "Has identificado correctamente el denominador radical.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",

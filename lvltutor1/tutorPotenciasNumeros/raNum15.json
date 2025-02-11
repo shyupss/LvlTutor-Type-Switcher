@@ -2,22 +2,26 @@
   "code": "raNum15", 
   "meta": {},
   "title": "Suma de radicales",
-  "text": "Aplicando propiedades , realiza la suma de radicales y escribe el resultado",
+  "text": "Aplicando propiedades, realiza la suma de radicales y escribe el resultado",
   "initialExpression":"2\\sqrt{12} - 3\\sqrt{75} + \\sqrt{27}",
   "type": "lvltutor",
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz.",
+      "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz.",
       "expression": "2\\sqrt{12}",
       "KCs": ["DescoRaiz"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
         },
         {
           "hintId":1,
+          "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+        },
+        {
+          "hintId":2,
           "hint":"El resultado es: ",
           "expression": "4\\sqrt{3}"
         }
@@ -32,16 +36,20 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Usando propiedades, descompone y simplifica la siguiente raíz de la suma de radicales.",
+      "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz de la suma de radicales.",
       "expression": "3\\sqrt{75}",
       "KCs": ["DescoRaiz"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+          "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
         },
         {
           "hintId":1,
+          "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+        },
+        {
+          "hintId":2,
           "hint":"El resultado es: ",
           "expression": "15\\sqrt{3}"
         }
@@ -56,17 +64,20 @@
     },
     {
       "stepId": "2",
-      "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz de 27.",
+      "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz de 27.",
       "expression": "\\sqrt{27}",
       "KCs": ["DescoRaiz"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo:",
-          "expression":"a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b}"
+          "hint": "Para descomponer la raiz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
         },
         {
           "hintId":1,
+          "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+        },
+        {
+          "hintId":2,
           "hint":"El resultado es: ",
           "expression": "3\\sqrt{3}"
         }

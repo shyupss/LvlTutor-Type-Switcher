@@ -52,7 +52,32 @@
             "displayResult": [
                 "5xy"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "5xy",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Debes calcular la raíz de las variables también"
+                },
+                {
+                    "id": 2,
+                    "expression": "25x^2 y^2",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el primer término debes utilizar el término 25x²y² y calcular su raíz."
+                },
+                {
+                    "id": 3,
+                    "expression": "5x^2 y^2",
+                    "correct": false,
+                    "feedbackMsg": "Calcula la raíz de 25x²y² para obtener el primer término"
+                }
+            ]
         },
         {
             "KCs": [
@@ -102,7 +127,32 @@
             "displayResult": [
                 "4"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "16",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes utilizar el término 16 y calcular su raíz."
+                },
+                {
+                    "id": 2,
+                    "expression": "-4",
+                    "correct": false,
+                    "feedbackMsg": "Procura fijarte bien en el signo"
+                },
+                {
+                    "id": 3,
+                    "expression": "-16",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes utilizar el término 16 y calcular su raíz."
+                }
+            ]
         }
     ],
     "title": "Suma por diferencia",
@@ -154,6 +204,31 @@
         "displayResult": [
             "4"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "4",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "16",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes utilizar el término 16 y calcular su raíz."
+            },
+            {
+                "id": 2,
+                "expression": "-4",
+                "correct": false,
+                "feedbackMsg": "Procura fijarte bien en el signo"
+            },
+            {
+                "id": 3,
+                "expression": "-16",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes utilizar el término 16 y calcular su raíz."
+            }
+        ]
     }
 }

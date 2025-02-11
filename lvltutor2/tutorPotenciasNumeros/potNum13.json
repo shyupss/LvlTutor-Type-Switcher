@@ -2,7 +2,7 @@
     "code": "potNum13",
     "meta": {},
     "title": "Cociente de potencias de igual base.",
-    "text": "Resuelve, reduce y desarrolla la siguiente expresion aplicando las propiedades de las potencias",
+    "text": "Resuelve, reduce y desarrolla la siguiente expresion aplicando las propiedades de las potencias.",
     "type": "lvltutor",
     "steps": [
         {
@@ -57,9 +57,37 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "2^{0} \\cdot 3^{1} \\cdot 5^{1} = 15"
+                "\\frac{2^{2} \\cdot 3^{3} \\cdot 5^{7}}{3^{2} \\cdot 5^{6} \\cdot 2^{2}} \\quad = \\quad 2^{2-2} \\cdot 3^{3-2} \\cdot 5^{7-6} \\quad = \\quad 2^{0} \\cdot 3^{1} \\cdot 5^{1} \\quad = \\quad 15"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2\\cdot3^{\\frac{3}{2}}\\cdot 5^{\\frac{7}{6}}",
+                    "correct": false,
+                    "feedbackMsg": "No debes dividir los exponentes, recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{15}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^4\\cdot3^6\\cdot5^{42}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                }
+            ]
         }
     ]
 }

@@ -17,8 +17,9 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba), debes realizar lo inverso a esto.",
-                    "hintId": 1
+                    "hintId": 1,
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba), debes realizar lo inverso a esto. Ejemplo:",
+                    "expression": "\\frac{w}{x} ⋅ \\frac{b}{a} \\quad ⟶ \\quad  \\frac{\\frac{w}{x}}{\\frac{a}{b}}"
                 },
                 {
                     "hint": "La solución es: ",
@@ -53,8 +54,8 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Para expresar una multiplicación de fracciones en una división de fracciones se divide la fracción de la izquierda de la multiplicación por la fracción inversa de la derecha de la multiplicación",
-            "stepTitle": "Inviertiendo la fracción del lado derecho de la multiplicación, expresa como una fracción de fracciones.",
+            "summary": "1) Para expresar una multiplicación de fracciones en una división de fracciones, se divide la fracción de la izquierda de la multiplicación, por la fracción de la derecha de la multiplicación, pero la fracción debe estar invertida.",
+            "stepTitle": "Invirtiendo la fracción del lado derecho de la multiplicación, expresa el resultado como una fracción de fracciones.",
             "correctMsg": "Has expresado la multiplicación de fracciones como división de fracciones correctamente.",
             "expression": "\\frac{x}{y}\\cdot\\frac{z}{k}",
             "validation": "evaluateAndCount",
@@ -62,7 +63,33 @@
             "displayResult": [
                 "\\frac{\\frac{x}{y}}{\\frac{k}{z}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\frac{x}{y}}{\\frac{k}{z}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{xz}{yk}",
+                    "correct": false,
+                    "feedbackMsg": "Divide la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\frac{x}{y}}{\\frac{z}{k}}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\left(\\frac{d}{c}\\right)^{-1}=\\frac{c}{d}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{xk}{yz}",
+                    "correct": false,
+                    "feedbackMsg": "Divide  la primera fracción por el inverso multiplicativo de la segunda fracción."
+                }
+            ]
         }
     ],
     "title": "Fracción Algebraica"

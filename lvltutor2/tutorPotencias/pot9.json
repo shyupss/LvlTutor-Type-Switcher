@@ -12,7 +12,7 @@
                 "TransExpFrac"
             ],
             "expression": "a^{-1}",
-            "stepTitle": "Utiliza la propiedad potencia con exponente negativo para volver positivo el exponente de la potencia.",
+            "stepTitle": "Utiliza la propiedad de potencia con exponente negativo para volver positivo el exponente de la potencia.",
             "displayResult": [
                 "\\frac{1}{a}"
             ],
@@ -25,14 +25,11 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Para que el exponente sea positivo, el numerador y denominador deben cambiar de lugar"
+                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+                    "expression": "a^{-b} = \\frac{1}{a^{b}}"
                 },
                 {
                     "hintId": 1,
-                    "hint": "El numerador es a, el denominador es 1 y el exponente es (-1)"
-                },
-                {
-                    "hintId": 2,
                     "hint": "El resultado es: ",
                     "expression": "\\frac{1}{a}"
                 }
@@ -49,7 +46,7 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
-            "summary": "Para transformar una potencia con exponente negativo a uno positivo se deben intercambiar el numerador por el denominador y viceversa.",
+            "summary": "1) Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo.",
             "multipleChoice": [
                 {
                     "id": 0,

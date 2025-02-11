@@ -8,7 +8,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{1}{b^{2}} + \\frac{1}{a^{2}\\cdot b}",
-      "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo",
+      "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
       "displayResult": [
         "a^{2}\\cdot b^{2}"
       ],
@@ -28,15 +28,17 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Comenzar encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x², y."
+          "hint": "Comienza encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x, x², y."
         },
         {
           "hintId": 1,
-          "hint": "Multiplicar todos los factores únicos de los dos denominadores en su máxima potencia."
+          "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+          "expression":"\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
         },
         {
           "hintId": 2,
-          "hint": "El mínimo común múltiplo de los denominadores es a²b²."
+          "hint": "El mínimo común múltiplo de los denominadores es:",
+          "expression":"a^{2}\\cdot b^{2}"
         }
       ],
       "matchingError": [],
@@ -80,11 +82,12 @@
         },
         {
           "hintId": 1,
-          "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+          "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
         },
         {
           "hintId": 2,
-          "hint": "El resultado es: (a²+b)/(a²b²)."
+          "hint": "El resultado es: ",
+          "expression":"\\frac{a^{2}+b}{a^{2}\\cdot b^{2}}"
         }
       ],
       "matchingError": [],

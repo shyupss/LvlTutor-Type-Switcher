@@ -7,13 +7,13 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 2",
+      "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 2.",
       "expression": "2^5 \\cdot 2^3",
       "KCs": ["SumResExp"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾"
+          "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = aˣ ⁺ ʸ"
         },
         {
           "hintId": 1,
@@ -26,7 +26,7 @@
         }
       ],
       "answers": [{ "answer": ["2^{8}"], "nextStep": "-1" }, { "answer": ["256"], "nextStep": "-1"}],
-      "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 2 y los exponentes son 5 y 3.",
+      "summary": "1) Se aplica la propiedad de producto de potencias de igual base aˣ · aʸ = aˣ ⁺ ʸ. En este caso la base en común es 2 y los exponentes son 5 y 3.",
       "correctMsg": "Has contestado correctamente aplicando la propiedad del producto potencias de igual base",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",

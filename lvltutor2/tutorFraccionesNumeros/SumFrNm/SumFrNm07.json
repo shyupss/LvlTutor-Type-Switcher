@@ -51,7 +51,32 @@
             "displayResult": [
                 "12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 2,
+                    "expression": "48",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                }
+            ]
         },
         {
             "KCs": [
@@ -99,7 +124,32 @@
             "displayResult": [
                 "\\frac{6}{12} + \\frac{9}{12} + \\frac{10}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{6}{12} + \\frac{9}{12} + \\frac{10}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{6}{12}+\\frac{3}{12}+\\frac{10}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador de la segunda fracción por 3"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{12}+\\frac{9}{12}+\\frac{10}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador de la primera fracción por 6"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{6}{12}+\\frac{9}{12}+\\frac{5}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador de la tercera fracción por 2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -150,7 +200,32 @@
             "displayResult": [
                 "\\frac{25}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{25}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "25",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{25}{36}",
+                    "correct": false,
+                    "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, suma los numeradores y  conserva el denominador."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{24}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Suma los numeradores correctamente y conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Suma de fracciones",
@@ -203,6 +278,31 @@
         "displayResult": [
             "\\frac{25}{12}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{25}{12}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "25",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{25}{36}",
+                "correct": false,
+                "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, suma los numeradores y  conserva el denominador."
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{24}{12}",
+                "correct": false,
+                "feedbackMsg": "Suma los numeradores correctamente y conserva el denominador."
+            }
+        ]
     }
 }

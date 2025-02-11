@@ -7,7 +7,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, exprese como raíz quinta.",
+      "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, expresa como raíz quinta.",
       "expression": "\\sqrt[5]{4} \\cdot \\sqrt[5]{-4} \\cdot \\sqrt[5]{-2}",
       "KCs": ["MultRaices"],
       "hints": [

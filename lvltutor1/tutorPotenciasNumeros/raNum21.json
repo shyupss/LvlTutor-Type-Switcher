@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Identifique y escriba el conjugado del denominador",
+      "stepTitle": "Identifica y escribe el conjugado del denominador",
       "expression": "\\frac{7}{\\sqrt{3} + \\sqrt{7}}",
       "KCs": ["DetConj"],
       "hints": [
@@ -33,21 +33,21 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+      "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
       "expression": "\\frac{7}{\\sqrt{3} + \\sqrt{7}} \\cdot \\frac{\\left( \\sqrt{3} - \\sqrt{7}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)}",
       "KCs": ["MultFrac","SumDif"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+          "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
         },
         {
           "hintId":1,
           "hint":"El resultado es: ",
-          "expression": "\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
+          "expression": "-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"
         }
       ],
-      "answers": [{ "answer": ["\\frac{-7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"], "nextStep": "-1" }, { "answer": ["-\\frac{7\\sqrt{3} - 7\\sqrt{7}}{4}"], "nextStep": "-1" }],
+      "answers": [{ "answer": ["-\\frac{7\\left(\\sqrt{3}-\\sqrt{7}\\right)}{4}"], "nextStep": "-1" }, { "answer": ["-\\frac{7\\sqrt{3} - 7\\sqrt{7}}{4}"], "nextStep": "-1" }],
       "summary": "2) Se hace la racionalización de la expresión.",
       "correctMsg": "Has racionalizado correctamente la expresion.",
       "validation": "evaluateAndCount",

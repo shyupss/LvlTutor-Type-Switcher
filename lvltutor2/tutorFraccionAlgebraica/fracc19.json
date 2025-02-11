@@ -8,7 +8,7 @@
         {
             "stepId": "0",
             "expression": "\\frac{1}{4a^{2}b^{2}}+\\frac{2}{6a^{3}b}",
-            "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
             "displayResult": [
                 "12a^{3}b^{2}"
             ],
@@ -30,11 +30,12 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Comenzar encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x², y. 12xy tiene por factores 2²,3,x,y. Deberías comenzar descomponiendo los coeficientes numéricos (4 y 6) en sus factores primos. "
+                    "hint": "Comienza encontrando los factores para cada denominador usando números primos y variables. Por ejemplo, 6x²y tiene por factores 2, 3, x, x², y."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores escoge el de máxima potencia"
+                    "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+                    "expression": "\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
                 },
                 {
                     "hintId": 2,
@@ -54,7 +55,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
-            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12a^{3}b^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12a^4b^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que a³ es múltiplo de a²"
+                },
+                {
+                    "id": 2,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "También debes considerar el mínimo común múltiplo entre los factores literales"
+                },
+                {
+                    "id": 3,
+                    "expression": "12a^3b",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que b² es múltiplo de b"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -88,7 +114,7 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+                    "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
                 },
                 {
                     "hintId": 2,
@@ -108,7 +134,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado la suma de fracciones correctamente..",
-            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3a+4b}{12a^{3}b^{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3a+2}{12a^3b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la  segunda fracción 2b"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{6a^3b+8a^2b^2}{12a^3b^2}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por 3a y la segunda por 2b"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1+4b}{12a^3b^2}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica  la primera fracción 3a"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -143,7 +194,7 @@
             },
             {
                 "hintId": 1,
-                "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, y la expresión resultante se divide por el mínimo común múltiplo."
+                "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
             },
             {
                 "hintId": 2,
@@ -163,6 +214,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has realizado la suma de fracciones correctamente..",
-        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{3a+4b}{12a^{3}b^{2}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{3a+2}{12a^3b^2}",
+                "correct": false,
+                "feedbackMsg": "Amplifica la  segunda fracción 2b"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{6a^3b+8a^2b^2}{12a^3b^2}",
+                "correct": false,
+                "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por 3a y la segunda por 2b"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{1+4b}{12a^3b^2}",
+                "correct": false,
+                "feedbackMsg": "Amplifica  la primera fracción 3a"
+            }
+        ]
     }
 }

@@ -48,7 +48,32 @@
             "displayResult": [
                 "6"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador del producto corresponde al producto de los numeradores"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador del producto corresponde al producto de los numeradores"
+                },
+                {
+                    "id": 3,
+                    "expression": "18",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador  del producto corresponde al producto de los numeradores"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "24"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "24",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                },
+                {
+                    "id": 3,
+                    "expression": "18",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                }
+            ]
         },
         {
             "KCs": [
@@ -109,11 +159,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 6. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 6. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -148,7 +198,30 @@
             "displayResult": [
                 "\\frac{6}{24} = \\frac{1}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{6}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{8}",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{6}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Debes simplicar la expresión"
+                }
+            ]
         }
     ],
     "title": "Multiplicación de fracciones",
@@ -166,11 +239,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 6. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 6. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -205,6 +278,29 @@
         "displayResult": [
             "\\frac{6}{24} = \\frac{1}{4}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{1}{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{1}{6}",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{1}{8}",
+                "correct": false
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{6}{24}",
+                "correct": false,
+                "feedbackMsg": "Debes simplicar la expresión"
+            }
+        ]
     }
 }

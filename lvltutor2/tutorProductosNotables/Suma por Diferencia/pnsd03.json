@@ -48,7 +48,32 @@
             "displayResult": [
                 "49x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "49x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "49x",
+                    "correct": false,
+                    "feedbackMsg": "No olvides elevar x al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "7x",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado la variable y su coeficiente"
+                },
+                {
+                    "id": 3,
+                    "expression": "7x^2",
+                    "correct": false,
+                    "feedbackMsg": "No olvides elevar al cuadrado el coeficiente"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "- 4y^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-4y^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-4",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir la variable y"
+                },
+                {
+                    "id": 2,
+                    "expression": "-4y",
+                    "correct": false,
+                    "feedbackMsg": "La variable y también debe estar al cuadrado"
+                },
+                {
+                    "id": 3,
+                    "expression": "-2y",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=2y "
+                }
+            ]
         }
     ],
     "title": "Suma por diferencia",
@@ -140,6 +190,31 @@
         "displayResult": [
             "- 4y^{2}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-4y^{2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-4",
+                "correct": false,
+                "feedbackMsg": "Debes incluir la variable y"
+            },
+            {
+                "id": 2,
+                "expression": "-4y",
+                "correct": false,
+                "feedbackMsg": "La variable y también debe estar al cuadrado"
+            },
+            {
+                "id": 3,
+                "expression": "-2y",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=2y "
+            }
+        ]
     }
 }

@@ -2,19 +2,19 @@
   "code": "raNum5", 
   "meta": {},
   "title": "Simplificación de raíces.",
-  "text": "Simplifica el siguiente producto de raíces quintas.",
+  "text": "Simplifica el siguiente producto de raíces.",
   "type": "lvltutor",
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Aplicando la propiedad del producto de raices del mismo orden , exprese como quedaria la raíz cúbica.",
+      "stepTitle": "Aplicando la propiedad del producto de raices del mismo orden, expresa como quedaria la raíz cúbica.",
       "expression": "\\sqrt[3]{6} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[3]{\\frac{9}{2}} \\cdot \\sqrt[2]{5}",
       "KCs": ["MultRaices"],
       "hints": [
         {
           "hintId": 0,
           "hint": "La propiedad del producto de raíces del mismo orden dice: ",
-          "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+          "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
         },
         {
           "hintId":1,
@@ -32,14 +32,14 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Aplicando la propiedad del producto de raíces del mismo orden , exprese como quedaría la raíz cuadrada.",
+      "stepTitle": "Aplicando la propiedad del producto de raíces del mismo orden, expresa como quedaría la raíz cuadrada.",
       "expression": "\\sqrt[3]{27} \\cdot \\sqrt[2]{5} \\cdot \\sqrt[2]{5}",
       "KCs": ["MultRaices"],
       "hints": [
         {
           "hintId": 0,
           "hint": "La propiedad del producto de raíces del mismo orden dice: ",
-          "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b}"
+          "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
         },
         {
           "hintId":1,

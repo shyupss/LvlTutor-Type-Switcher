@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Exprese como una sola raíz, aplicando la propiedad de raíz de una raíz.",
+      "stepTitle": "Expresa como una sola raíz, aplicando la propiedad de raíz de una raíz.",
       "expression": "\\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}}",
       "KCs": ["RaizDeRaiz"],
       "hints": [
@@ -33,7 +33,7 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Exprese la raíz como una potencia.",
+      "stepTitle": "Expresa la raíz como una potencia.",
       "expression": "\\sqrt[16]{2}",
       "KCs": ["TransRaizPot"],
       "hints": [
@@ -58,14 +58,13 @@
     },
     {
       "stepId": "2",
-      "stepTitle": "Aplicando la propiedad de potencia de una potencia, exprese el resultado como potencia de 2.",
+      "stepTitle": "Aplicando la propiedad de potencia de una potencia, expresa el resultado como potencia de 2.",
       "expression": "\\left( 2^{\\frac{1}{16}} \\right) ^{48}",
       "KCs": ["MultExp"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "La propiedad de potencia de una potencia dice: ",
-          "expression": "(a^{m})^{n} = a^{m \\cdot n}"
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
         },
         {
           "hintId": 1,

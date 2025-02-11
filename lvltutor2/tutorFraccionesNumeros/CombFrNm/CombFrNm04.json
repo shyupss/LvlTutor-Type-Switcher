@@ -66,7 +66,32 @@
             "displayResult": [
                 "\\frac{3}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{5}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que debes resolver primero los parentesis"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Para sumar dos fracciones con distinto denominador primero debes encontrar un minimo común múltiplo para ambos denominadores"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{8}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumar dos fracciones con mismo denominador solo se suman los numeradores"
+                }
+            ]
         },
         {
             "KCs": [
@@ -115,7 +140,32 @@
             "displayResult": [
                 "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{4} \\cdot  \\frac{5}{6} - \\frac{15}{24}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3\\cdot\\frac{5}{6}-\\frac{15}{24}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "4\\cdot\\frac{5}{6}-\\frac{15}{24}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el numerador"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{4}{3}\\cdot\\frac{5}{6}-\\frac{15}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que en una fracción, el numerador va en la parte superior y el denominador en la inferior"
+                }
+            ]
         },
         {
             "KCs": [
@@ -173,7 +223,32 @@
             "displayResult": [
                 "\\frac{15}{24}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{15}{24}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{5}{24}",
+                    "correct": false,
+                    "feedbackMsg": "La operación con prioridad en este caso es la multiplicación"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{9}{10}",
+                    "correct": false,
+                    "feedbackMsg": "La multiplicación para las fracciones se realiza de manera directa"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{8}{24}",
+                    "correct": false,
+                    "feedbackMsg": "La multiplicación para dos o más fracciones es directa"
+                }
+            ]
         },
         {
             "KCs": [
@@ -224,7 +299,24 @@
             "displayResult": [
                 "\\frac{15}{24} - \\frac{15}{24}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{15}{24} - \\frac{15}{24}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{24}{15}-\\frac{15}{24}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{15}{24}+\\frac{15}{24}",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -279,7 +371,26 @@
             "displayResult": [
                 "0"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "0",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{0}{0}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando restas dos fracciones con mismo denominador, solo restas los numeradores"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{15}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Una cantidad restada con sigo misma siempre es 0!"
+                }
+            ]
         }
     ],
     "title": "Ejercicio de fracciones con Operaciones combinadas",
@@ -336,6 +447,25 @@
         "displayResult": [
             "0"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "0",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{0}{0}",
+                "correct": false,
+                "feedbackMsg": "Cuando restas dos fracciones con mismo denominador, solo restas los numeradores"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{15}{24}",
+                "correct": false,
+                "feedbackMsg": "Una cantidad restada con sigo misma siempre es 0!"
+            }
+        ]
     }
 }

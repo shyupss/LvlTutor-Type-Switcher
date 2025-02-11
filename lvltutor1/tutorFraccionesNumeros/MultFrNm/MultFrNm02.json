@@ -67,12 +67,12 @@
   
           {
             "hintId": 1,
-            "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+            "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
           },
 
           {
             "hintId": 2,
-            "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+            "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
           },
 
           {

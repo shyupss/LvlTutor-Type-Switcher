@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando propiedades, descompone y simplifica la siguiente raíz de 12.",
+      "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz.",
       "expression": "\\sqrt{12}",
       "KCs": ["DescoRaiz"],
       "hints": [
@@ -18,12 +18,16 @@
         },
         {
           "hintId":1,
+          "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+        },
+        {
+          "hintId":2,
           "hint":"El resultado es: ",
           "expression": "2\\sqrt{3}"
         }
       ],
       "answers": [{ "answer": ["2\\sqrt{3}"], "nextStep": "-1" }],
-      "summary": "1)Se realiza la primera descoposición de la raiz de 12.",
+      "summary": "1) Se realiza la primera descoposición de la raiz de 12.",
       "correctMsg": "Has realizado correctamente la descomposición de la raiz.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
@@ -32,7 +36,7 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raiz de la suma de radicales.",
+      "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raiz.",
       "expression": "2\\sqrt{75}",
       "KCs": ["DescoRaiz"],
       "hints": [
@@ -42,12 +46,16 @@
         },
         {
           "hintId":1,
+          "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+        },
+        {
+          "hintId":2,
           "hint":"El resultado es: ",
           "expression": "10\\sqrt{3}"
         }
       ],
       "answers": [{ "answer": ["10\\sqrt{3}"], "nextStep": "-1" }],
-      "summary": "2)Se realiza la segunda descomposicion de la raiz de 75.",
+      "summary": "2) Se realiza la segunda descomposicion de la raiz de 75.",
       "correctMsg": "Has realizado correctamente la descomposición de la raiz.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
@@ -62,7 +70,7 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+          "hint": "Para realizar una suma o resta de radicales, primero debes factorizar los términos que tienen factores comunes. Ejemplo:",
           "expression":"a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b}"
         },
         {

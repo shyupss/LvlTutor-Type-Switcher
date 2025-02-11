@@ -7,7 +7,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de la fracción",
+            "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de la fracción.",
             "expression": "\\left( \\left( \\frac{1}{2}  \\right)^{-2}\\right)^{-3}",
             "KCs": [
                 "MultExp"
@@ -15,7 +15,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
                 },
                 {
                     "hintId": 1,
@@ -52,14 +52,41 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso los exponentes son -2 y -3, por lo tanto la multiplicación de estos es 6",
+            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso los exponentes son -2 y -3, por lo tanto la multiplicación de estos es 6",
             "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
                 "\\left( \\frac{1}{2} \\right)^{-2 \\cdot -3} = \\left( \\frac{1}{2} \\right) ^{6}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{1}{2} \\right)^{6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{1}{2}\\right)^{-6}",
+                    "correct": false,
+                    "feedbackMsg": "No sumes los exponentes, la propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "4^{-3}",
+                    "correct": false,
+                    "feedbackMsg": "Debes dejar expresado como una potencia de base",
+                    "feedbackMsgExp": "\\frac{1}{2}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{1}{2}\\right)^{-6}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo del exponente"
+                }
+            ]
         }
     ]
 }

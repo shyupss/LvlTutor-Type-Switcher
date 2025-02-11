@@ -48,7 +48,32 @@
             "displayResult": [
                 "4"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se conserva el denominador. "
+                },
+                {
+                    "id": 2,
+                    "expression": "64",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se conserva el denominador. "
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "El denominador de cada fracción es 4"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "6"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                },
+                {
+                    "id": 2,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                },
+                {
+                    "id": 3,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                }
+            ]
         },
         {
             "KCs": [
@@ -109,11 +159,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -148,7 +198,33 @@
             "displayResult": [
                 "\\frac{6}{4} = \\frac{3}{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{2}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que en una fracción",
+                    "feedbackMsgExp": "\\frac{a\\leftarrow numerador}{b\\leftarrow denominador}"
+                },
+                {
+                    "id": 2,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el numerador"
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                }
+            ]
         }
     ],
     "title": "Suma de fracciones",
@@ -166,11 +242,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -205,6 +281,32 @@
         "displayResult": [
             "\\frac{6}{4} = \\frac{3}{2}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{3}{2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{2}{3}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que en una fracción",
+                "feedbackMsgExp": "\\frac{a\\leftarrow numerador}{b\\leftarrow denominador}"
+            },
+            {
+                "id": 2,
+                "expression": "4",
+                "correct": false,
+                "feedbackMsg": "No olvides el numerador"
+            },
+            {
+                "id": 3,
+                "expression": "6",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            }
+        ]
     }
 }

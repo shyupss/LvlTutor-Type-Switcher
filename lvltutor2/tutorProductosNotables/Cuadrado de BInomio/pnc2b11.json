@@ -52,7 +52,32 @@
             "displayResult": [
                 "7xz"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "7xz",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir las variables x y z"
+                },
+                {
+                    "id": 2,
+                    "expression": "7x^2 z^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes aplicar la raiz tanto al coeficiente como a las variables"
+                },
+                {
+                    "id": 3,
+                    "expression": "49",
+                    "correct": false,
+                    "feedbackMsg": "La raíz cuadrada aplica tanto al coeficiente como a las variables"
+                }
+            ]
         },
         {
             "KCs": [
@@ -106,7 +131,32 @@
             "displayResult": [
                 "-7"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-7",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "49",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 2,
+                    "expression": "-49",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 3,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de considerar el signo"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -162,6 +212,31 @@
         "displayResult": [
             "-7"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-7",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "49",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 2,
+                "expression": "-49",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 3,
+                "expression": "7",
+                "correct": false,
+                "feedbackMsg": "No te olvides de considerar el signo"
+            }
+        ]
     }
 }

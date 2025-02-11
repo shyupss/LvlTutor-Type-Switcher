@@ -7,7 +7,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa como potencia de 3",
+      "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa como potencia de 3.",
       "expression": "\\frac{3^{6}}{3^{3}}",
       "KCs": ["SumResExp"],
       "hints": [
@@ -31,7 +31,7 @@
       "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["3^{6-3} = 3^{3}"],
+      "displayResult": ["\\frac{3^{6}}{3^{3}} = 3^{6-3} = 3^{3}"],
       "matchingError": []
     }
   ]

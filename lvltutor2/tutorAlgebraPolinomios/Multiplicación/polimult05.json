@@ -10,7 +10,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '5x'",
                     "hintId": 0
                 },
                 {
@@ -18,7 +18,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 15x³-10x²+30x.",
+                    "hint": "El resultado es:",
+                    "expression": "15x^{3}-10x^{2}+30x",
                     "hintId": 2
                 }
             ],
@@ -37,7 +38,7 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se realiza la primera multiplicación.",
+            "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
             "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(3x^{2}-2x+6)\\cdot (5x+4)",
@@ -46,7 +47,32 @@
             "displayResult": [
                 "15x^{3}-10x^{2}+30x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15x^{3}-10x^{2}+30x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5x^2+30x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3x²‧5x"
+                },
+                {
+                    "id": 2,
+                    "expression": "15x^3+10x^2+30x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -2x‧5x"
+                },
+                {
+                    "id": 3,
+                    "expression": "15x^3-10x^2+35x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 6‧5x"
+                }
+            ]
         },
         {
             "KCs": [
@@ -54,7 +80,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '4'",
                     "hintId": 0
                 },
                 {
@@ -62,7 +88,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 12x²-8x+24.",
+                    "hint": "El resultado es:",
+                    "expression": "12x^{2}-8x+24",
                     "hintId": 2
                 }
             ],
@@ -81,7 +108,7 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la segunda multiplicación.",
+            "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
             "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(3x^{2}-2x+6)\\cdot (5x+4)",
@@ -90,7 +117,32 @@
             "displayResult": [
                 "12x^{2}-8x+24"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12x^{2}-8x+24",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12x^3-8x+24",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3x²‧4"
+                },
+                {
+                    "id": 2,
+                    "expression": "12x^2+8x+24",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -2x‧4"
+                },
+                {
+                    "id": 3,
+                    "expression": "12x^2-8x+20",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 6‧4"
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +159,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 15x³+2x²+22x+24.",
+                    "hint": "El resultado es:",
+                    "expression": "15x^{3}+2x^{2}+22x+24",
                     "hintId": 2
                 }
             ],
@@ -126,7 +179,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se obtiene el resultado.",
+            "summary": "3) Se suman los términos semejantes.",
             "stepTitle": "Finalmente, reduce los términos semejantes",
             "correctMsg": "Has encontrado el resultado.",
             "expression": "(15x^{3}-10x^{2}+30x)+(12x^{2}-8x+24)",
@@ -135,7 +188,32 @@
             "displayResult": [
                 "15x^{3}+2x^{2}+22x+24"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15x^{3}+2x^{2}+22x+24",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "27x^3+2x^2+30x+24",
+                    "correct": false,
+                    "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+                },
+                {
+                    "id": 2,
+                    "expression": "15x^3-22x^2+22x+24",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 3,
+                    "expression": "15x^3+2x^2+38x+24",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -154,7 +232,8 @@
                 "hintId": 1
             },
             {
-                "hint": "El resultado es 15x³+2x²+22x+24.",
+                "hint": "El resultado es:",
+                "expression": "15x^{3}+2x^{2}+22x+24",
                 "hintId": 2
             }
         ],
@@ -173,7 +252,7 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(15x^{3}-10x^{2}+30x)+(12x^{2}-8x+24)",
@@ -182,6 +261,31 @@
         "displayResult": [
             "15x^{3}+2x^{2}+22x+24"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "15x^{3}+2x^{2}+22x+24",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "27x^3+2x^2+30x+24",
+                "correct": false,
+                "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+            },
+            {
+                "id": 2,
+                "expression": "15x^3-22x^2+22x+24",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 3,
+                "expression": "15x^3+2x^2+38x+24",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            }
+        ]
     }
 }

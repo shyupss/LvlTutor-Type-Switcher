@@ -2,39 +2,40 @@
   "code": "raNum19", 
   "meta": {},
   "title": "Racionaliza la siguiente expresión.",
-  "text": "Realice la suma de radicales y escriba su resultado.",
+  "text": "Realice la división de radicales y escribe su resultado.",
   "initialExpression":"\\frac{3}{\\sqrt[3]{2}}",
   "type": "lvltutor",
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Para este caso, identifique el denominador radical.",
+      "stepTitle": "Para este caso, identifica el denominador radical.",
       "expression": "\\frac{3}{\\sqrt[3]{2}}",
       "KCs": ["IdeDenoRadi"],
       "hints": [
+        
         {
           "hintId": 0,
-          "hint": "Para racionalizar, necesitamos identificar correctamente el denominador radical. Por ejemplo :  ",
-          "expression":"\\frac{a}{\\sqrt{b}} \\longrightarrow \\sqrt{b}" 
+          "hint": "Para racionalizar expresiones donde el denominador no es una raíz cuadrada:  ",
+          "expression":"\\frac{a}{\\sqrt[n]{b^m}} = \\frac{a}{\\sqrt[n]{b^m}} \\cdot \\frac{\\sqrt[n]{b^{n-m}}}{\\sqrt[n]{b^{n-m}}} =\\frac{a \\sqrt[n]{b^{n-m}}}{\\sqrt[n]{b^n}}" 
         },
         {
           "hintId":1,
           "hint":"El resultado es: ",
-          "expression": "\\sqrt[3]{2}"
+          "expression": "\\sqrt[3]{2^2}"
         }
       ],
-      "answers": [{ "answer": ["\\sqrt[3]{2}"], "nextStep": "1" }],
-      "summary": "1)Se identifica el denominador radical.",
+      "answers": [{ "answer": ["\\sqrt[3]{2^2}"], "nextStep": "1" }],
+      "summary": "1) Se identifica el denominador radical.",
       "correctMsg": "Has identificado correctamente el denominador radical.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["\\frac{3}{\\sqrt[3]{2}} \\longrightarrow \\sqrt[3]{2}"],
+      "displayResult": ["\\frac{3}{\\sqrt[3]{2}} \\longrightarrow \\sqrt[3^2]{2^2}"],
       "matchingError": []
     },
     {
       "stepId": "1",
       "stepTitle": "Multiplica el numerador y el denominador por el denominador radical encontrado en el paso anterior.",
-      "expression": "\\frac{3}{\\sqrt[3]{2}} \\cdot \\frac{\\sqrt[3]{2}}{\\sqrt[3]{2}}",
+      "expression": "\\frac{3}{\\sqrt[3]{2}} \\cdot \\frac{\\sqrt[3]{2^2}}{\\sqrt[3]{2^2}}",
       "KCs": ["MultFrac","SumDif"],
       "hints": [
         {
@@ -44,15 +45,15 @@
         {
           "hintId":1,
           "hint":"El resultado es: ",
-          "expression": "\\frac{3\\sqrt[3]{2}}{2}"
+          "expression": "\\frac{3\\sqrt[3]{2^2}}{2}"
         }
       ],
-      "answers": [{ "answer": ["\\frac{3\\sqrt[3]{2}}{2}"], "nextStep": "-1" }],
+      "answers": [{ "answer": ["\\frac{3\\sqrt[3]{2^2}}{2}"], "nextStep": "-1" }],
       "summary": "2) Se realiza la racionalización.",
       "correctMsg": "Has realizado correctamente la racionalización.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["\\frac{3}{\\sqrt[3]{2}} \\cdot \\frac{\\sqrt[3]{2}}{\\sqrt[3]{2}} \\longrightarrow \\frac{3\\sqrt[3]{2}}{2}"],
+      "displayResult": ["\\frac{3}{\\sqrt[3]{2}} \\cdot \\frac{\\sqrt[3]{2^2}}{\\sqrt[3]{2^2}} \\longrightarrow \\frac{3\\sqrt[3]{2^2}}{2}"],
       "matchingError": []
     }
   ]

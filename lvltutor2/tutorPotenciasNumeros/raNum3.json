@@ -7,7 +7,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, exprese como raíz cúbica.",
+            "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, expresa como raíz cúbica.",
             "expression": "\\sqrt[3]{2} \\cdot \\sqrt[3]{4}",
             "KCs": [
                 "MultRaices"
@@ -16,7 +16,7 @@
                 {
                     "hintId": 0,
                     "hint": "La propiedad del producto de raíces del mismo orden dice: ",
-                    "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b }"
+                    "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
                 },
                 {
                     "hintId": 1,

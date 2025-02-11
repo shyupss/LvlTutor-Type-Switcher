@@ -46,7 +46,26 @@
             "displayResult": [
                 "5x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "5x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                },
+                {
+                    "id": 2,
+                    "expression": "5x^2",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                }
+            ]
         },
         {
             "KCs": [
@@ -90,7 +109,30 @@
             "displayResult": [
                 "5x^{3}+5x^{2}-5x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "5x^{3}+5x^{2}-5x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "10x^3+5x^2-5x",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "5x^3+x^2-5x",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "expression": "5x^3+5x^2+5x",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos"
+                }
+            ]
         },
         {
             "KCs": [
@@ -134,7 +176,24 @@
             "displayResult": [
                 "-12x^{2}+9x+1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-12x^{2}+9x+1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "10x^3-12x^2+9x+1",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "-12x^2-x+1",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -178,7 +237,25 @@
             "displayResult": [
                 "-12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "-12x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que dividir 2 expresiones iguales da como resultado 1."
+                }
+            ]
         },
         {
             "KCs": [
@@ -222,7 +299,26 @@
             "displayResult": [
                 "-12x^{2}-12x+12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-12x^{2}-12x+12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-12x^2-12x-12",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos."
+                },
+                {
+                    "id": 2,
+                    "expression": "12x^2+12x-12",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 12 está acompañado de un signo negativo."
+                }
+            ]
         },
         {
             "KCs": [
@@ -268,7 +364,26 @@
             "displayResult": [
                 "5x-12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "21x-11",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-24x^2+21x-11",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al restar -12x²-(-12x²)"
+                },
+                {
+                    "id": 2,
+                    "expression": "-24x^2-3x+13",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -316,6 +431,25 @@
         "displayResult": [
             "5x-12"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "21x-11",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-24x^2+21x-11",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al restar -12x²-(-12x²)"
+            },
+            {
+                "id": 2,
+                "expression": "-24x^2-3x+13",
+                "correct": false,
+                "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+            }
+        ]
     }
 }

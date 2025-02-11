@@ -3,14 +3,14 @@
     "title": "Fracción de fracciones",
     "type": "lvltutor",
     "meta": {},
-    "text": "Exprese la siguiente fracción como multiplicación: ",
+    "text": "Expresa la siguiente fracción como multiplicación: ",
     "steps": [
         {
             "stepId": "0",
             "expression": "\\frac{\\frac{1}{a}}{\\frac{1}{b}}",
-            "stepTitle": "Inviertiendo la fracción ubicada en el denominador, expresa como una multiplicación de fracciones.",
+            "stepTitle": "Invirtiendo la fracción del denominador, expresa como multiplicación de fracciones.",
             "displayResult": [
-                "\\frac{1}{a}\\cdot{b}"
+                "\\frac{b}{a}"
             ],
             "KCs": [
                 "DivFrac",
@@ -42,11 +42,13 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hintId": 2,
-                    "hint": "El resultado es: b/a"
+                    "hint": "El resultado es:",
+                    "expression": "\\frac{b}{a}"
                 }
             ],
             "matchingError": [],
@@ -73,7 +75,32 @@
             ],
             "incorrectMsg": "Verifica la expresión ingresada.",
             "correctMsg": "Has realizado la operación correctamente",
-            "summary": "Con el fin de transformar una fracción a multiplicación, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+            "summary": "Con el fin de transformar una divsión de fracciones a multiplicación de fracciones, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{a}\\cdot{b}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{a}\\cdot \\frac{1}{b}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\frac{1}{a}}{b}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{a}{b}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                }
+            ]
         }
     ]
 }

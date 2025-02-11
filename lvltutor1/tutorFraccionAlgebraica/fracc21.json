@@ -3,12 +3,12 @@
   "title": "Suma de fracciones",
   "type": "lvltutor",
   "meta": {},
-  "text": "Realiza la operación indicada y reduzca",
+  "text": "Realiza la operación indicada y reduce.",
   "steps": [
     {
       "stepId": "0",
       "expression": "\\frac{3}{x-2}+\\frac{4}{2-x}",
-      "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+      "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
       "displayResult": [
         "x-2"
       ],
@@ -28,11 +28,12 @@
           },
           {
             "hintId": 1,
-            "hint": "Puedes expresar la resta del denominador de la fraccion de la derecha como el negativo de la misma expresion invirtiendo los signos de sus componentes"
+            "hint": "Para que los denominadores sean iguales, factoriza el denominador de la segunda fracción por -1."
           },
           {
             "hintId": 2,
-            "hint": "El mínimo común múltiplo de los denominadores es (x-2)."
+            "hint": "El mínimo común múltiplo de los denominadores es:",
+            "expression":"(x-2)"
           }
         ],
       "matchingError": [],
@@ -51,8 +52,8 @@
     },
     {
       "stepId": "1",
-      "expression": "\\frac{3}{x-2}+\\frac{4}{2-x}=\\frac{3}{x-2}-\\frac{4}{x-2}",
-      "stepTitle": "Realiza la suma de las fracciones aplicando el mínimo común múltiplo encontrado.",
+      "expression": "\\frac{3}{x-2}-\\frac{4}{x-2}",
+      "stepTitle": "Realiza la resta de las fracciones aplicando el mínimo común múltiplo encontrado.",
       "displayResult": [
         "\\frac{-1}{x-2}"
       ],
@@ -72,7 +73,7 @@
           },
           {
             "hintId": 1,
-            "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el mínimo común denominador encontrado en el denominador del resultado."
+            "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el denominador."
           },
           {
             "hintId": 2,

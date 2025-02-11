@@ -14,11 +14,13 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos.",
+                    "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos. Ejemplo:",
+                    "expression": "a - (b+c-d) \\quad ⟶ \\quad a + (-b-c+d)",
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 2x²-5x-3.",
+                    "hint": "El resultado es:",
+                    "expression": "2x^{2}-5x-3",
                     "hintId": 2
                 }
             ],
@@ -46,7 +48,32 @@
             "displayResult": [
                 "2x^{2}-5x-3"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2x^{2}-5x-3",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-2x^2-5x-3",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                },
+                {
+                    "id": 2,
+                    "expression": "2x^2+5x-3",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                },
+                {
+                    "id": 3,
+                    "expression": "2x^2+5x+3",
+                    "correct": false,
+                    "feedbackMsg": "Debes invertir todos los signos."
+                }
+            ]
         },
         {
             "KCs": [
@@ -59,11 +86,12 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hint": "Los términos semejantes son aquellos que tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 5x²-3x-4.",
+                    "hint": "El resultado es:",
+                    "expression": "5x^{2}-3x-4",
                     "hintId": 2
                 }
             ],
@@ -91,7 +119,32 @@
             "displayResult": [
                 "5x^{2}-3x-4"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "5x^{2}-3x-4",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x^2-3x-4",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 2,
+                    "expression": "5x^2+7x-4",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                },
+                {
+                    "id": 3,
+                    "expression": "5x^2-3x+4",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los términos independientes."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -106,11 +159,12 @@
                 "hintId": 0
             },
             {
-                "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                "hint": "Los términos semejantes son aquellos que tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
                 "hintId": 1
             },
             {
-                "hint": "El resultado es 5x²-3x-4.",
+                "hint": "El resultado es:",
+                "expression": "5x^{2}-3x-4",
                 "hintId": 2
             }
         ],
@@ -138,6 +192,31 @@
         "displayResult": [
             "5x^{2}-3x-4"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "5x^{2}-3x-4",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "x^2-3x-4",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 2,
+                "expression": "5x^2+7x-4",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            },
+            {
+                "id": 3,
+                "expression": "5x^2-3x+4",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los términos independientes."
+            }
+        ]
     }
 }

@@ -37,14 +37,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el numerador que es la parte superior de la expresión, luego identifica si hay operaciones realizables en el numerador."
+                    "hint": "Identifica el numerador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma (o resta) de fracciones en el numerador (la parte superior), aplica la propiedad de suma de fracciones. Necesita encontrar el mínimo común múltiplo de los denominadores."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "bd"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del numerador es ",
                     "expression": "\\left(\\frac{ad+bc}{bd}\\right)"
                 }
@@ -61,7 +66,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el numerador correctamente.",
-            "summary": "1) Luego se resuelve las operaciones en el numerador."
+            "summary": "1) Se identifica la suma de fracciones en el numerador y luego se resuelve la operacion expresando el resultado en el numerador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{ad+bc}{bd}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{ad-cb}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "El numerador es la parte superior de una fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{a+cb}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por d."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{ad+c}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la segunda fracción por b."
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -95,14 +125,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el denominador que es la parte inferior de la expresión, luego identifica si hay operaciones realizables en el denominador."
+                    "hint": "Identifica el denominador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma (o resta) de fracciones en el denominador (la parte inferior), aplica la propiedad de suma de fracciones."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "bd"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del denominador es ",
                     "expression": "\\left(\\frac{a\\cdot d-b\\cdot c}{b\\cdot d}\\right)"
                 }
@@ -119,7 +154,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el denominador correctamente.",
-            "summary": "2) Se continúa resolviendo las operaciones en el denominador."
+            "summary": "2) Se continúa resolviendo las operaciones en el denominador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{ad-bc}{bd}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{a-bc}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por d."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{ad-c}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la segunda fracción por b."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{a-c}{bd}",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -156,7 +216,8 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hintId": 2,
@@ -176,7 +237,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
-            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{ad+bc}{bd}\\right)\\cdot\\left(\\frac{bd}{ad-bc}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{ad+bc}{bd}\\right)\\cdot\\left(\\frac{ad-bc}{bd}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{ad+bc}{bd}\\right)+\\left(\\frac{bd}{ad-bc}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\left(\\frac{a\\cdot d+b\\cdot c}{b\\cdot d}\\right)}{\\left(\\frac{b\\cdot d}{a\\cdot d-b\\cdot c}\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                }
+            ]
         },
         {
             "stepId": "3",
@@ -218,7 +306,7 @@
                 {
                     "hintId": 1,
                     "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                    "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                    "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
                 },
                 {
                     "hintId": 2,
@@ -238,7 +326,26 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has logrado reducir la expresión correctamente.",
-            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{ad+bc}{ad-bc}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "1",
+                    "correct": false,
+                    "feedbackMsg": "Las expresiones (ad+bc) y (ad-bc) no son iguales, por lo tanto no puedes simplificarlas."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{(ad+bc)\\cdot bd}{bd\\cdot (ad-bc)}",
+                    "correct": false,
+                    "feedbackMsg": "Simplifica la expresión lo más que puedas."
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -281,7 +388,7 @@
             {
                 "hintId": 1,
                 "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
             },
             {
                 "hintId": 2,
@@ -301,6 +408,25 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has logrado reducir la expresión correctamente.",
-        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{ad+bc}{ad-bc}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "1",
+                "correct": false,
+                "feedbackMsg": "Las expresiones (ad+bc) y (ad-bc) no son iguales, por lo tanto no puedes simplificarlas."
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{(ad+bc)\\cdot bd}{bd\\cdot (ad-bc)}",
+                "correct": false,
+                "feedbackMsg": "Simplifica la expresión lo más que puedas."
+            }
+        ]
     }
 }

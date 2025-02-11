@@ -7,15 +7,15 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de la fracción",
-            "expression": "((\\frac{1}{10})^{2})^{4}",
+            "stepTitle": "Usando la propiedad de potencia de una potencia, expresa como potencia de la fracción.",
+            "expression": "\\left(\\left(\\frac{1}{10}\\right)^{2}\\right)^{4}",
             "KCs": [
                 "MultExp"
             ],
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
                 },
                 {
                     "hintId": 1,
@@ -24,7 +24,7 @@
                 {
                     "hintId": 2,
                     "hint": "La respuesta es :",
-                    "expression": "(\\frac{1}{10})^{2 \\cdot 4} = (\\frac{1}{10})^{8}"
+                    "expression": "\\left(\\frac{1}{10}\\right)^{2 \\cdot 4} = \\left(\\frac{1}{10}\\right)^{8}"
                 }
             ],
             "answers": [
@@ -47,14 +47,41 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso los exponentes son 2 y 4, por lo tanto la multiplicación de estos es 8",
+            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso los exponentes son 2 y 4, por lo tanto la multiplicación de estos es 8",
             "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "(\\frac{1}{10})^{2 \\cdot 4} = (\\frac{1}{10})^{8}"
+                "\\left(\\frac{1}{10}\\right)^{2 \\cdot 4} = \\left(\\frac{1}{10}\\right)^{8}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(\\frac{1}{10})^{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{1}{10}\\right)^6",
+                    "correct": false,
+                    "feedbackMsg": "No sumes los exponentes, la propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{1}{100}\\right)^4",
+                    "correct": false,
+                    "feedbackMsg": "Debes dejar expresado como una potencia de base",
+                    "feedbackMsgExp": "\\frac{1}{10}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{1}{10}\\right)^{-8}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo del exponente"
+                }
+            ]
         }
     ]
 }

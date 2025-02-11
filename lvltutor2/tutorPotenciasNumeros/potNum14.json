@@ -43,14 +43,41 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 2, el exponente del numerador es 5 y el del denominador es 3, y la resta de estos es 2",
+            "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 2, el exponente del numerador es 5 y el del denominador es 3, y la resta de estos es 2.",
             "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "2^{5-3} = 2^{2}"
+                "\\frac{2^{5}}{2^{3}} = 2^{5-3} = 2^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(2^2\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "En este primer paso, solo estamos trabajando con la cantidad entre paréntesis."
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -63,7 +90,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
                 },
                 {
                     "hintId": 1,
@@ -89,14 +116,42 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+            "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4.",
             "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "2^{2 \\cdot 2} = 2^{4}"
+                "\\left( 2^{2}\\right)^{2} = 2^{2 \\cdot 2} = 2^{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^8",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -110,7 +165,7 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
             },
             {
                 "hintId": 1,
@@ -136,13 +191,41 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+        "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4.",
         "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
         "validation": "evaluateAndCount",
         "incorrectMsg": "La expresión ingresada no es correcta.",
         "displayResult": [
-            "2^{2 \\cdot 2} = 2^{4}"
+            "\\left( 2^{2}\\right)^{2} = 2^{2 \\cdot 2} = 2^{4}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2^{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "8",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            },
+            {
+                "id": 2,
+                "expression": "2",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            },
+            {
+                "id": 3,
+                "expression": "2^8",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            }
+        ]
     }
 }

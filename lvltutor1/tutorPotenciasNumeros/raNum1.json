@@ -43,11 +43,12 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Separa el producto en una multiplicacion de 2 raíces."
+          "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+          "expression": "\\sqrt[n]{a \\cdot b} = \\sqrt[n]{a} \\cdot  \\sqrt[n]{b}"
         },
         {
           "hintId":1,
-          "hint": "Aplica las raíces en cada uno de los valores , si es que se pudiera."
+          "hint": "Aplica las raíces en cada uno de los valores, si es que se pudiera."
         },
         {
           "hintId": 2,

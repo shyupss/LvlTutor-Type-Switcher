@@ -51,7 +51,28 @@
             "displayResult": [
                 "\\frac{3}{4} \\cdot \\frac{5}{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{4} \\cdot \\frac{5}{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{4}{3}\\cdot\\frac{2}{5}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la fracción del númerador por el inverso multiplicativo del denominador, el denominador en este caso es",
+                    "feedbackMsgExp": "\\frac{2}{5}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3}{4}\\cdot\\frac{2}{5}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la fracción del númerador por el inverso multiplicativo del denominador, el denominador en este caso es",
+                    "feedbackMsgExp": "\\frac{2}{5}"
+                }
+            ]
         },
         {
             "KCs": [
@@ -97,7 +118,32 @@
             "displayResult": [
                 "15"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "20",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -143,7 +189,32 @@
             "displayResult": [
                 "8"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "8",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "20",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "15",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -195,7 +266,24 @@
             "displayResult": [
                 "\\frac{15}{8}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{15}{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{8}{15}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3}{2}",
+                    "correct": false
+                }
+            ]
         }
     ],
     "title": "División de fracciones",
@@ -249,6 +337,23 @@
         "displayResult": [
             "\\frac{15}{8}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{15}{8}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{8}{15}",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{3}{2}",
+                "correct": false
+            }
+        ]
     }
 }

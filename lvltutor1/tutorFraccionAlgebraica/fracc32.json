@@ -14,8 +14,9 @@
           "hintId": 0
         },
         {
-          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba).",
-          "hintId": 1
+          "hintId": 1,
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+          "expression":"\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
         },
         {
           "hint": "El resultado es:",
@@ -63,8 +64,8 @@
         }
 
       ],
-      "summary": "1) Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
-      "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+      "summary": "1) Con el fin de transformar una divsión de fracciones a multiplicación de fracciones, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+      "stepTitle": "Invirtiendo la fracción del denominador, expresa como multiplicación de fracciones.",
       "correctMsg": "Has invertido el denominador correctamente",
       "expression": "\\frac{\\frac{ab}{c}}{\\frac{c}{d}}",
       "validation": "evaluateAndCount",
@@ -84,7 +85,8 @@
           "hintId": 0
         },
         {
-          "hint": "El numerador resultante es abd",
+          "hint": "El numerador resultante es:",
+          "expression":"abd",
           "hintId": 1
         },
         {
@@ -97,7 +99,7 @@
           "hintId": 3
         },
         {
-          "hint": "el resultado es:",
+          "hint": "El resultado es:",
           "expression": "\\frac{abd}{c^{2}}",
           "hintId": 4
         }

@@ -60,7 +60,26 @@
             "displayResult": [
                 "\\frac{8}{15}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{8}{15}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{6}{15}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar primero la multiplicación de fracciones correctamente, recuerda que la multiplicación de fracciones es directa"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{10}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar primero la multiplicación de fracciones correctamente, recuerda que la multiplicación de fracciones es directa"
+                }
+            ]
         },
         {
             "KCs": [
@@ -109,7 +128,26 @@
             "displayResult": [
                 "\\frac{8}{15} - \\frac{6}{15}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{8}{15} - \\frac{6}{15}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{15}{8}-\\frac{6}{15}",
+                    "correct": false,
+                    "feedbackMsg": "Debes sustituir el resultado obtenido dentro de la expresión correctamente"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{6}{15}-\\frac{6}{15}",
+                    "correct": false,
+                    "feedbackMsg": "Debes sustituir el resultado obtenido dentro de la expresión correctamente"
+                }
+            ]
         },
         {
             "KCs": [
@@ -166,7 +204,26 @@
             "displayResult": [
                 "\\frac{2}{15}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{2}{15}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "-\\frac{2}{15}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Ejercicio de fracciones con Operaciones combinadas",
@@ -225,6 +282,25 @@
         "displayResult": [
             "\\frac{2}{15}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{2}{15}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "-\\frac{2}{15}",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+            }
+        ]
     }
 }

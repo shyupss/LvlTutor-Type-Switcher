@@ -11,7 +11,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+                    "hint": "Para encontrar el resultado debes elevar al cubo el primer término del binomio.",
                     "hintId": 0
                 },
                 {
@@ -53,7 +53,32 @@
             "displayResult": [
                 "512x^{3}y^{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "512x^{3}y^{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "512",
+                    "correct": false,
+                    "feedbackMsg": "Las variables x e y también forman parte del primer término"
+                },
+                {
+                    "id": 2,
+                    "expression": "24",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cubo el primer término, no multiplicarlo por 3, y no olvides las variables."
+                },
+                {
+                    "id": 3,
+                    "expression": "24x^3y^3",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cubo el coeficiente, no multiplicarlo por 3"
+                }
+            ]
         },
         {
             "KCs": [
@@ -65,13 +90,18 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
+                    "hint": "¿Cuanto vale 3a²b?, si:",
+                    "expression": "a=8xy, \\quad b=7",
                     "hintId": 1
+                },
+                {
+                    "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b tendrá un signo menos.",
+                    "hintId": 2
                 },
                 {
                     "hint": "El resultado es: ",
                     "expression": "1344x^{2}y^{2}",
-                    "hintId": 2
+                    "hintId": 3
                 }
             ],
             "stepId": "1",
@@ -102,7 +132,32 @@
             "displayResult": [
                 "1344x^{2}y^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "1344x^{2}y^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "168xy",
+                    "correct": false,
+                    "feedbackMsg": "El término 'a' debe estar al cuadrado. El término que estás buscando es 3a²b."
+                },
+                {
+                    "id": 2,
+                    "expression": "448x^2y^2",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de multiplicar por 3"
+                },
+                {
+                    "id": 3,
+                    "expression": "1344xy",
+                    "correct": false,
+                    "feedbackMsg": "Tambien debes elevar las variables 'x' e 'y' al cuadrado, ya que a=8xy"
+                }
+            ]
         },
         {
             "KCs": [
@@ -114,13 +169,18 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "El término 3ab² siempre será positivo.",
+                    "hint": "¿Cuanto vale 3ab²?, si:",
+                    "expression": "a=8xy, \\quad b=7",
                     "hintId": 1
+                },
+                {
+                    "hint": "El término 3ab² siempre será positivo.",
+                    "hintId": 2
                 },
                 {
                     "hint": "El resultado es: ",
                     "expression": "1176xy",
-                    "hintId": 2
+                    "hintId": 3
                 }
             ],
             "stepId": "2",
@@ -151,7 +211,32 @@
             "displayResult": [
                 "1176xy"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "1176xy",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "1176",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir las variables 'x' e 'y', ya que a=8xy"
+                },
+                {
+                    "id": 2,
+                    "expression": "168xy",
+                    "correct": false,
+                    "feedbackMsg": "El término 'b' debe estar al cuadrado"
+                },
+                {
+                    "id": 3,
+                    "expression": "392xy",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de multiplicar por 3"
+                }
+            ]
         },
         {
             "KCs": [
@@ -200,9 +285,34 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "displayResult": [
-                "512x³y³+1344x²y²+1176xy+343"
+                "343"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "343",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "49",
+                    "correct": false,
+                    "feedbackMsg": "El coeficiente 'b' debe estar al cubo, no al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "21",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar el coeficiente 'b' al cubo, no multiplicarlo por 3."
+                },
+                {
+                    "id": 3,
+                    "expression": "-343",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo."
+                }
+            ]
         }
     ],
     "title": "Cubo de binomio",
@@ -253,8 +363,33 @@
         "validation": "evaluateAndCount",
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "displayResult": [
-            "512x³y³+1344x²y²+1176xy+343"
+            "343"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "343",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "49",
+                "correct": false,
+                "feedbackMsg": "El coeficiente 'b' debe estar al cubo, no al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "21",
+                "correct": false,
+                "feedbackMsg": "Debes elevar el coeficiente 'b' al cubo, no multiplicarlo por 3."
+            },
+            {
+                "id": 3,
+                "expression": "-343",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el signo."
+            }
+        ]
     }
 }

@@ -46,7 +46,26 @@
             "displayResult": [
                 "x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                },
+                {
+                    "id": 2,
+                    "expression": "x^3",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                }
+            ]
         },
         {
             "KCs": [
@@ -90,7 +109,24 @@
             "displayResult": [
                 "x^{5}+x^{3}+x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{5}+x^{3}+x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-x^5-x^3-x^2",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "5x^4+5x^2+5x",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -134,7 +170,26 @@
             "displayResult": [
                 "-x^{3}-x-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-x^{3}-x-1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2x^5+x^3+2x^2-x-1",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+                },
+                {
+                    "id": 2,
+                    "expression": "x³-x-1",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar x³ por el -1 que hay fuera del paréntesis."
+                }
+            ]
         },
         {
             "KCs": [
@@ -178,7 +233,32 @@
             "displayResult": [
                 "-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "1",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el signo negativo de -x³."
+                },
+                {
+                    "id": 2,
+                    "expression": "-x",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                },
+                {
+                    "id": 3,
+                    "expression": "x^3",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                }
+            ]
         },
         {
             "KCs": [
@@ -222,7 +302,26 @@
             "displayResult": [
                 "-x^{3}-x-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-x^{3}-x-1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-x³-x+1",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos."
+                },
+                {
+                    "id": 2,
+                    "expression": "x³+x+1",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos."
+                }
+            ]
         },
         {
             "KCs": [
@@ -269,7 +368,26 @@
             "displayResult": [
                 "x²-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "0",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-2x^3-2x-2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+                },
+                {
+                    "id": 2,
+                    "expression": "-2x^3",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos, recuerda que estás restando."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -318,6 +436,25 @@
         "displayResult": [
             "x²-1"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "0",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-2x^3-2x-2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+            },
+            {
+                "id": 2,
+                "expression": "-2x^3",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con los signos, recuerda que estás restando."
+            }
+        ]
     }
 }

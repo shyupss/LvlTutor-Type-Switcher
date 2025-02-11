@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Identifique y escriba el conjugado del denominador",
+      "stepTitle": "Identifica y escribe el conjugado del denominador",
       "expression": "\\frac{1}{3 - \\sqrt{10}}",
       "KCs": ["DetConj"],
       "hints": [
@@ -33,13 +33,13 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
-      "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{7}\\right)}",
+      "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
+      "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{10}\\right)}",
       "KCs": ["MultFrac","SumDif"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+          "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
         },
         {
           "hintId":1,
@@ -52,7 +52,7 @@
       "correctMsg": "Has racionalizado correctamente la expresion.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no  es correcta.",
-      "displayResult": ["\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -3-\\sqrt{10}"],
+      "displayResult": ["\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{10}\\right)} \\longrightarrow -3-\\sqrt{10}"],
       "matchingError": []
     }
   ]

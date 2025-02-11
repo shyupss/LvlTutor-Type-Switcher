@@ -51,7 +51,28 @@
             "displayResult": [
                 "\\frac{3}{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{6}{5}",
+                    "correct": false,
+                    "feedbackMsg": "El divisor es",
+                    "feedbackMsgExp": "\\frac{2}{3}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{2}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el inverso multiplicativo de una fracción está definido como",
+                    "feedbackMsgExp": "\\frac{b}{a}\\space es\\space inverso\\space de\\space \\frac{a}{b}"
+                }
+            ]
         },
         {
             "KCs": [
@@ -95,7 +116,26 @@
             "displayResult": [
                 "\\frac{5}{6} \\cdot \\frac{3}{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{5}{6} \\cdot \\frac{3}{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{5}{6}\\cdot\\frac{2}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la primera fracción por el inverso multiplicarivo de la segunda."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{6}{5}\\cdot\\frac{3}{2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la primera fracción por el inverso multiplicarivo de la segunda."
+                }
+            ]
         },
         {
             "KCs": [
@@ -141,7 +181,32 @@
             "displayResult": [
                 "15"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "18",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -187,7 +252,32 @@
             "displayResult": [
                 "12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "18",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -205,11 +295,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 3. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 3. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -245,7 +335,24 @@
             "displayResult": [
                 "\\frac{15}{12} = \\frac{5}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{5}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3}{2}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{4}{5}",
+                    "correct": false
+                }
+            ]
         }
     ],
     "title": "División de fracciones",
@@ -265,11 +372,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 3. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 3. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -305,6 +412,23 @@
         "displayResult": [
             "\\frac{15}{12} = \\frac{5}{4}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{5}{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{3}{2}",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{4}{5}",
+                "correct": false
+            }
+        ]
     }
 }

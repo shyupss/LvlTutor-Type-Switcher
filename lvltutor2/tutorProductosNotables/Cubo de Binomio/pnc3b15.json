@@ -49,7 +49,32 @@
             "displayResult": [
                 "(\\frac{5}{7}x+5)(\\frac{5}{7}x+5)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(\\frac{5}{7}x+5)(\\frac{5}{7}x+5)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{5}{7}x+5\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que a³=a‧a²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{5}{7}x+5\\right)\\left(\\frac{5}{7}x+5\\right)\\left(\\frac{5}{7}x+5\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia con exponente 1 y otra con exponente 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{5}{7}x+5\\right)\\left(\\frac{5}{7}x+5\\right)",
+                    "correct": false,
+                    "feedbackMsg": "El segundo término debe estar al cuadrado"
+                }
+            ]
         },
         {
             "KCs": [
@@ -95,7 +120,32 @@
             "displayResult": [
                 "\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{25}{49}x^{2}+\\frac{50}{7}x + 25",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{25}{49}x^2+\\frac{50}{7}x+5",
+                    "correct": false,
+                    "feedbackMsg": "El tercer término del cuadrado de binomio es b², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{5}{7}x+\\frac{50}{7}x+25",
+                    "correct": false,
+                    "feedbackMsg": "El primer término del cuadrado de binomio es a², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{25}{49}x^2+\\frac{25}{7}x+25",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de mutliplicar por 2 el segundo término, recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                }
+            ]
         },
         {
             "KCs": [
@@ -148,7 +198,32 @@
             "displayResult": [
                 "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{125}{343}x^3 + \\frac{250}{49}x^2 + \\frac{125}{7}x + \\frac{125}{49}x^2 + \\frac{250}{7}x + 125",
+                    "correct": false,
+                    "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{125}{343}x^2+\\frac{75}{49}x^2+\\frac{75}{7}x+125",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{125}{343}x^3+\\frac{75}{49}x+\\frac{75}{7}x+125",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de la variable del segundo término"
+                }
+            ]
         }
     ],
     "title": "Cubo de binomio",
@@ -203,6 +278,31 @@
         "displayResult": [
             "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{125}{343}x^{3}+\\frac{75}{49}x^{2} +\\frac{75}{7}x +125",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{125}{343}x^3 + \\frac{250}{49}x^2 + \\frac{125}{7}x + \\frac{125}{49}x^2 + \\frac{250}{7}x + 125",
+                "correct": false,
+                "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{125}{343}x^2+\\frac{75}{49}x^2+\\frac{75}{7}x+125",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{125}{343}x^3+\\frac{75}{49}x+\\frac{75}{7}x+125",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de la variable del segundo término"
+            }
+        ]
     }
 }

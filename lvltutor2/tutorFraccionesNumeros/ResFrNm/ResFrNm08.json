@@ -51,7 +51,32 @@
             "displayResult": [
                 "12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 2,
+                    "expression": "288",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 3,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                }
+            ]
         },
         {
             "KCs": [
@@ -99,7 +124,32 @@
             "displayResult": [
                 "\\frac{9}{12} - \\frac{2}{12}  - \\frac{5}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{9}{12} - \\frac{2}{12}  - \\frac{5}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3}{12}-\\frac{2}{12}-\\frac{5}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la primera fracción por 3"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{9}{12}-\\frac{1}{12}-\\frac{5}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la segunda fracción por 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{12}-\\frac{1}{12}-\\frac{5}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la primera fracción por 3 y de la segunda fracción por 2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -115,11 +165,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -155,7 +205,32 @@
             "displayResult": [
                 "\\frac{2}{12} = \\frac{1}{6}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "1",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "-\\frac{1}{6}",
+                    "correct": false,
+                    "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                },
+                {
+                    "id": 3,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Resta de fracciones",
@@ -173,11 +248,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -213,6 +288,31 @@
         "displayResult": [
             "\\frac{2}{12} = \\frac{1}{6}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{1}{6}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "1",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "-\\frac{1}{6}",
+                "correct": false,
+                "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            },
+            {
+                "id": 3,
+                "expression": "2",
+                "correct": false,
+                "feedbackMsg": "Como todas las fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            }
+        ]
     }
 }

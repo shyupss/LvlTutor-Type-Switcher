@@ -57,7 +57,32 @@
             "displayResult": [
                 "25"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "25",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el término faltante es el cuadrado de 'b', no simplemente 'b' como número"
+                },
+                {
+                    "id": 2,
+                    "expression": "-5",
+                    "correct": false,
+                    "feedbackMsg": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)², utiliza a² y 2ab para encontrar b²."
+                },
+                {
+                    "id": 3,
+                    "expression": "100",
+                    "correct": false,
+                    "feedbackMsg": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)², utiliza a² y 2ab para encontrar b²."
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +132,32 @@
             "displayResult": [
                 "(2x+5)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(2x+5)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(2x+25\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(4x^2+25\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' y el 'a' no deben estar al cuadrado dentro de los paréntesis."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(2x^2+5\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -159,6 +209,31 @@
         "displayResult": [
             "(2x+5)^{2}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "(2x+5)^{2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\left(2x+25\\right)^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "\\left(4x^2+25\\right)^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' y el 'a' no deben estar al cuadrado dentro de los paréntesis."
+            },
+            {
+                "id": 3,
+                "expression": "\\left(2x^2+5\\right)^2",
+                "correct": false,
+                "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+            }
+        ]
     }
 }

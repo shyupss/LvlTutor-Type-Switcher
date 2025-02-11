@@ -57,7 +57,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has expresado cada factor en su notación científica.",
-            "summary": "1) Se expresa cada factor en su notación científica."
+            "summary": "1) Se expresa cada factor en su notación científica.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(2\\right)\\cdot\\left(10^{-2}\\right)\\cdot \\left(2\\right)\\cdot\\left(10\\right)\\cdot \\left(5.5\\right)\\cdot\\left(10^{2}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(2\\cdot 10^{2}\\right)\\cdot \\left(2\\cdot 10^{-1}\\right)\\cdot \\left(5.5\\cdot 10^{-2}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que si la posición del separador decimal se mueve a la derecha, el exponente de 10 es negativo y, si se mueve a la izquierda, es positivo."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(2\\cdot 10^{-2}\\right)\\cdot \\left(2\\cdot 10^{-1}\\right)\\cdot \\left(5.5\\cdot 10^{-2}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que si la posición del separador decimal se mueve a la izquierda, el exponente de 10 es positivo."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(2\\cdot 10^{2}\\right)\\cdot \\left(2\\cdot 10\\right)\\cdot \\left(5.5\\cdot 10^2\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que si la posición del separador decimal se mueve a la derecha, el exponente de 10 es negativo."
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -93,7 +118,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has realizado las operaciones indicadas correctamente.",
-            "summary": "2) Se trabaja primero con los números que no son potencias de 10 reduciendo la expresión."
+            "summary": "2) Se trabaja primero con los números que no son potencias de 10 reduciendo la expresión.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(22\\right)\\cdot\\left(10^{-2}\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{2}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "22",
+                    "correct": false,
+                    "feedbackMsg": "No olvides las potencias de 10"
+                },
+                {
+                    "id": 2,
+                    "expression": "11\\cdot 10",
+                    "correct": false,
+                    "feedbackMsg": "Revisa el resultado de 2‧2‧5.5 y no multipliques las potencias de 10"
+                },
+                {
+                    "id": 3,
+                    "expression": "22\\cdot 10",
+                    "correct": false,
+                    "feedbackMsg": "No multipliques las potencias de 10"
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -134,7 +184,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has expresado el número indicado en su notación científica.",
-            "summary": "3) Se expresan los factores en su notación científica."
+            "summary": "3) Se expresan los factores en su notación científica.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(2.2\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{-2}\\right)\\cdot\\left(10\\right)\\cdot\\left(10^{2}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2.2\\cdot 10^{-2}\\cdot 10\\cdot 10^2",
+                    "correct": false,
+                    "feedbackMsg": "Para encontrar el exponente de 10, cuenta la cantidad de posiciones que el separador decimal se movió a la izquierda."
+                },
+                {
+                    "id": 2,
+                    "expression": "220\\cdot 10^{-1}\\cdot 10^{-2}\\cdot 10\\cdot 10^2",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                },
+                {
+                    "id": 3,
+                    "expression": "0.22\\cdot 10^2\\cdot 10^{-2}\\cdot 10\\cdot 10^2",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                }
+            ]
         },
         {
             "stepId": "3",
@@ -179,7 +254,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado expresar la expresión original en su notación científica",
-            "summary": "4) Se aplica la propiedad de suma de potencias."
+            "summary": "4) Se aplica la propiedad de suma de potencias.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(2.2\\right)\\cdot\\left(10^{2}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2.2\\cdot 10^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2.2",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de la potencia de 10"
+                },
+                {
+                    "id": 3,
+                    "expression": "2.2\\cdot 10^{4}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides la potencia",
+                    "feedbackMsgExp": "10^{-2}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -225,6 +327,33 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado expresar la expresión original en su notación científica",
-        "summary": "4) Se aplica la propiedad de suma de potencias."
+        "summary": "4) Se aplica la propiedad de suma de potencias.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\left(2.2\\right)\\cdot\\left(10^{2}\\right)",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2.2\\cdot 10^{-2}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+            },
+            {
+                "id": 2,
+                "expression": "2.2",
+                "correct": false,
+                "feedbackMsg": "No te olvides de la potencia de 10"
+            },
+            {
+                "id": 3,
+                "expression": "2.2\\cdot 10^{4}",
+                "correct": false,
+                "feedbackMsg": "No olvides la potencia",
+                "feedbackMsgExp": "10^{-2}"
+            }
+        ]
     }
 }

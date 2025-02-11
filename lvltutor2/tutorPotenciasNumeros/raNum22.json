@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Identifique y escriba el conjugado del denominador",
+            "stepTitle": "Identifica y escribe el conjugado del denominador",
             "expression": "\\frac{1}{3 - \\sqrt{10}}",
             "KCs": [
                 "DetConj"
@@ -40,12 +40,40 @@
             "displayResult": [
                 "3 - \\sqrt{10}  \\longrightarrow 3 + \\sqrt{10}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3+\\sqrt{10}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3-\\sqrt{10}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{10}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                },
+                {
+                    "id": 3,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de un binomio es igual al binomio con el signo central cambiado. Ejemplo :",
+                    "feedbackMsgExp": "\\left(a+b\\right)\\longrightarrow \\left(a-b\\right)"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
-            "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{7}\\right)}",
+            "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
+            "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{10}\\right)}",
             "KCs": [
                 "DetConj",
                 "MultFrac",
@@ -54,7 +82,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+                    "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
                 },
                 {
                     "hintId": 1,
@@ -75,15 +103,40 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no  es correcta.",
             "displayResult": [
-                "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -3-\\sqrt{10}"
+                "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{10}\\right)} \\longrightarrow -3-\\sqrt{10}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-3-\\sqrt{10}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\left(3+\\sqrt{10}\\right)}{19}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\left(3+\\sqrt{10}\\right)}{\\left(3-\\sqrt{10}\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "-\\frac{\\left(3+\\sqrt{10}\\right)}{7}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "1",
-        "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
-        "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{7}\\right)}",
+        "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
+        "expression": "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left(3 + \\sqrt{10}\\right)}",
         "KCs": [
             "DetConj",
             "MultFrac",
@@ -92,7 +145,7 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+                "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
             },
             {
                 "hintId": 1,
@@ -113,8 +166,33 @@
         "validation": "evaluateAndCount",
         "incorrectMsg": "La expresión ingresada no  es correcta.",
         "displayResult": [
-            "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{7}\\right)} \\longrightarrow -3-\\sqrt{10}"
+            "\\frac{1}{3 - \\sqrt{10}} \\cdot \\frac{\\left( 3 + \\sqrt{10}\\right)}{\\left( \\sqrt{3} - \\sqrt{10}\\right)} \\longrightarrow -3-\\sqrt{10}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-3-\\sqrt{10}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{\\left(3+\\sqrt{10}\\right)}{19}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{\\left(3+\\sqrt{10}\\right)}{\\left(3-\\sqrt{10}\\right)}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            },
+            {
+                "id": 3,
+                "expression": "-\\frac{\\left(3+\\sqrt{10}\\right)}{7}",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al multiplicar el denominador, recuerda la identidad suma por diferencia: (a + b)(a - b) = a² - b²"
+            }
+        ]
     }
 }

@@ -9,12 +9,12 @@
     {
       "stepId": "0",
       "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
-      "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+      "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
       "displayResult": ["\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot{\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}}"],
       "KCs":["DetConj", "AmpFrac1"],
       "values":[{"name":"x","value":1},{"name":"y","value":4}],
       "hints": [
-        { "hintId": 0, "hint": "El conjugado de p-q es p+q." },
+        { "hintId": 0, "hint": "El conjugado de p+q es p-q." },
         { 
           "hintId": 1, 
           "hint": "Para racionalizar, se multiplica por un '1 conveniente', utilizando el conjugado del denominador. Ejemplo: ",

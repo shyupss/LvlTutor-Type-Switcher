@@ -38,14 +38,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el numerador que es la parte superior de la expresión, luego identifica si hay operaciones realizables en el numerador."
+                    "hint": "Identifica el numerador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma (o resta) de fracciones en el numerador (la parte superior), aplica la propiedad de suma de fracciones. Necesita encontrar el mínimo común múltiplo de los denominadores."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "4su"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del numerador es ",
                     "expression": "\\left(\\frac{8ru+8st}{4su}\\right)"
                 }
@@ -62,7 +67,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el numerador correctamente.",
-            "summary": "1) Luego se resuelve las operaciones en el numerador."
+            "summary": "1) Se identifica la suma de fracciones en el numerador y luego se resuelve la operacion expresando el resultado en el numerador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{8ru+8st}{4su}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{2ru-6st}{4su}",
+                    "correct": false,
+                    "feedbackMsg": "El numerador es la parte superior de una fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{8r+8st}{4su}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por u."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{8ru+2t}{4su}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la segunda fracción por 4s."
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -97,14 +127,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el denominador que es la parte inferior de la expresión, luego identifica si hay operaciones realizables en el denominador."
+                    "hint": "Identifica el denominador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma (o resta) de fracciones en el denominador (la parte inferior), aplica la propiedad de suma de fracciones."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "2su"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del denominador es ",
                     "expression": "\\left(\\frac{r\\cdot u-3\\cdot s\\cdot t}{2\\cdot s\\cdot u}\\right)"
                 }
@@ -121,7 +156,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el denominador correctamente.",
-            "summary": "2) Se continúa resolviendo las operaciones en el denominador."
+            "summary": "2) Se continúa resolviendo las operaciones en el denominador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{ru-3st}{2su}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{r-3ts}{2su}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por u."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{2ru-6ts}{2su}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por u y la segunda por s."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{ru-3t}{2su}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la segunda fracción por s."
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -161,7 +221,8 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hintId": 2,
@@ -181,7 +242,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
-            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(\\frac{8ru+8st}{4su}\\right)\\cdot\\left(\\frac{2su}{ru-3st}\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{8ru+8st}{4su}\\right) \\cdot \\left(\\frac{ru-3st}{2su}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{8ru+8st}{4su}\\right) + \\left(\\frac{2su}{ru-3st}\\right)",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\left(\\frac{8\\cdot r\\cdot u+8\\cdot s\\cdot t}{4\\cdot s\\cdot u}\\right)}{\\left(\\frac{2\\cdot s\\cdot u}{r\\cdot u-3\\cdot s\\cdot t}\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                }
+            ]
         },
         {
             "stepId": "3",
@@ -226,7 +314,7 @@
                 {
                     "hintId": 1,
                     "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                    "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                    "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
                 },
                 {
                     "hintId": 2,
@@ -246,7 +334,26 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has logrado reducir la expresión correctamente.",
-            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{4ru+4st}{ru-3st}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Las expresiones (ru+st) y (ru-3st) no son iguales, por lo tanto no puedes simplificarlas."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{(8\\cdot r\\cdot u+8\\cdot s\\cdot t)(2\\cdot s\\cdot u)}{(4\\cdot s\\cdot u)(r\\cdot u-3\\cdot s\\cdot t)}",
+                    "correct": false,
+                    "feedbackMsg": "Simplifica la expresión lo más que puedas."
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -292,7 +399,7 @@
             {
                 "hintId": 1,
                 "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
             },
             {
                 "hintId": 2,
@@ -312,6 +419,25 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has logrado reducir la expresión correctamente.",
-        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{4ru+4st}{ru-3st}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "4",
+                "correct": false,
+                "feedbackMsg": "Las expresiones (ru+st) y (ru-3st) no son iguales, por lo tanto no puedes simplificarlas."
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{(8\\cdot r\\cdot u+8\\cdot s\\cdot t)(2\\cdot s\\cdot u)}{(4\\cdot s\\cdot u)(r\\cdot u-3\\cdot s\\cdot t)}",
+                "correct": false,
+                "feedbackMsg": "Simplifica la expresión lo más que puedas."
+            }
+        ]
     }
 }

@@ -51,7 +51,32 @@
             "displayResult": [
                 "24"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "24",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "48",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 2,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                }
+            ]
         },
         {
             "KCs": [
@@ -99,7 +124,32 @@
             "displayResult": [
                 "\\frac{20}{24} - \\frac{6}{24}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{20}{24} - \\frac{6}{24}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{5}{24}-\\frac{6}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la primera fracción por 4"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{20}{24}-\\frac{2}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador  y el denominador de la segunda fracción por 3"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{5}{24}-\\frac{2}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la primera fracción por 4 y de la segunda fracción por 3"
+                }
+            ]
         },
         {
             "KCs": [
@@ -115,11 +165,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -155,7 +205,32 @@
             "displayResult": [
                 "\\frac{14}{24} = \\frac{7}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{7}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{336}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{16}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Resta de fracciones",
@@ -173,11 +248,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -213,6 +288,31 @@
         "displayResult": [
             "\\frac{14}{24} = \\frac{7}{12}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{7}{12}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "7",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{336}{24}",
+                "correct": false,
+                "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{16}{24}",
+                "correct": false,
+                "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            }
+        ]
     }
 }

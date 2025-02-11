@@ -9,9 +9,9 @@
         {
             "stepId": "0",
             "expression": "\\frac{1}{\\sqrt{5}}",
-            "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+            "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
             "displayResult": [
-                "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}"
+                "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}"
             ],
             "KCs": [
                 "DetConj",
@@ -48,18 +48,43 @@
             "answers": [
                 {
                     "answer": [
-                        "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}"
+                        "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}"
                     ],
                     "nextStep": "1"
                 }
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado identificar el conjugado y expresar la amplificación.",
-            "summary": "1) Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado."
+            "summary": "1) Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\sqrt{5}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de una raíz es igual a la misma raíz"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{1}{\\sqrt{5}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar por un '1' conveniente para que no cambie el valor de la expresión"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{-\\sqrt{5}}{\\sqrt{5}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar numerador y denominador por la misma expresión"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}",
+            "expression": "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
             "stepTitle": "Multiplica ambas fracciones y simplifica si es posible.",
             "displayResult": [
                 "\\frac{\\sqrt{5}}{5}"
@@ -103,12 +128,38 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-            "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+            "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\sqrt{5}}{5}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\sqrt{5}}{\\sqrt{5}\\cdot\\sqrt{5}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes desarrollar el producto, teniendo en cuenta que en denominador hay una suma por su diferencia."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\sqrt{5}}{25}",
+                    "correct": false,
+                    "feedbackMsg": "Al multiplicar dos raíces iguales se obtiene el número dentro de la raíz,",
+                    "feedbackMsgExp": "\\sqrt{a}\\cdot\\sqrt{a}=a"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1}{\\sqrt{5}}",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de realizar la multiplicación del denominador"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "1",
-        "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}",
+        "expression": "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
         "stepTitle": "Multiplica ambas fracciones y simplifica si es posible.",
         "displayResult": [
             "\\frac{\\sqrt{5}}{5}"
@@ -152,6 +203,32 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-        "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+        "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{\\sqrt{5}}{5}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{\\sqrt{5}}{\\sqrt{5}\\cdot\\sqrt{5}}",
+                "correct": false,
+                "feedbackMsg": "Debes desarrollar el producto, teniendo en cuenta que en denominador hay una suma por su diferencia."
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{\\sqrt{5}}{25}",
+                "correct": false,
+                "feedbackMsg": "Al multiplicar dos raíces iguales se obtiene el número dentro de la raíz,",
+                "feedbackMsgExp": "\\sqrt{a}\\cdot\\sqrt{a}=a"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{1}{\\sqrt{5}}",
+                "correct": false,
+                "feedbackMsg": "No te olvides de realizar la multiplicación del denominador"
+            }
+        ]
     }
 }

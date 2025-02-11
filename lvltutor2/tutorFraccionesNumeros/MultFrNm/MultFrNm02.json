@@ -48,7 +48,32 @@
             "displayResult": [
                 "6"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador del producto  corresponde al producto de los numeradores"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador del producto  corresponde al producto de los numeradores"
+                },
+                {
+                    "id": 3,
+                    "expression": "15",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el numerador  del producto corresponde al producto de los numeradores"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "20"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "20",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                },
+                {
+                    "id": 2,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                },
+                {
+                    "id": 3,
+                    "expression": "15",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el denominador del producto  corresponde al producto de los denominadores"
+                }
+            ]
         },
         {
             "KCs": [
@@ -110,11 +160,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                    "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
                 },
                 {
                     "hintId": 2,
-                    "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                    "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
                 },
                 {
                     "hintId": 3,
@@ -149,7 +199,30 @@
             "displayResult": [
                 "\\frac{6}{20} = \\frac{3}{10}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{10}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{2}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{1}{5}",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{6}{20}",
+                    "correct": false,
+                    "feedbackMsg": "Debes simplicar la expresión"
+                }
+            ]
         }
     ],
     "title": "Multiplicación de fracciones",
@@ -168,11 +241,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+                "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
             },
             {
                 "hintId": 2,
-                "hint": "Ese factor común es el 2. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+                "hint": "Ese factor común es 2. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
             },
             {
                 "hintId": 3,
@@ -207,6 +280,29 @@
         "displayResult": [
             "\\frac{6}{20} = \\frac{3}{10}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{3}{10}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{1}{2}",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{1}{5}",
+                "correct": false
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{6}{20}",
+                "correct": false,
+                "feedbackMsg": "Debes simplicar la expresión"
+            }
+        ]
     }
 }

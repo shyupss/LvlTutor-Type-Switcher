@@ -48,7 +48,32 @@
             "displayResult": [
                 "121x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "121x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "121x",
+                    "correct": false,
+                    "feedbackMsg": "No olvides elevar x al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "11x",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado la variable y su coeficiente"
+                },
+                {
+                    "id": 3,
+                    "expression": "11x^2",
+                    "correct": false,
+                    "feedbackMsg": "No olvides elevar al cuadrado el coeficiente"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "-81"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-81",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "81",
+                    "correct": false,
+                    "feedbackMsg": "En suma por diferencia, el segundo término siempre tiene signo negativo."
+                },
+                {
+                    "id": 2,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=9 "
+                },
+                {
+                    "id": 3,
+                    "expression": "-9",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=9 "
+                }
+            ]
         }
     ],
     "title": "Suma por diferencia",
@@ -140,6 +190,31 @@
         "displayResult": [
             "-81"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-81",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "81",
+                "correct": false,
+                "feedbackMsg": "En suma por diferencia, el segundo término siempre tiene signo negativo."
+            },
+            {
+                "id": 2,
+                "expression": "9",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=9 "
+            },
+            {
+                "id": 3,
+                "expression": "-9",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=9 "
+            }
+        ]
     }
 }

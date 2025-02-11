@@ -24,14 +24,19 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Identifica el numerador que es la parte superior de la expresión, luego identifica si hay operaciones realizables en el numerador."
+          "hint": "Identifica el numerador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
         },
         {
           "hintId": 1,
-          "hint": "Existe una suma de fracciones en el numerador (la parte superior), aplica la propiedad de suma de fracciones. Recuerda que 'a' se puede expresar como fracción al dividirlo por 1."
+          "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores. Recuerda que 'a' se puede expresar como fracción al dividirlo por 1."
         },
         {
           "hintId": 2,
+          "hint":"El mínimo común múltiplo es:",
+          "expression":"2"
+        },
+        {
+          "hintId": 3,
           "hint": "El resultado final del numerador es: ",
           "expression": "\\frac{2a+1}{2}"
         }
@@ -69,14 +74,19 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Identifica el denominador que es la parte inferior de la expresión, luego identifica si hay operaciones realizables en el denominador."
+          "hint": "Identifica el denominador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
         },
         {
           "hintId": 1,
-          "hint": "Existe una suma de fracciones en el denominador (la parte inferior), aplica la propiedad de suma de fracciones. Recuerda que '2' se puede expresar como fracción al dividirlo por 1."
+          "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores. Recuerda que '2' se puede expresar como fracción al dividirlo por 1."
         },
         {
           "hintId": 2,
+          "hint":"El mínimo común múltiplo es:",
+          "expression":"a"
+        },
+        {
+          "hintId": 3,
           "hint": "El resultado final del denominador es ",
           "expression": "\\frac{2a+1}{a}"
         }
@@ -118,7 +128,8 @@
         },
         {
           "hintId": 1,
-          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+          "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+          "expression":"\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
         },
         {
           "hintId": 2,
@@ -165,7 +176,7 @@
         {
           "hintId": 1,
           "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-          "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+          "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
         },
         {
           "hintId": 2,

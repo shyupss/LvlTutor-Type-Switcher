@@ -8,13 +8,13 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando propiedades, realize la suma de radicales y escriba el resultado",
+      "stepTitle": "Usando propiedades, realiza la suma de radicales y escribe el resultado",
       "expression": "-5\\sqrt{5} + \\sqrt{5} + 4\\sqrt{5}",
       "KCs": ["SumRad"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+          "hint": "Para realizar una suma o resta de radicales, primero debes factorizar los términos que tienen factores comunes. Ejemplo:",
           "expression":"a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b} "
         },
         {
@@ -24,7 +24,7 @@
         }
       ],
       "answers": [{ "answer": ["0"], "nextStep": "-1" }],
-      "summary": "1)Ocupando propiedades y factorización se realiza la suma de radicales.",
+      "summary": "1) Ocupando propiedades y factorización se realiza la suma de radicales.",
       "correctMsg": "Has realizado correctamente la suma de radicales.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",

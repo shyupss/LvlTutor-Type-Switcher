@@ -48,7 +48,32 @@
             "displayResult": [
                 "8x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "8x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir la variable x"
+                },
+                {
+                    "id": 2,
+                    "expression": "8x^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes aplicar la raiz tanto al coeficiente como a la variable"
+                },
+                {
+                    "id": 3,
+                    "expression": "64",
+                    "correct": false,
+                    "feedbackMsg": "La raíz cuadrada aplica tanto al coeficiente como a la variable"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "3"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 2,
+                    "expression": "-9",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+                },
+                {
+                    "id": 3,
+                    "expression": "-3",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de considerar el signo"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -140,6 +190,31 @@
         "displayResult": [
             "3"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "3",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "9",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 2,
+                "expression": "-9",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el segundo término es solo b, no su cuadrado."
+            },
+            {
+                "id": 3,
+                "expression": "-3",
+                "correct": false,
+                "feedbackMsg": "No te olvides de considerar el signo"
+            }
+        ]
     }
 }

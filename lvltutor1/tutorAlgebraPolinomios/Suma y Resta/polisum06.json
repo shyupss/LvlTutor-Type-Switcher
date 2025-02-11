@@ -12,10 +12,14 @@
             "hintId": 0
           },
           {
-            "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+            "hint": "Los términos semejantes son aquellos que tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
             "hintId": 1
           },
-          { "hint": "El resultado es x⁴+3x³-4x²+6x-8.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"x^{4}+3x^{3}-4x^{2}+6x-8",
+            "hintId": 2
+          }       
         ],
         "stepId": "0",
         "values": [

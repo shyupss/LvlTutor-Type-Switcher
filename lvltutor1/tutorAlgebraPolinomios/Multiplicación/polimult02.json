@@ -8,21 +8,25 @@
       "KCs": ["MultDist"],
       "hints": [
         {
-          "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+          "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2x'",
           "hintId": 0
         },
         {
           "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
           "hintId": 1
         },
-        { "hint": "El resultado es 2x³+8x²+6x.", "hintId": 2 }
+        { 
+          "hint": "El resultado es:",
+          "expression":"2x^{3}+8x^{2}+6x",
+          "hintId": 2
+        }
       ],
       "stepId": "0",
       "values": [
         { "name": "x", "value": 1 }
       ],
       "answers": [{ "answer": ["2x^{3}+8x^{2}+6x"], "nextStep": "1" }],
-      "summary": "1) Se realiza la primera multiplicación.",
+      "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
       "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
       "correctMsg": "Has encontrado el primer término.",
       "expression": "(x^{2}+4x+3)\\cdot (2x+5)",
@@ -35,21 +39,25 @@
       "KCs": ["MultDist"],
       "hints": [
         {
-          "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+          "hint": "Debes multiplicar todos los términos del primer polinomio por el término '5'",
           "hintId": 0
         },
         {
           "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
           "hintId": 1
         },
-        { "hint": "El resultado es 5x²+20x+15.", "hintId": 2 }
+        { 
+          "hint": "El resultado es:",
+          "expression":"5x^{2}+20x+15",
+          "hintId": 2
+        }
       ],
       "stepId": "1",
       "values": [
         { "name": "x", "value": 1 }
       ],
       "answers": [{ "answer": ["5x^{2}+20x+15"], "nextStep": "2" }],
-      "summary": "2) Se realiza la segunda multiplicación.",
+      "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
       "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
       "correctMsg": "Has encontrado el primer término.",
       "expression": "(x^{2}+4x+3)\\cdot (2x+5)",
@@ -69,14 +77,18 @@
           "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
           "hintId": 1
         },
-        { "hint": "El resultado es 2x³+13x²+26x+15.", "hintId": 2 }
+        { 
+          "hint": "El resultado es:",
+          "expression":"2x^{3}+13x^{2}+26x+15",
+          "hintId": 2
+        }      
       ],
       "stepId": "2",
       "values": [
         { "name": "x", "value": 1 }
       ],
       "answers": [{ "answer": ["2x^{3}+13x^{2}+26x+15"], "nextStep": "-1" }],
-      "summary": "3) Se obtiene el resultado.",
+      "summary": "3) Se suman los términos semejantes.",
       "stepTitle": "Finalmente, reduce los términos semejantes",
       "correctMsg": "Has encontrado el resultado.",
       "expression": "(2x^{3}+8x^{2}+6x)+(5x^{2}+20x+15)",

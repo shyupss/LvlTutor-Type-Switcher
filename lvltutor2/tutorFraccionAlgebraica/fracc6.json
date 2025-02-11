@@ -3,7 +3,7 @@
     "title": "Fracción Algebraica",
     "type": "lvltutor",
     "meta": {},
-    "text": "Exprese la siguiente fracción como multiplicación:",
+    "text": "Expresa la siguiente fracción como multiplicación:",
     "steps": [
         {
             "stepId": "0",
@@ -43,11 +43,13 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hintId": 2,
-                    "hint": "La solución es (a/b) * (d/c)"
+                    "hint": "La solución es:",
+                    "expression": "\\frac{a}{b}\\cdot \\frac{d}{c}"
                 }
             ],
             "matchingError": [],
@@ -62,7 +64,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
-            "summary": "Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+            "summary": "Con el fin de transformar una divsión de fracciones a multiplicación de fracciones, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{a}{b}\\cdot \\frac{d}{c}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{a}{b}\\cdot \\frac{c}{d}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\frac{a}{b}}{\\frac{d}{c}}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{b}{a}\\cdot\\frac{c}{d}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                }
+            ]
         }
     ]
 }

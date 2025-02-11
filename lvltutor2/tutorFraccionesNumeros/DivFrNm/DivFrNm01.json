@@ -51,7 +51,28 @@
             "displayResult": [
                 "\\frac{5}{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{5}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{7}{4}",
+                    "correct": false,
+                    "feedbackMsg": "El divisor es",
+                    "feedbackMsgExp": "\\frac{3}{5}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3}{5}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el inverso multiplicativo de una fracción está definido como",
+                    "feedbackMsgExp": "\\frac{b}{a}\\space es\\space inverso\\space de\\space \\frac{a}{b}"
+                }
+            ]
         },
         {
             "KCs": [
@@ -95,7 +116,26 @@
             "displayResult": [
                 "\\frac{4}{7} \\cdot \\frac{5}{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{4}{7} \\cdot \\frac{5}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{4}{7}\\cdot\\frac{3}{5}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la primera fracción por el inverso multiplicarivo de la segunda."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{7}{4}\\cdot\\frac{5}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar la primera fracción por el inverso multiplicarivo de la segunda."
+                }
+            ]
         },
         {
             "KCs": [
@@ -141,7 +181,32 @@
             "displayResult": [
                 "20"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "20",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "35",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los numeradores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -187,7 +252,32 @@
             "displayResult": [
                 "21"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "21",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 2,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                },
+                {
+                    "id": 3,
+                    "expression": "35",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar directamente los denominadores de las fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -240,7 +330,24 @@
             "displayResult": [
                 "\\frac{20}{21}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{20}{21}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{2}{7}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{21}{20}",
+                    "correct": false
+                }
+            ]
         }
     ],
     "title": "División de fracciones",
@@ -295,6 +402,23 @@
         "displayResult": [
             "\\frac{20}{21}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{20}{21}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{2}{7}",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{21}{20}",
+                "correct": false
+            }
+        ]
     }
 }

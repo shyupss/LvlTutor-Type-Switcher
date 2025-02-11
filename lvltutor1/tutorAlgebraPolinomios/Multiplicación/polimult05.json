@@ -8,21 +8,25 @@
         "KCs": ["MultDist"],
         "hints": [
           {
-            "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+            "hint": "Debes multiplicar todos los términos del primer polinomio por el término '5x'",
             "hintId": 0
           },
           {
             "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
             "hintId": 1
           },
-          { "hint": "El resultado es 15x³-10x²+30x.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"15x^{3}-10x^{2}+30x",
+            "hintId": 2
+          }
         ],
         "stepId": "0",
         "values": [
           { "name": "x", "value": 1 }
         ],
         "answers": [{ "answer": ["15x^{3}-10x^{2}+30x"], "nextStep": "1" }],
-        "summary": "1) Se realiza la primera multiplicación.",
+        "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
         "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
         "correctMsg": "Has encontrado el primer término.",
         "expression": "(3x^{2}-2x+6)\\cdot (5x+4)",
@@ -35,21 +39,25 @@
         "KCs": ["MultDist"],
         "hints": [
           {
-            "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+            "hint": "Debes multiplicar todos los términos del primer polinomio por el término '4'",
             "hintId": 0
           },
           {
             "hint": "Recuerda revisar los signos y los exponentes al multiplicar términos semejantes.",
             "hintId": 1
           },
-          { "hint": "El resultado es 12x²-8x+24.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"12x^{2}-8x+24",
+            "hintId": 2
+          }
         ],
         "stepId": "1",
         "values": [
           { "name": "x", "value": 1 }
         ],
         "answers": [{ "answer": ["12x^{2}-8x+24"], "nextStep": "2" }],
-        "summary": "2) Se realiza la segunda multiplicación.",
+        "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
         "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
         "correctMsg": "Has encontrado el primer término.",
         "expression": "(3x^{2}-2x+6)\\cdot (5x+4)",
@@ -69,14 +77,18 @@
             "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
             "hintId": 1
           },
-          { "hint": "El resultado es 15x³+2x²+22x+24.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"15x^{3}+2x^{2}+22x+24",
+            "hintId": 2
+          }
         ],
         "stepId": "2",
         "values": [
           { "name": "x", "value": 1 }
         ],
         "answers": [{ "answer": ["15x^{3}+2x^{2}+22x+24"], "nextStep": "-1" }],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(15x^{3}-10x^{2}+30x)+(12x^{2}-8x+24)",

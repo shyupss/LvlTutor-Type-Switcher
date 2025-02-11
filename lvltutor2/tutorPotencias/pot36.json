@@ -9,7 +9,7 @@
         {
             "stepId": "0",
             "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
-            "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+            "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
             "displayResult": [
                 "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot{\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}}"
             ],
@@ -30,7 +30,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "El conjugado de p-q es p+q."
+                    "hint": "El conjugado de p+q es p-q."
                 },
                 {
                     "hintId": 1,
@@ -55,7 +55,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado identificar el conjugado y expresar la amplificación.",
-            "summary": "1) Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado."
+            "summary": "1) Con el fin de racionalizar el denominador se procede a encontrar su conjugado, luego se multiplica la expresión por una fracción de numerador y denominador respectivamente igual al conjugado encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot{\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
+                    "correct": false,
+                    "feedbackMsg": "El conjugado de a+b es a-b"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot\\frac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar numerador y denominador por la misma expresión"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}\\cdot\\frac{\\sqrt{5}-\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar numerador y denominador por la misma expresión"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -107,7 +132,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-            "summary": "2) Luego se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+            "summary": "2) Luego se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\left(\\sqrt{5}-\\sqrt{2}\\right)^{2}}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{(\\sqrt{5}-\\sqrt{2})(\\sqrt{5}-\\sqrt{2})}{(\\sqrt{5}+\\sqrt{2})(\\sqrt{5}-\\sqrt{2})}",
+                    "correct": false,
+                    "feedbackMsg": "Debes desarrollar el producto, teniendo en cuenta que en denominador hay una suma por su diferencia."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\left(\\sqrt{5}-\\sqrt{2}\\right)^2}{7}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que (a+b)(a-b)=a²-b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\left(\\sqrt{5}-\\sqrt{2}\\right)}{3}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el numerador de la primera fracción"
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -155,7 +205,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-            "summary": "2) Finalmente se desarrolla el binomio cuadrático."
+            "summary": "2) Finalmente se desarrolla el binomio cuadrático.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{7-2\\sqrt{10}}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{7+2\\sqrt{10}}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{7}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -204,6 +279,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-        "summary": "2) Finalmente se desarrolla el binomio cuadrático."
+        "summary": "2) Finalmente se desarrolla el binomio cuadrático.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{7-2\\sqrt{10}}{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "3",
+                "correct": false,
+                "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{7+2\\sqrt{10}}{3}",
+                "correct": false,
+                "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{7}{3}",
+                "correct": false,
+                "feedbackMsg": "Utiliza la identidad del binomio cuadratico de una resta, (a-b)²=a²-2ab+b²"
+            }
+        ]
     }
 }

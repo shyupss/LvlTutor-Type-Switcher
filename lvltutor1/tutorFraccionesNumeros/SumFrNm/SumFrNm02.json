@@ -23,7 +23,7 @@
         { "name": "b", "value": 2 }
       ],
       "answers": [{ "answer": ["6"], "nextStep": "1" }],
-      "summary": "  1) Primero, identificamos cuál será el denominador de la fracción resultante. Es importante recordar que si ya contamos con fracciones que comparten el mismo denominador, este se conservará en la fracción resultante.",
+      "summary": "1) Primero, identificamos cuál será el denominador de la fracción resultante. Es importante recordar que si ya contamos con fracciones que comparten el mismo denominador, este se conservará en la fracción resultante.",
       "stepTitle": "Identifica el valor del denominador de la fracción resultante.",
       "correctMsg": "Has identificado el valor del denominador de la fracción resultante.",
       "validation": "evaluateAndCount",
@@ -69,12 +69,12 @@
 
         {
           "hintId": 1,
-          "hint": "Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
+          "hint": "¡Se puede simplificar! El numerador y el denominador tienen un factor común. Intenta identificar ese factor y simplifica dividiendo ambos términos de la fracción por ese factor."
         },
 
         {
           "hintId": 2,
-          "hint": "Ese factor común es el 3. Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
+          "hint": "Ese factor común es 3. ¡Simplifica! Divide tanto el numerador como el denominador de la fracción resultante."
         },
 
         {

@@ -48,7 +48,32 @@
             "displayResult": [
                 "10"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "10",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "30",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se conserva el denominador. "
+                },
+                {
+                    "id": 2,
+                    "expression": "1000",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se conserva el denominador. "
+                },
+                {
+                    "id": 3,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "El denominador de cada fracción es 10"
+                }
+            ]
         },
         {
             "KCs": [
@@ -93,7 +118,32 @@
             "displayResult": [
                 "9"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "9",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "24",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                },
+                {
+                    "id": 2,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                },
+                {
+                    "id": 3,
+                    "expression": "30",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas dos o más fracciones con el mismo denominador,  se suman los numeradores."
+                }
+            ]
         },
         {
             "KCs": [
@@ -143,7 +193,33 @@
             "displayResult": [
                 "\\frac{9}{10}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{9}{10}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{10}{9}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que en una fracción",
+                    "feedbackMsgExp": "\\frac{a\\leftarrow numerador}{b\\leftarrow denominador}"
+                },
+                {
+                    "id": 2,
+                    "expression": "10",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el numerador"
+                },
+                {
+                    "id": 3,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                }
+            ]
         }
     ],
     "title": "Suma de fracciones",
@@ -195,6 +271,32 @@
         "displayResult": [
             "\\frac{9}{10}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{9}{10}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{10}{9}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que en una fracción",
+                "feedbackMsgExp": "\\frac{a\\leftarrow numerador}{b\\leftarrow denominador}"
+            },
+            {
+                "id": 2,
+                "expression": "10",
+                "correct": false,
+                "feedbackMsg": "No olvides el numerador"
+            },
+            {
+                "id": 3,
+                "expression": "9",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            }
+        ]
     }
 }

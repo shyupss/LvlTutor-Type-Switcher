@@ -7,7 +7,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 2",
+            "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 2.",
             "expression": "2 \\cdot 2^{5} \\cdot 2^{-3}",
             "KCs": [
                 "SumResExp"
@@ -15,7 +15,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾"
+                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = aˣ ⁺ ʸ"
                 },
                 {
                     "hintId": 1,
@@ -46,14 +46,41 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 2 y los exponentes son 2, 5 y -3.",
+            "summary": "1) Se aplica la propiedad de producto de potencias de igual base aˣ · aʸ = aˣ ⁺ ʸ. En este caso la base en común es 2 y los exponentes son 2, 5 y -3.",
             "correctMsg": "Has contestado correctamente aplicando la propiedad del producto potencias de igual base",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
                 "2^{1+5-3} = 2^{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^{-30}",
+                    "correct": false,
+                    "feedbackMsg": " No multipliques los exponentes, la propiedad del producto de potencias de igual base dice:",
+                    "feedbackMsgExp": "a^{x} \\cdot a^{y} = a^{(x + y)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "1",
+                    "correct": false,
+                    "feedbackMsg": " No restes los exponentes, la propiedad del producto de potencias de igual base dice:",
+                    "feedbackMsgExp": "a^{x} \\cdot a^{y} = a^{(x + y)}"
+                },
+                {
+                    "id": 3,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar el resultado como una potencia de base 2"
+                }
+            ]
         }
     ]
 }

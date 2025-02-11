@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Identifique y escriba el conjugado del denominador",
+      "stepTitle": "Identifica y escribe el conjugado del denominador.",
       "expression": "\\frac{3}{\\sqrt{5} - \\sqrt{2}}",
       "KCs": ["DetConj"],
       "hints": [
@@ -25,7 +25,7 @@
       ],
       "answers": [{ "answer": ["\\sqrt{5} + \\sqrt{2}"], "nextStep": "-1" }],
       "summary": "1) Se identifica el conjugado de la expresión.",
-      "correctMsg": "Has identificado correctamente el conjugado de la fracción.",
+      "correctMsg": "Has identificado correctamente el conjugado del denominador.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
       "displayResult": ["\\sqrt{5} - \\sqrt{2}  \\longrightarrow \\sqrt{5} + \\sqrt{2}"],
@@ -33,18 +33,22 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Multiplica el numerador y el denominador con el conjugado encontrado en el paso anterior.",
+      "stepTitle": "Multiplica el numerador y el denominador por el conjugado encontrado en el paso anterior.",
       "expression": "\\frac{3}{\\sqrt{5} - \\sqrt{2}} \\cdot \\frac{\\left( \\sqrt{5} + \\sqrt{2}\\right)}{\\left( \\sqrt{5} + \\sqrt{2}\\right)}",
       "KCs": ["MultFrac","SumDif"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "Recuerda que es una multiplicación de binomios por lo que multplica en orden."
+          "hint": "Recuerda que es una multiplicación de binomios por lo que debes multplicar término por término."
+        },
+        {
+          "hintId":1,
+          "expression":"Recuerda simplificar la fracción si es posible."
         },
         {
           "hintId":1,
           "hint":"El resultado es: ",
-          "expression": "\\sqrt{5} + \\sqrt{2}"
+          "expression": "\\dot\\sqrt{5} + \\sqrt{2}"
         }
       ],
       "answers": [{ "answer": ["\\sqrt{5} + \\sqrt{2}"], "nextStep": "-1" }],

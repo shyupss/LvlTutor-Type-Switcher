@@ -7,7 +7,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa como potencia de la 5",
+            "stepTitle": "Usando la propiedad del cociente de potencias de igual base, expresa como potencia de 5.",
             "expression": "\\frac{5^{3}}{5^{-2}}",
             "KCs": [
                 "SumResExp"
@@ -52,9 +52,37 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "5^{3-(-2)} = 5^{5}"
+                "\\frac{5^{3}}{5^{-2}} = 5^{3-(-2)} = 5^{5}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "5^{5}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "5^{-\\frac{3}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "No debes dividir los exponentes, recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 2,
+                    "expression": "5^{-5}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                },
+                {
+                    "id": 3,
+                    "expression": "5^{-6}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{a^n}{a^m}=a^{n-m}"
+                }
+            ]
         }
     ]
 }

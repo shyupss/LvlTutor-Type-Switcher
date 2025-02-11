@@ -2,13 +2,13 @@
     "code": "raNum12",
     "meta": {},
     "title": "Suma de radicales",
-    "text": "Realice la suma de radicales y escriba su resultado.",
+    "text": "Realiza la suma de radicales y escribe su resultado.",
     "initialExpression": "2\\sqrt{2} - 4\\sqrt{2} + \\sqrt{2}",
     "type": "lvltutor",
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando propiedades, realize la suma de radicales y escriba el resultado",
+            "stepTitle": "Usando propiedades, realiza la suma de radicales y escribe el resultado",
             "expression": "2\\sqrt{2} - 4\\sqrt{2} + \\sqrt{2}",
             "KCs": [
                 "SumRad"
@@ -16,7 +16,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo :",
+                    "hint": "Para realizar una suma o resta de radicales, primero debes factorizar los términos que tienen factores comunes. Ejemplo:",
                     "expression": "a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b} "
                 },
                 {
@@ -33,7 +33,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1)Ocupando propiedades y factorización se realiza la suma de radicales.",
+            "summary": "1) Ocupando propiedades y factorización se realiza la suma de radicales.",
             "correctMsg": "Has realizado correctamente la suma de radicales.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",

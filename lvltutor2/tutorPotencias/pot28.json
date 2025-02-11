@@ -45,7 +45,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
-            "summary": "Se mueve la coma decimal 7 veces hacia la izquierda, quedando como número decimal 2, luego esto se multiplica por una potencia de 10 cuyo exponente es 7 "
+            "summary": "Se mueve la coma decimal 7 veces hacia la izquierda, quedando como número decimal 2, luego esto se multiplica por una potencia de 10 cuyo exponente es 7 ",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2\\cdot{10^{7}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2\\cdot10^7",
+                    "correct": false,
+                    "feedbackMsg": "Para encontrar el exponente de 10, cuenta la cantidad de posiciones que el separador decimal se movió a la izquierda."
+                },
+                {
+                    "id": 2,
+                    "expression": "20\\cdot 10^6",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                },
+                {
+                    "id": 3,
+                    "expression": "0.2\\cdot 10^8",
+                    "correct": false,
+                    "feedbackMsg": "En notación científica, el factor de la izquierda se escribe sólo con un dígito distinto de cero a la izquierda del separador decimal"
+                }
+            ]
         }
     ]
 }

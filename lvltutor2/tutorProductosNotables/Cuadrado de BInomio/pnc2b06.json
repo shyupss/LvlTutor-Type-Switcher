@@ -49,7 +49,32 @@
             "displayResult": [
                 "64x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "64x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "64x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que tambien debes elevar al cuadrado las variables"
+                },
+                {
+                    "id": 2,
+                    "expression": "8x^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado tanto la variable como al coeficiente que lo acompaña."
+                },
+                {
+                    "id": 3,
+                    "expression": "16x",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado el el primer término del cuadrado de binomio, no multiplicarlo por 2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -94,7 +119,32 @@
             "displayResult": [
                 "-32x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-32x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-32",
+                    "correct": false,
+                    "feedbackMsg": "Debes incluir las variables del primer término"
+                },
+                {
+                    "id": 2,
+                    "expression": "32x",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda revisar el signo del segundo término."
+                },
+                {
+                    "id": 3,
+                    "expression": "-16x",
+                    "correct": false,
+                    "feedbackMsg": "No olvides multiplicar el resultado por 2."
+                }
+            ]
         },
         {
             "KCs": [
@@ -140,7 +190,32 @@
             "displayResult": [
                 "4"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-2",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "4x",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=-2"
+                },
+                {
+                    "id": 3,
+                    "expression": "-4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -188,6 +263,31 @@
         "displayResult": [
             "4"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "4",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-2",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "4x",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado, en este caso b=-2"
+            },
+            {
+                "id": 3,
+                "expression": "-4",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el tercer término es b² y corresponde a un número positivo"
+            }
+        ]
     }
 }

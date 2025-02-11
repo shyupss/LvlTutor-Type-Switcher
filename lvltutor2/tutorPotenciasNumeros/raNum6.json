@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Exprese como una sola raíz, aplicando la propiedad de raíz de una raíz.",
+            "stepTitle": "Expresa como una sola raíz, aplicando la propiedad de raíz de una raíz.",
             "expression": "\\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}}",
             "KCs": [
                 "RaizDeRaiz"
@@ -40,11 +40,37 @@
             "displayResult": [
                 "\\sqrt{\\sqrt{\\sqrt{\\sqrt{2}}}} \\longrightarrow \\sqrt[2 \\cdot 2 \\cdot 2 \\cdot 2]{2} \\longrightarrow \\sqrt[16]{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt[16]{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt[8]{2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar los índices, no sumarlos, la propiedad dice:",
+                    "feedbackMsgExp": "\\sqrt[n]{\\sqrt[m]{a}}=\\sqrt[n\\cdot m]{a}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{\\frac{1}{16}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como una raíz, no como una potencia."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt[4]{2}",
+                    "correct": false,
+                    "feedbackMsg": "El índice de las raíces es 2, no 1"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Exprese la raíz como una potencia.",
+            "stepTitle": "Expresa la raíz como una potencia.",
             "expression": "\\sqrt[16]{2}",
             "KCs": [
                 "TransRaizPot"
@@ -76,11 +102,39 @@
             "displayResult": [
                 "\\sqrt[16]{2} \\longrightarrow 2^{\\frac{1}{16}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{\\frac{1}{16}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que para expresar la raíz como una potencia se hace :",
+                    "feedbackMsgExp": "\\sqrt[n]{a}=a^{\\frac{1}{n}}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{16}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que para expresar la raíz como una potencia se hace :",
+                    "feedbackMsgExp": "\\sqrt[n]{a}=a^{\\frac{1}{n}}"
+                },
+                {
+                    "id": 3,
+                    "expression": "16^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que para expresar la raíz como una potencia se hace :",
+                    "feedbackMsgExp": "\\sqrt[n]{a}=a^{\\frac{1}{n}}"
+                }
+            ]
         },
         {
             "stepId": "2",
-            "stepTitle": "Aplicando la propiedad de potencia de una potencia, exprese el resultado como potencia de 2.",
+            "stepTitle": "Aplicando la propiedad de potencia de una potencia, expresa el resultado como potencia de 2.",
             "expression": "\\left( 2^{\\frac{1}{16}} \\right) ^{48}",
             "KCs": [
                 "RaizDeRaiz",
@@ -90,8 +144,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad de potencia de una potencia dice: ",
-                    "expression": "(a^{m})^{n} = a^{m \\cdot n}"
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
                 },
                 {
                     "hintId": 1,
@@ -114,12 +167,39 @@
             "displayResult": [
                 "2^{\\frac{1}{16} \\cdot 48} \\longrightarrow 2^{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^4",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado al simplificar la fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{\\frac{769}{16}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "(x^a)^b=x^{a\\cdot b}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^{\\frac{1}{768}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "(x^a)^b=x^{a\\cdot b}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "2",
-        "stepTitle": "Aplicando la propiedad de potencia de una potencia, exprese el resultado como potencia de 2.",
+        "stepTitle": "Aplicando la propiedad de potencia de una potencia, expresa el resultado como potencia de 2.",
         "expression": "\\left( 2^{\\frac{1}{16}} \\right) ^{48}",
         "KCs": [
             "RaizDeRaiz",
@@ -129,8 +209,7 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "La propiedad de potencia de una potencia dice: ",
-                "expression": "(a^{m})^{n} = a^{m \\cdot n}"
+                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
             },
             {
                 "hintId": 1,
@@ -153,6 +232,33 @@
         "displayResult": [
             "2^{\\frac{1}{16} \\cdot 48} \\longrightarrow 2^{3}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2^{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2^4",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado al simplificar la fracción."
+            },
+            {
+                "id": 2,
+                "expression": "2^{\\frac{769}{16}}",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "(x^a)^b=x^{a\\cdot b}"
+            },
+            {
+                "id": 3,
+                "expression": "2^{\\frac{1}{768}}",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "(x^a)^b=x^{a\\cdot b}"
+            }
+        ]
     }
 }

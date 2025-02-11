@@ -14,11 +14,12 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+                    "hint": "Los términos semejantes son aquellos que tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 3x-2.",
+                    "hint": "El resultado es:",
+                    "expression": "3x-2",
                     "hintId": 2
                 }
             ],

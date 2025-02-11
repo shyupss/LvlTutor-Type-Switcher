@@ -51,7 +51,32 @@
             "displayResult": [
                 "12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 2,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                },
+                {
+                    "id": 3,
+                    "expression": "24",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre dos números es el menor entero que es múltiplo de ambos números."
+                }
+            ]
         },
         {
             "KCs": [
@@ -99,7 +124,32 @@
             "displayResult": [
                 "\\frac{9}{12} - \\frac{2}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{9}{12} - \\frac{2}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3}{12}-\\frac{2}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y el denominador de la primera fracción por 3"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{9}{12}-\\frac{1}{12}''",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador  y el denominador de la segunda fracción por 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{12}-\\frac{1}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador  y el denominador de la primera fracción por 3 y de la segunda fracción por 5"
+                }
+            ]
         },
         {
             "KCs": [
@@ -150,7 +200,32 @@
             "displayResult": [
                 "\\frac{7}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{7}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{84}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{7}{24}",
+                    "correct": false,
+                    "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Resta de fracciones",
@@ -203,6 +278,31 @@
         "displayResult": [
             "\\frac{7}{12}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{7}{12}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "7",
+                "correct": false,
+                "feedbackMsg": "No olvides el denominador"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{84}{12}",
+                "correct": false,
+                "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{7}{24}",
+                "correct": false,
+                "feedbackMsg": "Como ambas fracciones tienen el mismo denominador, resta los numeradores y conserva el denominador."
+            }
+        ]
     }
 }

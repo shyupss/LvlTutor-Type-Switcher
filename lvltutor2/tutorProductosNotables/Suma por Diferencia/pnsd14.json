@@ -52,7 +52,32 @@
             "displayResult": [
                 "9xy^{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "9xy^{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9xy",
+                    "correct": false,
+                    "feedbackMsg": "Debes calcular la raíz de 81x²y⁸."
+                },
+                {
+                    "id": 2,
+                    "expression": "81x^2 y^8",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el primer término debes utilizar el término 81x²y⁸ y calcular su raíz."
+                },
+                {
+                    "id": 3,
+                    "expression": "9x^2y^4",
+                    "correct": false,
+                    "feedbackMsg": "Calcula la raíz de 81x²y⁸ para obtener el primer término"
+                }
+            ]
         },
         {
             "KCs": [
@@ -102,7 +127,32 @@
             "displayResult": [
                 "3"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes utilizar el término 9 y calcular su raíz."
+                },
+                {
+                    "id": 2,
+                    "expression": "-3",
+                    "correct": false,
+                    "feedbackMsg": "Procura fijarte bien en el signo"
+                },
+                {
+                    "id": 3,
+                    "expression": "-9",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el segundo término debes utilizar el término 9 y calcular su raíz."
+                }
+            ]
         }
     ],
     "title": "Suma por diferencia",
@@ -154,6 +204,31 @@
         "displayResult": [
             "3"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "3",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "9",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes utilizar el término 9 y calcular su raíz."
+            },
+            {
+                "id": 2,
+                "expression": "-3",
+                "correct": false,
+                "feedbackMsg": "Procura fijarte bien en el signo"
+            },
+            {
+                "id": 3,
+                "expression": "-9",
+                "correct": false,
+                "feedbackMsg": "Para obtener el segundo término debes utilizar el término 9 y calcular su raíz."
+            }
+        ]
     }
 }

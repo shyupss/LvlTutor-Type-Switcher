@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe su resultado.",
+            "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe tu resultado.",
             "expression": "\\left( \\frac{1}{3} \\right)^{-2}",
             "KCs": [
                 "TransExpFrac"
@@ -38,13 +38,39 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "3^{3} + \\left( \\frac{1}{3} \\right)^{-2} \\longrightarrow 3^{3} + 3^{2}"
+                "3^{3} + \\left( \\frac{1}{3} \\right)^{-2} \\quad \\longrightarrow \\quad 3^{3} + 3^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que para a diferente de cero,",
+                    "feedbackMsgExp": "\\left(\\frac{1}{a}\\right)^{-n}=a^n"
+                },
+                {
+                    "id": 2,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "No olvides que el exponente es -2"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1}{3^{-2}}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides expresar esta cantidad utiizando base 3"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+            "stepTitle": "Quedando la expresión de la siguiente manera, resuelve:",
             "expression": "3^{3} + 3^{2}",
             "KCs": [
                 "TransExpFrac",
@@ -76,12 +102,39 @@
             "displayResult": [
                 "3^{3} + 3^{2} = 27 + 9 = 36"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "36",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "15",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                    "feedbackMsgExp": "a^n"
+                },
+                {
+                    "id": 2,
+                    "expression": "11",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                    "feedbackMsgExp": "a^n"
+                },
+                {
+                    "id": 3,
+                    "expression": "18",
+                    "correct": false,
+                    "feedbackMsg": "Debes sumar ambas potencias"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "1",
-        "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+        "stepTitle": "Quedando la expresión de la siguiente manera, resuelve:",
         "expression": "3^{3} + 3^{2}",
         "KCs": [
             "TransExpFrac",
@@ -113,6 +166,33 @@
         "displayResult": [
             "3^{3} + 3^{2} = 27 + 9 = 36"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "36",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "15",
+                "correct": false,
+                "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                "feedbackMsgExp": "a^n"
+            },
+            {
+                "id": 2,
+                "expression": "11",
+                "correct": false,
+                "feedbackMsg": "Recuerda que multiplicando 'n' factores 'a' se obtiene",
+                "feedbackMsgExp": "a^n"
+            },
+            {
+                "id": 3,
+                "expression": "18",
+                "correct": false,
+                "feedbackMsg": "Debes sumar ambas potencias"
+            }
+        ]
     }
 }

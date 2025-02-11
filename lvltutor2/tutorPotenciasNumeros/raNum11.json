@@ -2,13 +2,13 @@
     "code": "raNum11",
     "meta": {},
     "title": "Expresar como raíz",
-    "text": "Expresar solo como raíz.",
+    "text": "Expresa como una sola raíz.",
     "initialExpression": "2\\sqrt{3}",
     "type": "lvltutor",
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando propiedades de raíces transforma a un radical.",
+            "stepTitle": "Usando propiedades de raíces transforma a un radical y multiplica.",
             "expression": "2\\sqrt{3}",
             "KCs": [
                 "CompRaiz"
@@ -16,11 +16,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Para expresar como un solo radical, el número de afuera tiene que entrar a la raíz.",
-                    "expression": "a\\sqrt{b} \\longrightarrow \\sqrt{a^{2} \\cdot b}"
+                    "hint": "Para expresar un producto de un número por una raíz como un único radical, el factor externo debe incorporarse dentro del radical elevándolo al valor del índice.",
+                    "expression": "a \\cdot \\sqrt[n]{b} \\longrightarrow \\sqrt[n]{a^{n} \\cdot b}"
                 },
                 {
                     "hintId": 1,
+                    "hint": "En este caso la raíz tiene índice 2, por lo tanto el factor externo a la raíz, ingresará con exponente 2."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Cuando ya hayas ingresado el factor externo a la raíz, recuerda multiplicar los números dentro de la raíz."
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado es: ",
                     "expression": "\\sqrt{12}"
                 }
@@ -33,7 +41,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se ocupa propiedades para transformar la expresión a un solo radical",
+            "summary": "1) Se ocupa propiedades para transformar la expresión a un solo radical, en este caso el factor externo es 2 y el indice del radical es 2, por lo tanto el factor ingresa como 2² = 4. Luego se multiplica por el valor dentro de la raíz, en este caso 3",
             "correctMsg": "Has respondido correctamente.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",

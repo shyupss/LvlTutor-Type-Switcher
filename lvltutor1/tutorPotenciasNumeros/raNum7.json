@@ -8,13 +8,13 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Utilizando la propiedad de raíz de una raíz, exprese el resultado como una raíz.",
+      "stepTitle": "Utilizando la propiedad de raíz de una raíz, expresa el numerador como una sola raíz.",
       "expression": "\\sqrt{\\sqrt[3]{15}}",
       "KCs": ["RaizDeRaiz"],
       "hints": [
         {
           "hintId": 0,
-          "hint": "La propiedad dice :",
+          "hint": "La propiedad dice:",
           "expression":"\\sqrt[n]{\\sqrt[m]{a}} = \\sqrt[n \\cdot m]{a}"
         },
         {
@@ -33,7 +33,7 @@
     },
     {
       "stepId": "1",
-      "stepTitle": "Utilizando la propiedad de raíz de una raíz, exprese el resultado como una raíz.",
+      "stepTitle": "Utilizando la propiedad de raíz de una raíz, expresa el denominador como una sola raíz.",
       "expression": "\\sqrt[3]{\\sqrt{15}}",
       "KCs": ["RaizDeRaiz"],
       "hints": [
@@ -53,7 +53,7 @@
       "correctMsg": "Has aplicado la propiedad correctamente.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["(2^{\\frac{1}{4}})^{12} = 2^{3} = 8"],
+      "displayResult": ["\\sqrt{\\sqrt[3]{15}} \\longrightarrow \\sqrt[6]{15}"],
       "matchingError": []
     },
     {
@@ -64,8 +64,7 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Primero se realiza la fracción para luego finalizar con la raíz.",
-          "expression": "(x^{n})^{m} =  x^{n \\cdot m}"
+          "hint": "Primero se trabaja con la fracción y luego con la raíz."
         },
         {
           "hintId":1,
@@ -74,7 +73,7 @@
         }
       ],
       "answers": [{ "answer": ["1"], "nextStep": "-1" }],
-      "summary": "2) Se aplica la propiedad de potencia de una potencia y se escribe el resultado.",
+      "summary": "3) Se aplica la propiedad de potencia de una potencia y se escribe el resultado.",
       "correctMsg": "Has aplicado la propiedad correctamente.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",

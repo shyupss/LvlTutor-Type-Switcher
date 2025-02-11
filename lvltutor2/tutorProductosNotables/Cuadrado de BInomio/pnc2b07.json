@@ -53,7 +53,32 @@
             "displayResult": [
                 "25x^{2}y^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "25x^{2}y^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "25xy",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que tambien debes elevar al cuadrado las variables"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(25xy\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "El coeficiente ya fue elevado al cuadrado y debe estar fuera de los paréntesis"
+                },
+                {
+                    "id": 3,
+                    "expression": "5 x^2 y^2",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar al cuadrado tanto las variables como al coeficiente que las acompaña."
+                }
+            ]
         },
         {
             "KCs": [
@@ -102,7 +127,32 @@
             "displayResult": [
                 "60xy"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "60xy",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "36",
+                    "correct": false,
+                    "feedbackMsg": "Primero multiplica ambos términos, y después multiplica el resultado por 2; recuerda que el segundo término es 2⋅a⋅b."
+                },
+                {
+                    "id": 2,
+                    "expression": "30xy",
+                    "correct": false,
+                    "feedbackMsg": "No olvides multiplicar el resultado por 2."
+                },
+                {
+                    "id": 3,
+                    "expression": "60",
+                    "correct": false,
+                    "feedbackMsg": "Tambien debes incluir las variables x e y del primer término"
+                }
+            ]
         },
         {
             "KCs": [
@@ -153,7 +203,32 @@
             "displayResult": [
                 "36"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "36",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "12",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que b al cuadrado es b⋅b"
+                },
+                {
+                    "id": 3,
+                    "expression": "36^2",
+                    "correct": false,
+                    "feedbackMsg": "El coeficiente ya fue elevado al cuadrado, no lo eleves 2 veces"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -206,6 +281,31 @@
         "displayResult": [
             "36"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "36",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "6",
+                "correct": false,
+                "feedbackMsg": "Debes elevar b al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "12",
+                "correct": false,
+                "feedbackMsg": "Recuerda que b al cuadrado es b⋅b"
+            },
+            {
+                "id": 3,
+                "expression": "36^2",
+                "correct": false,
+                "feedbackMsg": "El coeficiente ya fue elevado al cuadrado, no lo eleves 2 veces"
+            }
+        ]
     }
 }

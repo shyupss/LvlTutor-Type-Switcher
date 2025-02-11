@@ -61,7 +61,32 @@
             "displayResult": [
                 "\\frac{3}{8}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{1}{6}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar la división de fracciones primero"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{11}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar la división de fracciones primero"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{8}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Atento a como se realiza la división de fracciones"
+                }
+            ]
         },
         {
             "KCs": [
@@ -110,7 +135,24 @@
             "displayResult": [
                 "\\frac{3}{8} + \\frac{1}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{8} + \\frac{1}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{8}{3}+\\frac{1}{4}",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3}{2}+\\frac{1}{4}",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -163,7 +205,31 @@
             "displayResult": [
                 "\\frac{3}{8} + \\frac{2}{8}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3}{8} + \\frac{2}{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3}{8}+\\frac{1}{8}",
+                    "correct": false,
+                    "feedbackMsg": "Al amplificar una fracción por un factor, debes hacerlo tanto para el numerador como el denominador"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3}{32}+\\frac{1}{32}",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{8}+\\frac{4}{8}",
+                    "correct": false,
+                    "feedbackMsg": "Al amplificar una fracción por un factor, debes hacerlo tanto para el numerador como el denominador correctamente"
+                }
+            ]
         },
         {
             "KCs": [
@@ -219,7 +285,32 @@
             "displayResult": [
                 "\\frac{5}{8}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{5}{8}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{5}{16}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+                },
+                {
+                    "id": 2,
+                    "expression": "5",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3}{2}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+                }
+            ]
         }
     ],
     "title": "Ejercicio de fracciones con Operaciones combinadas",
@@ -277,6 +368,31 @@
         "displayResult": [
             "\\frac{5}{8}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{5}{8}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{5}{16}",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+            },
+            {
+                "id": 2,
+                "expression": "5",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{3}{2}",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas fracciones con mismo denominador, este se conserva y solo sumas los numeradores"
+            }
+        ]
     }
 }

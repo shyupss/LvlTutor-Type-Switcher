@@ -9,7 +9,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{1}{\\sqrt{3y}-\\sqrt{2x}}",
-      "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+      "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
       "displayResult": ["\\frac{1}{\\sqrt{3y}-\\sqrt{2x}}\\cdot\\frac{\\sqrt{3y}+\\sqrt{2x}}{\\sqrt{3y}+\\sqrt{2x}}"],
       "KCs":["DetConj", "AmpFrac1"],
       "values":[{"name":"a","value":1},{"name":"b","value":4}],

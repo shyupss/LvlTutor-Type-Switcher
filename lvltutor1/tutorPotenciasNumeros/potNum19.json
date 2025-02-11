@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe su resultado.",
+      "stepTitle": "Aplica la propiedad de la potencia con exponente negativo y escribe tu resultado.",
       "expression": "\\left( \\frac{1}{3} \\right)^{-2}",
       "KCs": ["TransExpFrac"],
       "hints": [
@@ -28,12 +28,12 @@
       "correctMsg": "Has contestado correctamente aplicando la propiedad del producto de potencias de igual base.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["3^{3} + \\left( \\frac{1}{3} \\right)^{-2} \\longrightarrow 3^{3} + 3^{2}"],
+      "displayResult": ["3^{3} + \\left( \\frac{1}{3} \\right)^{-2} \\quad \\longrightarrow \\quad 3^{3} + 3^{2}"],
       "matchingError": []
     },
     {
       "stepId": "1",
-      "stepTitle": "Quedando la expresión de la siguiente manera, resuelve.",
+      "stepTitle": "Quedando la expresión de la siguiente manera, resuelve:",
       "expression": "3^{3} + 3^{2}",
       "KCs": ["PotNum"],
       "hints": [

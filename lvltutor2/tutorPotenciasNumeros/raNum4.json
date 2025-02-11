@@ -7,7 +7,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, exprese como raíz quinta.",
+            "stepTitle": "Usando la propiedad del producto de raíces del mismo orden, expresa como raíz quinta.",
             "expression": "\\sqrt[5]{4} \\cdot \\sqrt[5]{-4} \\cdot \\sqrt[5]{-2}",
             "KCs": [
                 "MultRaices"
@@ -39,7 +39,33 @@
             "displayResult": [
                 "\\sqrt[5]{4 \\cdot -4 \\cdot 4} \\longrightarrow \\sqrt[5]{32}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt[5]{32}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "32^{\\frac{1}{5}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresar como raíz quinta, no como potencia de base 32."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt[5]{-2}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad del producto de raíces del mismo orden dice:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}\\cdot \\sqrt[n]{b}=\\sqrt[n]{a\\cdot b}"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt[5]{4\\cdot -4\\cdot -2}",
+                    "correct": false,
+                    "feedbackMsg": "Debes realizar las multiplicaciones que están dentro de la raíz."
+                }
+            ]
         }
     ]
 }

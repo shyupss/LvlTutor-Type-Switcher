@@ -10,7 +10,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '6x²'",
                     "hintId": 0
                 },
                 {
@@ -18,7 +18,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 6x⁴+18x³-24x².",
+                    "hint": "El resultado es:",
+                    "expression": "6x^{4}+18x^{3}-24x^{2}",
                     "hintId": 2
                 }
             ],
@@ -37,7 +38,7 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se realiza la primera multiplicación.",
+            "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
             "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(x^{2}+3x-4)\\cdot (6x^{2}-2)",
@@ -46,7 +47,32 @@
             "displayResult": [
                 "6x^{4}+18x^{3}-24x^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6x^{4}+18x^{3}-24x^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "18x^3-18x^2",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación x²‧6x²"
+                },
+                {
+                    "id": 2,
+                    "expression": "6x^4-18x^3-24x^2",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3x‧6x²"
+                },
+                {
+                    "id": 3,
+                    "expression": "6x^4+18x^3+24x^2",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -4‧6x²"
+                }
+            ]
         },
         {
             "KCs": [
@@ -54,7 +80,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '-2'",
                     "hintId": 0
                 },
                 {
@@ -62,7 +88,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -2x²-6x+8.",
+                    "hint": "El resultado es:",
+                    "expression": "-2x^{2}-6x+8",
                     "hintId": 2
                 }
             ],
@@ -81,7 +108,7 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la segunda multiplicación.",
+            "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
             "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(x^{2}+3x-4)\\cdot (6x^{2}-2)",
@@ -90,7 +117,32 @@
             "displayResult": [
                 "-2x^{2}-6x+8"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-2x^{2}-6x+8",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2x^2-6x+8",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación x²‧-2"
+                },
+                {
+                    "id": 2,
+                    "expression": "-2x^2+6x+8",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 3x‧-2"
+                },
+                {
+                    "id": 3,
+                    "expression": "-2x^2-6x-8",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -4‧-2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +159,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 6x⁴+18x³-26x²-6x+8.",
+                    "hint": "El resultado es:",
+                    "expression": "6x^{4}+18x^{3}-26x^{2}-6x+8",
                     "hintId": 2
                 }
             ],
@@ -126,7 +179,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se obtiene el resultado.",
+            "summary": "3) Se suman los términos semejantes.",
             "stepTitle": "Finalmente, reduce los términos semejantes",
             "correctMsg": "Has encontrado el resultado.",
             "expression": "(6x^{4}+18x^{3}-24x^{2})+(-2x^{2}-6x+8)",
@@ -135,7 +188,32 @@
             "displayResult": [
                 "6x^{4}+18x^{3}-26x^{2}-6x+8"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "6x^{4}+18x^{3}-26x^{2}-6x+8",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4x^4+18x^3-26x^2-6x+8",
+                    "correct": false,
+                    "feedbackMsg": "Solo hay un término con x⁴, ten cuidado al sumar."
+                },
+                {
+                    "id": 2,
+                    "expression": "6x^4+18x^3+26x^2-6x+8",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 3,
+                    "expression": "6x^4+18x^3-26x^2-6x",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides del término independiente."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -154,7 +232,8 @@
                 "hintId": 1
             },
             {
-                "hint": "El resultado es 6x⁴+18x³-26x²-6x+8.",
+                "hint": "El resultado es:",
+                "expression": "6x^{4}+18x^{3}-26x^{2}-6x+8",
                 "hintId": 2
             }
         ],
@@ -173,7 +252,7 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(6x^{4}+18x^{3}-24x^{2})+(-2x^{2}-6x+8)",
@@ -182,6 +261,31 @@
         "displayResult": [
             "6x^{4}+18x^{3}-26x^{2}-6x+8"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "6x^{4}+18x^{3}-26x^{2}-6x+8",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "4x^4+18x^3-26x^2-6x+8",
+                "correct": false,
+                "feedbackMsg": "Solo hay un término con x⁴, ten cuidado al sumar."
+            },
+            {
+                "id": 2,
+                "expression": "6x^4+18x^3+26x^2-6x+8",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 3,
+                "expression": "6x^4+18x^3-26x^2-6x",
+                "correct": false,
+                "feedbackMsg": "No te olvides del término independiente."
+            }
+        ]
     }
 }

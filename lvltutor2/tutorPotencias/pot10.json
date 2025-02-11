@@ -20,11 +20,11 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Para que el exponente sea positivo, el numerador y denominador deben cambiar de lugar."
+                    "hint": "Para que el exponente sea positivo, la potencia con exponente negativo debes expresarla como 1 dividido por la potencia, utilizando la misma base elevado al mismo exponente positivo"
                 },
                 {
                     "hintId": 1,
-                    "hint": "4⁽⁻²⁾ se puede escribir como ",
+                    "hint": "4⁻² se puede escribir como ",
                     "expression": "\\frac{1}{4^{2}}"
                 },
                 {
@@ -51,7 +51,7 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado aplicar la propiedad de potencia con exponente negativo.",
-            "summary": "1) El segundo factor tiene un exponente negativo, por lo que se utiliza la propiedad a⁻¹ = 1/a. Luego el resultado de esto se multiplica por el primer factor.",
+            "summary": "1) El segundo factor tiene un exponente negativo, por lo que se utiliza la propiedad a⁻ᵇ = 1/aᵇ. Luego el resultado de esto se multiplica por el primer factor.",
             "multipleChoice": [
                 {
                     "id": 0,

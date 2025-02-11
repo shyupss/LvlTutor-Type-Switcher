@@ -8,7 +8,7 @@
         {
             "stepId": "0",
             "expression": "\\frac{y}{\\left(y-x\\right)}+\\frac{x}{\\left(y+x\\right)}",
-            "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
             "displayResult": [
                 "\\left(y-x\\right)\\left(y+x\\right)"
             ],
@@ -31,11 +31,12 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Comenzar encontrando los factores para cada denominador.Además, lo que está dentro de paréntesis se puede tomar como un único factor, siempre y cuando esté factorizado."
+                    "hint": "Comienza encontrando los factores para cada denominador. Además, lo que está dentro de paréntesis se puede tomar como un único factor, siempre y cuando esté factorizado."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores, se escoge el de máxima potencia"
+                    "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+                    "expression": "\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
                 },
                 {
                     "hintId": 2,
@@ -55,7 +56,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
-            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(y-x\\right)\\left(y+x\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(y-x\\right)^2\\left(y+x\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que (y-x)⋅(y+x) es múltiplo de (y-x) y de (y+x)"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(y-x\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Tambien debes considerar el mínimo común múltiplo para el denominador de la segunda fracción"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(y+x\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que (y-x)⋅(y+x) es múltiplo de (y-x) y de (y+x)"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -90,7 +116,11 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Cada fracción en la suma de las fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+                    "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
+                },
+                {
+                    "hintId": 2,
+                    "hint": "Recuerda desarrollar el numerador si es posible."
                 },
                 {
                     "hintId": 2,
@@ -110,7 +140,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado la suma de fracciones correctamente..",
-            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{y^{2}+2xy-x^{2}}{\\left(y-x\\right)\\left(y+x\\right)}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{y\\cdot(y+x)+x}{\\left(y-x\\right)\\left(y+x\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la  segunda fracción (y-x)"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{y\\cdot (y+x)+x\\cdot (y-x)}{\\left(y-x\\right)\\left(y+x\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por (y+x) y la segunda por (y-x)"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{y+x(y-x)}{\\left(y-x\\right)\\left(y+x\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica  la primera fracción (y+x)"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -146,7 +201,11 @@
             },
             {
                 "hintId": 1,
-                "hint": "Cada fracción en la suma de las fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+                "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
+            },
+            {
+                "hintId": 2,
+                "hint": "Recuerda desarrollar el numerador si es posible."
             },
             {
                 "hintId": 2,
@@ -166,6 +225,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has realizado la suma de fracciones correctamente..",
-        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{y^{2}+2xy-x^{2}}{\\left(y-x\\right)\\left(y+x\\right)}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{y\\cdot(y+x)+x}{\\left(y-x\\right)\\left(y+x\\right)}",
+                "correct": false,
+                "feedbackMsg": "Amplifica la  segunda fracción (y-x)"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{y\\cdot (y+x)+x\\cdot (y-x)}{\\left(y-x\\right)\\left(y+x\\right)}",
+                "correct": false,
+                "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por (y+x) y la segunda por (y-x)"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{y+x(y-x)}{\\left(y-x\\right)\\left(y+x\\right)}",
+                "correct": false,
+                "feedbackMsg": "Amplifica  la primera fracción (y+x)"
+            }
+        ]
     }
 }

@@ -15,12 +15,12 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾"
+                    "hint": "La propiedad del producto de potencias de igual base dice: aˣ · aʸ = aˣ ⁺ ʸ"
                 },
                 {
                     "hintId": 1,
                     "hint": " La base en común es: ",
-                    "expression": "2/3"
+                    "expression": "\\frac{2}{3}"
                 },
                 {
                     "hintId": 2,
@@ -42,14 +42,42 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 2/3 y los exponentes son 2 y -3.",
+            "summary": "1) Se aplica la propiedad de producto de potencias de igual base aˣ · aʸ = aˣ ⁺ ʸ. En este caso la base en común es 2/3 y los exponentes son 2 y -3.",
             "correctMsg": "Has contestado correctamente aplicando la propiedad del producto de potencias de igual base.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "\\left(  \\frac{2}{3} \\right)^{2 - 3} \\longrightarrow \\left( \\frac{2}{3} \\right)^{-1} = \\frac{3}{2}"
+                "\\left(  \\frac{2}{3} \\right)^{2 - 3} \\quad \\longrightarrow \\quad \\left( \\frac{2}{3} \\right)^{-1} = \\frac{3}{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left( \\frac{2}{3} \\right)^{-1}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "(\\frac{2}{3})^{-6}",
+                    "correct": false,
+                    "feedbackMsg": " No multipliques los exponentes, la propiedad del producto de potencias de igual base dice:",
+                    "feedbackMsgExp": "a^{x} \\cdot a^{y} = a^{(x + y)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{2}{3}^{-1}",
+                    "correct": false,
+                    "feedbackMsg": " No restes los exponentes, la propiedad del producto de potencias de igual base dice:",
+                    "feedbackMsgExp": "a^{x} \\cdot a^{y} = a^{(x + y)}"
+                },
+                {
+                    "id": 3,
+                    "expression": " \\left(\\frac{2}{3}\\right)^{-\\frac{2}{3}}",
+                    "correct": false,
+                    "feedbackMsg": " No dividas los exponentes, la propiedad del producto de potencias de igual base dice:",
+                    "feedbackMsgExp": "a^{x} \\cdot a^{y} = a^{(x + y)}"
+                }
+            ]
         }
     ]
 }

@@ -28,11 +28,11 @@
         }
       ],
       "answers": [{ "answer": ["2^{2}"], "nextStep": "1" }, { "answer": ["4"], "nextStep": "1"}],
-      "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 2, el exponente del numerador es 5 y el del denominador es 3, y la resta de estos es 2",
+      "summary": "1) Se aplica la propiedad del cociente de potencias de igual base. En este caso la base en común es 2, el exponente del numerador es 5 y el del denominador es 3, y la resta de estos es 2.",
       "correctMsg": "Has contestado correctamente aplicando la propiedad del cociente de potencias de igual base.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["2^{5-3} = 2^{2}"],
+      "displayResult": ["\\frac{2^{5}}{2^{3}} = 2^{5-3} = 2^{2}"],
       "matchingError": []
     },
     {
@@ -43,7 +43,7 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
         },
         {
           "hintId": 1,
@@ -56,11 +56,11 @@
         }
       ],
       "answers": [{ "answer": ["2^{4}"], "nextStep": "-1" }, { "answer": ["16"], "nextStep": "-1"}],
-      "summary": "1) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4",
+      "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 2 y 2, por lo tanto la multiplicación de estos es 4.",
       "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["2^{2 \\cdot 2} = 2^{4}"],
+      "displayResult": ["\\left( 2^{2}\\right)^{2} = 2^{2 \\cdot 2} = 2^{4}"],
       "matchingError": []
     }
   ]

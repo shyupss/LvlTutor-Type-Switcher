@@ -40,7 +40,32 @@
             "displayResult": [
                 "\\sqrt{16}  \\longrightarrow 16^{\\frac{1}{2}} \\longrightarrow 2^{\\frac{4}{2}} \\longrightarrow 2^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 16 está dentro de una raíz."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{2^4}",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia de base 2."
+                },
+                {
+                    "id": 3,
+                    "expression": "2^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el signo del exponente"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -52,11 +77,11 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda transformar el 4 a una potencia de 2 y realiza la propiedad."
+                    "hint": "Recuerda transformar el 4 a una potencia de 2 y aplica la propiedad."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+                    "hint": "Recuerda que la propiedad de multiplicar potencias de misma base es de la forma:",
                     "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
                 },
                 {
@@ -73,14 +98,39 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la propiedad de multiplicar 2 potencias del misma base.",
+            "summary": "2) Se aplica la propiedad de multiplicar potencias de la misma base.",
             "correctMsg": "Has realizado la propiedad correctamente.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
                 "4 \\cdot 2^{2} \\longrightarrow 2^{2} \\cdot 2^{2} \\longrightarrow 2^{2+2} \\longrightarrow 2^{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "16",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia de base 2"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^3",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda transformar el 4 a una potencia de 2 y aplica la propiedad."
+                },
+                {
+                    "id": 3,
+                    "expression": "2^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda transformar el 4 a una potencia de 2 y aplica la propiedad."
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -93,12 +143,12 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que para escribir la raíz como una potencia se ocupa: ",
+                    "hint": "Recuerda la propiedad para escribir la raíz como una potencia: ",
                     "expression": "\\sqrt[n]{a} \\longrightarrow a^{\\frac{1}{n}}"
                 },
                 {
                     "hintId": 1,
-                    "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+                    "hint": "Recuerda que la propiedad de multiplicar potencias de misma base es de la forma:",
                     "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
                 },
                 {
@@ -122,7 +172,34 @@
             "displayResult": [
                 "2 \\sqrt{2^{4}} \\longrightarrow 2 \\cdot 2^{2} \\longrightarrow 2^{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad para escribir la raíz como una potencia:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}= a^{\\frac{1}{n}}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad para escribir la raíz como una potencia:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}= a^{\\frac{1}{n}}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^5",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 2⁴ esta dentro de una raíz."
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -136,12 +213,12 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Recuerda que para escribir la raíz como una potencia se ocupa: ",
+                "hint": "Recuerda la propiedad para escribir la raíz como una potencia: ",
                 "expression": "\\sqrt[n]{a} \\longrightarrow a^{\\frac{1}{n}}"
             },
             {
                 "hintId": 1,
-                "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+                "hint": "Recuerda que la propiedad de multiplicar potencias de misma base es de la forma:",
                 "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
             },
             {
@@ -165,6 +242,33 @@
         "displayResult": [
             "2 \\sqrt{2^{4}} \\longrightarrow 2 \\cdot 2^{2} \\longrightarrow 2^{3}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2^{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2^4",
+                "correct": false,
+                "feedbackMsg": "Recuerda la propiedad para escribir la raíz como una potencia:",
+                "feedbackMsgExp": "\\sqrt[n]{a}= a^{\\frac{1}{n}}"
+            },
+            {
+                "id": 2,
+                "expression": "2^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda la propiedad para escribir la raíz como una potencia:",
+                "feedbackMsgExp": "\\sqrt[n]{a}= a^{\\frac{1}{n}}"
+            },
+            {
+                "id": 3,
+                "expression": "2^5",
+                "correct": false,
+                "feedbackMsg": "Recuerda que 2⁴ esta dentro de una raíz."
+            }
+        ]
     }
 }

@@ -30,7 +30,7 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "El exponente de a es 2, y el exponente de 2 es 4"
+                    "hint": "El exponente de \"a\" es \"2\", y el exponente de \"a²\" es 4."
                 },
                 {
                     "hintId": 2,
@@ -50,7 +50,7 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado reducir la expresión utilizando propiedades de las potencias.",
-            "summary": "Se aplicó la propiedad de potencia de una potencia, donde se conserva la base de la expresión y se multiplican los exponentes.",
+            "summary": "1) Se aplicó la propiedad de potencia de una potencia, donde se conserva la base de la expresión y se multiplican los exponentes.",
             "multipleChoice": [
                 {
                     "id": 0,

@@ -13,10 +13,19 @@
       "displayResult": ["\\left(2^{-5}\\cdot\\left(2^{2}-1\\right)\\right)^{-2}"],
       "KCs":["FactExp"],
       "hints": [
-        { "hintId": 0, "hint": "Identifica el número con el menor exponente y utilízalo para factorizar." },
-        { "hintId": 1, "hint": "La base en común es 2 y el menor exponente es -5." },
-        { "hintId": 2, "hint": "La solución es: ",
-          "expression": "\\left(2^{-5} \\cdot \\left(2^{2}-1\\right)\\right)^{-2}" }
+        { 
+          "hintId": 0,
+          "hint": "Identifica el número con el menor exponente y utilízalo para factorizar."
+        },
+        {
+          "hintId": 1,
+          "hint": "La base en común es 2 y el menor exponente es -5." 
+        },
+        { 
+          "hintId": 2,
+          "hint": "La solución es: ",
+          "expression": "\\left(2^{-5} \\cdot \\left(2^{2}-1\\right)\\right)^{-2}"
+        }
       ],
       "matchingError":[],
       "validation":"evaluateAndCount",
@@ -34,11 +43,19 @@
       "displayResult": ["2^{10}\\cdot3^{-2}"],
       "KCs":["MultExp","EvalExp"],
       "hints": [
-        { "hintId": 0, "hint": "Resuelve el párentesis interno, luego utiliza propiedades de las potencias." },
-        { "hintId": 1, "hint": "Los exponentes se multiplican en una potencia de una potencia, por ejemplo: ",
-          "expression": "\\left(3^{4}\\cdot2^{-2}\\right)^{-3} = 3^{-12}\\cdot2^{6}" },
-        { "hintId": 2, "hint": "La solución es ",
-          "expression": "2^{10} \\cdot 3^{-2}." }
+        { 
+          "hintId": 0, 
+          "hint": "Resuelve el párentesis interno, luego utiliza propiedades de las potencias." 
+        },
+        { "hintId": 1,
+          "hint": "Los exponentes se multiplican en una potencia de una potencia, por ejemplo: ",
+          "expression": "\\left(3^{4}\\cdot2^{-2}\\right)^{-3} = 3^{-12}\\cdot2^{6}"
+        },
+        { 
+          "hintId": 2,
+          "hint": "La solución es ",
+          "expression": "2^{10} \\cdot 3^{-2}"
+        }
       ],
       "matchingError":[],
       "validation":"evaluateAndCount",
@@ -52,14 +69,21 @@
     {
       "stepId": "2",
       "expression": "2^{10}\\cdot3^{-2}",
-      "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+      "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción, evaluando las potencias.",
       "displayResult": ["\\frac{1024}{9}"],
       "KCs":["EvalExp","TransExpFrac"],
       "hints": [
-        { "hintId": 0, "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
-          "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}" },
-        { "hintId": 1, "hint": "Expresa como una fracción y evalúa las potencias." },
-        { "hintId": 2,
+        {
+          "hintId": 0,
+          "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+          "expression": "5^{-2} = \\frac{1}{5^{2}}"
+        },
+        {
+          "hintId": 1,
+          "hint": "Expresa como una fracción y evalúa las potencias."
+        },
+        { 
+          "hintId": 2,
           "hint": "La solución es:",
           "expression":" \\frac{1024}{9}"
         }

@@ -12,10 +12,15 @@
             "hintId": 0
           },
           {
-            "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos.",
+            "hint": "Debes cambiar los signos positivos por negativos, y los negativos por positivos. Ejemplo:",
+            "expression":"a - (b+c-d) \\quad ⟶ \\quad a + (-b-c+d)",
             "hintId": 1
           },
-          { "hint": "El resultado es x³-2x²+x-3.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"x^{3}-2x^{2}+x-3",
+            "hintId": 2
+          }        
         ],
         "stepId": "0",
         "values": [
@@ -39,10 +44,14 @@
             "hintId": 0
           },
           {
-            "hint": "Los términos semejantes son aquellos tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
+            "hint": "Los términos semejantes son aquellos que tienen la misma incógnita con el mismo exponente, y también los términos numéricos sin incógnitas.",
             "hintId": 1
           },
-          { "hint": "El resultado es 2x⁴+3x²-x-2.", "hintId": 2 }
+          { 
+            "hint": "El resultado es:",
+            "expression":"2x^{4}+3x^{2}-x-2",
+            "hintId": 2
+          }
         ],
         "stepId": "1",
         "values": [

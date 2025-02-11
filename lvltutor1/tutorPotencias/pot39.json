@@ -9,7 +9,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{3}{\\sqrt{4x}+\\sqrt{2y}}",
-      "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
+      "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
       "displayResult": ["\\frac{3}{\\sqrt{4x}-\\sqrt{2y}}\\cdot\\frac{\\sqrt{4x}+\\sqrt{2y}}{\\sqrt{4x}+\\sqrt{2y}}"],
       "KCs":["DetConj", "AmpFrac1"],
       "values":[{"name":"a","value":1},{"name":"b","value":4}],

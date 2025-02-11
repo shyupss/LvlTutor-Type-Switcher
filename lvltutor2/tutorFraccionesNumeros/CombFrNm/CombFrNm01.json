@@ -52,7 +52,32 @@
             "displayResult": [
                 "12"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "12",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre distintos números es el menor entero que es múltiplo de todos."
+                },
+                {
+                    "id": 2,
+                    "expression": "24",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre distintos números es el menor entero que es múltiplo de todos."
+                },
+                {
+                    "id": 3,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el mínimo común múltiplo entre distintos números es el menor entero que es múltiplo de todos."
+                }
+            ]
         },
         {
             "KCs": [
@@ -101,7 +126,32 @@
             "displayResult": [
                 "\\frac{9}{12} + \\frac{8}{12} - \\frac{10}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{9}{12} + \\frac{8}{12} - \\frac{10}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3}{12}+\\frac{8}{12}-\\frac{10}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y denominador de la primera fracción por 3"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{9}{12}+\\frac{2}{12}-\\frac{10}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y denominador de la primera fracción por 4"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{9}{12}+\\frac{8}{12}-\\frac{5}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar el numerador y denominador de la primera fracción por 2"
+                }
+            ]
         },
         {
             "KCs": [
@@ -158,7 +208,26 @@
             "displayResult": [
                 "\\frac{7}{12}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{7}{12}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-\\frac{7}{12}",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+                },
+                {
+                    "id": 2,
+                    "expression": "7",
+                    "correct": false,
+                    "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+                }
+            ]
         }
     ],
     "title": "Operaciones combinadas de fracciones",
@@ -217,6 +286,25 @@
         "displayResult": [
             "\\frac{7}{12}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{7}{12}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-\\frac{7}{12}",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+            },
+            {
+                "id": 2,
+                "expression": "7",
+                "correct": false,
+                "feedbackMsg": "Cuando sumas o restas distintas fracciones con el mismo denominador, se conserva el denominador."
+            }
+        ]
     }
 }

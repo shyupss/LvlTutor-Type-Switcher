@@ -46,7 +46,26 @@
             "displayResult": [
                 "x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x^3",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                },
+                {
+                    "id": 2,
+                    "expression": "x^2",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                }
+            ]
         },
         {
             "KCs": [
@@ -90,7 +109,24 @@
             "displayResult": [
                 "x^{2}-x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x^{2}-x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-x+1",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "-x^2+1",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -134,7 +170,30 @@
             "displayResult": [
                 "-x+1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-x+1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-1-x",
+                    "correct": false,
+                    "feedbackMsg": "Debes multiplicar -x por el -1 que hay fuera del paréntesis."
+                },
+                {
+                    "id": 2,
+                    "expression": "0",
+                    "correct": false
+                },
+                {
+                    "id": 3,
+                    "expression": "x",
+                    "correct": false
+                }
+            ]
         },
         {
             "KCs": [
@@ -178,7 +237,26 @@
             "displayResult": [
                 "-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-x",
+                    "correct": false,
+                    "feedbackMsg": "Al dividir dos potencias de igual base, se conserva la base y se restan los exponentes."
+                },
+                {
+                    "id": 2,
+                    "expression": "1",
+                    "correct": false,
+                    "feedbackMsg": "No olvides el signo negativo de -x."
+                }
+            ]
         },
         {
             "KCs": [
@@ -222,7 +300,31 @@
             "displayResult": [
                 "-x+1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-x+1",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x^2+1",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "x-1",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos."
+                },
+                {
+                    "id": 3,
+                    "expression": "x+1",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con los signos."
+                }
+            ]
         },
         {
             "KCs": [
@@ -268,7 +370,25 @@
             "displayResult": [
                 "x-1"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "0",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "x+1",
+                    "correct": false
+                },
+                {
+                    "id": 2,
+                    "expression": "-2x+2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -316,6 +436,24 @@
         "displayResult": [
             "x-1"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "0",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "x+1",
+                "correct": false
+            },
+            {
+                "id": 2,
+                "expression": "-2x+2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que estás restando los polinomios, no sumándolos."
+            }
+        ]
     }
 }

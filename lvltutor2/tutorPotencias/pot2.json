@@ -96,7 +96,7 @@
                 {
                     "hintId": 2,
                     "hint": "La solución es ",
-                    "expression": "2^{10} \\cdot 3^{-2}."
+                    "expression": "2^{10} \\cdot 3^{-2}"
                 }
             ],
             "matchingError": [],
@@ -142,7 +142,7 @@
         {
             "stepId": "2",
             "expression": "2^{10}\\cdot3^{-2}",
-            "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+            "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción, evaluando las potencias.",
             "displayResult": [
                 "\\frac{1024}{9}"
             ],
@@ -155,8 +155,8 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
-                    "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+                    "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+                    "expression": "5^{-2} = \\frac{1}{5^{2}}"
                 },
                 {
                     "hintId": 1,
@@ -213,7 +213,7 @@
     "finalAnswer": {
         "stepId": "2",
         "expression": "2^{10}\\cdot3^{-2}",
-        "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción.",
+        "stepTitle": "Evalúa la expresión y expresa el resultado como una fracción, evaluando las potencias.",
         "displayResult": [
             "\\frac{1024}{9}"
         ],
@@ -226,8 +226,8 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con exponente positivo. Por ejemplo ",
-                "expression": "5^{-2} = \\left(\\frac{1}{5}\\right)^{2}"
+                "hint": "Una potencia con exponente negativo se puede expresar como 1 dividido por la potencia con la misma base y exponente positivo. Por ejemplo: ",
+                "expression": "5^{-2} = \\frac{1}{5^{2}}"
             },
             {
                 "hintId": 1,

@@ -10,7 +10,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'x'",
                     "hintId": 0
                 },
                 {
@@ -18,7 +18,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es x⁴+8x³+21x²+18x.",
+                    "hint": "El resultado es:",
+                    "expression": "x^{4}+8x^{3}+21x^{2}+18x",
                     "hintId": 2
                 }
             ],
@@ -37,7 +38,7 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se realiza la primera multiplicación.",
+            "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
             "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(x^{3}+8x^{2}+21x+18)\\cdot (x+2)",
@@ -87,7 +88,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es 2x³+16x²+42x+36.",
+                    "hint": "El resultado es:",
+                    "expression": "2x^{3}+16x^{2}+42x+36",
                     "hintId": 2
                 }
             ],
@@ -106,7 +108,7 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la segunda multiplicación.",
+            "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
             "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(x^{3}+8x^{2}+21x+18)\\cdot (x+2)",
@@ -157,7 +159,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es x⁴+10x³+37x²+60x+36.",
+                    "hint": "El resultado es:",
+                    "expression": "x^{4}+10x^{3}+37x^{2}+60x+36",
                     "hintId": 2
                 }
             ],
@@ -176,7 +179,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se obtiene el resultado.",
+            "summary": "3) Se suman los términos semejantes.",
             "stepTitle": "Finalmente, reduce los términos semejantes",
             "correctMsg": "Has encontrado el resultado.",
             "expression": "(x^{4}+8x^{3}+21x^{2}+18x)+(2x^{3}+16x^{2}+42x+36)",
@@ -229,7 +232,8 @@
                 "hintId": 1
             },
             {
-                "hint": "El resultado es x⁴+10x³+37x²+60x+36.",
+                "hint": "El resultado es:",
+                "expression": "x^{4}+10x^{3}+37x^{2}+60x+36",
                 "hintId": 2
             }
         ],
@@ -248,7 +252,7 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(x^{4}+8x^{3}+21x^{2}+18x)+(2x^{3}+16x^{2}+42x+36)",

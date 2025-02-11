@@ -7,7 +7,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 8",
+      "stepTitle": "Usando la propiedad del producto de potencias de igual base, expresa como potencia de 8.",
       "expression": "8^{3} \\cdot 8",
       "KCs": ["SumResExp"],
       "hints": [
@@ -31,7 +31,7 @@
         }
       ],
       "answers": [{ "answer": ["8^{4}"], "nextStep": "-1" }, { "answer": ["4096"], "nextStep": "-1"}],
-      "summary": "1) Se aplica la propiedad de producto de igual base aˣ · aʸ = a⁽ˣ ⁺ ʸ⁾. En este caso la base en común es 8 y los exponentes son 3 y 1.",
+      "summary": "1) Se aplica la propiedad de producto de potencias de igual base aˣ · aʸ = aˣ ⁺ ʸ. En este caso la base en común es 8 y los exponentes son 3 y 1.",
       "correctMsg": "Has contestado correctamente aplicando la propiedad del producto potencias de igual base",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",

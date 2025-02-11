@@ -9,7 +9,7 @@
         "KCs": ["IdeTer3"],
         "hints": [
           {
-            "hint": "Para encontrar el resultado debes elevar al cubo el primer término.",
+            "hint": "Para encontrar el resultado debes elevar al cubo el primer término del binomio.",
             "hintId": 0
           },
           {
@@ -44,12 +44,17 @@
             "hintId": 0
           },
           {
-            "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b será negativo.",
-            "hintId": 1
+            "hint":"¿Cuanto vale 3a²b?, si:",
+            "expression":"a=5x, \\quad b=2",
+            "hintId":1
+          },
+          {
+            "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término 3a²b tendrá un signo menos.",
+            "hintId": 2
           },
           { "hint": "El resultado es: ",
             "expression": "-150x^{2}",
-            "hintId": 2
+            "hintId": 3
           }
         ],
         "stepId": "1",
@@ -74,13 +79,18 @@
             "hintId": 0
           },
           {
-            "hint": "El término 3ab² siempre será positivo.",
+            "hint":"¿Cuanto vale 3ab²?, si:",
+            "expression":"a=5x, \\quad b=2",
             "hintId": 1
+          },
+          {
+            "hint": "El término 3ab² siempre será positivo.",
+            "hintId": 2
           },
           {
             "hint": "El resultado es: ",
             "expression": "60x",
-            "hintId": 2
+            "hintId": 3
           }
         ],
         "stepId": "2",
@@ -110,9 +120,13 @@
             "hintId": 1
           },
           {
+            "hint": "Recuerda revisar el signo, si hay un signo menos en el binomio, el término b³ tiene un signo menos.",
+            "hintId": 2
+          },
+          {
             "hint": "El resultado es: ",
             "expression": "-8",
-            "hintId": 2
+            "hintId": 3
           }
         ],
         "stepId": "3",
@@ -126,7 +140,7 @@
         "expression": "(5x-2)^{3} = 125x³ - 150x² + 60x + □",
         "validation": "evaluateAndCount",
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
-        "displayResult": ["125x³-150x²+60x-8"],
+        "displayResult": ["-8"],
         "matchingError": []
       }
     ],

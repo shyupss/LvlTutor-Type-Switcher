@@ -10,7 +10,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término 'X'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '-x'",
                     "hintId": 0
                 },
                 {
@@ -18,7 +18,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -4x³+2x²-6x.",
+                    "hint": "El resultado es:",
+                    "expression": "-4x^{3}+2x^{2}-6x",
                     "hintId": 2
                 }
             ],
@@ -37,7 +38,7 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Se realiza la primera multiplicación.",
+            "summary": "1) Se multiplica el polinomio del primer paréntesis, por el primer término del binomio del segundo paréntesis",
             "stepTitle": "Primero multiplica todos los términos del primer polinomio por el primer término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(4x^{2}-2x+6)\\cdot (-x-3)",
@@ -46,7 +47,32 @@
             "displayResult": [
                 "-4x^{3}+2x^{2}-6x"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-4x^{3}+2x^{2}-6x",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "4x^3+2x^2-6x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 4x²‧-x"
+                },
+                {
+                    "id": 2,
+                    "expression": "-4x^3-4x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -2x‧-x"
+                },
+                {
+                    "id": 3,
+                    "expression": "-4x^3+2x^2+6x",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 6‧-x"
+                }
+            ]
         },
         {
             "KCs": [
@@ -54,7 +80,7 @@
             ],
             "hints": [
                 {
-                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '2'",
+                    "hint": "Debes multiplicar todos los términos del primer polinomio por el término '-3'",
                     "hintId": 0
                 },
                 {
@@ -62,7 +88,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -12x²+6x-18.",
+                    "hint": "El resultado es:",
+                    "expression": "-12x^{2}+6x-18",
                     "hintId": 2
                 }
             ],
@@ -81,7 +108,7 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la segunda multiplicación.",
+            "summary": "2) Se multiplica el polinomio del primer paréntesis, por el segundo término del binomio del segundo paréntesis",
             "stepTitle": "Ahora multiplica todos los términos del primer polinomio por el segundo término del segundo polinomio.",
             "correctMsg": "Has encontrado el primer término.",
             "expression": "(4x^{2}-2x+6)\\cdot (-x-3)",
@@ -90,7 +117,32 @@
             "displayResult": [
                 "-12x^{2}+6x-18"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-12x^{2}+6x-18",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "12x^2+6x-18",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 4x²‧-3"
+                },
+                {
+                    "id": 2,
+                    "expression": "-12x^2-6x-18",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación -2x‧-3"
+                },
+                {
+                    "id": 3,
+                    "expression": "-12x^2+6x-9",
+                    "correct": false,
+                    "feedbackMsg": "Procura realizar bien la multiplicación 6‧-3"
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +159,8 @@
                     "hintId": 1
                 },
                 {
-                    "hint": "El resultado es -4x³-10x²-18.",
+                    "hint": "El resultado es:",
+                    "expression": "-4x^{3}-10x^{2}-18",
                     "hintId": 2
                 }
             ],
@@ -126,7 +179,7 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se obtiene el resultado.",
+            "summary": "3) Se suman los términos semejantes.",
             "stepTitle": "Finalmente, reduce los términos semejantes",
             "correctMsg": "Has encontrado el resultado.",
             "expression": "(-4x^{3}+2x^{2}-6x)+(-12x^{2}+6x-18)",
@@ -135,7 +188,32 @@
             "displayResult": [
                 "-4x^{3}-10x^{2}-18"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-4x^{3}-10x^{2}-18",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "-16x^3-10x^2-18",
+                    "correct": false,
+                    "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+                },
+                {
+                    "id": 2,
+                    "expression": "-4x^3+2x^2-18",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+                },
+                {
+                    "id": 3,
+                    "expression": "-4x^3-10x^2-12x-18",
+                    "correct": false,
+                    "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+                }
+            ]
         }
     ],
     "title": "Álgebra de polinomios",
@@ -154,7 +232,8 @@
                 "hintId": 1
             },
             {
-                "hint": "El resultado es -4x³-10x²-18.",
+                "hint": "El resultado es:",
+                "expression": "-4x^{3}-10x^{2}-18",
                 "hintId": 2
             }
         ],
@@ -173,7 +252,7 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se obtiene el resultado.",
+        "summary": "3) Se suman los términos semejantes.",
         "stepTitle": "Finalmente, reduce los términos semejantes",
         "correctMsg": "Has encontrado el resultado.",
         "expression": "(-4x^{3}+2x^{2}-6x)+(-12x^{2}+6x-18)",
@@ -182,6 +261,31 @@
         "displayResult": [
             "-4x^{3}-10x^{2}-18"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-4x^{3}-10x^{2}-18",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "-16x^3-10x^2-18",
+                "correct": false,
+                "feedbackMsg": "Solo hay un término con x³, ten cuidado al sumar."
+            },
+            {
+                "id": 2,
+                "expression": "-4x^3+2x^2-18",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x²."
+            },
+            {
+                "id": 3,
+                "expression": "-4x^3-10x^2-12x-18",
+                "correct": false,
+                "feedbackMsg": "Procura sumar bien los coeficientes que acompañan a x."
+            }
+        ]
     }
 }

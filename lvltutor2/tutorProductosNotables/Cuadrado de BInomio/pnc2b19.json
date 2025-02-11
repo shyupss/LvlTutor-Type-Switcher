@@ -59,7 +59,32 @@
             "displayResult": [
                 "64"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "64",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el término faltante es el cuadrado de 'b', no simplemente 'b' como número"
+                },
+                {
+                    "id": 2,
+                    "expression": "16",
+                    "correct": false,
+                    "feedbackMsg": "Debes elevar b al cuadrado, no multiplicarlo por 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "-64",
+                    "correct": false,
+                    "feedbackMsg": "Fijáte bien en el signo"
+                }
+            ]
         },
         {
             "KCs": [
@@ -110,7 +135,32 @@
             "displayResult": [
                 "(\\frac{3}{4}x+8)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(\\frac{3}{4}x+8)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(\\frac{3}{4}x+64\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(\\frac{3}{4}x^2+64\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado y la variable x tampoco dentro de los paréntesis."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(\\frac{3}{4}x^2+8\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -163,6 +213,31 @@
         "displayResult": [
             "(\\frac{3}{4}x+8)^{2}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "(\\frac{3}{4}x+8)^{2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\left(\\frac{3}{4}x+64\\right)^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "\\left(\\frac{3}{4}x^2+64\\right)^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado y la variable x tampoco dentro de los paréntesis."
+            },
+            {
+                "id": 3,
+                "expression": "\\left(\\frac{3}{4}x^2+8\\right)^2",
+                "correct": false,
+                "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+            }
+        ]
     }
 }

@@ -49,7 +49,32 @@
             "displayResult": [
                 "(5x+2)(5x+2)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(5x+2)(5x+2)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "(5x+2)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que a³=a‧a²"
+                },
+                {
+                    "id": 2,
+                    "expression": "(5x+2)(5x+2)(5x+2)",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia con exponente 1 y otra con exponente 2"
+                },
+                {
+                    "id": 3,
+                    "expression": "(5x+2)(5x+2)",
+                    "correct": false,
+                    "feedbackMsg": "El segundo término debe estar al cuadrado"
+                }
+            ]
         },
         {
             "KCs": [
@@ -94,7 +119,32 @@
             "displayResult": [
                 "25x^{2}+20x + 4"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "25x^{2}+20x + 4",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "25x^2+20x+2",
+                    "correct": false,
+                    "feedbackMsg": "El tercer término del cuadrado de binomio es b², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 2,
+                    "expression": "5x+20x+4",
+                    "correct": false,
+                    "feedbackMsg": "El primer término del cuadrado de binomio es a², recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                },
+                {
+                    "id": 3,
+                    "expression": "25x^2+10x+4",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides de mutliplicar por 2 el segundo término, recuerda la identidad de cuadrado de binomio: (a ± b)² = a² ± 2ab + b²"
+                }
+            ]
         },
         {
             "KCs": [
@@ -146,7 +196,32 @@
             "displayResult": [
                 "125x^{3}+150x^{2}+60x+8"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "125x^{3}+150x^{2} +60x +8",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "125x^3 + 100x^2 + 20x + 50x^2 + 40x + 8",
+                    "correct": false,
+                    "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+                },
+                {
+                    "id": 2,
+                    "expression": "125x^2+150x^2+60x+8",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+                },
+                {
+                    "id": 3,
+                    "expression": "125x^3+150x+60+8",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el exponente de la variable del segundo término"
+                }
+            ]
         }
     ],
     "title": "Cubo de binomio",
@@ -200,6 +275,31 @@
         "displayResult": [
             "125x^{3}+150x^{2}+60x+8"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "125x^{3}+150x^{2} +60x +8",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "125x^3 + 100x^2 + 20x + 50x^2 + 40x + 8",
+                "correct": false,
+                "feedbackMsg": "Simplifica la expresión lo mas que puedas"
+            },
+            {
+                "id": 2,
+                "expression": "125x^2+150x^2+60x+8",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de la variable del primer término"
+            },
+            {
+                "id": 3,
+                "expression": "125x^3+150x+60+8",
+                "correct": false,
+                "feedbackMsg": "Ten cuidado con el exponente de la variable del segundo término"
+            }
+        ]
     }
 }

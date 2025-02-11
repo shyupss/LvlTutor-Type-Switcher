@@ -8,7 +8,7 @@
   "steps": [
     {
       "stepId": "0",
-      "stepTitle": "expresa el 16 como una potencia de 2 y escribe el resultado.",
+      "stepTitle": "Expresa el 16 como una potencia de 2 y escribe el resultado.",
       "expression": "16",
       "KCs": ["ExprePot"],
       "hints": [
@@ -18,7 +18,7 @@
         },
         {
           "hintId":1,
-          "hint":"La base de la potencia que estamos buscando es 2. ¿Cuál sería el exponente ? :",
+          "hint":"La base de la potencia que estamos buscando es 2. ¿Cuál sería el exponente?: ",
           "expression": "2^{n} = 16"
         },
         {
@@ -32,7 +32,7 @@
       "correctMsg": "Has contestado correctamente expresando el 16 como potencia de 2.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["16 \\longrightarrow 2^{4}"],
+      "displayResult": ["16 \\quad \\longrightarrow \\quad 2^{4}"],
       "matchingError": []
     },
     {
@@ -43,7 +43,7 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+          "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
         },
         {
           "hintId": 1,
@@ -52,11 +52,11 @@
         }
       ],
       "answers": [{ "answer": ["2^{6}"], "nextStep": "-1" }],
-      "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
+      "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
       "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia. ",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
-      "displayResult": ["\\left( 2^{4} \\right)^{\\frac{3}{2}} \\longrightarrow 2^{4 \\cdot \\frac{3}{2}} \\longrightarrow 2^{6} "],
+      "displayResult": ["\\left( 2^{4} \\right)^{\\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{4 \\cdot \\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{6} "],
       "matchingError": []
     }
   ]

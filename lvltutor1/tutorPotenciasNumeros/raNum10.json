@@ -39,11 +39,11 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Recuerda transformar el 4 a una potencia de 2 y realiza la propiedad."
+          "hint": "Recuerda transformar el 4 a una potencia de 2 y aplica la propiedad."
         },
         {
           "hintId": 1,
-          "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+          "hint": "Recuerda que la propiedad de multiplicar potencias de misma base es de la forma:",
           "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
         },
         {
@@ -53,7 +53,7 @@
         }
       ],
       "answers": [{ "answer": ["2^{4}"], "nextStep": "2" }],
-      "summary": "2) Se realiza la propiedad de multiplicar 2 potencias del misma base.",
+      "summary": "2) Se aplica la propiedad de multiplicar potencias de la misma base.",
       "correctMsg": "Has realizado la propiedad correctamente.",
       "validation": "evaluateAndCount",
       "incorrectMsg": "La expresión ingresada no es correcta.",
@@ -68,12 +68,12 @@
       "hints": [
         {
           "hintId": 0,
-          "hint": "Recuerda que para escribir la raíz como una potencia se ocupa: ",
+          "hint": "Recuerda la propiedad para escribir la raíz como una potencia: ",
           "expression":"\\sqrt[n]{a} \\longrightarrow a^{\\frac{1}{n}}"
         },
         {
           "hintId": 1,
-          "hint": "Recuerda que la propiedad de multiplicar 2 potencias de misma base es de la forma:",
+          "hint": "Recuerda que la propiedad de multiplicar potencias de misma base es de la forma:",
           "expression": "a^{n} \\cdot a^{m} = a^{n+m}"
         },
         {

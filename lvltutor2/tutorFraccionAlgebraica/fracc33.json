@@ -27,14 +27,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el numerador que es la parte superior de la expresión, luego identifica si hay operaciones realizables en el numerador."
+                    "hint": "Identifica el numerador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma de fracciones en el numerador (la parte superior), aplica la propiedad de suma de fracciones. Recuerda que 'b' se puede expresar como fracción al dividirlo por 1."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores. Recuerda que 'b' se puede expresar como fracción al dividirlo por 1."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "3"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del numerador es: ",
                     "expression": "\\frac{3b+1}{3}"
                 }
@@ -51,7 +56,26 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el numerador correctamente.",
-            "summary": "1) Se identifica la suma de fracciones en el numerador y luego se resuelve la operacion expresando el resultado en el numerador."
+            "summary": "1) Se identifica la suma de fracciones en el numerador y luego se resuelve la operacion expresando el resultado en el numerador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3b+1}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3b+1}{b}",
+                    "correct": false,
+                    "feedbackMsg": "El numerador es la parte superior de una fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{b+1}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por 3."
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -74,14 +98,19 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Identifica el denominador que es la parte inferior de la expresión, luego identifica si hay operaciones realizables en el denominador."
+                    "hint": "Identifica el denominador de la expresión completa, e identifica si hay operaciones realizables en el numerador de esta subexpresión."
                 },
                 {
                     "hintId": 1,
-                    "hint": "Existe una suma de fracciones en el denominador (la parte inferior), aplica la propiedad de suma de fracciones. Recuerda que '3' se puede expresar como fracción al dividirlo por 1."
+                    "hint": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores. Recuerda que '3' se puede expresar como fracción al dividirlo por 1."
                 },
                 {
                     "hintId": 2,
+                    "hint": "El mínimo común múltiplo es:",
+                    "expression": "b"
+                },
+                {
+                    "hintId": 3,
                     "hint": "El resultado final del denominador es ",
                     "expression": "\\frac{3b+1}{b}"
                 }
@@ -98,7 +127,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado las operaciones en el denominador correctamente.",
-            "summary": "2) Se identifica la suma de fracciones en el denominador y luego se resuelve la operacion expresando el resultado en el denominador."
+            "summary": "2) Se identifica la suma de fracciones en el denominador y luego se resuelve la operacion expresando el resultado en el denominador.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3b+1}{b}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{4}{b}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la primera fracción por b."
+                },
+                {
+                    "id": 2,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de suma de fracciones. Necesitas encontrar el mínimo común múltiplo de los denominadores."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3b+1}{3}",
+                    "correct": false,
+                    "feedbackMsg": "Ten cuidado con el denominador de la fracción"
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -124,7 +178,8 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hintId": 2,
@@ -150,7 +205,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has invertido el denominador correctamente, esta operación es lo que permite 'dividir' una fracción.",
-            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo)."
+            "summary": "3) Con el fin de dividir una fracción se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3b+1}{3}\\cdot\\frac{b}{3b+1}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{3b+1}{3}\\cdot\\frac{3b+1}{b}",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3b+1}{3}+\\frac{b}{3b+1}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba)."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{\\frac{3b+1}{3}}{\\frac{b}{3b+1}}",
+                    "correct": false,
+                    "feedbackMsg": "Aplica la propiedad de división de fracciones:",
+                    "feedbackMsgExp": "\\frac{\\frac{a}{b}}{\\frac{c}{d}} = \\frac{a}{b} \\cdot \\frac{d}{c}"
+                }
+            ]
         },
         {
             "stepId": "3",
@@ -183,7 +265,7 @@
                 {
                     "hintId": 1,
                     "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                    "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                    "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
                 },
                 {
                     "hintId": 2,
@@ -203,7 +285,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has logrado reducir la expresión correctamente.",
-            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+            "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{b}{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "b",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides del 3 del denominador."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3b^2+b}{9b+3}",
+                    "correct": false,
+                    "feedbackMsg": "Puedes simplificar la expresión (3b+1), ya que está en el numerador y en el denominador."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{1}{3}",
+                    "correct": false,
+                    "feedbackMsg": "No te olvides del 'b' del numerador."
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -237,7 +344,7 @@
             {
                 "hintId": 1,
                 "hint": "Términos semejantes que existen en el numerador y el denominador se pueden cancelar porque su división equivale a 1. Por ejemplo, ",
-                "expression": "\\left(\\frac{p}{q}\\right)\\cdot\\left(\\frac{q}{w}\\right) = \\left(\\frac{p}{\\cancel{q}}\\right)\\cdot\\left(\\frac{\\cancel{q}}{w}\\right) = 1\\cdot\\frac{p}{w} = \\frac{p}{w}"
+                "expression": "\\frac{a \\cdot c}{c \\cdot b} \\quad ⟶ \\quad \\frac{a}{b} ⋅ \\frac{c}{c} \\quad ⟶ \\quad \\frac{a}{b} ⋅ 1"
             },
             {
                 "hintId": 2,
@@ -257,6 +364,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has logrado reducir la expresión correctamente.",
-        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones."
+        "summary": "4) Luego se logra reducir la expresión eliminando los términos semejantes. Finalmente se aplica la multiplicación entre ambas fracciones.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{b}{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "b",
+                "correct": false,
+                "feedbackMsg": "No te olvides del 3 del denominador."
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{3b^2+b}{9b+3}",
+                "correct": false,
+                "feedbackMsg": "Puedes simplificar la expresión (3b+1), ya que está en el numerador y en el denominador."
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{1}{3}",
+                "correct": false,
+                "feedbackMsg": "No te olvides del 'b' del numerador."
+            }
+        ]
     }
 }

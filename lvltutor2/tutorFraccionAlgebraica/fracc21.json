@@ -3,12 +3,12 @@
     "title": "Suma de fracciones",
     "type": "lvltutor",
     "meta": {},
-    "text": "Realiza la operación indicada y reduzca",
+    "text": "Realiza la operación indicada y reduce.",
     "steps": [
         {
             "stepId": "0",
             "expression": "\\frac{3}{x-2}+\\frac{4}{2-x}",
-            "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
             "displayResult": [
                 "x-2"
             ],
@@ -29,11 +29,12 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Puedes expresar la resta del denominador de la fraccion de la derecha como el negativo de la misma expresion invirtiendo los signos de sus componentes"
+                    "hint": "Para que los denominadores sean iguales, factoriza el denominador de la segunda fracción por -1."
                 },
                 {
                     "hintId": 2,
-                    "hint": "El mínimo común múltiplo de los denominadores es (x-2)."
+                    "hint": "El mínimo común múltiplo de los denominadores es:",
+                    "expression": "(x-2)"
                 }
             ],
             "matchingError": [],
@@ -48,12 +49,37 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
-            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "x-2",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "(x-2)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 2-x = -(x-2)"
+                },
+                {
+                    "id": 2,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Nota que 'x - 2' y '2 - x' son iguales salvo por el signo."
+                },
+                {
+                    "id": 3,
+                    "expression": "x",
+                    "correct": false,
+                    "feedbackMsg": "Nota que 'x - 2' y '2 - x' son iguales salvo por el signo."
+                }
+            ]
         },
         {
             "stepId": "1",
-            "expression": "\\frac{3}{x-2}+\\frac{4}{2-x}=\\frac{3}{x-2}-\\frac{4}{x-2}",
-            "stepTitle": "Realiza la suma de las fracciones aplicando el mínimo común múltiplo encontrado.",
+            "expression": "\\frac{3}{x-2}-\\frac{4}{x-2}",
+            "stepTitle": "Realiza la resta de las fracciones aplicando el mínimo común múltiplo encontrado.",
             "displayResult": [
                 "\\frac{-1}{x-2}"
             ],
@@ -76,7 +102,7 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el mínimo común denominador encontrado en el denominador del resultado."
+                    "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el denominador."
                 },
                 {
                     "hintId": 2,
@@ -96,13 +122,38 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado la suma de fracciones correctamente..",
-            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+            "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{-1}{x-2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{7}{x-2}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la  segunda fracción -1"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{3(2-x)+4(x-2)}{x-2}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la segunda fracción por -1"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{3x-10}{x-2}",
+                    "correct": false,
+                    "feedbackMsg": "No debes amplificar la primera fraccion por (x-2)"
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "1",
-        "expression": "\\frac{3}{x-2}+\\frac{4}{2-x}=\\frac{3}{x-2}-\\frac{4}{x-2}",
-        "stepTitle": "Realiza la suma de las fracciones aplicando el mínimo común múltiplo encontrado.",
+        "expression": "\\frac{3}{x-2}-\\frac{4}{x-2}",
+        "stepTitle": "Realiza la resta de las fracciones aplicando el mínimo común múltiplo encontrado.",
         "displayResult": [
             "\\frac{-1}{x-2}"
         ],
@@ -125,7 +176,7 @@
             },
             {
                 "hintId": 1,
-                "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el mínimo común denominador encontrado en el denominador del resultado."
+                "hint": "Como el denominador de ambas fracciones es el mismo, simplemente debes restar los numeradores y mantener el denominador."
             },
             {
                 "hintId": 2,
@@ -145,6 +196,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has realizado la suma de fracciones correctamente..",
-        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado."
+        "summary": "2) Finalmente se realiza la suma de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{-1}{x-2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{7}{x-2}",
+                "correct": false,
+                "feedbackMsg": "Amplifica la  segunda fracción -1"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{3(2-x)+4(x-2)}{x-2}",
+                "correct": false,
+                "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la segunda fracción por -1"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{3x-10}{x-2}",
+                "correct": false,
+                "feedbackMsg": "No debes amplificar la primera fraccion por (x-2)"
+            }
+        ]
     }
 }

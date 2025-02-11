@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Aplicando la propiedad de multiplicación de raíces de igual orden, exprese como raíz el resultado del numerador.",
+            "stepTitle": "Aplicando la propiedad de multiplicación de raíces de igual orden, expresa como una sola raíz el numerador.",
             "expression": "\\sqrt{2} \\cdot \\sqrt{3}",
             "KCs": [
                 "MultRaices"
@@ -16,8 +16,8 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Recuerda que la propiedad de la potencia negativa es : ",
-                    "expression": "\\sqrt[n]{a} \\cdot \\sqrt[n]{b} \\longrightarrow \\sqrt[n]{a \\cdot b}"
+                    "hint": "La propiedad del producto de raíces del mismo orden dice: ",
+                    "expression": "\\sqrt[n]{a} \\cdot  \\sqrt[n]{b} = \\sqrt[n]{a \\cdot b}"
                 },
                 {
                     "hintId": 1,
@@ -40,11 +40,38 @@
             "displayResult": [
                 "\\sqrt{2} \\cdot \\sqrt{3} \\longrightarrow \\sqrt{6}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{5}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad del producto de raíces del mismo orden dice:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}\\cdot \\sqrt[n]{b}=\\sqrt[n]{a\\cdot b}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt[4]{6}",
+                    "correct": false,
+                    "feedbackMsg": "No cambies el orden de la raíz"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt{\\frac{2}{3}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad del producto de raíces del mismo orden dice:",
+                    "feedbackMsgExp": "\\sqrt[n]{a}\\cdot \\sqrt[n]{b}=\\sqrt[n]{a\\cdot b}"
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Aplicando la propiedad del cociente de raíces del mismo orden , exprese el resultado como una fracción de raíces.",
+            "stepTitle": "Aplicando la propiedad del cociente de raíces del mismo orden, expresa el resultado como una fracción de raíces.",
             "expression": "\\frac{\\sqrt{6}}{\\sqrt{12}}",
             "KCs": [
                 "CoRaiz"
@@ -75,18 +102,39 @@
                     "nextStep": "2"
                 }
             ],
-            "summary": "2) Se realiza la propiedad del cociente de raíces de igual orden. ",
+            "summary": "2) Se aplica la propiedad del cociente de raíces de igual orden. ",
             "correctMsg": "Has realizado la propiedad correctamente.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
                 "\\frac{\\sqrt{6}}{\\sqrt{12}} \\longrightarrow \\frac{\\sqrt{1}}{\\sqrt{2}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\sqrt{\\frac{1}{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de división de raíces de igual índice",
+                    "feedbackMsgExp": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{-6}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda la propiedad de división de raíces de igual índice",
+                    "feedbackMsgExp": "\\frac{\\sqrt[n]{a}}{\\sqrt[n]{b}} = \\sqrt[n]{\\frac{a}{b}}"
+                }
+            ]
         },
         {
             "stepId": "2",
-            "stepTitle": "Simplifica la expresión resultante , aplicando la propiedad de cociente de raíces de igual orden.",
+            "stepTitle": "Simplifica la expresión resultante, aplicando la propiedad de cociente de raíces de igual orden. Racionaliza si es posible.",
             "expression": "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3}",
             "KCs": [
                 "MultRaices",
@@ -101,6 +149,11 @@
                 },
                 {
                     "hintId": 1,
+                    "hint": "Para racionalizar debes amplificar la fracción por la raíz del denominador. Ejemplo: ",
+                    "expression": "\\frac{\\sqrt{1}}{a\\sqrt{3}} \\longrightarrow \\frac{\\sqrt{1}}{a\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} \\longrightarrow \\frac{\\sqrt{3}}{3a} "
+                },
+                {
+                    "hintId": 2,
                     "hint": "La respuesta es:",
                     "expression": "\\frac{\\sqrt{2}}{4}"
                 }
@@ -119,19 +172,38 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "3) Se simplifica aplicando la propiedades correspondientes.",
+            "summary": "3) Se simplifica aplicando la propiedades correspondientes, luego se racionaliza",
             "correctMsg": "Has realizado la simplificación correctamente.",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3} \\longrightarrow \\frac{\\sqrt{2}}{4}"
+                "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3} \\longrightarrow \\frac{\\sqrt{1}}{\\sqrt{2}^{3}} \\longrightarrow \\frac{\\sqrt{1}}{2\\cdot\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} \\longrightarrow \\frac{\\sqrt{2}}{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{\\sqrt{2}}{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{\\sqrt{2}}{\\sqrt{4}}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que al racionalizar la raíz del denominador desaparece y queda lo de adentro de la raíz"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\sqrt{1}}{4}",
+                    "correct": false,
+                    "feedbackMsg": "Esta expresión se puede racionalizar, para esto debes amplificar la fracción por la raíz del denominador."
+                }
+            ]
         }
     ],
     "finalAnswer": {
         "stepId": "2",
-        "stepTitle": "Simplifica la expresión resultante , aplicando la propiedad de cociente de raíces de igual orden.",
+        "stepTitle": "Simplifica la expresión resultante, aplicando la propiedad de cociente de raíces de igual orden. Racionaliza si es posible.",
         "expression": "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3}",
         "KCs": [
             "MultRaices",
@@ -146,6 +218,11 @@
             },
             {
                 "hintId": 1,
+                "hint": "Para racionalizar debes amplificar la fracción por la raíz del denominador. Ejemplo: ",
+                "expression": "\\frac{\\sqrt{1}}{a\\sqrt{3}} \\longrightarrow \\frac{\\sqrt{1}}{a\\sqrt{3}} \\cdot \\frac{\\sqrt{3}}{\\sqrt{3}} \\longrightarrow \\frac{\\sqrt{3}}{3a} "
+            },
+            {
+                "hintId": 2,
                 "hint": "La respuesta es:",
                 "expression": "\\frac{\\sqrt{2}}{4}"
             }
@@ -164,13 +241,32 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "3) Se simplifica aplicando la propiedades correspondientes.",
+        "summary": "3) Se simplifica aplicando la propiedades correspondientes, luego se racionaliza",
         "correctMsg": "Has realizado la simplificación correctamente.",
         "validation": "evaluateAndCount",
         "incorrectMsg": "La expresión ingresada no es correcta.",
         "displayResult": [
-            "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3} \\longrightarrow \\frac{\\sqrt{2}}{4}"
+            "\\left( \\frac{\\sqrt{1}}{\\sqrt{2}} \\right)^{3} \\longrightarrow \\frac{\\sqrt{1}}{\\sqrt{2}^{3}} \\longrightarrow \\frac{\\sqrt{1}}{2\\cdot\\sqrt{2}} \\cdot \\frac{\\sqrt{2}}{\\sqrt{2}} \\longrightarrow \\frac{\\sqrt{2}}{4}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{\\sqrt{2}}{4}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{\\sqrt{2}}{\\sqrt{4}}",
+                "correct": false,
+                "feedbackMsg": "Recuerda que al racionalizar la raíz del denominador desaparece y queda lo de adentro de la raíz"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{\\sqrt{1}}{4}",
+                "correct": false,
+                "feedbackMsg": "Esta expresión se puede racionalizar, para esto debes amplificar la fracción por la raíz del denominador."
+            }
+        ]
     }
 }

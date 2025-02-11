@@ -2,13 +2,13 @@
     "code": "raNum15",
     "meta": {},
     "title": "Suma de radicales",
-    "text": "Aplicando propiedades , realiza la suma de radicales y escribe el resultado",
+    "text": "Aplicando propiedades, realiza la suma de radicales y escribe el resultado",
     "initialExpression": "2\\sqrt{12} - 3\\sqrt{75} + \\sqrt{27}",
     "type": "lvltutor",
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz.",
+            "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz.",
             "expression": "2\\sqrt{12}",
             "KCs": [
                 "DescoRaiz"
@@ -16,10 +16,14 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+                    "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
                 },
                 {
                     "hintId": 1,
+                    "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+                },
+                {
+                    "hintId": 2,
                     "hint": "El resultado es: ",
                     "expression": "4\\sqrt{3}"
                 }
@@ -39,11 +43,36 @@
             "displayResult": [
                 "2\\sqrt{12} \\longrightarrow 2\\sqrt{4 \\cdot 3 } \\longrightarrow 4\\sqrt{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "4\\sqrt{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2\\sqrt{6\\cdot 2}",
+                    "correct": false,
+                    "feedbackMsg": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
+                },
+                {
+                    "id": 2,
+                    "expression": "2\\sqrt{3\\cdot 4}",
+                    "correct": false,
+                    "feedbackMsg": "Como 4 es un cuadrado perfecto, puedes sacarlo fuera de la raíz"
+                },
+                {
+                    "id": 3,
+                    "expression": "2\\sqrt{4}\\cdot \\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 4 es un cuadrado perfecto, por lo tanto tiene raíz exacta."
+                }
+            ]
         },
         {
             "stepId": "1",
-            "stepTitle": "Usando propiedades, descompone y simplifica la siguiente raíz de la suma de radicales.",
+            "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz de la suma de radicales.",
             "expression": "3\\sqrt{75}",
             "KCs": [
                 "DescoRaiz"
@@ -51,10 +80,14 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto, para que se simplifique."
+                    "hint": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
                 },
                 {
                     "hintId": 1,
+                    "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+                },
+                {
+                    "hintId": 2,
                     "hint": "El resultado es: ",
                     "expression": "15\\sqrt{3}"
                 }
@@ -74,11 +107,36 @@
             "displayResult": [
                 "3\\sqrt{75} \\longrightarrow 3\\sqrt{25 \\cdot 3} \\longrightarrow 15\\sqrt{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "15\\sqrt{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "3\\sqrt{15\\cdot 5}",
+                    "correct": false,
+                    "feedbackMsg": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
+                },
+                {
+                    "id": 2,
+                    "expression": "3\\sqrt{25\\cdot 3}",
+                    "correct": false,
+                    "feedbackMsg": "Como 25 es un cuadrado perfecto, puedes sacarlo fuera de la raíz"
+                },
+                {
+                    "id": 3,
+                    "expression": "3 \\cdot \\sqrt{25}\\cdot \\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 25 es un cuadrado perfecto, por lo tanto tiene raíz exacta."
+                }
+            ]
         },
         {
             "stepId": "2",
-            "stepTitle": "Usando propiedades , descompone y simplifica la siguiente raíz de 27.",
+            "stepTitle": "Usando propiedades, descompón y simplifica la siguiente raíz de 27.",
             "expression": "\\sqrt{27}",
             "KCs": [
                 "DescoRaiz"
@@ -86,11 +144,14 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La suma y resta de radicales se realiza en los que contienen factores comunes. Ejemplo:",
-                    "expression": "a\\sqrt{b} + c\\sqrt{b} = (a + c) \\sqrt{b}"
+                    "hint": "Para descomponer la raiz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
                 },
                 {
                     "hintId": 1,
+                    "hint": "Una vez separado el radicando, aplica las raíces en cada uno de los factores, si es que se pudiera."
+                },
+                {
+                    "hintId": 2,
                     "hint": "El resultado es: ",
                     "expression": "3\\sqrt{3}"
                 }
@@ -110,7 +171,32 @@
             "displayResult": [
                 "2\\sqrt{3} - 3\\sqrt{3} + 10\\sqrt{3} = 9\\sqrt{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "3\\sqrt{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\sqrt{3\\cdot 3\\cdot 3}",
+                    "correct": false,
+                    "feedbackMsg": "Para descomponer la raíz tienes que encontrar 2 factores en la cual uno de ellos sea un cuadrado perfecto."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\sqrt{9\\cdot 3}",
+                    "correct": false,
+                    "feedbackMsg": "Como 9 es un cuadrado perfecto, puedes sacarlo fuera de la raíz"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\sqrt{9}\\cdot \\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que 9 es un cuadrado perfecto, por lo tanto tiene raíz exacta."
+                }
+            ]
         },
         {
             "stepId": "3",
@@ -147,7 +233,35 @@
             "displayResult": [
                 "4\\sqrt{3} - 15\\sqrt{3} + 3\\sqrt{3} \\longrightarrow -8\\sqrt{3}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "-8\\sqrt{3}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "8\\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{3}"
+                },
+                {
+                    "id": 2,
+                    "expression": "22\\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{3}"
+                },
+                {
+                    "id": 3,
+                    "expression": "-180\\sqrt{3}",
+                    "correct": false,
+                    "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                    "feedbackMsgExp": "\\sqrt{3}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -185,6 +299,34 @@
         "displayResult": [
             "4\\sqrt{3} - 15\\sqrt{3} + 3\\sqrt{3} \\longrightarrow -8\\sqrt{3}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "-8\\sqrt{3}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "8\\sqrt{3}",
+                "correct": false,
+                "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                "feedbackMsgExp": "\\sqrt{3}"
+            },
+            {
+                "id": 2,
+                "expression": "22\\sqrt{3}",
+                "correct": false,
+                "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                "feedbackMsgExp": "\\sqrt{3}"
+            },
+            {
+                "id": 3,
+                "expression": "-180\\sqrt{3}",
+                "correct": false,
+                "feedbackMsg": "Para obtener el resultado, considera como factor común",
+                "feedbackMsgExp": "\\sqrt{3}"
+            }
+        ]
     }
 }

@@ -17,8 +17,9 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba).",
-                    "hintId": 1
+                    "hintId": 1,
+                    "hint": "La propiedad de división de fracciones indica que el denominador (la fracción de abajo) se invierte y pasa a multiplicar el numerador (la fracción de arriba). Ejemplo:",
+                    "expression": "\\frac{\\frac{w}{x}}{\\frac{a}{b}} \\quad ⟶ \\quad \\frac{w}{x} ⋅ \\frac{b}{a} "
                 },
                 {
                     "hint": "El resultado es:",
@@ -65,8 +66,8 @@
                     "nextStep": "1"
                 }
             ],
-            "summary": "1) Con el fin de transformar una fraccion a multiplicacion, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
-            "stepTitle": "Invierte la fracción ubicada en el denominador, luego expresa como multiplicación el resultado con el numerador.",
+            "summary": "1) Con el fin de transformar una divsión de fracciones a multiplicación de fracciones, se multiplica el numerador (la fracción de arriba) con el inverso del denominador (la fracción de abajo).",
+            "stepTitle": "Invirtiendo la fracción del denominador, expresa como multiplicación de fracciones.",
             "correctMsg": "Has invertido el denominador correctamente",
             "expression": "\\frac{\\frac{ab}{c}}{\\frac{c}{d}}",
             "validation": "evaluateAndCount",
@@ -74,7 +75,32 @@
             "displayResult": [
                 "\\frac{ab}{c} \\cdot \\frac{d}{c}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{ab}{c} \\cdot \\frac{d}{c}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{ab}{c}\\cdot\\frac{c}{d}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{\\frac{ab}{c}}{\\frac{d}{c}}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{c}{ab}\\cdot\\frac{c}{d}",
+                    "correct": false,
+                    "feedbackMsg": "Multiplica la primera fracción por el inverso multiplicativo de la segunda fracción."
+                }
+            ]
         },
         {
             "KCs": [
@@ -90,7 +116,8 @@
                     "hintId": 0
                 },
                 {
-                    "hint": "El numerador resultante es abd",
+                    "hint": "El numerador resultante es:",
+                    "expression": "abd",
                     "hintId": 1
                 },
                 {
@@ -103,7 +130,7 @@
                     "hintId": 3
                 },
                 {
-                    "hint": "el resultado es:",
+                    "hint": "El resultado es:",
                     "expression": "\\frac{abd}{c^{2}}",
                     "hintId": 4
                 }
@@ -144,7 +171,32 @@
             "displayResult": [
                 "\\frac{abd}{c^{2}}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{abd}{c^{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{abd}{c}",
+                    "correct": false,
+                    "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+                },
+                {
+                    "id": 2,
+                    "expression": "abd",
+                    "correct": false,
+                    "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{abd}{2c}",
+                    "correct": false,
+                    "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+                }
+            ]
         }
     ],
     "title": "Fracción Algebraica",
@@ -162,7 +214,8 @@
                 "hintId": 0
             },
             {
-                "hint": "El numerador resultante es abd",
+                "hint": "El numerador resultante es:",
+                "expression": "abd",
                 "hintId": 1
             },
             {
@@ -175,7 +228,7 @@
                 "hintId": 3
             },
             {
-                "hint": "el resultado es:",
+                "hint": "El resultado es:",
                 "expression": "\\frac{abd}{c^{2}}",
                 "hintId": 4
             }
@@ -216,6 +269,31 @@
         "displayResult": [
             "\\frac{abd}{c^{2}}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{abd}{c^{2}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{abd}{c}",
+                "correct": false,
+                "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+            },
+            {
+                "id": 2,
+                "expression": "abd",
+                "correct": false,
+                "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{abd}{2c}",
+                "correct": false,
+                "feedbackMsg": "Observa que en el denominador debes multiplicar c·c"
+            }
+        ]
     }
 }

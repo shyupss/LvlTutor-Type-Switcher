@@ -46,7 +46,33 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has expresado el numerador y denominador en notación científica.",
-            "summary": "1) Se escribe el denominador y numerador de la fracción en notación científica."
+            "summary": "1) Se escribe el denominador y numerador de la fracción en notación científica.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{4\\cdot{10^{-2}}}{2\\cdot{10^{2}}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{0.04}{2\\cdot10^2}",
+                    "correct": false,
+                    "feedbackMsg": "El numerador también debe escribirse en notación científica, considerando que la parte entera debe ser un número natural entre 1 y 9."
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{0.4\\cdot 10}{2\\cdot10^2}",
+                    "correct": false,
+                    "feedbackMsg": "El numerador también debe escribirse en notación científica, considerando que la parte entera debe ser un número natural entre 1 y 9."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{4\\cdot10^{-3}}{2\\cdot10^2}",
+                    "correct": false,
+                    "feedbackMsg": "Para escribir 0.04 en notación científica, debes encontrar n tal que",
+                    "feedbackMsgExp": "4*10^{n} = 0.04"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -83,7 +109,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has realizado las operaciones indicadas correctamente.",
-            "summary": "2) Se reduce la expresion dividiendo los números que no son potencia de 10."
+            "summary": "2) Se reduce la expresion dividiendo los números que no son potencia de 10.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2\\cdot\\frac{10^{-2}}{10^{2}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "No olvides las potencias de 10"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{2\\cdot10^{-2}}{2\\cdot10^2}",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que al simplificar por 2, debes dividir el numerador y el denominador por 2."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{2\\cdot10^{-2}}{10^{-2}}",
+                    "correct": false,
+                    "feedbackMsg": "Debes mantener las potencias de 10 sin modificaciones"
+                }
+            ]
         },
         {
             "stepId": "2",
@@ -125,7 +176,34 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
             "correctMsg": "Has logrado expresar la expresión original en su notación científica.",
-            "summary": "3) Se realiza la división de las potencias con base 10."
+            "summary": "3) Se realiza la división de las potencias con base 10.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2\\cdot{10^{-4}}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2\\cdot 10^4",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que",
+                    "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2\\cdot 10^{-2}",
+                    "correct": false,
+                    "feedbackMsg": "No olvides la potencia de 10 del denominador"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -168,6 +246,33 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
         "correctMsg": "Has logrado expresar la expresión original en su notación científica.",
-        "summary": "3) Se realiza la división de las potencias con base 10."
+        "summary": "3) Se realiza la división de las potencias con base 10.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2\\cdot{10^{-4}}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2\\cdot 10^4",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+            },
+            {
+                "id": 2,
+                "expression": "2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que",
+                "feedbackMsgExp": "\\frac{10^m}{10^n}=10^{m-n}"
+            },
+            {
+                "id": 3,
+                "expression": "2\\cdot 10^{-2}",
+                "correct": false,
+                "feedbackMsg": "No olvides la potencia de 10 del denominador"
+            }
+        ]
     }
 }

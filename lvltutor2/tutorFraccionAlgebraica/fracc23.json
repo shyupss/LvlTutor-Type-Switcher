@@ -8,7 +8,7 @@
         {
             "stepId": "0",
             "expression": "\\frac{1}{\\left(x+1\\right)}+\\frac{2}{\\left(x-1\\right)}-\\frac{1}{\\left(x^{2}-1\\right)}",
-            "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+            "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
             "displayResult": [
                 "\\left(x+1\\right)\\left(x-1\\right)",
                 "\\left(x^{2}-1\\right)"
@@ -28,15 +28,16 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "Comenzar encontrando los factores para cada denominador. Para esto debes factorizar cada denominador si es que es posible."
+                    "hint": "Comienza encontrando los factores para cada denominador. Para esto debes factorizar cada denominador si es que es posible."
                 },
                 {
                     "hintId": 1,
-                    "hint": "El denominador de la tercera fracción es una diferencia de cuadrados, por lo tanto, se puede expresar de la forma (x+a)(x-a)"
+                    "hint": "El denominador de la tercera fracción es una diferencia de cuadrados, por lo tanto, se puede expresar de la forma (a+b)(a-b)"
                 },
                 {
                     "hintId": 2,
-                    "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores escoge el de máxima potencia"
+                    "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+                    "expression": "\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
                 },
                 {
                     "hintId": 3,
@@ -62,7 +63,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has encontrado el mínimo común múltiplo de los denominadores.",
-            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores."
+            "summary": "1) Se obtiene el mínimo común múltiplo entre dos denominadores.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\left(x+1\\right)\\left(x-1\\right)",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(x+1\\right)\\left(x-1\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que (x+1)⋅(x-1) es múltiplo de (x+1) y (x-1)"
+                },
+                {
+                    "id": 2,
+                    "expression": "(x+1)",
+                    "correct": false,
+                    "feedbackMsg": "Tambien debes considerar el mínimo común múltiplo para el denominador de la segunda fracción"
+                },
+                {
+                    "id": 3,
+                    "expression": "(x-1)",
+                    "correct": false,
+                    "feedbackMsg": "Tambien debes considerar el mínimo común múltiplo para el denominador de la primera fracción"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -94,7 +120,7 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "Cada fracción en la suma y resta de las fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+                    "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
                 },
                 {
                     "hintId": 2,
@@ -115,7 +141,32 @@
             ],
             "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
             "correctMsg": "Has realizado la suma y resta de fracciones correctamente..",
-            "summary": "2) Finalmente se realiza las operaciones indicadas de fracciones haciendo uso del mínimo común múltiplo encontrado."
+            "summary": "2) Finalmente se realiza las operaciones indicadas de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "\\frac{3x}{\\left(x+1\\right)\\left(x-1\\right)}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\frac{x}{\\left(x+1\\right)\\left(x-1\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica la  segunda fracción (x+1)"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\frac{(3x+1)(x^2-1)-(x-1)}{\\left(x+1\\right)\\left(x-1\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por (x-1) y la segunda por (x+1)"
+                },
+                {
+                    "id": 3,
+                    "expression": "\\frac{2(x+1)}{\\left(x+1\\right)\\left(x-1\\right)}",
+                    "correct": false,
+                    "feedbackMsg": "Amplifica  la primera fracción (x-1)"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -148,7 +199,7 @@
             },
             {
                 "hintId": 1,
-                "hint": "Cada fracción en la suma y resta de las fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+                "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
             },
             {
                 "hintId": 2,
@@ -169,6 +220,31 @@
         ],
         "incorrectMsg": "Revisa que la expresión ingresada este correcta.",
         "correctMsg": "Has realizado la suma y resta de fracciones correctamente..",
-        "summary": "2) Finalmente se realiza las operaciones indicadas de fracciones haciendo uso del mínimo común múltiplo encontrado."
+        "summary": "2) Finalmente se realiza las operaciones indicadas de fracciones haciendo uso del mínimo común múltiplo encontrado.",
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "\\frac{3x}{\\left(x+1\\right)\\left(x-1\\right)}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\frac{x}{\\left(x+1\\right)\\left(x-1\\right)}",
+                "correct": false,
+                "feedbackMsg": "Amplifica la  segunda fracción (x+1)"
+            },
+            {
+                "id": 2,
+                "expression": "\\frac{(3x+1)(x^2-1)-(x-1)}{\\left(x+1\\right)\\left(x-1\\right)}",
+                "correct": false,
+                "feedbackMsg": "En lugar de multiplicar cruzado, amplifica la primera fracción por (x-1) y la segunda por (x+1)"
+            },
+            {
+                "id": 3,
+                "expression": "\\frac{2(x+1)}{\\left(x+1\\right)\\left(x-1\\right)}",
+                "correct": false,
+                "feedbackMsg": "Amplifica  la primera fracción (x-1)"
+            }
+        ]
     }
 }

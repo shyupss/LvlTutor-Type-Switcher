@@ -9,8 +9,8 @@
     {
       "stepId": "0",
       "expression": "\\frac{1}{\\sqrt{5}}",
-      "stepTitle": "Reescribe la expresión como una racionalización, dejando expresada la multiplicación de fracciones.",
-      "displayResult": ["\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}"],
+      "stepTitle": "Multiplica la parte de arriba y la parte de abajo de la fracción por el conjugado del denominador, dejando expresada como una multiplicación de dos fracciones",
+      "displayResult": ["\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}"],
       "KCs":["DetConj", "AmpFrac1"],
       "values":[{"name":"a","value":1},{"name":"b","value":4}],
       "hints": [
@@ -26,7 +26,7 @@
       "matchingError":[],
       "validation":"evaluateAndCount",
       "answers": [
-        { "answer": ["\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}"], "nextStep": "1" }
+        { "answer": ["\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}"], "nextStep": "1" }
       ],
       "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
       "correctMsg": "Has logrado identificar el conjugado y expresar la amplificación.",
@@ -34,7 +34,7 @@
     },
     {
       "stepId": "1",
-      "expression": "\\frac{1}{\\sqrt{5}}\\cdot\\frac{\\sqrt{5}}{\\sqrt{5}}",
+      "expression": "\\frac{1}{\\sqrt{5}} \\cdot \\frac{\\sqrt{5}}{\\sqrt{5}}",
       "stepTitle": "Multiplica ambas fracciones y simplifica si es posible.",
       "displayResult": ["\\frac{\\sqrt{5}}{5}"],
       "KCs":["MultFrac"],
@@ -52,7 +52,7 @@
       ],
       "incorrectMsg": "Revisa que la expresión ingresada esté correcta.",
       "correctMsg": "Has logrado racionalizar el denominador correctamente.",
-      "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador luego de identificar la suma por diferencia."
+      "summary": "2) Finalmente se multiplica ambas fracciones eliminando las raíces del denominador."
     }
   ]
 }

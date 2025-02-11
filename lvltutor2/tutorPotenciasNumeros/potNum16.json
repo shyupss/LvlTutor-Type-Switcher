@@ -8,7 +8,7 @@
     "steps": [
         {
             "stepId": "0",
-            "stepTitle": "expresa el 16 como una potencia de 2 y escribe el resultado.",
+            "stepTitle": "Expresa el 16 como una potencia de 2 y escribe el resultado.",
             "expression": "16",
             "KCs": [
                 "ExprePot"
@@ -20,7 +20,7 @@
                 },
                 {
                     "hintId": 1,
-                    "hint": "La base de la potencia que estamos buscando es 2. ¿Cuál sería el exponente ? :",
+                    "hint": "La base de la potencia que estamos buscando es 2. ¿Cuál sería el exponente?: ",
                     "expression": "2^{n} = 16"
                 },
                 {
@@ -42,9 +42,37 @@
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "16 \\longrightarrow 2^{4}"
+                "16 \\quad \\longrightarrow \\quad 2^{4}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{4}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^8",
+                    "correct": false,
+                    "feedbackMsg": "Busca un número 'n' tal que",
+                    "feedbackMsgExp": "2^{n}=16"
+                },
+                {
+                    "id": 2,
+                    "expression": "2\\cdot2\\cdot2\\cdot2",
+                    "correct": false,
+                    "feedbackMsg": "Debes expresarlo como una potencia de la forma",
+                    "feedbackMsgExp": "2^{n}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^3",
+                    "correct": false,
+                    "feedbackMsg": "Busca un número 'n' tal que",
+                    "feedbackMsgExp": "2^{n}=16"
+                }
+            ]
         },
         {
             "stepId": "1",
@@ -57,7 +85,7 @@
             "hints": [
                 {
                     "hintId": 0,
-                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                    "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
                 },
                 {
                     "hintId": 1,
@@ -73,14 +101,42 @@
                     "nextStep": "-1"
                 }
             ],
-            "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
+            "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
             "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia. ",
             "validation": "evaluateAndCount",
             "incorrectMsg": "La expresión ingresada no es correcta.",
             "displayResult": [
-                "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\longrightarrow 2^{4 \\cdot \\frac{3}{2}} \\longrightarrow 2^{6} "
+                "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{4 \\cdot \\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{6} "
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "2^{6}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "2^{\\frac{11}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 2,
+                    "expression": "2^{\\frac{5}{2}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                },
+                {
+                    "id": 3,
+                    "expression": "2^{\\frac{12}{3}}",
+                    "correct": false,
+                    "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                    "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+                }
+            ]
         }
     ],
     "finalAnswer": {
@@ -94,7 +150,7 @@
         "hints": [
             {
                 "hintId": 0,
-                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾"
+                "hint": "La propiedad de potencia de una potencia dice: (xᵃ)ᵇ = xᵃᵇ"
             },
             {
                 "hintId": 1,
@@ -110,13 +166,41 @@
                 "nextStep": "-1"
             }
         ],
-        "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = x⁽ᵃ ⁺ ᵇ⁾. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
+        "summary": "2) Se aplica la propiedad de potencia de una potencia (xᵃ)ᵇ = xᵃᵇ. En este caso la base es 2 y los exponentes son 4 y 3/2 , por lo tanto la multiplicación de estos es 6",
         "correctMsg": "Has contestado correctamente aplicando la propiedad de potencia de una potencia. ",
         "validation": "evaluateAndCount",
         "incorrectMsg": "La expresión ingresada no es correcta.",
         "displayResult": [
-            "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\longrightarrow 2^{4 \\cdot \\frac{3}{2}} \\longrightarrow 2^{6} "
+            "\\left( 2^{4} \\right)^{\\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{4 \\cdot \\frac{3}{2}} \\quad \\longrightarrow \\quad 2^{6} "
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "2^{6}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "2^{\\frac{11}{2}}",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            },
+            {
+                "id": 2,
+                "expression": "2^{\\frac{5}{2}}",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            },
+            {
+                "id": 3,
+                "expression": "2^{\\frac{12}{3}}",
+                "correct": false,
+                "feedbackMsg": "La propiedad de potencia de una potencia dice:",
+                "feedbackMsgExp": "\\left( x^{a} \\right)^{b} = x^{(a \\cdot b)}"
+            }
+        ]
     }
 }

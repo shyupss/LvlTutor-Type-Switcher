@@ -57,7 +57,32 @@
             "displayResult": [
                 "36"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "36",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "6",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el término faltante es el cuadrado de 'b', no simplemente 'b' como número"
+                },
+                {
+                    "id": 2,
+                    "expression": "4",
+                    "correct": false,
+                    "feedbackMsg": "La fórmula de cuadrado de binomio es a²+2ab+b²=(a+b)², utiliza a² y 2ab para encontrar b²."
+                },
+                {
+                    "id": 3,
+                    "expression": "9",
+                    "correct": false,
+                    "feedbackMsg": "El término faltante es el cuadrado de 'b', no el de 'a'"
+                }
+            ]
         },
         {
             "KCs": [
@@ -107,7 +132,32 @@
             "displayResult": [
                 "(3x+6)^{2}"
             ],
-            "matchingError": []
+            "matchingError": [],
+            "multipleChoice": [
+                {
+                    "id": 0,
+                    "expression": "(3x+6)^{2}",
+                    "correct": true
+                },
+                {
+                    "id": 1,
+                    "expression": "\\left(3x+36\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+                },
+                {
+                    "id": 2,
+                    "expression": "\\left(3x^2+36\\right)",
+                    "correct": false,
+                    "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado y la variable x tampoco dentro de los paréntesis."
+                },
+                {
+                    "id": 3,
+                    "expression": "\\left(3x^2+6\\right)^2",
+                    "correct": false,
+                    "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+                }
+            ]
         }
     ],
     "title": "Cuadrado de binomio",
@@ -159,6 +209,31 @@
         "displayResult": [
             "(3x+6)^{2}"
         ],
-        "matchingError": []
+        "matchingError": [],
+        "multipleChoice": [
+            {
+                "id": 0,
+                "expression": "(3x+6)^{2}",
+                "correct": true
+            },
+            {
+                "id": 1,
+                "expression": "\\left(3x+36\\right)^2",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado"
+            },
+            {
+                "id": 2,
+                "expression": "\\left(3x^2+36\\right)",
+                "correct": false,
+                "feedbackMsg": "Recuerda que el termino 'b' no debe estar al cuadrado y la variable x tampoco dentro de los paréntesis."
+            },
+            {
+                "id": 3,
+                "expression": "\\left(3x^2+6\\right)^2",
+                "correct": false,
+                "feedbackMsg": "La variable x no debe estar al cuadrado, recuerda la formula a² ± 2ab+b² =(a ± b)²"
+            }
+        ]
     }
 }

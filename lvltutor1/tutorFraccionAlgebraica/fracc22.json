@@ -8,7 +8,7 @@
     {
       "stepId": "0",
       "expression": "\\frac{2x}{\\left(x+1\\right)}+\\frac{5}{\\left( x^{2}-1\\right)}",
-      "stepTitle": "Encuentra el mínimo común denominador entre los denominadores",
+      "stepTitle": "Encuentra el mínimo común múltiplo entre los denominadores y escríbelo.",
       "displayResult": [
         "\\left(x+1\\right)\\left(x-1\\right)",
         "\\left(x^{2}-1\\right)"
@@ -25,15 +25,16 @@
       "hints": [
           {
             "hintId": 0,
-            "hint": "Comenzar encontrando los factores para cada denominador. Para esto debes factorizar cada denominador si es que es posible."
+            "hint": "Comienza encontrando los factores para cada denominador. Para esto debes factorizar cada denominador si es que es posible."
           },
           {
             "hintId": 1,
-            "hint": "El denominador de la segunda fracción es una diferencia de cuadrados, por lo tanto, se puede expresar de la forma (x+a)(x-a)"
+            "hint": "El denominador de la segunda fracción es una diferencia de cuadrados, por lo tanto, se puede expresar de la forma (a+b)(a-b)"
           },
           {
             "hintId": 2,
-            "hint": "Multiplicar todos los factores únicos de los dos denominadores. Si un factor se repite en los denominadores escoge el de máxima potencia"
+            "hint": "Para encontrar el mínimo común múltiplo de las variables, este debe ser una multiplicación de factores comunes y no comunes elevados al mayor exponente. Para el siguiente ejemplo, el mínimo común múltiplo de los denominadores es x²y³z: ",
+            "expression":"\\frac{1}{x^{2}y} + \\frac{1}{y^{3}z} \\quad ⟶ \\quad MCM \\quad = \\quad x²y³z"
           },
           {
             "hintId": 3,
@@ -79,7 +80,7 @@
           },
           {
             "hintId": 1,
-            "hint": "Cada fracción en la suma de las dos fracciones se multiplica por el mínimo común múltiplo, luego se reduce los terminos semejantes y por último la expresión resultante se divide por el mínimo común múltiplo."
+            "hint": "Para cada fracción, su denominador divide al mínimo común múltiplo. Luego, el resultado se multiplica por el numerador de la respectiva fracción para obtener fracciones equivalentes con el mismo denominador."
           },
           {
             "hintId": 2,
